@@ -1,12 +1,12 @@
-﻿- description: Connect on-prem networks to Azure critical workloads via multiple ExpressRoutes
+- description: 複数の ExpressRoute を介してオンプレミス ネットワークを Azure の重要なワークロードに接続します
   aprlGuid: 4d703025-dafc-f840-a183-5dc440456134
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.Network/expressRouteCircuits
   recommendationMetadataState: Active
-  longDescription: |
-    Connecting each ExpressRoute Gateway to a minimum of two circuits in different peering locations enhances redundancy and reliability by ensuring alternate pathways for data in case one circuit fails.
+  longDescription: |-
+    各 ExpressRoute ゲートウェイを異なるピアリングの場所にある少なくとも 2 つの回線に接続すると、1 つの回線に障害が発生した場合にデータの代替経路が確保され、冗長性と信頼性が強化されます。
   potentialBenefits: Enhanced reliability and redundancy
   pgVerified: true
   publishedToLearn: false
@@ -16,16 +16,15 @@
   learnMoreLink:
     - name: Designing for disaster recovery with ExpressRoute private peering
       url: "https://learn.microsoft.com/azure/expressroute/designing-for-disaster-recovery-with-expressroute-privatepeering"
-
-- description: Ensure ExpressRoute's physical links connect to distinct network edge devices
+- description: ExpressRoute の物理リンクが個別のネットワーク エッジ デバイスに接続されていることを確認する
   aprlGuid: 0e19cc41-8274-1342-b0db-0e4146eacef8
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.Network/expressRouteCircuits
   recommendationMetadataState: Active
-  longDescription: |
-    Microsoft or the ExpressRoute provider always ensures physical redundancy in their services. It's essential to maintain this level of physical redundancy (two devices, two links) from the ExpressRoute peering location to your network for optimal performance and reliability.
+  longDescription: |-
+    Microsoft または ExpressRoute プロバイダーは、サービスの物理的な冗長性を常に確保します。最適なパフォーマンスと信頼性を実現するには、ExpressRoute ピアリングの場所からネットワークまでこのレベルの物理冗長性 (2 つのデバイス、2 つのリンク) を維持することが不可欠です。
   potentialBenefits: Enhanced reliability and fault tolerance
   pgVerified: true
   publishedToLearn: false
@@ -37,16 +36,15 @@
       url: "https://learn.microsoft.com/en-us/azure/expressroute/designing-for-high-availability-with-expressroute"
     - name: Azure Well-Architected Framework review - Azure ExpressRoute - Design Checklist
       url: "https://learn.microsoft.com/azure/well-architected/services/networking/azure-expressroute#recommendations"
-
-- description: Ensure both connections of an ExpressRoute circuit are configured in active-active mode
+- description: ExpressRoute 回線の両方の接続がアクティブ/アクティブ モードで構成されていることを確認します。
   aprlGuid: f06a2bbe-5839-d447-9f39-fc3d20562d88
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.Network/expressRouteCircuits
   recommendationMetadataState: Active
-  longDescription: |
-    Operating both connections of an ExpressRoute circuit in active-active mode enhances high availability as the Microsoft network will load balance the traffic across the connections on a per-flow basis.
+  longDescription: |-
+    ExpressRoute 回線の両方の接続をアクティブ/アクティブ モードで動作させると、Microsoft ネットワークがフローごとに接続間のトラフィックの負荷分散を行うため、高可用性が向上します。
   potentialBenefits: Improved high availability and load balancing
   pgVerified: true
   publishedToLearn: false
@@ -56,16 +54,15 @@
   learnMoreLink:
     - name: Designing for high availability with ExpressRoute - Active-active connections
       url: "https://learn.microsoft.com/azure/expressroute/designing-for-high-availability-with-expressroute#active-active-connections"
-
-- description: Activate Bidirectional Forwarding Detection on edge devices for faster failover
+- description: エッジデバイスで双方向転送検出を有効にしてフェイルオーバーを高速化します
   aprlGuid: 2a5bf650-586d-db4c-a292-d922be7d3e0e
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.Network/expressRouteCircuits
   recommendationMetadataState: Active
-  longDescription: |
-    Enabling BFD over ExpressRoute speeds up link failure detection between MSEE devices and routers configured for ExpressRoute (CE/PE), applicable over both customer and Partner Edge routing devices with managed Layer 3 service.
+  longDescription: |-
+    ExpressRoute 経由の BFD を有効にすると、MSEE デバイスと ExpressRoute (CE/PE) 用に構成されたルーター間のリンク障害の検出が高速化され、管理されたレイヤー 3 サービスを備えた顧客とパートナー エッジ ルーティング デバイスの両方に適用されます。
   potentialBenefits: Faster link failure detection
   pgVerified: true
   publishedToLearn: false
@@ -75,16 +72,15 @@
   learnMoreLink:
     - name: Configure BFD over ExpressRoute
       url: "https://learn.microsoft.com/azure/expressroute/expressroute-bfd"
-
-- description: Configure monitoring and alerting for ExpressRoute circuits
+- description: ExpressRoute 回線の監視とアラートを構成する
   aprlGuid: 9771a435-d031-814e-9827-9b5fdafc0f87
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Network/expressRouteCircuits
   recommendationMetadataState: Active
-  longDescription: |
-    Use Network Insights for monitoring ExpressRoute circuit availability, QoS, and throughput. Set alerts based on Azure Monitor Baseline Alerts for availability, QoS metrics, and throughput metrics exceeding specific thresholds.
+  longDescription: |-
+    Network Insights を使用して、ExpressRoute 回線の可用性、QoS、およびスループットを監視します。特定のしきい値を超える可用性、QoS メトリック、およびスループット メトリックについて、Azure Monitor ベースライン アラートに基づいてアラートを設定します。
   potentialBenefits: Enhanced network performance and health
   pgVerified: true
   publishedToLearn: false
@@ -98,16 +94,15 @@
       url: "https://learn.microsoft.com/azure/expressroute/monitor-expressroute"
     - name: Configure Traffic Collector for ExpressRoute Direct - Azure ExpressRoute | Microsoft Learn
       url: "https://learn.microsoft.com/en-us/azure/expressroute/how-to-configure-traffic-collector#deploy-expressroute-traffic-collector"
-
-- description: Configure service health to receive ExpressRoute circuit maintenance notification
+- description: ExpressRoute 回線メンテナンス通知を受信するようにサービス正常性を構成する
   aprlGuid: 26cb547f-aabc-dc40-be02-d0a9b6b04b1a
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Network/expressRouteCircuits
   recommendationMetadataState: Active
-  longDescription: |
-    ExpressRoute leverages service health for notifications on both planned and unplanned maintenance, ensuring users are informed about any changes to their ExpressRoute circuits.
+  longDescription: |-
+    ExpressRoute は、サービスの正常性を活用して計画的および計画外のメンテナンスに関する通知を行い、ExpressRoute 回線への変更についてユーザーに確実に通知します。
   potentialBenefits: Stay informed on circuit updates
   pgVerified: true
   publishedToLearn: false
@@ -117,16 +112,15 @@
   learnMoreLink:
     - name: How to view and configure alerts for Azure ExpressRoute circuit maintenance
       url: "https://learn.microsoft.com/azure/expressroute/maintenance-alerts"
-
-- description: Use a site-to-site VPN as an interim backup solution for a single ExpressRoute circuit
+- description: 単一の ExpressRoute 回線の暫定バックアップ ソリューションとしてサイト間 VPN を使用する
   aprlGuid: f902cf86-2b53-2942-abc2-781f4fb62be6
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Network/expressRouteCircuits
   recommendationMetadataState: Active
-  longDescription: |
-    If you haven't added a second ExpressRoute circuit, use a site-to-site VPN as a temporary solution until the second circuit is available. This ensures network reliability and continuity of service.
+  longDescription: |-
+    2 番目の ExpressRoute 回線を追加していない場合は、2 番目の回線が使用可能になるまで、一時的なソリューションとしてサイト間 VPN を使用します。これにより、ネットワークの信頼性とサービスの継続性が保証されます。
   potentialBenefits: Ensures continuity and reliability
   pgVerified: true
   publishedToLearn: false

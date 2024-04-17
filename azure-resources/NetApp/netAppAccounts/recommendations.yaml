@@ -1,12 +1,12 @@
-﻿- description: Use the correct service level and volume quota size for the expected performance level
+- description: 期待されるパフォーマンス レベルに合わせて、正しいサービス レベルとボリューム クォータ サイズを使用してください。
   aprlGuid: af426a99-62a6-6b4c-9662-42d220b413b8
   recommendationTypeId: null
   recommendationControl: Scalability
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.NetApp/netAppAccounts
   recommendationMetadataState: Active
-  longDescription: |
-    Service levels, part of capacity pool attributes, determine the maximum throughput per volume quota in Azure NetApp Files. It combines read and write speed, offering three levels: Standard (16 MiB/s per 1TiB), Premium (64 MiB/s per 1TiB), and Ultra (128 MiB/s per 1TiB) throughput.
+  longDescription: |-
+    容量プール属性の一部であるサービス レベルによって、Azure NetApp Files のボリューム クォータごとの最大スループットが決まります。読み取り速度と書き込み速度を組み合わせ、Standard (1TiB あたり 16 MiB/s)、Premium (1TiB あたり 64 MiB/s)、および Ultra (1TiB あたり 128 MiB/s) の 3 つのレベルのスループットを提供します。
   potentialBenefits: Optimized performance and cost efficiency
   pgVerified: true
   publishedToLearn: false
@@ -16,16 +16,15 @@
   learnMoreLink:
     - name: Service levels for Azure NetApp Files | Microsoft Learn
       url: "https://learn.microsoft.com/azure/azure-netapp-files/azure-netapp-files-service-levels"
-
-- description: Use standard network features for production in Azure NetApp Files
+- description: Azure NetApp Files での運用に標準のネットワーク機能を使用する
   aprlGuid: ab984130-c57b-6c4a-8d04-6723b4e1bdb6
   recommendationTypeId: null
   recommendationControl: Governance
   recommendationImpact: High
   recommendationResourceType: Microsoft.NetApp/netAppAccounts
   recommendationMetadataState: Active
-  longDescription: |
-    Standard network feature in Azure NetApp Files enhances IP limits and VNet capabilities, including network security groups, user-defined routes on subnets, and diverse connectivity options.
+  longDescription: |-
+    Azure NetApp Files の標準ネットワーク機能により、ネットワーク セキュリティ グループ、サブネット上のユーザー定義ルート、多様な接続オプションなどの IP 制限と VNet 機能が強化されます。
   potentialBenefits: Enhanced connectivity and security
   pgVerified: true
   publishedToLearn: false
@@ -35,16 +34,15 @@
   learnMoreLink:
     - name: Guidelines for Azure NetApp Files network planning | Microsoft Learn
       url: "https://learn.microsoft.com/azure/azure-netapp-files/azure-netapp-files-network-topologies"
-
-- description: Use availability zones for high availability in Azure NetApp Files
+- description: Azure NetApp Files での高可用性のために可用性ゾーンを使用する
   aprlGuid: 47d100a5-7f85-5742-967a-67eb5081240a
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.NetApp/netAppAccounts
   recommendationMetadataState: Active
-  longDescription: |
-    Azure availability zones are distinct locations within each Azure region designed to withstand local failures through redundancy and logical isolation, improving service resiliency with at least three zones in enabled regions.
+  longDescription: |-
+    Azure 可用性ゾーンは、各 Azure リージョン内の個別の場所であり、冗長性と論理的分離によってローカル障害に耐えるように設計されており、有効なリージョン内に少なくとも 3 つのゾーンがあることでサービスの回復力が向上します。
   potentialBenefits: Enhances disaster recovery
   pgVerified: true
   publishedToLearn: false
@@ -54,16 +52,15 @@
   learnMoreLink:
     - name: Use availability zones for high availability in Azure NetApp Files | Microsoft Learn
       url: "https://learn.microsoft.com/azure/azure-netapp-files/use-availability-zones"
-
-- description: Use snapshots for data protection in Azure NetApp Files
+- description: Azure NetApp Files でのデータ保護にスナップショットを使用する
   aprlGuid: 72827434-c773-4345-9493-34848ddf5803
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.NetApp/netAppAccounts
   recommendationMetadataState: Active
-  longDescription: |
-    Azure NetApp Files snapshot technology ensures stability, scalability, and swift data recoverability without affecting performance. It supports automatic snapshot creation via policies for Azure NetApp Files data.
+  longDescription: |-
+    Azure NetApp Files スナップショット テクノロジは、パフォーマンスに影響を与えることなく、安定性、スケーラビリティ、および迅速なデータ回復可能性を保証します。 Azure NetApp Files データのポリシーによる自動スナップショット作成をサポートします。
   potentialBenefits: Stable, scalable, swift recovery, no perf impact
   pgVerified: true
   publishedToLearn: false
@@ -73,16 +70,15 @@
   learnMoreLink:
     - name: How Azure NetApp Files snapshots work | Microsoft Learn
       url: "https://learn.microsoft.com/azure/azure-netapp-files/snapshots-introduction"
-
-- description: Enable backup for data protection in Azure NetApp Files
+- description: Azure NetApp Files でデータ保護のためのバックアップを有効にする
   aprlGuid: b2fb3e60-97ec-e34d-af29-b16a0d61c2ac
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: High
   recommendationResourceType: Microsoft.NetApp/netAppAccounts
   recommendationMetadataState: Active
-  longDescription: |
-    Azure NetApp Files offers a fully managed backup solution enhancing long-term recovery, archiving, and compliance.
+  longDescription: |-
+    Azure NetApp Files は、長期的なリカバリ、アーカイブ、コンプライアンスを強化するフルマネージドのバックアップ ソリューションを提供します。
   potentialBenefits: Enhances data recovery and compliance
   pgVerified: true
   publishedToLearn: false
@@ -92,16 +88,15 @@
   learnMoreLink:
     - name: Understand Azure NetApp Files backup | Microsoft Learn
       url: "https://learn.microsoft.com/azure/azure-netapp-files/backup-introduction"
-
-- description: Enable Cross-region replication of Azure NetApp Files volumes
+- description: Azure NetApp Files ボリュームのクロスリージョン レプリケーションを有効にする
   aprlGuid: e30317d2-c502-4dfe-a2d3-0a737cc79545
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: High
   recommendationResourceType: Microsoft.NetApp/netAppAccounts
   recommendationMetadataState: Active
-  longDescription: |
-    Azure NetApp Files replication offers data protection by allowing asynchronous cross-region volume replication for application failover in case of regional outages. Volumes can be replicated across regions, not concurrently with cross-zone replication.
+  longDescription: |-
+    Azure NetApp Files レプリケーションは、リージョンが停止した場合にアプリケーション フェールオーバー用の非同期クロスリージョン ボリューム レプリケーションを可能にすることでデータ保護を提供します。ボリュームはリージョン間でレプリケートできますが、クロスゾーン レプリケーションと同時に行うことはできません。
   potentialBenefits: Enhanced data protection and disaster recovery
   pgVerified: true
   publishedToLearn: false
@@ -111,16 +106,15 @@
   learnMoreLink:
     - name: Cross-region replication of Azure NetApp Files volumes
       url: "https://learn.microsoft.com/en-us/azure/azure-netapp-files/cross-region-replication-introduction"
-
-- description: Enable Cross-zone replication of Azure NetApp Files volumes
+- description: Azure NetApp Files ボリュームのクロスゾーン レプリケーションを有効にする
   aprlGuid: e3d742e1-dacd-9b48-b6b1-510ec9f87c96
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.NetApp/netAppAccounts
   recommendationMetadataState: Active
-  longDescription: |
-    The cross-zone replication (CZR) feature enables asynchronous data replication between Azure NetApp Files volumes across different availability zones, ensuring data protection and critical application failover in case of zone-wide disasters.
+  longDescription: |-
+    クロスゾーン レプリケーション (CZR) 機能により、異なる可用性ゾーンにまたがる Azure NetApp Files ボリューム間の非同期データ レプリケーションが可能になり、ゾーン全体の災害発生時にデータ保護と重要なアプリケーションのフェールオーバーが確保されます。
   potentialBenefits: Enhances disaster recovery
   pgVerified: true
   publishedToLearn: false
@@ -130,16 +124,15 @@
   learnMoreLink:
     - name: Cross-zone replication of Azure NetApp Files volumes | Microsoft Learn
       url: "https://learn.microsoft.com/azure/azure-netapp-files/cross-zone-replication-introduction"
-
-- description: Monitor Azure NetApp Files metrics to better understand usage pattern and performance
+- description: Azure NetApp Files メトリックを監視して、使用パターンとパフォーマンスをより深く理解する
   aprlGuid: 2f579fc9-e599-0d44-8b97-254f50ae04d8
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.NetApp/netAppAccounts
   recommendationMetadataState: Active
-  longDescription: |
-    Azure NetApp Files offers metrics like allocated storage, actual usage, volume IOPS, and latency, enabling a better understanding of usage patterns and volume performance for NetApp accounts.
+  longDescription: |-
+    Azure NetApp Files は、割り当てられたストレージ、実際の使用量、ボリューム IOPS、待機時間などのメトリックを提供し、NetApp アカウントの使用パターンとボリューム パフォーマンスをより深く理解できるようにします。
   potentialBenefits: Optimize usage and performance
   pgVerified: true
   publishedToLearn: false
@@ -149,16 +142,15 @@
   learnMoreLink:
     - name: Ways to monitor Azure NetApp Files | Microsoft Learn
       url: "https://learn.microsoft.com/azure/azure-netapp-files/monitor-azure-netapp-files"
-
-- description: Enforce standards and assess compliance in Azure NetApp Files with Azure policy
+- description: Azure ポリシーを使用して標準を適用し、Azure NetApp Files のコンプライアンスを評価します
   aprlGuid: 687ae58f-517f-ca43-90fe-922497e61283
   recommendationTypeId: null
   recommendationControl: Governance
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.NetApp/netAppAccounts
   recommendationMetadataState: Active
-  longDescription: |
-    Azure NetApp Files supports Azure policy integration using either built-in policy definitions or by creating custom ones to maintain organizational standards and compliance.
+  longDescription: |-
+    Azure NetApp Files は、組み込みのポリシー定義を使用するか、組織の標準とコンプライアンスを維持するためのカスタム定義を作成することによって、Azure ポリシーの統合をサポートします。
   potentialBenefits: Enforce standards and assess compliance
   pgVerified: true
   publishedToLearn: false
@@ -170,16 +162,15 @@
       url: "https://learn.microsoft.com/azure/azure-netapp-files/azure-policy-definitions"
     - name: Creating custom policy definitions | Microsoft Learn
       url: "https://learn.microsoft.com/azure/governance/policy/tutorials/create-custom-policy-definition"
-
-- description: Restrict default access to Azure NetApp Files volumes
+- description: Azure NetApp Files ボリュームへのデフォルトのアクセスを制限する
   aprlGuid: cfa2244b-5436-47de-8287-b217875d3b0a
   recommendationTypeId: null
   recommendationControl: Security
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.NetApp/netAppAccounts
   recommendationMetadataState: Active
-  longDescription: |
-    Access to the delegated subnet should be limited to specific Azure Virtual Networks. SMB-enabled volumes' share permissions should move away from 'Everyone/Full control'. NFS-enabled volumes' access needs to be controlled via export policies and/or NFSv4.1 ACLs.
+  longDescription: |-
+    委任されたサブネットへのアクセスは、特定の Azure 仮想ネットワークに制限する必要があります。 SMB が有効なボリュームの共有アクセス許可は、「Everyone/フル コントロール」から移行する必要があります。 NFS 対応ボリュームのアクセスは、エクスポート ポリシーや NFSv4.1 ACL によって制御する必要があります。
   potentialBenefits: Enhanced security, Reduced data breach risk
   pgVerified: true
   publishedToLearn: false
@@ -197,16 +188,15 @@
       url: "https://learn.microsoft.com/azure/azure-netapp-files/configure-access-control-lists"
     - name: Configure Unix permissions and change ownership mode for NFS and dual-protocol volumes
       url: "https://learn.microsoft.com/azure/azure-netapp-files/configure-unix-permissions-change-ownership-mode"
-
-- description: Make use of SMB continuous availability for supported applications
+- description: サポートされているアプリケーションに対して SMB の継続的可用性を利用する
   aprlGuid: d1e7ccc3-e6c1-40e9-a36e-fd134711c808
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.NetApp/netAppAccounts
   recommendationMetadataState: Active
-  longDescription: |
-    Certain SMB applications need SMB Transparent Failover for maintenance without interrupting server connectivity. Azure NetApp Files provides this through SMB Continuous Availability for applications like Citrix App Layering, FSLogix user/profile containers, Microsoft SQL Server, MSIX app attach.
+  longDescription: |-
+    特定の SMB アプリケーションでは、サーバー接続を中断せずにメンテナンスを行うために、SMB 透過的フェールオーバーが必要です。 Azure NetApp Files は、Citrix App Layering、FSLogix ユーザー/プロファイル コンテナー、Microsoft SQL Server、MSIX アプリ アタッチなどのアプリケーションに対して SMB Continuous Availability を通じてこれを提供します。
   potentialBenefits: Zero downtime for SMB apps
   pgVerified: true
   publishedToLearn: false
@@ -216,16 +206,15 @@
   learnMoreLink:
     - name: Do I need to take special precautions for SMB-based applications? | Microsoft Learn
       url: "https://learn.microsoft.com/azure/azure-netapp-files/faq-application-resilience#do-i-need-to-take-special-precautions-for-smb-based-applications"
-
-- description: Ensure application resilience for service maintenance events
+- description: サービスメンテナンスイベントに対するアプリケーションの復元力を確保
   aprlGuid: 60f36f9b-fac9-4160-bbf5-57af04da4f53
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.NetApp/netAppAccounts
   recommendationMetadataState: Active
-  longDescription: |
-    Azure NetApp Files might undergo occasional planned maintenance such as platform updates or service and software upgrades. It's important to be aware of the application's resiliency settings to cope with these storage service maintenance events.
+  longDescription: |-
+    Azure NetApp Files では、プラットフォームの更新やサービスとソフトウェアのアップグレードなど、不定期に計画されたメンテナンスが行われる場合があります。こうしたストレージ サービスのメンテナンス イベントに対処するには、アプリケーションの復元力の設定を認識しておくことが重要です。
   potentialBenefits: Minimizes downtime during maintenance
   pgVerified: true
   publishedToLearn: false

@@ -1,12 +1,12 @@
-﻿- description: Enable HA with zone redundancy
+- description: ゾーン冗長性による HA の有効化
   aprlGuid: 88856605-53d8-4bbd-a75b-4a7b14939d32
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.DBforMySQL/flexibleServers
   recommendationMetadataState: Active
-  longDescription: |
-    Enable HA with zone redundancy on flexible server instances to deploy a standby replica in a different zone, offering automatic failover capability for improved reliability and disaster recovery.
+  longDescription: |-
+    フレキシブル サーバー インスタンス上でゾーン冗長性を備えた HA を有効にして、スタンバイ レプリカを別のゾーンにデプロイし、信頼性と災害復旧を向上させるための自動フェイルオーバー機能を提供します。
   potentialBenefits: Enhanced uptime and data protection
   pgVerified: true
   publishedToLearn: false
@@ -16,16 +16,15 @@
   learnMoreLink:
     - name: High availability concepts in Azure Database for MySQL - Flexible Server
       url: "https://learn.microsoft.com/azure/mysql/flexible-server/concepts-high-availability"
-
-- description: Enable custom maintenance schedule
+- description: カスタム メンテナンス スケジュールを有効にする
   aprlGuid: 82a9a0f2-24ee-496f-9ad2-25f81710942d
   recommendationTypeId: null
   recommendationControl: Scalability
   recommendationImpact: High
   recommendationResourceType: Microsoft.DBforMySQL/flexibleServers
   recommendationMetadataState: Active
-  longDescription: |
-    Use custom maintenance schedule on flexible server instances to select a preferred time for service updates to be applied.
+  longDescription: |-
+    フレキシブル サーバー インスタンスでカスタム メンテナンス スケジュールを使用して、サービス更新を適用する希望の時間を選択します。
   potentialBenefits: Control update timings
   pgVerified: true
   publishedToLearn: false

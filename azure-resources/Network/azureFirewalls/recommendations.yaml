@@ -1,12 +1,12 @@
-﻿- description: Deploy Azure Firewall across multiple availability zones
+- description: 複数の可用性ゾーンに Azure Firewall をデプロイする
   aprlGuid: c72b7fee-1fa0-5b4b-98e5-54bcae95bb74
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.Network/azureFirewalls
   recommendationMetadataState: Active
-  longDescription: |
-    Azure Firewall offers different SLAs depending on its deployment; in a single availability zone or across multiple, potentially improving reliability and performance.
+  longDescription: |-
+    Azure Firewall は、その展開に応じて異なる SLA を提供します。単一の可用性ゾーンまたは複数の可用性ゾーンにまたがって、信頼性とパフォーマンスが向上する可能性があります。
   potentialBenefits: Enhanced SLA and reliability
   pgVerified: true
   publishedToLearn: false
@@ -18,16 +18,15 @@
       url: "https://learn.microsoft.com/azure/architecture/framework/services/networking/azure-firewall"
     - name: Deploy Azure Firewall across multiple availability zones
       url: "https://learn.microsoft.com/azure/firewall/deploy-availability-zone-powershell"
-
-- description: Monitor Azure Firewall metrics
+- description: Azure Firewall メトリクスを監視する
   aprlGuid: 3c8fa7c6-6b78-a24a-a63f-348a7c71acb9
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Network/azureFirewalls
   recommendationMetadataState: Active
-  longDescription: |
-    Monitor Azure Firewall for overall health, processed throughput, and outbound SNAT port usage. Get alerted before limits impact services. Consider NAT gateway integration with zonal deployments; note limitations with zone redundant firewalls and secure virtual hub networks.
+  longDescription: |-
+    全体的な健全性、処理されたスループット、送信 SNAT ポートの使用状況については、Azure Firewall を監視します。制限がサービスに影響を与える前にアラートを受け取ります。 NAT ゲートウェイとゾーン展開との統合を検討してください。ゾーン冗長ファイアウォールと安全な仮想ハブ ネットワークの制限に注意してください。
   potentialBenefits: Improve health and performance monitoring
   pgVerified: true
   publishedToLearn: false
@@ -39,16 +38,15 @@
       url: "https://learn.microsoft.com/azure/azure-monitor/essentials/metrics-supported#microsoftnetworkazurefirewalls"
     - name: Azure Firewall performance
       url: "https://learn.microsoft.com/azure/firewall/firewall-performance"
-
-- description: Configure DDoS Protection on the Azure Firewall VNet
+- description: Azure Firewall VNet での DDoS 保護の構成
   aprlGuid: 1b2dbf4a-8a0b-5e4b-8f4e-3f758188910d
   recommendationTypeId: null
   recommendationControl: Security
   recommendationImpact: High
   recommendationResourceType: Microsoft.Network/azureFirewalls
   recommendationMetadataState: Active
-  longDescription: |
-    Associate a DDoS protection plan with the virtual network hosting Azure Firewall to provide enhanced mitigation against DDoS attacks. Azure Firewall Manager integrates the creation of firewall infrastructure and DDoS protection plans.
+  longDescription: |-
+    DDoS 保護計画を Azure Firewall をホストしている仮想ネットワークに関連付けて、DDoS 攻撃に対する緩和策を強化します。 Azure Firewall Manager は、ファイアウォール インフラストラクチャと DDoS 保護計画の作成を統合します。
   potentialBenefits: Enhanced DDoS attack defense
   pgVerified: true
   publishedToLearn: false
@@ -58,16 +56,15 @@
   learnMoreLink:
     - name: Azure DDoS Protection overview
       url: "https://learn.microsoft.com/azure/ddos-protection/ddos-protection-overview"
-
-- description: Leverage Azure Policy inheritance model
+- description: Azure Policy 継承モデルを活用する
   aprlGuid: 3a63560a-1ed3-6140-acd1-d1d23f9a2e12
   recommendationTypeId: null
   recommendationControl: Governance
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Network/azureFirewalls
   recommendationMetadataState: Active
-  longDescription: |
-    Azure Firewall policy supports rule hierarchies for compliance enforcement, using a central base policy with higher priority over child policies, and employs Azure custom roles to safeguard base policy and manage access within subscriptions or groups.
+  longDescription: |-
+    Azure Firewall ポリシーは、子ポリシーよりも優先度の高い中央の基本ポリシーを使用して、コンプライアンスを適用するためのルール階層をサポートし、基本ポリシーを保護し、サブスクリプションまたはグループ内のアクセスを管理するために Azure カスタム ロールを採用します。
   potentialBenefits: Enhanced compliance and rule hierarchy
   pgVerified: true
   publishedToLearn: false
@@ -77,16 +74,15 @@
   learnMoreLink:
     - name: Azure Firewall Policy hierarchy
       url: "https://learn.microsoft.com/azure/firewall-manager/rule-hierarchy"
-
-- description: Configure 2-4 PIPs for SNAT Port utilization
+- description: SNAT ポートを使用するために 2 ～ 4 つの PIP を構成する
   aprlGuid: d2e4a38e-2307-4299-a217-4c0cebc9a7f6
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Network/azureFirewalls
   recommendationMetadataState: Active
-  longDescription: |
-    Configure a minimum of two to four public IP addresses per Azure Firewall to avoid SNAT exhaustion. Azure Firewall offers SNAT for all outbound traffic to public IPs, providing 2,496 SNAT ports for each additional PIP.
+  longDescription: |-
+    SNAT の枯渇を避けるために、Azure Firewall ごとに少なくとも 2 ～ 4 つのパブリック IP アドレスを構成します。 Azure Firewall は、パブリック IP へのすべての送信トラフィックに対して SNAT を提供し、追加の PIP ごとに 2,496 個の SNAT ポートを提供します。
   potentialBenefits: Avoids SNAT exhaustion.
   pgVerified: false
   publishedToLearn: false
@@ -96,16 +92,15 @@
   learnMoreLink:
     - name: Azure Well-Architected Framework review - Azure Firewall
       url: "https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-firewall#recommendations"
-
-- description: Monitor AZFW Latency Probes metric
+- description: AZFW レイテンシー プローブ メトリックの監視
   aprlGuid: 8faace2d-a36e-425c-aa58-2ad99e3e0b7a
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Network/azureFirewalls
   recommendationMetadataState: Active
-  longDescription: |
-    Creating a metric to monitor latency probes over 20ms for periods longer than 30mins helps identify when firewall instance CPUs are stressed, potentially indicating issues.
+  longDescription: |-
+    30 分を超える期間、20 ミリ秒を超えるレイテンシ プローブを監視するメトリックを作成すると、ファイアウォール インスタンスの CPU に負荷がかかり、問題が発生する可能性がある時期を特定するのに役立ちます。
   potentialBenefits: Improved CPU stress detection
   pgVerified: false
   publishedToLearn: false

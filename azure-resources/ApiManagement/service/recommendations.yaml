@@ -1,12 +1,12 @@
-﻿- description: Migrate API Management services to Premium SKU to support Availability Zones
+- description: API Management サービスを Premium SKU に移行してアベイラビリティーゾーンをサポートする
   aprlGuid: baf3bfc0-32a2-4c0c-926d-c9bf0b49808e
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.ApiManagement/service
   recommendationMetadataState: Active
-  longDescription: |
-    Upgrading the API Management instance to the Premium SKU adds support for Availability Zones, enhancing availability and resilience by distributing services across physically separate locations within Azure regions.
+  longDescription: |-
+    API Management インスタンスを Premium SKU にアップグレードすると、可用性ゾーンのサポートが追加され、Azure リージョン内の物理的に離れた場所にサービスを分散することで可用性と復元力が強化されます。
   potentialBenefits: Enhanced availability and resilience
   pgVerified: false
   publishedToLearn: false
@@ -18,16 +18,15 @@
       url: "https://learn.microsoft.com/en-us/azure/api-management/upgrade-and-scale#change-your-api-management-service-tier"
     - name: Migrate Azure API Management to availability zone support
       url: "https://learn.microsoft.com/en-us/azure/reliability/migrate-api-mgt"
-
-- description: Enable Availability Zones on Premium API Management instances
+- description: Premium API Management インスタンスでアベイラビリティーゾーンを有効にする
   aprlGuid: 740f2c1c-8857-4648-80eb-47d2c56d5a50
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.ApiManagement/service
   recommendationMetadataState: Active
-  longDescription: |
-    Zone redundancy for APIM instances ensures the gateway and control plane (Management API, developer portal, Git configuration) are replicated across datacenters in physically separated zones, boosting resilience to zone failures.
+  longDescription: |-
+    APIM インスタンスのゾーン冗長性により、ゲートウェイとコントロール プレーン (管理 API、開発者ポータル、Git 構成) が物理的に分離されたゾーン内のデータセンター全体に確実に複製され、ゾーン障害に対する回復力が強化されます。
   potentialBenefits: Improved resilience to zone failures
   pgVerified: false
   publishedToLearn: false
@@ -39,16 +38,15 @@
       url: "https://learn.microsoft.com/en-us/azure/api-management/high-availability#availability-zones"
     - name: Migrate Azure API Management to availability zone support
       url: "https://learn.microsoft.com/en-us/azure/reliability/migrate-api-mgt"
-
-- description: Upgrade to platform version stv2
+- description: プラットフォーム バージョン stv2 にアップグレードする
   aprlGuid: e35cf148-8eee-49d1-a1c9-956160f99e0b
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.ApiManagement/service
   recommendationMetadataState: Active
-  longDescription: |
-    Upgrading to API Management stv2 is required as stv1 retires on 31 Aug 2024, offering enhanced capabilities with the new platform version.
+  longDescription: |-
+    stv1 は 2024 年 8 月 31 日に廃止され、新しいプラットフォーム バージョンで強化された機能が提供されるため、API Management stv2 へのアップグレードが必要です。
   potentialBenefits: Ensures service continuity
   pgVerified: false
   publishedToLearn: false

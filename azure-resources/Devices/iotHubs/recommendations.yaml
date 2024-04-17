@@ -1,12 +1,12 @@
-﻿- description: Device Identities are exported to a secondary region
+- description: デバイス ID はセカンダリ リージョンにエクスポートされます
   aprlGuid: 783c6c18-760b-4867-9ced-3010a0bc5aa3
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: High
   recommendationResourceType: Microsoft.Devices/IotHubs
   recommendationMetadataState: Active
-  longDescription: |
-    Device Identities should be copied to the failover region IoT-Hub for all IoT devices to ensure connectivity in case of a failover. Manual Failover to another region is quicker (RTO), suitable for mission critical workloads.
+  longDescription: |-
+    フェールオーバーの場合に接続を確保するには、すべての IoT デバイスのデバイス ID をフェールオーバー リージョン IoT-Hub にコピーする必要があります。別のリージョンへの手動フェイルオーバーは高速 (RTO) であり、ミッション クリティカルなワークロードに適しています。
   potentialBenefits: Faster failover; Ensures device connectivity
   pgVerified: false
   publishedToLearn: false
@@ -18,16 +18,15 @@
       url: "https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-bulk-identity-mgmt"
     - name: IoT Hub high availability and disaster recovery
       url: "https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-ha-dr#manual-failover"
-
-- description: Do not use free tier
+- description: 無料利用枠を使用しない
   aprlGuid: eeba3a49-fef0-481f-a471-7ff01139b474
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.Devices/IotHubs
   recommendationMetadataState: Active
-  longDescription: |
-    In a production scenario, the IoT Hub tier should not be Free because the Free tier does not provide the necessary Service Level Agreement.
+  longDescription: |-
+    運用シナリオでは、無料層では必要なサービス レベル アグリーメントが提供されないため、IoT Hub 層を無料にすることはできません。
   potentialBenefits: Ensures SLA for production
   pgVerified: false
   publishedToLearn: false
@@ -37,16 +36,15 @@
   learnMoreLink:
     - name: Choose the right IoT Hub tier and size for your solution
       url: "https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-scaling"
-
-- description: Use Availability Zones
+- description: アベイラビリティーゾーンの使用
   aprlGuid: 214cbc46-747e-4354-af6e-6bf0054196a5
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.Devices/IotHubs
   recommendationMetadataState: Active
-  longDescription: |
-    In regions supporting Availability Zones for IoT Hub, using these zones boosts availability. They're automatically activated for new IoT Hubs in supported areas.
+  longDescription: |-
+    IoT Hub の可用性ゾーンをサポートしているリージョンでは、これらのゾーンを使用すると可用性が向上します。これらは、サポートされているエリアの新しい IoT Hub に対して自動的にアクティブ化されます。
   potentialBenefits: Boosts IoT Hub availability
   pgVerified: false
   publishedToLearn: false
@@ -56,16 +54,15 @@
   learnMoreLink:
     - name: Azure IoT Hub high availability and disaster recovery
       url: "https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-ha-dr#availability-zones"
-
-- description: Use Device Provisioning Service
+- description: デバイス プロビジョニング サービスを使用する
   aprlGuid: b1e1378d-4572-4414-bebd-b8872a6d4d1c
   recommendationTypeId: null
   recommendationControl: Scalability
   recommendationImpact: High
   recommendationResourceType: Microsoft.Devices/IotHubs
   recommendationMetadataState: Active
-  longDescription: |
-    Device Provisioning Service (DPS) enables easy redistribution of IoT devices for scaling and availability, allowing devices to be reassigned and not bound to specific IoT Hub instances. Devices in IoT Hubs using DPS should be verified for DPS utilization.
+  longDescription: |-
+    Device Provisioning Service (DPS) を使用すると、拡張性と可用性を確保するために IoT デバイスを簡単に再配布できるため、デバイスを再割り当てし、特定の IoT Hub インスタンスにバインドしないようにできます。 DPS を使用する IoT ハブ内のデバイスは、DPS の使用状況を検証する必要があります。
   potentialBenefits: Enhances scalability and availability
   pgVerified: false
   publishedToLearn: false
@@ -79,16 +76,15 @@
       url: "https://learn.microsoft.com/en-us/azure/iot-dps/concepts-deploy-at-scale"
     - name: IoT Hub Device Provisioning Service high availability and disaster recovery
       url: "https://learn.microsoft.com/en-us/azure/iot-dps/iot-dps-ha-dr"
-
-- description: Define Failover Guidelines
+- description: フェイルオーバーガイドラインの定義
   aprlGuid: 02568a5d-335e-4e51-9f7c-fe2ada977300
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.Devices/IotHubs
   recommendationMetadataState: Active
-  longDescription: |
-    In case of a regional failure, an IoT Hub can failover to a second region, automatically or manually, to ensure your application continues working.
+  longDescription: |-
+    リージョンに障害が発生した場合、IoT Hub は自動的または手動で 2 番目のリージョンにフェールオーバーし、アプリケーションが引き続き動作するようにします。
   potentialBenefits: Ensures business continuity
   pgVerified: false
   publishedToLearn: false
@@ -98,16 +94,15 @@
   learnMoreLink:
     - name: IoT Hub high availability and disaster recovery
       url: "https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-ha-dr"
-
-- description: Disabled Fallback Route
+- description: 無効化されたフォールバック ルート
   aprlGuid: e7dbd21f-b27a-4b8c-a901-cedb1e6d8e1e
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
   recommendationImpact: Low
   recommendationResourceType: Microsoft.Devices/IotHubs
   recommendationMetadataState: Active
-  longDescription: |
-    Using message routing for custom endpoints in IoT Hub, messages might not reach these destinations if specific conditions are unmet. A default route ensures all messages are received, but disabling this safety net risks leaving some messages undelivered.
+  longDescription: |-
+    IoT Hub のカスタム エンドポイントにメッセージ ルーティングを使用すると、特定の条件が満たされない場合、メッセージがこれらの宛先に到達しない可能性があります。デフォルト ルートではすべてのメッセージが確実に受信されますが、このセーフティ ネットを無効にすると、一部のメッセージが配信されないままになる危険があります。
   potentialBenefits: Prevents undelivered messages
   pgVerified: false
   publishedToLearn: false

@@ -1,12 +1,12 @@
-﻿- description: Enable diagnostics logging
+- description: 診断ログを有効にする
   aprlGuid: 493f6079-3bb6-4a56-96ba-ab3248474cb1
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
   recommendationImpact: Low
   recommendationResourceType: Microsoft.Web/sites
   recommendationMetadataState: Active
-  longDescription: |
-    Enabling diagnostics logging for your Azure App Service is crucial for monitoring and diagnostics, including both application logging and web server logging.
+  longDescription: |-
+    Azure App Service の診断ログを有効にすることは、アプリケーション ログと Web サーバー ログの両方を含む監視と診断にとって重要です。
   potentialBenefits: Enhanced monitoring and diagnostics
   pgVerified: false
   publishedToLearn: false
@@ -16,16 +16,15 @@
   learnMoreLink:
     - name: Enable diagnostics logging for apps in Azure App Service
       url: "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs"
-
-- description: Monitor Performance
+- description: パフォーマンスを監視する
   aprlGuid: a7e8bb3d-8ceb-442d-b26f-007cd63f9ffc
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Web/sites
   recommendationMetadataState: Active
-  longDescription: |
-    Use Application Insights to monitor app performance and load behavior, offering real-time insights, issue diagnosis, and root-cause analysis. It supports ASP.NET, ASP.NET Core, Java, and Node.js on Azure App Service, now with built-in monitoring.
+  longDescription: |-
+    Application Insights を使用してアプリのパフォーマンスと負荷動作を監視し、リアルタイムの洞察、問題の診断、根本原因の分析を提供します。 Azure App Service で ASP.NET、ASP.NET Core、Java、Node.js をサポートし、監視が組み込まれるようになりました。
   potentialBenefits: Real-time insights and issue diagnosis
   pgVerified: false
   publishedToLearn: false
@@ -37,16 +36,15 @@
       url: "https://learn.microsoft.com/azure/application-insights/app-insights-overview"
     - name: Application monitoring for Azure App Service
       url: "https://learn.microsoft.com/azure/azure-monitor/app/azure-web-apps"
-
-- description: Separate web apps from web APIs
+- description: Web アプリを Web API から分離する
   aprlGuid: 78a5c033-ff51-4332-8a71-83464c34494b
   recommendationTypeId: null
   recommendationControl: Scalability
   recommendationImpact: Low
   recommendationResourceType: Microsoft.Web/sites
   recommendationMetadataState: Active
-  longDescription: |
-    If your solution includes both a web front end and a web API, decomposing them into separate App Service apps facilitates solution decomposition by workload, allowing for independent scaling. Initially, you can deploy both in the same plan and separate them for independent scaling when necessary.
+  longDescription: |-
+    ソリューションに Web フロント エンドと Web API の両方が含まれている場合、それらを個別の App Service アプリに分解すると、ワークロードごとのソリューションの分解が容易になり、独立したスケーリングが可能になります。最初は両方を同じプランにデプロイし、必要に応じて独立したスケーリングのためにそれらを分離できます。
   potentialBenefits: Independent scaling, easier management
   pgVerified: false
   publishedToLearn: false
@@ -56,16 +54,15 @@
   learnMoreLink:
     - name: Resiliency checklist for specific Azure services
       url: "https://learn.microsoft.com/azure/architecture/checklist/resiliency-per-service#app-service"
-
-- description: Create a separate storage account for logs
+- description: ログ用に別のストレージ アカウントを作成する
   aprlGuid: 3f9ddb59-0bb3-4acb-9c9b-99aa1776f0ab
   recommendationTypeId: null
   recommendationControl: Scalability
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Web/sites
   recommendationMetadataState: Active
-  longDescription: |
-    Creating a separate storage account for logs and not using the same one for application data prevents logging activities from reducing application performance by ensuring that the resources dedicated to handling application data are not burdened by logging processes.
+  longDescription: |-
+    ログ用に別のストレージ アカウントを作成し、アプリケーション データには同じストレージ アカウントを使用しないようにすると、アプリケーション データの処理専用のリソースにログ プロセスによる負荷がかからなくなり、ログ アクティビティによるアプリケーションのパフォーマンスの低下を防ぐことができます。
   potentialBenefits: Improves app performance
   pgVerified: false
   publishedToLearn: false
@@ -75,16 +72,15 @@
   learnMoreLink:
     - name: Resiliency checklist
       url: "https://learn.microsoft.com/azure/architecture/checklist/resiliency-per-service#app-service"
-
-- description: Deploy to a staging slot
+- description: ステージング スロットにデプロイする
   aprlGuid: a1d91661-32d4-430b-b3b6-5adeb0975df7
   recommendationTypeId: null
   recommendationControl: Governance
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Web/sites
   recommendationMetadataState: Active
-  longDescription: |
-    Create a deployment slot for staging to deploy updates, verify them, and ensure all instances are warmed up before production swap, reducing bad update chances. An LKG slot allows easy rollback to a previous good deployment if issues arise later, enhancing reliability.
+  longDescription: |-
+    ステージング用のデプロイメント スロットを作成して更新をデプロイし、検証し、運用環境のスワップ前にすべてのインスタンスがウォームアップされていることを確認し、不適切な更新の可能性を減らします。 LKG スロットを使用すると、後で問題が発生した場合に以前の良好な展開に簡単にロールバックできるため、信頼性が向上します。
   potentialBenefits: Safer updates and easy rollback
   pgVerified: false
   publishedToLearn: false
@@ -94,16 +90,15 @@
   learnMoreLink:
     - name: Set up staging environments in Azure App Service
       url: "https://learn.microsoft.com/azure/app-service-web/web-sites-staged-publishing"
-
-- description: Store configuration as app settings
+- description: 設定をアプリ設定として保存する
   aprlGuid: 0b80b67c-afbe-4988-ad58-a85a146b681e
   recommendationTypeId: null
   recommendationControl: Other Best Practices
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Web/sites
   recommendationMetadataState: Active
-  longDescription: |
-    Use app settings for configuration and define them in Resource Manager templates or via PowerShell to facilitate part of an automated deployment/update process for improved reliability.
+  longDescription: |-
+    構成にアプリ設定を使用し、Resource Manager テンプレートまたは PowerShell 経由で定義して、自動展開/更新プロセスの一部を容易にして信頼性を向上させます。
   potentialBenefits: Enhanced reliability via automation
   pgVerified: false
   publishedToLearn: false

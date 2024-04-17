@@ -1,12 +1,12 @@
-﻿- description: Set up disaster recovery of Automation accounts and its dependent resources
+- description: Automation アカウントとその依存リソースのディザスター リカバリーをセットアップする
   aprlGuid: 67205887-0733-466e-b50e-b1cd7316c514
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.Automation/automationAccounts
   recommendationMetadataState: Active
-  longDescription: |
-    Set up disaster recovery for Automation accounts and resources like Modules, Connections, Credentials, Certificates, Variables, and Schedules to deal with region or zone failures. A replica Automation account should be ready in a secondary region for failover.
+  longDescription: |-
+    リージョンまたはゾーンの障害に対処するために、Automation アカウントとモジュール、接続、資格情報、証明書、変数、スケジュールなどのリソースのディザスター リカバリーを設定します。レプリカ Automation アカウントは、フェールオーバー用にセカンダリ リージョンで準備ができている必要があります。
   potentialBenefits: Ensures continuity during outages
   pgVerified: false
   publishedToLearn: false

@@ -1,12 +1,12 @@
-﻿- description: A minimum of three replicas should be kept for production image versions
+- description: 実稼働イメージ バージョン用に少なくとも 3 つのレプリカを保持する必要があります
   aprlGuid: b49a39fd-f431-4b61-9062-f2157849d845
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Compute/galleries
   recommendationMetadataState: Active
-  longDescription: |
-    Keeping a minimum of 3 replicas for production images in Azure's Compute Gallery ensures scalability and prevents throttling in multi-VM deployments by distributing VM deployments across different replicas. This reduces the risk of overloading a single replica.
+  longDescription: |-
+    Azure のコンピューティング ギャラリーで運用イメージのレプリカを少なくとも 3 つ維持すると、VM デプロイメントをさまざまなレプリカに分散することでスケーラビリティを確保し、マルチ VM デプロイメントでのスロットルを防止します。これにより、単一のレプリカに過負荷がかかるリスクが軽減されます。
   potentialBenefits: Enhances scalability and avoids throttling
   pgVerified: true
   publishedToLearn: false
@@ -16,16 +16,15 @@
   learnMoreLink:
     - name: Compute Gallery best practices
       url: "https://learn.microsoft.com/en-us/azure/virtual-machines/azure-compute-gallery#best-practices"
-
-- description: Zone redundant storage should be used for image versions
+- description: イメージ バージョンにはゾーン冗長ストレージを使用する必要があります
   aprlGuid: 488dcc8b-f2e3-40ce-bf95-73deb2db095f
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Compute/galleries
   recommendationMetadataState: Active
-  longDescription: |
-    Use ZRS for high availability when creating image/VM versions in Azure Compute Gallery, offering resilience against Availability Zone failures. ZRS accounts are advisable in regions with Availability Zones, with the choice of Standard_ZRS recommended over Standard_LRS for these regions.
+  longDescription: |-
+    Azure コンピューティング ギャラリーでイメージ/VM バージョンを作成するときに高可用性を実現するために ZRS を使用し、アベイラビリティ ゾーンの障害に対する回復力を提供します。アベイラビリティーゾーンのあるリージョンでは ZRS アカウントを使用することをお勧めします。これらのリージョンでは、Standard_LRS よりも Standard_ZRS の選択が推奨されます。
   potentialBenefits: Enhances image version availability
   pgVerified: true
   publishedToLearn: false
@@ -37,16 +36,15 @@
       url: "https://learn.microsoft.com/en-us/azure/virtual-machines/azure-compute-gallery#best-practices"
     - name: Zone-redundant storage
       url: "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy#zone-redundant-storage"
-
-- description: Consider creating TrustedLaunchSupported images where possible
+- description: 可能な場合は、TrustedLaunchSupported イメージの作成を検討してください。
   aprlGuid: 1c5e1e58-4e56-491c-8529-10f37af9d4ed
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: Low
   recommendationResourceType: Microsoft.Compute/galleries
   recommendationMetadataState: Active
-  longDescription: |
-    We recommend creating Trusted Launch Supported Images for benefits like Secure Boot, vTPM, trusted launch VMs, large boot volume. These are Gen 2 Images by default and you cannot change a VM's generation after creation, so review the considerations first.
+  longDescription: |-
+    セキュア ブート、vTPM、信頼できる起動 VM、大規模なブート ボリュームなどの利点を得るために、信頼できる起動をサポートするイメージを作成することをお勧めします。これらはデフォルトで Gen 2 イメージであり、作成後に VM の世代を変更することはできないため、最初に考慮事項を確認してください。
   potentialBenefits: Enhances VM security and features
   pgVerified: true
   publishedToLearn: false

@@ -1,12 +1,12 @@
-﻿- description: All Subnets should have a Network Security Group associated
+- description: すべてのサブネットにはネットワーク セキュリティ グループが関連付けられている必要があります
   aprlGuid: f0bf9ae6-25a5-974d-87d5-025abec73539
   recommendationTypeId: null
   recommendationControl: Security
   recommendationImpact: High
   recommendationResourceType: Microsoft.Network/virtualNetworks
   recommendationMetadataState: Active
-  longDescription: |
-    Network security groups and application security groups allow filtering of inbound and outbound traffic by IP, port, and protocol, adding a security layer at the Subnet level.
+  longDescription: |-
+    ネットワーク セキュリティ グループとアプリケーション セキュリティ グループを使用すると、IP、ポート、プロトコルごとに受信トラフィックと送信トラフィックをフィルタリングでき、サブネット レベルでセキュリティ層を追加できます。
   potentialBenefits: Enhanced subnet security and traffic control
   pgVerified: false
   publishedToLearn: false
@@ -22,16 +22,15 @@
       url: "https://learn.microsoft.com/en-us/azure/route-server/route-server-faq#can-i-associate-a-network-security-group-nsg-to-the-routeserversubnet"
     - name: Are Network Security Groups (NSGs) supported on the AzureFirewallSubnet?
       url: "https://learn.microsoft.com/en-us/azure/firewall/firewall-faq#are-network-security-groups--nsgs--supported-on-the-azurefirewallsubnet"
-
-- description: Shield public endpoints in Azure VNets with Azure DDoS Standard Protection Plans
+- description: Azure DDoS Standard Protection Plan を使用して Azure VNet のパブリック エンドポイントをシールドする
   aprlGuid: 69ea1185-19b7-de40-9da1-9e8493547a5c
   recommendationTypeId: null
   recommendationControl: Security
   recommendationImpact: High
   recommendationResourceType: Microsoft.Network/virtualNetworks
   recommendationMetadataState: Active
-  longDescription: |
-    Azure DDoS Protection offers enhanced mitigation features against DDoS attacks and is auto-tuned to protect specific resources in a virtual network, combined with application design best practices.
+  longDescription: |-
+    Azure DDoS Protection は、DDoS 攻撃に対する強化された軽減機能を提供し、アプリケーション設計のベスト プラクティスと組み合わせて、仮想ネットワーク内の特定のリソースを保護するように自動調整されます。
   potentialBenefits: Enhanced DDoS attack mitigation
   pgVerified: false
   publishedToLearn: false
@@ -41,16 +40,15 @@
   learnMoreLink:
     - name: Reliability and Azure Virtual Network - Microsoft Azure Well-Architected Framework | Microsoft Learn
       url: "https://learn.microsoft.com/azure/architecture/framework/services/networking/azure-virtual-network/reliability"
-
-- description: When available, use Private Endpoints instead of Service Endpoints for PaaS Services
+- description: 利用可能な場合は、PaaS サービスのサービス エンドポイントの代わりにプライベート エンドポイントを使用します
   aprlGuid: 24ae3773-cc2c-3649-88de-c9788e25b463
   recommendationTypeId: null
   recommendationControl: Security
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Network/virtualNetworks
   recommendationMetadataState: Active
-  longDescription: |
-    Use VNet service endpoints only if Private Link isn't available and no data movement concerns. This feature restricts Azure service access to specified VNet and subnet, enhancing network security and isolating service traffic.
+  longDescription: |-
+    VNet サービス エンドポイントは、Private Link が利用できず、データ移動の懸念がない場合にのみ使用してください。この機能は、指定された VNet およびサブネットへの Azure サービス アクセスを制限し、ネットワーク セキュリティを強化し、サービス トラフィックを分離します。
   potentialBenefits: Enhanced security and data isolation
   pgVerified: false
   publishedToLearn: false

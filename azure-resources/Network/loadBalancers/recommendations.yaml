@@ -1,12 +1,12 @@
-﻿- description: Use Standard Load Balancer SKU
+- description: 標準ロード バランサー SKU を使用する
   aprlGuid: 38c3bca1-97a1-eb42-8cd3-838b243f35ba
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.Network/loadBalancers
   recommendationMetadataState: Active
-  longDescription: |
-    Selecting Standard SKU Load Balancer enhances reliability through availability zones and zone resiliency, ensuring deployments withstand zone and region failures. Unlike Basic, it supports global load balancing and offers an SLA.
+  longDescription: |-
+    Standard SKU ロード バランサーを選択すると、可用性ゾーンとゾーンの復元力を通じて信頼性が向上し、ゾーンとリージョンの障害に耐えられる展開が保証されます。 Basic とは異なり、グローバル負荷分散をサポートし、SLA を提供します。
   potentialBenefits: Enhanced reliability and SLA support
   pgVerified: true
   publishedToLearn: false
@@ -18,16 +18,15 @@
       url: "https://learn.microsoft.com/azure/architecture/framework/services/networking/azure-load-balancer/reliability"
     - name: Resiliency checklist for specific Azure services- Azure Load Balancer
       url: "https://learn.microsoft.com/azure/architecture/checklist/resiliency-per-service#azure-load-balancer"
-
-- description: Ensure the Backend Pool contains at least two instances
+- description: バックエンド プールに少なくとも 2 つのインスタンスが含まれていることを確認してください
   aprlGuid: 6d82d042-6d61-ad49-86f0-6a5455398081
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.Network/loadBalancers
   recommendationMetadataState: Active
-  longDescription: |
-    Deploying Azure Load Balancers with at least two instances in the backend prevents a single point of failure and supports scalability. Pairing with Virtual Machine Scale Sets is advised for optimal scale building.
+  longDescription: |-
+    バックエンドに少なくとも 2 つのインスタンスを含む Azure Load Balancer をデプロイすると、単一障害点が防止され、スケーラビリティがサポートされます。最適なスケールを構築するには、仮想マシン スケール セットとペアリングすることをお勧めします。
   potentialBenefits: Enhances reliability and scalability
   pgVerified: true
   publishedToLearn: false
@@ -37,16 +36,15 @@
   learnMoreLink:
     - name: Resiliency checklist for specific Azure services- Azure Load Balancer
       url: "https://learn.microsoft.com/azure/architecture/checklist/resiliency-per-service#azure-load-balancer"
-
-- description: Use NAT Gateway instead of Outbound Rules for Production Workloads
+- description: 運用ワークロードのアウトバウンド ルールの代わりに NAT ゲートウェイを使用する
   aprlGuid: 8d319a05-677b-944f-b9b4-ca0fb42e883c
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Network/loadBalancers
   recommendationMetadataState: Active
-  longDescription: |
-    Outbound rules for Standard Public Load Balancer involve manual port allocation for backend pools, limiting scalability and risk of SNAT port exhaustion. NAT Gateway is recommended for its dynamic scaling and secure internet connectivity.
+  longDescription: |-
+    標準パブリック ロード バランサーのアウトバウンド ルールには、バックエンド プールへの手動ポート割り当てが含まれており、スケーラビリティと SNAT ポート枯渇のリスクが制限されます。 NAT ゲートウェイは、動的スケーリングと安全なインターネット接続のために推奨されます。
   potentialBenefits: Enhanced scalability and reliability
   pgVerified: true
   publishedToLearn: false
@@ -56,16 +54,15 @@
   learnMoreLink:
     - name: Resiliency checklist for specific Azure services- Azure Load Balancer
       url: "https://learn.microsoft.com/azure/architecture/checklist/resiliency-per-service#azure-load-balancer"
-
-- description: Ensure Standard Load Balancer is zone-redundant
+- description: Standard Load Balancer がゾーン冗長であることを確認する
   aprlGuid: 621dbc78-3745-4d32-8eac-9e65b27b7512
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.Network/loadBalancers
   recommendationMetadataState: Active
-  longDescription: |
-    In regions with Availability Zones, assigning a zone-redundant frontend IP to a Standard Load Balancer ensures continuous traffic distribution even if one availability zone fails, provided other healthy zones and backend instances are available to receive the traffic.
+  longDescription: |-
+    アベイラビリティーゾーンのあるリージョンでは、ゾーン冗長フロントエンド IP を Standard Load Balancer に割り当てることで、1 つのアベイラビリティーゾーンに障害が発生した場合でも、他の正常なゾーンとバックエンドインスタンスがトラフィックを受信できる場合に限り、継続的なトラフィック分散が保証されます。
   potentialBenefits: Enhances uptime and resilience
   pgVerified: true
   publishedToLearn: false

@@ -1,12 +1,12 @@
-﻿- description: Use Generation 2 virtual machine source image
+- description: 第 2 世代仮想マシンのソース イメージを使用する
   aprlGuid: 19b6df57-f6b5-3e4f-843a-273daa087cb0
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: Low
   recommendationResourceType: Microsoft.VirtualMachineImages/imageTemplates
   recommendationMetadataState: Active
-  longDescription: |
-    When building Image Templates, use sources for gen 2 VMs. Gen 2 offers more memory, supports >2TB disks, uses UEFI for faster boot/installation, has Intel SGX, and virtualized persistent memory (vPMEM), unlike gen 1's BIOS-based architecture.
+  longDescription: |-
+    イメージ テンプレートを構築するときは、第 2 世代 VM のソースを使用します。第 2 世代は、第 1 世代の BIOS ベースのアーキテクチャとは異なり、より多くのメモリを提供し、2TB を超えるディスクをサポートし、起動/インストールを高速化するために UEFI を使用し、Intel SGX と仮想化永続メモリ (vPMEM) を備えています。
   potentialBenefits: More memory, supports >2TB disks, faster boot
   pgVerified: true
   publishedToLearn: false
@@ -16,16 +16,15 @@
   learnMoreLink:
     - name: Generation 1 vs generation 2 virtual machines
       url: "https://learn.microsoft.com/en-us/azure/virtual-machines/generation-2#features-and-capabilities"
-
-- description: Replicate your Image Templates to a secondary region
+- description: イメージ テンプレートをセカンダリ リージョンにレプリケートする
   aprlGuid: 21fb841b-ba70-1f4e-a460-1f72fb41aa51
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: Low
   recommendationResourceType: Microsoft.VirtualMachineImages/imageTemplates
   recommendationMetadataState: Active
-  longDescription: |
-    The Azure Image Builder service, used for deploying Image Templates, lacks availability zones support. By replicating Image Templates to a secondary, preferably paired, region, quick recovery from a region failure is enabled, ensuring continuous virtual machine deployment from these templates.
+  longDescription: |-
+    イメージ テンプレートの展開に使用される Azure Image Builder サービスには、可用性ゾーンのサポートがありません。イメージ テンプレートをセカンダリ (できればペアになっている) リージョンにレプリケートすると、リージョン障害からの迅速な回復が可能になり、これらのテンプレートから継続的に仮想マシンを展開できるようになります。
   potentialBenefits: Enhances disaster recovery capability
   pgVerified: true
   publishedToLearn: false

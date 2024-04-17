@@ -1,12 +1,12 @@
-﻿- description: Deploy Network Watcher in all regions where you have networking services
+- description: ネットワーク サービスを利用できるすべてのリージョンに Network Watcher を展開します。
   aprlGuid: 4e133bd0-8762-bc40-a95b-b29142427d73
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
   recommendationImpact: Low
   recommendationResourceType: Microsoft.Network/networkWatchers
   recommendationMetadataState: Active
-  longDescription: |
-    Azure Network Watcher offers tools for monitoring, diagnosing, viewing metrics, and managing logs for IaaS resources. It helps maintain the health of VMs, VNets, application gateways, load balancers, but not for PaaS or Web analytics.
+  longDescription: |-
+    Azure Network Watcher は、IaaS リソースの監視、診断、メトリックの表示、ログ管理のためのツールを提供します。 VM、VNet、アプリケーション ゲートウェイ、ロード バランサーの健全性の維持には役立ちますが、PaaS や Web 分析の健全性の維持には役立ちません。
   potentialBenefits: Enhanced monitoring and diagnostics for Azure IaaS
   pgVerified: false
   publishedToLearn: false
@@ -16,16 +16,15 @@
   learnMoreLink:
     - name: What is Azure Network Watcher?
       url: "https://learn.microsoft.com/azure/network-watcher/network-watcher-overview"
-
-- description: Fix Flow Log configurations in Failed state or Disabled Status
+- description: 失敗状態または無効状態のフロー ログ構成を修正する
   aprlGuid: 22a769ed-0ecb-8b49-bafe-8f52e6373d9c
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
   recommendationImpact: Low
   recommendationResourceType: Microsoft.Network/networkWatchers
   recommendationMetadataState: Active
-  longDescription: |
-    Network security group flow logging is a feature of Azure Network Watcher that logs IP traffic info through a network security group. If in Failed state, monitoring data from the associated resource is not collected.
+  longDescription: |-
+    ネットワーク セキュリティ グループ フロー ログは、ネットワーク セキュリティ グループを通じて IP トラフィック情報をログに記録する Azure Network Watcher の機能です。 「失敗」状態の場合、関連するリソースからの監視データは収集されません。
   potentialBenefits: Ensures IP traffic logging
   pgVerified: false
   publishedToLearn: false

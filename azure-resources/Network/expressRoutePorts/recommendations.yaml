@@ -1,12 +1,12 @@
-﻿- description: The Admin State of both Links of an ExpressRoute Direct should be in Enabled state
+- description: ExpressRoute Direct の両方のリンクの管理状態が有効状態である必要があります
   aprlGuid: 60077378-7cb1-4b35-89bb-393884d9921d
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.Network/ExpressRoutePorts
   recommendationMetadataState: Active
-  longDescription: |
-    In Azure ExpressRoute Direct, the "Admin State" indicates the administrative status of layer 1 links, showing if a link is enabled or disabled, effectively turning the physical port on or off.
+  longDescription: |-
+    Azure ExpressRoute Direct では、「管理状態」はレイヤー 1 リンクの管理状態を示し、リンクが有効か無効かを示し、実質的に物理ポートをオンまたはオフにします。
   potentialBenefits: Ensures optimal connectivity.
   pgVerified: true
   publishedToLearn: false
@@ -16,16 +16,15 @@
   learnMoreLink:
     - name: How to configure ExpressRoute Direct Change Admin State of links
       url: "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-erdirect#state"
-
-- description: Ensure you do not over-subscribe an ExpressRoute Direct
+- description: ExpressRoute Direct を過剰にサブスクライブしないようにしてください
   aprlGuid: 0bee356b-7348-4799-8cab-0c71ffe13018
   recommendationTypeId: null
   recommendationControl: Scalability
   recommendationImpact: High
   recommendationResourceType: Microsoft.Network/ExpressRoutePorts
   recommendationMetadataState: Active
-  longDescription: |
-    Provisioning ExpressRoute circuits on a 10-Gbps or 100-Gbps ExpressRoute Direct resource up to 20-Gbps or 200-Gbps is possible but not recommended for resiliency. If an ExpressRoute Direct port fails, and circuits are using full capacity, the remaining port won't handle the extra load.
+  longDescription: |-
+    最大 20 Gbps または 200 Gbps の 10 Gbps または 100 Gbps ExpressRoute Direct リソース上に ExpressRoute 回線をプロビジョニングすることは可能ですが、復元性の観点から推奨されません。 ExpressRoute Direct ポートに障害が発生し、回線が全容量を使用している場合、残りのポートは余分な負荷を処理できません。
   potentialBenefits: Improves resilience during port failures
   pgVerified: true
   publishedToLearn: false
@@ -35,16 +34,15 @@
   learnMoreLink:
     - name: About ExpressRoute Direct Circuit Sizes
       url: "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-erdirect-about?source=recommendations#circuit-sizes"
-
-- description: Implement rate-limiting across ExpressRoute Direct Circuits to optimize network flow
+- description: ExpressRoute Direct Circuits 全体にレート制限を実装してネットワーク フローを最適化する
   aprlGuid: d40c769d-2f08-4980-8d8f-a386946276e6
   recommendationTypeId: null
   recommendationControl: Scalability
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Network/ExpressRoutePorts
   recommendationMetadataState: Active
-  longDescription: |
-    Rate limiting controls traffic volume between on-premises networks and Azure via ExpressRoute Direct, applying to private or Microsoft peering. It distributes port bandwidth, ensures stability, and prevents congestion, with steps outlined for enabling on circuits.
+  longDescription: |-
+    レート制限は、ExpressRoute Direct 経由でオンプレミス ネットワークと Azure 間のトラフィック量を制御し、プライベート ピアリングまたは Microsoft ピアリングに適用します。ポート帯域幅を分散し、安定性を確保し、輻輳を防止します。回線上で有効にするための手順が概説されています。
   potentialBenefits: Optimizes network, prevents congestion
   pgVerified: true
   publishedToLearn: false

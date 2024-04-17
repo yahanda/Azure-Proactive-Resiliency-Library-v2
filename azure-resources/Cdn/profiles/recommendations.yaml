@@ -1,12 +1,12 @@
-﻿- description: Avoid combining Traffic Manager and Front Door
+- description: Traffic Manager と Front Door の組み合わせを避ける
   aprlGuid: 9437634c-d69e-2747-b13e-631c13182150
   recommendationTypeId: null
   recommendationControl: Business Continuity
   recommendationImpact: High
   recommendationResourceType: Microsoft.Cdn/profiles
   recommendationMetadataState: Active
-  longDescription: |
-    For most solutions, choose either Azure Front Door for content caching, CDN, TLS termination, and WAF, or Traffic Manager for simple global load balancing.
+  longDescription: |-
+    ほとんどのソリューションでは、コンテンツ キャッシュ、CDN、TLS 終端、WAF には Azure Front Door を、単純なグローバル負荷分散には Traffic Manager を選択します。
   potentialBenefits: Optimized network routing and security
   pgVerified: true
   publishedToLearn: false
@@ -22,16 +22,15 @@
       url: "https://learn.microsoft.com/azure/frontdoor/front-door-overview"
     - name: Mission-critical global content delivery
       url: "https://learn.microsoft.com/en-us/azure/architecture/guide/networking/global-web-applications/mission-critical-content-delivery"
-
-- description: Restrict traffic to your origins
+- description: オリジンへのトラフィックを制限する
   aprlGuid: 6c40b7ae-2bea-5748-be1a-9e9e3b834649
   recommendationTypeId: null
   recommendationControl: Security
   recommendationImpact: High
   recommendationResourceType: Microsoft.Cdn/profiles
   recommendationMetadataState: Active
-  longDescription: |
-    Front Door's features perform optimally when traffic exclusively comes through Front Door. It's advised to set up your origin to deny access to traffic that bypasses Front Door.
+  longDescription: |-
+    Front Door の機能は、トラフィックがもっぱら Front Door を通過する場合に最適に動作します。 Front Door をバイパスするトラフィックへのアクセスを拒否するように起点を設定することをお勧めします。
   potentialBenefits: Enhances security and performance
   pgVerified: true
   publishedToLearn: false
@@ -41,16 +40,15 @@
   learnMoreLink:
     - name: Secure traffic to Azure Front Door origins
       url: "https://learn.microsoft.com/azure/frontdoor/origin-security?tabs=app-service-functions&pivots=front-door-standard-premium"
-
-- description: Use the latest API version and SDK version
+- description: 最新の API バージョンと SDK バージョンを使用する
   aprlGuid: 52bc9a7b-23c8-bc4c-9d2a-7bc43b50104a
   recommendationTypeId: null
   recommendationControl: Governance
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Cdn/profiles
   recommendationMetadataState: Active
-  longDescription: |
-    When working with Azure Front Door through APIs, ARM templates, Bicep, or SDKs, using the latest API or SDK version is crucial. Updates bring new functions, important security patches, and bug fixes.
+  longDescription: |-
+    API、ARM テンプレート、Bicep、または SDK を通じて Azure Front Door を操作する場合、最新の API または SDK バージョンを使用することが重要です。アップデートにより、新機能、重要なセキュリティ パッチ、バグ修正が提供されます。
   potentialBenefits: Enhanced security and features
   pgVerified: true
   publishedToLearn: false
@@ -64,16 +62,15 @@
       url: "https://learn.microsoft.com/java/api/overview/azure/resourcemanager-frontdoor-readme?view=azure-java-preview"
     - name: SDK for Python
       url: "https://learn.microsoft.com/python/api/overview/azure/front-door?view=azure-python"
-
-- description: Configure logs
+- description: ログを構成する
   aprlGuid: 1ad74c3c-e3d7-0046-b83f-a2199974ef15
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Cdn/profiles
   recommendationMetadataState: Active
-  longDescription: |
-    Front Door logs offer comprehensive telemetry on each request, crucial for understanding your solution's performance and responses, especially when caching is enabled, as origin servers might not receive every request.
+  longDescription: |-
+    Front Door ログは、各要求に関する包括的なテレメトリを提供します。これは、特にキャッシュが有効になっている場合、オリジン サーバーがすべての要求を受信するとは限らないため、ソリューションのパフォーマンスと応答を理解するために重要です。
   potentialBenefits: Enhanced insights and solution monitoring
   pgVerified: true
   publishedToLearn: false
@@ -87,16 +84,15 @@
       url: "https://learn.microsoft.com/azure/web-application-firewall/afds/waf-front-door-monitor?pivots=front-door-standard-premium#waf-logs"
     - name: Configure Azure Front Door logs
       url: "https://learn.microsoft.com/azure/frontdoor/standard-premium/how-to-logs"
-
-- description: Use end-to-end TLS
+- description: エンドツーエンド TLS を使用する
   aprlGuid: d9bd6780-0d6f-cd4c-bc66-8ddcab12f3d1
   recommendationTypeId: null
   recommendationControl: Security
   recommendationImpact: High
   recommendationResourceType: Microsoft.Cdn/profiles
   recommendationMetadataState: Active
-  longDescription: |
-    Front Door terminates TCP and TLS connections from clients and establishes new connections from each PoP to the origin. Securing these connections with TLS, even for Azure-hosted origins, ensures data is always encrypted during transit.
+  longDescription: |-
+    Front Door は、クライアントからの TCP および TLS 接続を終了し、各 PoP から起点への新しい接続を確立します。これらの接続を TLS で保護すると、Azure でホストされているオリジンであっても、転送中にデータが常に暗号化されます。
   potentialBenefits: Ensures data encryption in transit
   pgVerified: true
   publishedToLearn: false
@@ -106,16 +102,15 @@
   learnMoreLink:
     - name: End-to-end TLS with Azure Front Door
       url: "https://learn.microsoft.com/azure/frontdoor/end-to-end-tls?pivots=front-door-standard-premium"
-
-- description: Use HTTP to HTTPS redirection
+- description: HTTP から HTTPS へのリダイレクトを使用する
   aprlGuid: 24ab9f11-a3e4-3043-a985-22cf94c4933a
   recommendationTypeId: null
   recommendationControl: Security
   recommendationImpact: High
   recommendationResourceType: Microsoft.Cdn/profiles
   recommendationMetadataState: Active
-  longDescription: |
-    Using HTTPS is ideal for secure connections. However, for compatibility with older clients, HTTP requests may be necessary. Azure Front Door enables auto redirection of HTTP to HTTPS, enhancing security without sacrificing accessibility.
+  longDescription: |-
+    HTTPS の使用は、安全な接続に最適です。ただし、古いクライアントとの互換性のために、HTTP リクエストが必要になる場合があります。 Azure Front Door では、HTTP から HTTPS への自動リダイレクトが可能になり、アクセシビリティを犠牲にすることなくセキュリティが強化されます。
   potentialBenefits: Enhances security and compliance
   pgVerified: true
   publishedToLearn: false
@@ -125,16 +120,15 @@
   learnMoreLink:
     - name: Create HTTP to HTTPS redirect rule
       url: "https://learn.microsoft.com/azure/frontdoor/front-door-how-to-redirect-https#create-http-to-https-redirect-rule"
-
-- description: Use managed TLS certificates
+- description: マネージド TLS 証明書を使用する
   aprlGuid: 29d65c41-2fad-d142-95eb-9eab95f6c0a5
   recommendationTypeId: null
   recommendationControl: Security
   recommendationImpact: High
   recommendationResourceType: Microsoft.Cdn/profiles
   recommendationMetadataState: Active
-  longDescription: |
-    When Front Door manages your TLS certificates, it reduces your operational costs and helps you to avoid costly outages caused by forgetting to renew a certificate. Front Door automatically issues and rotates the managed TLS certificates.
+  longDescription: |-
+    Front Door が TLS 証明書を管理すると、運用コストが削減され、証明書の更新忘れによるコストのかかる停止を回避できます。 Front Door は、管理された TLS 証明書を自動的に発行し、ローテーションします。
   potentialBenefits: Lowers costs, avoids outages
   pgVerified: true
   publishedToLearn: false
@@ -144,8 +138,7 @@
   learnMoreLink:
     - name: Configure HTTPS on an Azure Front Door custom domain using the Azure portal
       url: "https://learn.microsoft.com/azure/frontdoor/standard-premium/how-to-configure-https-custom-domain?tabs=powershell"
-
-- description: Use latest version for customer-managed certificates
+- description: 顧客管理の証明書には最新バージョンを使用してください
   aprlGuid: 4638c2c0-03de-6d42-9e09-82ee4478cbf3
   recommendationTypeId: null
   recommendationControl: Security
@@ -163,16 +156,15 @@
   learnMoreLink:
     - name: Select the certificate for Azure Front Door to deploy
       url: "https://learn.microsoft.com/azure/frontdoor/standard-premium/how-to-configure-https-custom-domain?tabs=powershell#select-the-certificate-for-azure-front-door-to-deploy"
-
-- description: Use the same domain name on Front Door and your origin
+- description: Front Door とオリジンで同じドメイン名を使用する
   aprlGuid: cd6a32af-747a-e649-82a7-a98f528ca842
   recommendationTypeId: null
   recommendationControl: Governance
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Cdn/profiles
   recommendationMetadataState: Active
-  longDescription: |
-    Front Door can rewrite Host headers for custom domain names routing to a single origin, useful for avoiding custom domain configuration at both Front Door and the origin.
+  longDescription: |-
+    Front Door は、単一の起点にルーティングされるカスタム ドメイン名のホスト ヘッダーを書き換えることができます。これは、Front Door と起点の両方でカスタム ドメイン構成を回避するのに役立ちます。
   potentialBenefits: Improves session/auth handling
   pgVerified: true
   publishedToLearn: false
@@ -182,16 +174,15 @@
   learnMoreLink:
     - name: Preserve the original HTTP host name between a reverse proxy and its back-end web application
       url: "https://learn.microsoft.com/azure/architecture/best-practices/host-name-preservation"
-
-- description: Enable the WAF
+- description: WAFを有効にする
   aprlGuid: 1bd2b7e8-400f-e64a-99a2-c572f7b08a62
   recommendationTypeId: null
   recommendationControl: Security
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Cdn/profiles
   recommendationMetadataState: Active
-  longDescription: |
-    For internet-facing applications, enabling the Front Door web application firewall (WAF) and configuring it to use managed rules is recommended for protection against a wide range of attacks using Microsoft-managed rules.
+  longDescription: |-
+    インターネットに接続するアプリケーションの場合、Microsoft 管理ルールを使用した幅広い攻撃から保護するために、Front Door Web アプリケーション ファイアウォール (WAF) を有効にし、管理ルールを使用するように構成することをお勧めします。
   potentialBenefits: Enhances web app security
   pgVerified: true
   publishedToLearn: false
@@ -201,16 +192,15 @@
   learnMoreLink:
     - name: Web Application Firewall on Azure Front Door
       url: "https://learn.microsoft.com/azure/frontdoor/web-application-firewall"
-
-- description: Disable health probes when there is only one origin in an origin group
+- description: オリジン グループにオリジンが 1 つしかない場合、正常性プローブを無効にする
   aprlGuid: 38f3d542-6de6-a44b-86c6-97e3be690281
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: Low
   recommendationResourceType: Microsoft.Cdn/profiles
   recommendationMetadataState: Active
-  longDescription: |
-    Front Door health probes help detect unavailable or unhealthy origins, directing traffic to alternate origins if needed.
+  longDescription: |-
+    Front Door 正常性プローブは、利用できない送信元または異常な送信元を検出し、必要に応じてトラフィックを別の送信元に誘導します。
   potentialBenefits: Reduces unnecessary origin traffic
   pgVerified: true
   publishedToLearn: false
@@ -220,16 +210,15 @@
   learnMoreLink:
     - name: Health probes
       url: "https://learn.microsoft.com/azure/frontdoor/health-probes"
-
-- description: Select good health probe endpoints
+- description: 健全性プローブのエンドポイントを選択する
   aprlGuid: 5225bba3-28ec-1e43-8986-7eedfd466d65
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Cdn/profiles
   recommendationMetadataState: Active
-  longDescription: |
-    Consider selecting a webpage or location specifically designed for health monitoring as the endpoint for Azure Front Door's health probes. This should encompass the status of critical components like application servers, databases, and caches to serve production traffic efficiently.
+  longDescription: |-
+    Azure Front Door の正常性プローブのエンドポイントとして、正常性の監視用に特別に設計された Web ページまたは場所を選択することを検討してください。これには、運用トラフィックを効率的に処理するために、アプリケーション サーバー、データベース、キャッシュなどの重要なコンポーネントのステータスが含まれる必要があります。
   potentialBenefits: Improves traffic routing and uptime
   pgVerified: true
   publishedToLearn: false
@@ -239,16 +228,15 @@
   learnMoreLink:
     - name: Health Endpoint Monitoring pattern
       url: "https://learn.microsoft.com/azure/architecture/patterns/health-endpoint-monitoring"
-
-- description: Use HEAD health probes
+- description: HEAD ヘルス プローブを使用する
   aprlGuid: 5783defe-b49e-d947-84f7-d8677593f324
   recommendationTypeId: null
   recommendationControl: Scalability
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Cdn/profiles
   recommendationMetadataState: Active
-  longDescription: |
-    Health probes in Azure Front Door can use GET or HEAD HTTP methods. Using the HEAD method for health probes is a recommended practice because it reduces the traffic load on your origins, being less resource-intensive.
+  longDescription: |-
+    Azure Front Door の正常性プローブでは、GET または HEAD HTTP メソッドを使用できます。正常性プローブに HEAD メソッドを使用すると、オリジンのトラフィック負荷が軽減され、リソースの消費が少なくなるため、推奨される方法です。
   potentialBenefits: Reduces traffic load on origins
   pgVerified: true
   publishedToLearn: false
@@ -258,16 +246,15 @@
   learnMoreLink:
     - name: Supported HTTP methods for health probes
       url: "https://learn.microsoft.com/azure/frontdoor/health-probes#supported-http-methods-for-health-probes"
-
-- description: Use geo-filtering in Azure Front Door
+- description: Azure Front Door で geo フィルタリングを使用する
   aprlGuid: b515690d-3bf9-3a49-8d38-188e0fd45896
   recommendationTypeId: null
   recommendationControl: Security
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Cdn/profiles
   recommendationMetadataState: Active
-  longDescription: |
-    Azure Front Door's geo-filtering through WAF enables defining custom access rules by country/region to restrict or allow web app access.
+  longDescription: |-
+    WAF を介した Azure Front Door の地理フィルタリングにより、国/地域ごとにカスタム アクセス ルールを定義して、Web アプリのアクセスを制限または許可できます。
   potentialBenefits: Enhanced regional access control
   pgVerified: true
   publishedToLearn: false
@@ -277,16 +264,15 @@
   learnMoreLink:
     - name: Geo filter WAF policy - GeoMatch
       url: "https://learn.microsoft.com/azure/web-application-firewall/afds/waf-front-door-geo-filtering"
-
-- description: Secure your Origin with Private Link in Azure Front Door
+- description: Azure Front Door のプライベート リンクでオリジンを保護する
   aprlGuid: 1cfe7834-56ec-ff41-b11d-993734705dba
   recommendationTypeId: null
   recommendationControl: Security
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Cdn/profiles
   recommendationMetadataState: Active
-  longDescription: |
-    Azure Private Link enables secure access to Azure PaaS and services over a private endpoint in your virtual network, ensuring traffic goes over the Microsoft backbone network, not the public internet.
+  longDescription: |-
+    Azure Private Link を使用すると、仮想ネットワーク内のプライベート エンドポイント経由で Azure PaaS およびサービスに安全にアクセスできるようになり、トラフィックがパブリック インターネットではなく Microsoft バックボーン ネットワークを確実に通過できるようになります。
   potentialBenefits: Enhanced security and private connectivity
   pgVerified: true
   publishedToLearn: false

@@ -1,12 +1,12 @@
-﻿- description: Resolve issues with Private Endpoints in non Succeeded connection state
+- description: 成功していない接続状態のプライベート エンドポイントに関する問題を解決する
   aprlGuid: b89c9acc-0aba-fb44-9ff2-3dbfcf97dce7
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Network/privateEndpoints
   recommendationMetadataState: Active
-  longDescription: |
-    A private endpoint has two custom properties, static IP address and the network interface name, which must be set at creation. If not in Succeeded state, there may be issues with the endpoint or associated resource.
+  longDescription: |-
+    プライベート エンドポイントには、静的 IP アドレスとネットワーク インターフェイス名という 2 つのカスタム プロパティがあり、作成時に設定する必要があります。成功状態でない場合は、エンドポイントまたは関連リソースに問題がある可能性があります。
   potentialBenefits: Enhanced connection reliability
   pgVerified: false
   publishedToLearn: false

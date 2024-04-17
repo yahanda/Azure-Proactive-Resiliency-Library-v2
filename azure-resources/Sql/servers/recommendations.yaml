@@ -1,12 +1,12 @@
-﻿- description: Use Active Geo Replication to Create a Readable Secondary in Another Region
+- description: アクティブ Geo レプリケーションを使用して、別のリージョンに読み取り可能なセカンダリを作成する
   aprlGuid: 74c2491d-048b-0041-a140-935960220e20
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: High
   recommendationResourceType: Microsoft.Sql/servers
   recommendationMetadataState: Active
-  longDescription: |
-    If your primary database fails, perform a manual failover to the secondary database which remains read-only until then. Active geo-replication allows creating readable replicas and manual failover in case of a datacenter outage or application upgrade.
+  longDescription: |-
+    プライマリ データベースに障害が発生した場合は、セカンダリ データベースへの手動フェールオーバーを実行します。セカンダリ データベースはそれまで読み取り専用のままです。アクティブ geo レプリケーションにより、読み取り可能なレプリカの作成と、データセンターの停止またはアプリケーションのアップグレードの場合の手動フェールオーバーが可能になります。
   potentialBenefits: Enhanced disaster recovery and read scalability
   pgVerified: false
   publishedToLearn: false
@@ -16,16 +16,15 @@
   learnMoreLink:
     - name: Active Geo Replication
       url: "https://learn.microsoft.com/en-us/azure/azure-sql/database/active-geo-replication-overview"
-
-- description: Auto Failover Groups for apps should include all related databases for cohesion
+- description: アプリの自動フェイルオーバー グループには、一貫性を保つためにすべての関連データベースを含める必要があります
   aprlGuid: 943c168a-2ec2-a94c-8015-85732a1b4859
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: High
   recommendationResourceType: Microsoft.Sql/servers
   recommendationMetadataState: Active
-  longDescription: |
-    You can use the readable secondary databases to offload read-only query workloads. Autofailover groups involve multiple databases configured on a primary server, supporting replication of all databases in the group to only one secondary server or instance in a different region.
+  longDescription: |-
+    読み取り可能なセカンダリ データベースを使用して、読み取り専用クエリのワークロードをオフロードできます。自動フェイルオーバー グループには、プライマリ サーバー上に構成された複数のデータベースが含まれ、グループ内のすべてのデータベースの、異なるリージョンにある 1 つのセカンダリ サーバーまたはインスタンスのみへのレプリケーションをサポートします。
   potentialBenefits: Improves load balancing and disaster recovery
   pgVerified: false
   publishedToLearn: false
@@ -37,16 +36,15 @@
       url: "https://learn.microsoft.com/en-us/azure/azure-sql/database/auto-failover-group-overview?tabs=azure-powershell"
     - name: DR Design
       url: "https://learn.microsoft.com/en-us/azure/azure-sql/database/designing-cloud-solutions-for-disaster-recovery"
-
-- description: Use a Zone-Redundant Database
+- description: ゾーン冗長データベースを使用する
   aprlGuid: c0085c32-84c0-c247-bfa9-e70977cbf108
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Sql/servers
   recommendationMetadataState: Active
-  longDescription: |
-    By default, the premium availability model clusters nodes in one datacenter.
+  longDescription: |-
+    デフォルトでは、プレミアム可用性モデルは 1 つのデータセンターにノードをクラスタ化します。
   potentialBenefits: Enhanced reliability, no extra cost
   pgVerified: false
   publishedToLearn: false
@@ -56,16 +54,15 @@
   learnMoreLink:
     - name: Zone Redundant Databases
       url: "https://learn.microsoft.com/en-us/azure/azure-sql/database/high-availability-sla"
-
-- description: Implement Retry Logic
+- description: 再試行ロジックの実装
   aprlGuid: cbb17a29-64fb-c943-95d0-8df814a37c40
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.Sql/servers
   recommendationMetadataState: Active
-  longDescription: |
-    Azure SQL Database, known for its resilience to infrastructure failures, can occasionally encounter connectivity issues due to transient errors. Implementing retry logic in your code ensures continued operation by reattempting failed calls, maintaining smooth database interaction.
+  longDescription: |-
+    Azure SQL Database は、インフラストラクチャ障害に対する回復力が高いことで知られていますが、一時的なエラーが原因で接続の問題が発生することがあります。コードに再試行ロジックを実装すると、失敗した呼び出しを再試行することで操作が継続され、スムーズなデータベース対話が維持されます。
   potentialBenefits: Enhanced connectivity stability
   pgVerified: false
   publishedToLearn: false
@@ -75,16 +72,15 @@
   learnMoreLink:
     - name: How to Implement Retry Logic
       url: "https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-connectivity-issues"
-
-- description: Monitor your Azure SQL Database in Near Real-Time to Detect Reliability Incidents
+- description: Azure SQL データベースをほぼリアルタイムで監視し、信頼性に関するインシデントを検出します
   aprlGuid: 7e7daec9-6a81-3546-a4cc-9aef72fec1f7
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
   recommendationImpact: High
   recommendationResourceType: Microsoft.Sql/servers
   recommendationMetadataState: Active
-  longDescription: |
-    Use available solutions to monitor SQL Database to detect reliability incidents early, making your databases more reliable. Opt for near real-time monitoring to rapidly react to incidents.
+  longDescription: |-
+    利用可能なソリューションを使用して SQL Database を監視し、信頼性に関するインシデントを早期に検出し、データベースの信頼性を高めます。ほぼリアルタイムの監視を選択して、インシデントに迅速に対応します。
   potentialBenefits: Quick incident detection and response
   pgVerified: false
   publishedToLearn: false
@@ -98,16 +94,15 @@
       url: "https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-sql-database-azure-monitor"
     - name: Monitoring SQL Database Reference
       url: "https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-sql-database-azure-monitor-reference"
-
-- description: Back Up Your Keys
+- description: キーをバックアップする
   aprlGuid: d6ef87aa-574e-584e-a955-3e6bb8b5425b
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Sql/servers
   recommendationMetadataState: Active
-  longDescription: |
-    It is highly recommended to use Azure Key Vault to store encryption keys for Always Encrypted configurations. Though not mandatory, if not using AKV, ensure keys are properly backed up.
+  longDescription: |-
+    Always Encrypted 構成の暗号化キーを保存するには、Azure Key Vault を使用することを強くお勧めします。必須ではありませんが、AKV を使用しない場合は、キーが適切にバックアップされていることを確認してください。
   potentialBenefits: Enhanced security and data recovery
   pgVerified: false
   publishedToLearn: false

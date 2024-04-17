@@ -1,12 +1,12 @@
-﻿- description: Enable Availability Zones for Service Bus namespaces
+- description: Service Bus 名前空間のアベイラビリティーゾーンを有効にする
   aprlGuid: 20057905-262c-49fe-a9be-49f423afb359
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.ServiceBus/namespaces
   recommendationMetadataState: Active
-  longDescription: |
-    Use Service Bus with zone redundancy for high availability. The Premium SKU supports availability zones, ensuring isolations within the same region. It manages 3 copies of the messaging store, kept in sync.
+  longDescription: |-
+    高可用性を実現するには、ゾーン冗長性を備えた Service Bus を使用します。 Premium SKU は可用性ゾーンをサポートし、同じリージョン内の分離を保証します。メッセージング ストアの 3 つのコピーを管理し、同期を保ちます。
   potentialBenefits: Enhances fault tolerance and uptime
   pgVerified: false
   publishedToLearn: false

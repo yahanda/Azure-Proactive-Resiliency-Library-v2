@@ -1,12 +1,12 @@
-﻿- description: Traffic Manager Monitor Status Should be Online
+- description: Traffic Manager モニターのステータスがオンラインである必要があります
   aprlGuid: f05a3e6d-49db-2740-88e2-2b13706c1f67
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.Network/trafficManagerProfiles
   recommendationMetadataState: Active
-  longDescription: |
-    Monitor status should be online to ensure failover for application workload. If Traffic Manager's health shows Degraded, one or more endpoints may also be Degraded.
+  longDescription: |-
+    アプリケーションのワークロードのフェイルオーバーを確実にするために、モニターのステータスはオンラインである必要があります。 Traffic Manager の正常性が低下を示している場合、1 つ以上のエンドポイントも低下している可能性があります。
   potentialBenefits: Ensures failover functionality
   pgVerified: false
   publishedToLearn: false
@@ -20,16 +20,15 @@
       url: "https://learn.microsoft.com/azure/traffic-manager/traffic-manager-monitoring#enable-or-disable-health-checks-preview"
     - name: Troubleshooting degraded state on Azure Traffic Manager
       url: "https://learn.microsoft.com/azure/traffic-manager/traffic-manager-troubleshooting-degraded"
-
-- description: Traffic manager profiles should have more than one endpoint
+- description: トラフィック マネージャー プロファイルには複数のエンドポイントが必要です
   aprlGuid: 5b422a7f-8caa-3d48-becb-511599e5bba9
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.Network/trafficManagerProfiles
   recommendationMetadataState: Active
-  longDescription: |
-    When configuring the Azure traffic manager, provision at least two endpoints to ensure workloads can fail-over to another instance, enhancing reliability and availability.
+  longDescription: |-
+    Azure トラフィック マネージャーを構成するときは、ワークロードが別のインスタンスに確実にフェールオーバーできるように、少なくとも 2 つのエンドポイントをプロビジョニングして、信頼性と可用性を強化します。
   potentialBenefits: Enhances failover capabilities
   pgVerified: false
   publishedToLearn: false
@@ -39,16 +38,15 @@
   learnMoreLink:
     - name: Traffic Manager Endpoint Types
       url: "https://learn.microsoft.com/azure/traffic-manager/traffic-manager-endpoint-types"
-
-- description: Configure at least one endpoint within a another region
+- description: 別のリージョン内に少なくとも 1 つのエンドポイントを構成する
   aprlGuid: 1ad9d7b7-9692-1441-a8f4-93792efbe97a
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Network/trafficManagerProfiles
   recommendationMetadataState: Active
-  longDescription: |
-    Profiles should have multiple endpoints to ensure availability in case an endpoint fails. It's also advised to distribute these endpoints across different regions for enhanced reliability.
+  longDescription: |-
+    エンドポイントに障害が発生した場合に可用性を確保するには、プロファイルには複数のエンドポイントが必要です。また、信頼性を高めるために、これらのエンドポイントを異なるリージョンに分散することをお勧めします。
   potentialBenefits: Enhances availability across regions
   pgVerified: false
   publishedToLearn: false
@@ -57,18 +55,16 @@
   tags: null
   learnMoreLink:
     - name: Reliability recommendations
-
       url: "https://learn.microsoft.com/azure/advisor/advisor-reference-reliability-recommendations#add-at-least-one-more-endpoint-to-the-profile-preferably-in-another-azure-region"
-
-- description: Ensure endpoint configured to (All World) for geographic profiles
+- description: エンドポイントが地理的プロファイルに対して (全世界) に設定されていることを確認します
   aprlGuid: c31f76a0-48cd-9f44-aa43-99ee904db9bc
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Network/trafficManagerProfiles
   recommendationMetadataState: Active
-  longDescription: |
-    For geographic routing, traffic is directed to endpoints based on specific regions. If a region fails, without a predefined failover, configuring an endpoint to "All (World)" for geographic profiles can prevent traffic black holes, ensuring service remains available.
+  longDescription: |-
+    地理的ルーティングの場合、トラフィックは特定の地域に基づいてエンドポイントに送信されます。リージョンに障害が発生した場合、事前定義されたフェールオーバーを使用せずに、地理的プロファイルのエンドポイントを「すべて (世界)」に構成すると、トラフィックのブラック ホールを防ぎ、サービスを利用可能な状態に保つことができます。
   potentialBenefits: Avoids traffic black holing, ensures availability
   pgVerified: false
   publishedToLearn: false

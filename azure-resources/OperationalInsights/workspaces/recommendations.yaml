@@ -1,12 +1,12 @@
-﻿- description: Enable Log Analytics data export to GRS or GZRS
+- description: GRS または GZRS への Log Analytics データのエクスポートを有効にする
   aprlGuid: b36fd2ac-dd83-664a-ab48-ff7b8d3b189d
   recommendationTypeId: null
   recommendationControl: Governance
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.OperationalInsights/workspaces
   recommendationMetadataState: Active
-  longDescription: |
-    Data export in a Log Analytics workspace to an Azure Storage account enhances data protection against regional failures by using geo-redundant (GRS) or geo-zone-redundant storage (GZRS), mainly for compliance and integration with other Azure services and tools.
+  longDescription: |-
+    Log Analytics ワークスペースのデータを Azure Storage アカウントにエクスポートすると、主にコンプライアンスと他の Azure サービスおよびツールとの統合のために、地理冗長 (GRS) または地理ゾーン冗長ストレージ (GZRS) を使用して、リージョン障害に対するデータ保護が強化されます。
   potentialBenefits: Enhances compliance and regional fault tolerance
   pgVerified: true
   publishedToLearn: false
@@ -18,16 +18,15 @@
       url: "https://learn.microsoft.com/azure/azure-monitor/logs/logs-data-export"
     - name: Azure Monitor configuration recommendations
       url: "https://learn.microsoft.com/azure/azure-monitor/best-practices-logs#configuration-recommendations"
-
-- description: Create a health status alert rule for your Log Analytics workspace
+- description: Log Analytics ワークスペースの正常性状態アラート ルールを作成する
   aprlGuid: 4b77191c-cc3c-8c4e-844b-0f56d0927890
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
   recommendationImpact: Low
   recommendationResourceType: Microsoft.OperationalInsights/workspaces
   recommendationMetadataState: Active
-  longDescription: |
-    A health status alert will proactively notify you if a workspace becomes unavailable because of a datacenter or regional failure.
+  longDescription: |-
+    データセンターまたは地域の障害によりワークスペースが利用できなくなった場合は、健全性ステータス アラートによって事前に通知されます。
   potentialBenefits: Early alert for workspace failure
   pgVerified: true
   publishedToLearn: false
@@ -39,16 +38,15 @@
       url: "https://learn.microsoft.com/azure/azure-monitor/logs/log-analytics-workspace-health"
     - name: Azure Monitor configuration recommendations
       url: "https://learn.microsoft.com/azure/azure-monitor/best-practices-logs#configuration-recommendations"
-
-- description: Configure minimal logging and retention of logs
+- description: 最小限のログ記録とログの保持を構成する
   aprlGuid: 7a0063ee-98a0-4634-823b-310a67f798cc
   recommendationTypeId: null
   recommendationControl: Governance
   recommendationImpact: Low
   recommendationResourceType: Microsoft.OperationalInsights/workspaces
   recommendationMetadataState: Active
-  longDescription: |
-    Azure Monitor Logs retain log data for specific periods depending on the data type, e.g., 30 days for platform logs. For compliance or business reasons, you might need longer retention. Data retention settings are adjustable.
+  longDescription: |-
+    Azure Monitor ログは、データの種類に応じて特定の期間、ログ データを保持します (たとえば、プラットフォーム ログの場合は 30 日間)。コンプライアンスまたはビジネス上の理由により、より長い保存期間が必要になる場合があります。データ保持設定は調整可能です。
   potentialBenefits: Cost-saving and compliance with data rules
   pgVerified: true
   publishedToLearn: false
