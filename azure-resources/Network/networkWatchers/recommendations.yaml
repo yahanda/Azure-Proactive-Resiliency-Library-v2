@@ -15,7 +15,7 @@
   tags: null
   learnMoreLink:
     - name: What is Azure Network Watcher?
-      url: "https://learn.microsoft.com/azure/network-watcher/network-watcher-overview"
+      url: "https://learn.microsoft.com/ja-jp/azure/network-watcher/network-watcher-overview"
 - description: 失敗状態または無効状態のフロー ログ構成を修正する
   aprlGuid: 22a769ed-0ecb-8b49-bafe-8f52e6373d9c
   recommendationTypeId: null
@@ -33,4 +33,4 @@
   tags: null
   learnMoreLink:
     - name: Manage NSG flow logs using the Azure portal
-      url: "https://learn.microsoft.com/azure/network-watcher/nsg-flow-logging"
+      url: "https://learn.microsoft.com/ja-jp/azure/network-watcher/nsg-flow-logging"

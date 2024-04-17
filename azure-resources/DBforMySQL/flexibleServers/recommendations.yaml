@@ -15,7 +15,7 @@
   tags: null
   learnMoreLink:
     - name: High availability concepts in Azure Database for MySQL - Flexible Server
-      url: "https://learn.microsoft.com/azure/mysql/flexible-server/concepts-high-availability"
+      url: "https://learn.microsoft.com/ja-jp/azure/mysql/flexible-server/concepts-high-availability"
 - description: カスタム メンテナンス スケジュールを有効にする
   aprlGuid: 82a9a0f2-24ee-496f-9ad2-25f81710942d
   recommendationTypeId: null
@@ -33,4 +33,4 @@
   tags: null
   learnMoreLink:
     - name: Scheduled maintenance in Azure Database for MySQL - Flexible Server
-      url: "https://learn.microsoft.com/azure/mysql/flexible-server/concepts-maintenance"
+      url: "https://learn.microsoft.com/ja-jp/azure/mysql/flexible-server/concepts-maintenance"

@@ -15,11 +15,11 @@
   tags: null
   learnMoreLink:
     - name: Resource Health
-      url: "https://learn.microsoft.com/en-us/azure/service-health/resource-health-overview"
+      url: "https://learn.microsoft.com/ja-jp/azure/service-health/resource-health-overview"
     - name: Configure Resource Health alerts in the Azure portal
-      url: "https://learn.microsoft.com/en-us/azure/service-health/resource-health-alert-monitor-guide#create-a-resource-health-alert-rule-in-the-azure-portal"
+      url: "https://learn.microsoft.com/ja-jp/azure/service-health/resource-health-alert-monitor-guide#create-a-resource-health-alert-rule-in-the-azure-portal"
     - name: Alerts Health
-      url: "https://learn.microsoft.com/en-us/azure/service-health/alerts-activity-log-service-notifications-portal"
+      url: "https://learn.microsoft.com/ja-jp/azure/service-health/alerts-activity-log-service-notifications-portal"
 - description: サービス健全性アラートの構成
   aprlGuid: 9729c89d-8118-41b4-a39b-e12468fa872b
   recommendationTypeId: null
@@ -37,6 +37,6 @@
   tags: null
   learnMoreLink:
     - name: What is Azure Service Health?
-      url: "https://learn.microsoft.com/azure/service-health/overview"
+      url: "https://learn.microsoft.com/ja-jp/azure/service-health/overview"
     - name: Configure alerts for service health events
-      url: "https://learn.microsoft.com/azure/service-health/alerts-activity-log-service-notifications-portal"
+      url: "https://learn.microsoft.com/ja-jp/azure/service-health/alerts-activity-log-service-notifications-portal"

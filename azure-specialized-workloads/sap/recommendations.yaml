@@ -1,12 +1,12 @@
-- description: Ensure that each SAP production system is designed for high availability across availability zones
+- description: 各 SAP 実稼働システムがアベイラビリティ ゾーン全体で高可用性を実現できるように設計されていることを確認します。
   aprlGuid: a9b649a5-2bfe-40ca-9b8f-34f9c71dfa12
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    Azure Availability Zones are physically separate locations within each Azure region that are tolerant to local failures. Use availability zones to protect your applications and data against unlikely data center failures. Ensure each single point of failure of each SAP production system is protected with high availability using multiple availability zones. If you cannot deploy across different zones in a region, then  refer to Microsoft guidance for High availability deployment options for SAP workload.
+  longDescription: |-
+    Azure アベイラビリティ ゾーンは、ローカル障害に耐えられる、各 Azure リージョン内の物理的に分離された場所です。アベイラビリティ ゾーンを使用して、予期せぬデータセンターの障害からアプリケーションとデータを保護します。各 SAP 本番システムの単一障害点が、複数の可用性ゾーンを使用した高可用性によって確実に保護されます。リージョン内の異なるゾーンにまたがってデプロイできない場合は、SAP ワークロードの高可用性デプロイメント オプションに関する Microsoft のガイダンスを参照してください。
   potentialBenefits: High availability for SAP systems
   pgVerified: true
   publishedToLearn: false
@@ -15,7 +15,7 @@
   tags: null
   learnMoreLink:
     - name: SAP ACSS Quality Insights
-      url: "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/get-quality-checks-insights"
+      url: "https://learn.microsoft.com/ja-jp/azure/sap/center-sap-solutions/get-quality-checks-insights"
     - name: OpenSource Inventory Checks
       url: "https://aka.ms/ACESInventoryCheckSAP"
     - name: OpenSource Quality Checks
@@ -23,17 +23,16 @@
     - name: Move Regional SAP HA to Zonal
       url: "https://github.com/Azure/SAP-on-Azure-Scripts-and-Utilities/tree/main/Move-VM-from-AvSet-to-AvZone/Move-Regional-SAP-HA-To-Zonal-SAP-HA-WhitePaper"
     - name: High Availability Deployment Options for SAP
-      url: "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-architecture-scenarios#high-availability-deployment-options-for-sap-workload"
-
-- description: Run SAP application servers on two or more VMs using VMSS Flex
+      url: "https://learn.microsoft.com/ja-jp/azure/sap/workloads/sap-high-availability-architecture-scenarios#high-availability-deployment-options-for-sap-workload"
+- description: VMSS Flex を使用して 2 つ以上の VM 上で SAP アプリケーション サーバーを実行する
   aprlGuid: 49bd34ab-d117-4b0e-99f8-34cc8a5394bc
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    Use Virtual Machines Scale Set (VMSS) with flexible orchestration to distribute the virtual machines across specified zones and within each zone to also distribute VMs across different fault domains within the zone on a best effort basis. Configure VMSS Flex following Microsoft recommendation for SAP workload using the right mode and correct settings. If you aren't currently using VMSS Flex for SAP application servers and also not using Availability Sets with Fault domain and Update domain distribution, then you should consider moving to VMSS Flex architecture to improve the resiliency posture of your SAP deployment. The following blog post in links below outlines the details on the process of migrating existing SAP workloads that are deployed in an availability set or availability zone to a flexible scale set with FD=1 deployment option.
+  longDescription: |-
+    柔軟なオーケストレーションを備えた仮想マシン スケール セット (VMSS) を使用して、指定したゾーン全体および各ゾーン内で仮想マシンを分散し、ベスト エフォート ベースでゾーン内の異なる障害ドメイン全体に VM を分散します。 Microsoft の SAP ワークロード推奨に従って、適切なモードと正しい設定を使用して VMSS Flex を構成します。現在、SAP アプリケーション サーバーに VMSS Flex を使用しておらず、障害ドメインと更新ドメインの配布で可用性セットも使用していない場合は、SAP デプロイメントの復元体制を向上させるために VMSS Flex アーキテクチャへの移行を検討する必要があります。以下のリンクにあるブログ投稿では、可用性セットまたは可用性ゾーンにデプロイされている既存の SAP ワークロードを、FD=1 デプロイ オプションを使用してフレキシブル スケール セットに移行するプロセスの詳細について概説しています。
   potentialBenefits: Enhanced resiliency for SAP on Azure
   pgVerified: true
   publishedToLearn: false
@@ -44,21 +43,20 @@
     - name: OpenSource Inventory Checks
       url: "https://aka.ms/ACESInventoryCheckSAP"
     - name: Virtual machine Scale Set SAP Deployment Guide
-      url: "https://learn.microsoft.com/en-us/azure/sap/workloads/virtual-machine-scale-set-sap-deployment-guide"
+      url: "https://learn.microsoft.com/ja-jp/azure/sap/workloads/virtual-machine-scale-set-sap-deployment-guide"
     - name: Considerations for Flexible VM Scale Sets for SAP
-      url: "https://learn.microsoft.com/en-us/azure/sap/workloads/virtual-machine-scale-set-sap-deployment-guide?tabs=scaleset-cli#important-consideration-of-flexible-virtual-machine-scale-sets-for-sap-workload"
+      url: "https://learn.microsoft.com/ja-jp/azure/sap/workloads/virtual-machine-scale-set-sap-deployment-guide?tabs=scaleset-cli#important-consideration-of-flexible-virtual-machine-scale-sets-for-sap-workload"
     - name: Migrate existing SAP system VMs to VMSS Flex
       url: "https://techcommunity.microsoft.com/t5/running-sap-applications-on-the/how-to-easily-migrate-an-existing-sap-system-vms-to-flexible/ba-p/3833548"
-
-- description: If using single-instance VMs all OS and data disks must be Premium SSD or Ultra Disk
+- description: 単一インスタンスの VM を使用する場合は、すべての OS とデータ ディスクが Premium SSD または Ultra Disk である必要があります
   aprlGuid: b60ae773-9917-4bca-8a42-7cb45365a917
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    For single-instance VMs, both OS and data disks must be either Premium SSD or Ultra Disk to achieve the single-instance SLA of 99.9% availability.
+  longDescription: |-
+    シングル インスタンス VM の場合、99.9% の可用性のシングル インスタンス SLA を達成するには、OS ディスクとデータ ディスクの両方が Premium SSD または Ultra Disk である必要があります。
   potentialBenefits: Higher SLA of 99.9% with SSDs
   pgVerified: true
   publishedToLearn: false
@@ -67,25 +65,24 @@
   tags: null
   learnMoreLink:
     - name: SAP ACSS Insights
-      url: "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/get-quality-checks-insights"
+      url: "https://learn.microsoft.com/ja-jp/azure/sap/center-sap-solutions/get-quality-checks-insights"
     - name: OpenSource Inventory Checks
       url: "https://aka.ms/ACESInventoryCheckSAP"
     - name: OpenSource Quality Checks
       url: "https://github.com/Azure/SAP-on-Azure-Scripts-and-Utilities/tree/main/QualityCheck"
     - name: VM SLA
-      url: "https://www.azure.cn/en-us/support/sla/virtual-machines/"
+      url: "https://www.azure.cn/ja-jp/support/sla/virtual-machines/"
     - name: SAP Storage Planning Guide
-      url: "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide-storage"
-
-- description: Ensure that the data is replicated synchronously (SYNC mode) between the primary and secondary database hosting VM nodes
+      url: "https://learn.microsoft.com/ja-jp/azure/sap/workloads/planning-guide-storage"
+- description: VM ノードをホストしているプライマリ データベースとセカンダリ データベースの間でデータが同期 (SYNC モード) でレプリケートされていることを確認します。
   aprlGuid: 094400a5-f112-408d-a334-afd68873ff0f
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    High availability for databases should be implemented using database native replication technologies and the data should be replicated synchronously that is in SYNC mode from primary database to a stand-by node.
+  longDescription: |-
+    データベースの高可用性は、データベース ネイティブ レプリケーション テクノロジを使用して実装する必要があり、データはプライマリ データベースからスタンバイ ノードに SYNC モードで同期的にレプリケートされる必要があります。
   potentialBenefits: Ensures high availability for SAP data
   pgVerified: true
   publishedToLearn: false
@@ -94,20 +91,19 @@
   tags: null
   learnMoreLink:
     - name: SAP ACSS Insights
-      url: "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/get-quality-checks-insights"
+      url: "https://learn.microsoft.com/ja-jp/azure/sap/center-sap-solutions/get-quality-checks-insights"
     - name: OpenSource Quality Checks
       url: "https://github.com/Azure/SAP-on-Azure-Scripts-and-Utilities/tree/main/QualityCheck"
-
-- description: Ensure that SAP shared file systems are designed for high availability and when possible using availability zones
+- description: SAP 共有ファイル システムが高可用性を実現するように設計されていることを確認し、可能な場合は可用性ゾーンを使用する
   aprlGuid: e09ca960-20b7-4831-b85b-83ec84c1390e
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    SAP shared file systems such as /sapmnt, /usr/trans, interfaces should be made highly available.
-    In case of Azure File Shares, we recommend that you use ZRS (Zone-redundant storage) and for Azure NetApp Files use Zonal replication for your volumes.
+  longDescription: |-
+    /sapmnt、/usr/trans、インターフェイスなどの SAP 共有ファイル システムは高可用性にする必要があります。
+    Azure File Shares の場合は ZRS (ゾーン冗長ストレージ) を使用し、Azure NetApp Files の場合はボリュームにゾーン レプリケーションを使用することをお勧めします。
   potentialBenefits: Enhanced data availability for SAP
   pgVerified: true
   publishedToLearn: false
@@ -117,17 +113,16 @@
   learnMoreLink:
     - name: OpenSource Inventory Checks
       url: "https://aka.ms/ACESInventoryCheckSAP"
-
-- description: Test high availability solutions thoroughly to ensure fail overs work as expected
+- description: 高可用性ソリューションを徹底的にテストして、フェイルオーバーが期待どおりに機能することを確認します。
   aprlGuid: 5663a808-56be-49ea-8d5c-c5dfc6925f76
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    Test all high availability solutions thoroughly (including kernel panic in Linux VMs and also fail-back). Include zonal failure scenarios in your testing, the testing should confirm that each layer of your SAP solution including database, central services, application servers and shared file systems is configured correctly for zone redundancy, the solution meets RPO = 0 and the application fails over automatically meeting your RTO.
-    The fail back can be either automatic or manual.
+  longDescription: |-
+    すべての高可用性ソリューションを徹底的にテストします (Linux VM のカーネル パニックやフェールバックを含む)。テストにはゾーン障害のシナリオを含めます。テストでは、データベース、セントラル サービス、アプリケーション サーバー、共有ファイル システムを含む SAP ソリューションの各レイヤーがゾーン冗長性に対して正しく構成されていること、ソリューションが RPO = 0 を満たしていること、アプリケーションが自動的にフェイルオーバーすることを確認する必要があります。 RTOを満たすために。
+    フェイルバックは自動または手動で行うことができます。
   potentialBenefits: Ensures SAP Azure's failover reliability
   pgVerified: true
   publishedToLearn: false
@@ -136,22 +131,21 @@
   tags: null
   learnMoreLink:
     - name: Test Cases
-      url: "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability?tabs=lb-portal#test-the-cluster-setup"
-
-- description: Remove unwanted location constraints from Linux Pacemaker clusters
+      url: "https://learn.microsoft.com/ja-jp/azure/sap/workloads/sap-hana-high-availability?tabs=lb-portal#test-the-cluster-setup"
+- description: Linux Pacemaker クラスターから不要な場所の制約を削除する
   aprlGuid: 1b8a3051-dfd4-4780-bfb7-446296774029
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    When executing a migrate command in a Linux Pacemaker cluster, the system generates a temporary "prefer" location constraint, aiming to move a resource to a specified node. This constraint prioritizes the target node for the resource temporarily without permanently altering the cluster's configuration.
+  longDescription: |-
+    Linux Pacemaker クラスターで移行コマンドを実行すると、システムはリソースを指定されたノードに移動することを目的として、一時的な「優先」ロケーション制約を生成します。この制約により、クラスターの構成を永続的に変更することなく、リソースのターゲット ノードが一時的に優先されます。
 
-    During planned maintenances and fail over testing, you can leverage the migrate command for temporary resource relocation during maintenance or administrative tasks to ensure minimal disruption. This constraint is not permanent and does not survive reboots or cluster resets. It's designed for short-term adjustments.
+    計画的なメンテナンスやフェールオーバー テスト中に、メンテナンスや管理タスク中に mitigrate コマンドを利用してリソースを一時的に再配置し、中断を最小限に抑えることができます。この制約は永続的なものではなく、再起動またはクラスターのリセット後は存続しません。短期間の調整用に設計されています。
 
-    Once the planned task necessitating the resource migration is complete, manually remove the temporary constraint to revert to the cluster's original resource management policies.
-    This approach allows for controlled resource movement within the cluster, facilitating maintenance while preserving the integrity and efficiency of the cluster's configuration.
+    リソースの移行を必要とする計画されたタスクが完了したら、一時的な制約を手動で削除して、クラスターの元のリソース管理ポリシーに戻します。
+    このアプローチにより、クラスター内でのリソースの移動の制御が可能になり、クラスター構成の整合性と効率を維持しながらメンテナンスが容易になります。
   potentialBenefits: Enhanced maintenance and failover handling
   pgVerified: true
   publishedToLearn: false
@@ -159,18 +153,17 @@
   automationAvailable: no
   tags: null
   learnMoreLink:
-
-- description: Secure compute resource capacity for critical VM roles in DR region
+- description: DR リージョン内の重要な VM ロールのためのコンピューティング リソース容量を確保
   aprlGuid: 820b4c0c-8a74-442a-8ba7-b0cb840cd983
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: Medium
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    To ensure the availability of compute resources for critical VM roles in a DR region, consider securing capacity either through a warm standby approach or by utilizing Azure's On-demand Capacity Reservation.
+  longDescription: |-
+    DR リージョン内の重要な VM ロールのコンピューティング リソースの可用性を確保するには、ウォーム スタンバイ アプローチまたは Azure のオンデマンド キャパシティ予約を利用してキャパシティを確保することを検討してください。
 
-    Warm standby involves keeping VMs in the DR region running. On-demand Capacity Reservation, on the other hand, reserves compute capacity without having to run the VMs, allowing you to start them when needed. When DR VMs are not needed, the reserved capacity may safely be used to run other workloads without the risk of losing the capacity to other customers. This strategy guarantees resource availability for your critical workloads in the event of a disaster, balancing cost and readiness.
+    ウォーム スタンバイには、DR リージョン内の VM を実行し続けることが含まれます。一方、オンデマンド容量予約では、VM を実行することなくコンピューティング容量を予約し、必要なときに VM を起動できるようにします。 DR VM が必要ない場合は、他の顧客が容量を失うリスクを負うことなく、予約された容量を他のワークロードの実行に安全に使用できます。この戦略により、災害発生時に重要なワークロードに対するリソースの可用性が保証され、コストと準備のバランスが保たれます。
   potentialBenefits: Guarantees DR region availability
   pgVerified: true
   publishedToLearn: false
@@ -179,17 +172,16 @@
   tags: null
   learnMoreLink:
     - name: Capacity Reservation
-      url: "https://learn.microsoft.com/en-us/azure/virtual-machines/capacity-reservation-overview"
-
-- description: Ensure that the production databases are replicated (ASYNC) to DR location using the database vendor's replication technology
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/capacity-reservation-overview"
+- description: データベース ベンダーのレプリケーション テクノロジを使用して、本番データベースが DR の場所にレプリケート (ASYNC) されていることを確認します。
   aprlGuid: fb8bdcee-d88f-408d-8572-a76a4aaa733b
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: High
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    Replicate production databases (ASYNC) to the DR location using the database vendor's replication technology.
+  longDescription: |-
+    データベース ベンダーのレプリケーション テクノロジを使用して、本番データベース (ASYNC) を DR の場所にレプリケートします。
   potentialBenefits: Enhanced DR resilience
   pgVerified: true
   publishedToLearn: false
@@ -198,17 +190,16 @@
   tags: null
   learnMoreLink:
     - name: SAP Disaster Recovery Guide
-      url: "https://learn.microsoft.com/en-us/azure/sap/workloads/disaster-recovery-sap-guide?tabs=windows"
-
-- description: SAP components are backed up to DR location using an appropriate backup tool or ASR
+      url: "https://learn.microsoft.com/ja-jp/azure/sap/workloads/disaster-recovery-sap-guide?tabs=windows"
+- description: SAP コンポーネントは、適切なバックアップ ツールまたは ASR を使用して DR の場所にバックアップされます。
   aprlGuid: 41f0d88e-7866-4444-aac4-ef5fee3e6874
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: High
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    SAP components such as (A)SCS, application servers, WebDispatchers, etc are backed up to DR location using an appropriate backup tool or ASR.
+  longDescription: |-
+    (A)SCS、アプリケーション サーバー、WebDispatcher などの SAP コンポーネントは、適切なバックアップ ツールまたは ASR を使用して DR の場所にバックアップされます。
   potentialBenefits: Ensures SAP data safety and recovery
   pgVerified: true
   publishedToLearn: false
@@ -217,19 +208,18 @@
   tags: null
   learnMoreLink:
     - name: SAP ACSS Insights
-      url: "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/get-quality-checks-insights"
+      url: "https://learn.microsoft.com/ja-jp/azure/sap/center-sap-solutions/get-quality-checks-insights"
     - name: OpenSource Inventory Checks
       url: "https://aka.ms/ACESInventoryCheckSAP"
-
-- description: SAP shared files systems are replicated or backed up to DR location
+- description: SAP 共有ファイル システムは DR の場所に複製またはバックアップされます
   aprlGuid: ee4dc309-00a1-49fe-92fa-1724baf5f103
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: High
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    Implementing robust monitoring and alerting for DR in SAP on Azure ensures coverage across its complex, multi-layer architecture. This strategy is crucial for databases, services, applications, and shared systems.
+  longDescription: |-
+    SAP on Azure の DR に対する堅牢な監視とアラートを実装することで、複雑な多層アーキテクチャ全体を確実にカバーできます。この戦略は、データベース、サービス、アプリケーション、共有システムにとって非常に重要です。
   potentialBenefits: Enhances SAP DR oversight
   pgVerified: true
   publishedToLearn: false
@@ -238,17 +228,16 @@
   tags: null
   learnMoreLink:
     - name: DR Guidance
-      url: "https://learn.microsoft.com/en-us/azure/sap/workloads/disaster-recovery-sap-guide?tabs=windows"
-
-- description: Automate DR infrastructure build or pre-deploy DR resources
+      url: "https://learn.microsoft.com/ja-jp/azure/sap/workloads/disaster-recovery-sap-guide?tabs=windows"
+- description: DR インフラストラクチャの構築または DR リソースの事前展開を自動化する
   aprlGuid: 0fabc52e-cdbb-4acd-8626-c4c637061e2d
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: Medium
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    Automate the build of disaster recovery (DR) infrastructure (or pre-deploy DR resources) and streamline SAP service recovery as much as possible.
+  longDescription: |-
+    災害復旧 (DR) インフラストラクチャの構築 (または DR リソースの事前展開) を自動化し、SAP サービスの復旧を可能な限り合理化します。
   potentialBenefits: Faster SAP recovery, reduced downtime
   pgVerified: true
   publishedToLearn: false
@@ -256,18 +245,17 @@
   automationAvailable: no
   tags: null
   learnMoreLink:
-
-- description: Document and test DR procedure ensure it meets RPO and RTO targets
+- description: DR 手順を文書化してテストし、RPO および RTO 目標を確実に満たすようにする
   aprlGuid: c300e949-528d-4ac9-889b-cacf8b4a6e90
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: Medium
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    Create detailed documentation of your DR procedures for each layer of the SAP architecture-database, central services, application servers, and shared file systems. This documentation should include configuration details, failover mechanisms, and step-by-step recovery procedures.
+  longDescription: |-
+    SAP アーキテクチャの各層 (データベース、中央サービス、アプリケーション サーバー、共有ファイル システム) の DR 手順の詳細な文書を作成します。このドキュメントには、構成の詳細、フェイルオーバー メカニズム、段階的な回復手順が含まれている必要があります。
 
-    Test a wide range of failure scenarios, including regional outages. Testing should confirm that your DR strategy is robust, meets your RPO and RTO targets, and provides seamless failover across all layers of the SAP architecture. This will ensure a comprehensive and resilient DR strategy capable of withstanding regional failures and ensuring business continuity.
+    地域的な停止を含む、幅広い障害シナリオをテストします。テストでは、DR 戦略が堅牢であること、RPO および RTO 目標を満たしていること、SAP アーキテクチャのすべての層にわたってシームレスなフェイルオーバーが提供されていることを確認する必要があります。これにより、地域的な障害に耐え、ビジネスの継続性を確保できる、包括的で回復力のある DR 戦略が確保されます。
   potentialBenefits: Ensures robust DR, meets RPO/RTO
   pgVerified: true
   publishedToLearn: false
@@ -275,16 +263,15 @@
   automationAvailable: no
   tags: null
   learnMoreLink:
-
-- description: Ensure there is a robust monitoring and alerting solution in place for the entire DR solution
+- description: DR ソリューション全体に対して堅牢な監視およびアラート ソリューションが導入されていることを確認します。
   aprlGuid: c27134b7-6917-4852-8276-3dbef5c71578
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: Medium
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    For an SAP solution hosted on Azure it is imperative to implement a robust monitoring and alerting solution that comprehensively covers DR of each layer of the SAP architecture. Given the complexity of SAP systems, which span multiple layers using diverse technologies and Azure resources, each with potentially distinct DR replication mechanisms, an appropriate monitoring strategy is crucial. The different layers include database, central services, application, and shared file systems.
+  longDescription: |-
+    Azure でホストされる SAP ソリューションの場合、SAP アーキテクチャの各層の DR を包括的にカバーする堅牢な監視およびアラート ソリューションを実装することが不可欠です。 SAP システムの複雑さは、さまざまなテクノロジと Azure リソースを使用して複数のレイヤーにまたがっており、それぞれが異なる DR レプリケーション メカニズムを備えている可能性があるため、適切な監視戦略が重要です。さまざまなレイヤーには、データベース、中央サービス、アプリケーション、共有ファイル システムが含まれます。
   potentialBenefits: Improved DR oversight and rapid issue response
   pgVerified: true
   publishedToLearn: false
@@ -292,22 +279,21 @@
   automationAvailable: no
   tags: null
   learnMoreLink:
-
-- description: Configure scheduled events notification
+- description: スケジュールされたイベント通知を構成する
   aprlGuid: 6b589ce6-c847-4cee-af35-f6e8eb1cf983
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
   recommendationImpact: High
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    Scheduled events is an Azure Metadata Services that provides proactive notifications about upcoming maintenance events (for example, reboot) so that your application can prepare for them and limit disruption. You should configure scheduled events for all your critical Azure VMs.
+  longDescription: |-
+    スケジュールされたイベントは、今後のメンテナンス イベント (再起動など) に関する事前通知を提供する Azure Metadata Services であり、アプリケーションがそれらのイベントに備えて中断を制限できるようにします。すべての重要な Azure VM に対してスケジュールされたイベントを構成する必要があります。
 
-    Resource agent azure-events-az can also integrate with Pacemaker clusters.
+    リソース エージェント azure-events-az は、Pacemaker クラスターと統合することもできます。
 
-    To ensure high availability and service continuity in your Azure VMs, you should configure the azure-events-az resource agent within your Pacemaker clusters. This agent monitors for scheduled Azure maintenance events and can proactively relocate resources for a graceful node shutdown. Configure the agent to monitor specific event types such as Reboot and Redeploy, and enable verbose logging for detailed diagnostics.
+    Azure VM での高可用性とサービス継続性を確保するには、Pacemaker クラスター内で azure-events-az リソース エージェントを構成する必要があります。このエージェントは、スケジュールされた Azure メンテナンス イベントを監視し、ノードを正常にシャットダウンするためにリソースをプロアクティブに再配置できます。再起動や再デプロイなどの特定のイベント タイプを監視するようにエージェントを構成し、詳細な診断のための詳細ログを有効にします。
 
-    In addition, it is also important that you define a procedure on how to react to scheduled events.
+    さらに、スケジュールされたイベントにどのように対応するかについて手順を定義することも重要です。
   potentialBenefits: Proactive maintenance awareness
   pgVerified: true
   publishedToLearn: false
@@ -316,19 +302,18 @@
   tags: null
   learnMoreLink:
     - name: VM Scheduled Events
-      url: "https://learn.microsoft.com/en-us/azure/virtual-machines/linux/scheduled-events"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/linux/scheduled-events"
     - name: Configure Pacemaker for Azure Scheduled Events
-      url: "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-pacemaker?tabs=msi#configure-pacemaker-for-azure-scheduled-events"
-
-- description: ASCS-Pacemaker (Central Server Instance) Ensure Pacemaker cluster has been setup for SAP ASCS high availability
+      url: "https://learn.microsoft.com/ja-jp/azure/sap/workloads/high-availability-guide-suse-pacemaker?tabs=msi#configure-pacemaker-for-azure-scheduled-events"
+- description: ASCS-Pacemaker (セントラル サーバー インスタンス) Pacemaker クラスターが SAP ASCS 高可用性用にセットアップされていることを確認します。
   aprlGuid: 9d8f6678-694c-4da4-8384-415201f65194
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    For the ASCS-Pacemaker (Central Server Instance), ensure that the Pacemaker cluster configuration parameters are correctly set up for SAP ASCS high availability.
+  longDescription: |-
+    ASCS-Pacemaker (セントラル サーバー インスタンス) の場合は、SAP ASCS 高可用性のために Pacemaker クラスター構成パラメーターが正しく設定されていることを確認してください。
   potentialBenefits: Enhances SAP ASCS uptime
   pgVerified: true
   publishedToLearn: false
@@ -337,21 +322,20 @@
   tags: null
   learnMoreLink:
     - name: SAP ACSS Insights
-      url: "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/get-quality-checks-insights"
+      url: "https://learn.microsoft.com/ja-jp/azure/sap/center-sap-solutions/get-quality-checks-insights"
     - name: OpenSource Quality Checks
       url: "https://github.com/Azure/SAP-on-Azure-Scripts-and-Utilities/tree/main/QualityCheck"
     - name: ASCS-Pacemaker - Central Server Instance
-      url: "https://docs.microsoft.com/en-us/azure/advisor/advisor-reference-reliability-recommendations"
-
-- description: ASCS-LB (Central Server Instance) Ensure the load balancer is configured correctly for SAP ASCS High availability
+      url: "https://docs.microsoft.com/ja-jp/azure/advisor/advisor-reference-reliability-recommendations"
+- description: ASCS-LB (セントラル サーバー インスタンス) SAP ASCS 高可用性用にロード バランサーが正しく構成されていることを確認します。
   aprlGuid: 5c2e52d0-25be-4b1c-833c-b98b5ef1a26b
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    For the ASCS-LB (Central Server Instance), ensure that the load balancer is configured correctly for SAP ASCS high availability.
+  longDescription: |-
+    ASCS-LB (セントラル サーバー インスタンス) の場合は、ロード バランサーが SAP ASCS 高可用性のために正しく構成されていることを確認してください。
   potentialBenefits: Enhanced HA for SAP ASCS
   pgVerified: true
   publishedToLearn: false
@@ -360,21 +344,20 @@
   tags: null
   learnMoreLink:
     - name: SAP ACSS Insights
-      url: "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/get-quality-checks-insights"
+      url: "https://learn.microsoft.com/ja-jp/azure/sap/center-sap-solutions/get-quality-checks-insights"
     - name: OpenSource Quality Checks
       url: "https://github.com/Azure/SAP-on-Azure-Scripts-and-Utilities/tree/main/QualityCheck"
     - name: ASCS-LB - Central Server Instance
-      url: "https://docs.microsoft.com/en-us/azure/advisor/advisor-reference-reliability-recommendations"
-
-- description: DBHANA-Pacemaker (Database Instance) Ensure the Pacemaker cluster has been setup for SAP HANA DB high availability
+      url: "https://docs.microsoft.com/ja-jp/azure/advisor/advisor-reference-reliability-recommendations"
+- description: DBHANA-Pacemaker (データベース インスタンス) Pacemaker クラスターが SAP HANA DB の高可用性用にセットアップされていることを確認します。
   aprlGuid: 6648fe61-880d-4a96-8d2d-190a23d5580b
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    For the DBHANA-Pacemaker (Database Instance), ensure that the Pacemaker cluster configuration parameters are correctly set up for SAP HANA DB high availability.
+  longDescription: |-
+    DBHANA-Pacemaker (データベース インスタンス) の場合は、SAP HANA DB の高可用性のために Pacemaker クラスター構成パラメーターが正しく設定されていることを確認してください。
   potentialBenefits: Enhances SAP HANA DB uptime
   pgVerified: true
   publishedToLearn: false
@@ -383,21 +366,20 @@
   tags: null
   learnMoreLink:
     - name: SAP ACSS Insights
-      url: "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/get-quality-checks-insights"
+      url: "https://learn.microsoft.com/ja-jp/azure/sap/center-sap-solutions/get-quality-checks-insights"
     - name: OpenSource Quality Checks
       url: "https://github.com/Azure/SAP-on-Azure-Scripts-and-Utilities/tree/main/QualityCheck"
     - name: DBHANA-Pacemaker - Database Instance
-      url: "https://docs.microsoft.com/en-us/azure/advisor/advisor-reference-reliability-recommendations"
-
-- description: DBHANA-LB (Database Instance) Ensure the load balancer is configured correctly for SAP HANA DB High availability
+      url: "https://docs.microsoft.com/ja-jp/azure/advisor/advisor-reference-reliability-recommendations"
+- description: DBHANA-LB (データベース インスタンス) SAP HANA DB 高可用性用にロード バランサーが正しく構成されていることを確認します。
   aprlGuid: 2e4c2171-a83f-4238-a8e3-b51c90d86a99
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    For the DBHANA-LB (Database Instance), make sure the load balancer is configured correctly for SAP HANA DB high availability.
+  longDescription: |-
+    DBHANA-LB (データベース インスタンス) の場合、ロード バランサーが SAP HANA DB の高可用性のために正しく構成されていることを確認してください。
   potentialBenefits: Enhanced DB availability
   pgVerified: true
   publishedToLearn: false
@@ -406,8 +388,8 @@
   tags: null
   learnMoreLink:
     - name: SAP ACSS Insights
-      url: "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/get-quality-checks-insights"
+      url: "https://learn.microsoft.com/ja-jp/azure/sap/center-sap-solutions/get-quality-checks-insights"
     - name: OpenSource Quality Checks
       url: "https://github.com/Azure/SAP-on-Azure-Scripts-and-Utilities/tree/main/QualityCheck"
     - name: DBHANA-LB- Database Instance
-      url: "https://docs.microsoft.com/en-us/azure/advisor/advisor-reference-reliability-recommendations"
+      url: "https://docs.microsoft.com/ja-jp/azure/advisor/advisor-reference-reliability-recommendations"

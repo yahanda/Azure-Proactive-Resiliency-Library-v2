@@ -1,28 +1,28 @@
-﻿- description: Test your applications for availability and resiliency
+- description: アプリケーションの可用性と復元力をテストする
   aprlGuid: 28a8ce6f-1b47-c243-bafb-208f4422fe7a
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: WellArchitected/Test
   recommendationMetadataState: Active
-  longDescription: |
-    Applications should be tested to ensure availability and resiliency. Availability describes the amount of time that an application runs in a healthy state without significant downtime. Resiliency describes how quickly an application recovers from failure.
+  longDescription: |-
+    アプリケーションは、可用性と復元力を確保するためにテストする必要があります。可用性は、アプリケーションが重大なダウンタイムなしに正常な状態で実行される時間を表します。復元力は、アプリケーションが障害からどれだけ早く回復するかを表します。
 
-    Being able to measure availability and resiliency can answer questions like:
-    - How much downtime is acceptable? How much does potential downtime cost your business?
-    - What are your availability requirements?
-    - How much do you invest in making your application highly available?
-    - What is the risk versus the cost?
-    - Testing plays a critical role in making sure your applications can meet these requirements.
+    可用性と回復力を測定できると、次のような質問に答えることができます。
+    - どのくらいのダウンタイムが許容されますか?潜在的なダウンタイムにより、ビジネスにどのくらいのコストがかかりますか?
+    - 可用性の要件は何ですか?
+    - アプリケーションの可用性を高めるためにどれくらい投資していますか?
+    - コストとリスクは何ですか?
+    - テストは、アプリケーションがこれらの要件を満たしていることを確認する上で重要な役割を果たします。
 
-    Key points:
-    - Test regularly to validate existing thresholds, targets, and assumptions.
-    - Automate testing as much as possible.
-    - Perform testing on both key Test environments and the production environment.
-    - Verify how the end-to-end workload performs under intermittent failure conditions.
-    - Test the application against critical functional and nonfunctional requirements for performance.
-    - Conduct load testing with expected peak volumes to Test scalability and performance under load.
-    - Perform chaos testing by injecting faults.
+    キーポイント：
+    - 定期的にテストを行って、既存のしきい値、目標、仮定を検証します。
+    - 可能な限りテストを自動化します。
+    - 主要なテスト環境と運用環境の両方でテストを実行します。
+    - 断続的な障害状況下でエンドツーエンドのワークロードがどのように実行されるかを検証します。
+    - パフォーマンスに関する重要な機能要件および非機能要件に対してアプリケーションをテストします。
+    - 予想されるピークボリュームで負荷テストを実施し、負荷時のスケーラビリティとパフォーマンスをテストします。
+    - 障害を挿入してカオス テストを実行します。
   potentialBenefits: Improves uptime and speeds recovery
   pgVerified: true
   publishedToLearn: false
@@ -31,26 +31,25 @@
   tags: null
   learnMoreLink:
     - name: Testing applications for availability and resiliency
-      url: "https://learn.microsoft.com/azure/well-architected/resiliency/testing"
-
-- description: Consider building logic into your workload to handle errors
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/resiliency/testing"
+- description: エラーを処理するロジックをワークロードに組み込むことを検討してください。
   aprlGuid: 155dda00-c264-1b45-8ac0-d6f68178844f
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: WellArchitected/Test
   recommendationMetadataState: Active
-  longDescription: |
-    In a distributed system, ensuring that your application can recover from errors is critical. You can test your applications to prevent errors and failure, but you need to prepare for a wide range of issues. Testing doesn't always catch everything, so you should understand how to handle errors and prevent potential failure.
+  longDescription: |-
+    分散システムでは、アプリケーションがエラーから確実に回復できるようにすることが重要です。アプリケーションをテストしてエラーや障害を防ぐことはできますが、さまざまな問題に備える必要があります。テストでは常にすべてを把握できるわけではないため、エラーを処理し、潜在的な失敗を防ぐ方法を理解する必要があります。
 
-    Many things in a distributed system, such as underlying cloud infrastructure and third-party runtime dependencies, are outside your span of control and your means to test. You can be sure something will fail eventually, so you need to be prepared.
+    基盤となるクラウド インフラストラクチャやサードパーティのランタイム依存関係など、分散システム内の多くのものは、制御範囲やテスト手段の範囲外にあります。いずれ何かが失敗することは確実なので、備えが必要です。
 
-    Key points:
-    - Implement retry logic to handle transient application failures and transient failures with internal or external dependencies.
-    - Uncover issues or failures in your application's retry logic.
-    - Configure request timeouts to manage intercomponent calls.
-    - Configure and test health probes for your load balancers and traffic managers.
-    - Segregate read operations from update operations across application data stores.
+    キーポイント：
+    - 一時的なアプリケーション障害および内部または外部の依存関係による一時的な障害を処理するための再試行ロジックを実装します。
+    - アプリケーションの再試行ロジックの問題や障害を明らかにします。
+    - コンポーネント間の呼び出しを管理するためにリクエストのタイムアウトを構成します。
+    - ロード バランサーとトラフィック マネージャーの正常性プローブを構成してテストします。
+    - アプリケーション データ ストア全体で読み取り操作を更新操作から分離します。
   potentialBenefits: Enhances recovery and error management
   pgVerified: true
   publishedToLearn: false
@@ -59,28 +58,27 @@
   tags: null
   learnMoreLink:
     - name: Error handling for resilient applications in Azure
-      url: "https://learn.microsoft.com/azure/well-architected/resiliency/app-design-error-handling"
-
-- description: Perform disaster recovery tests regularly
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/resiliency/app-design-error-handling"
+- description: 災害復旧テストを定期的に実行する
   aprlGuid: 1b612a06-28dc-e64e-9057-17467e57764a
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: High
   recommendationResourceType: WellArchitected/Test
   recommendationMetadataState: Active
-  longDescription: |
-    Disaster recovery is the process of restoring application functionality after a catastrophic loss.
+  longDescription: |-
+    災害復旧は、壊滅的な損失の後にアプリケーションの機能を復元するプロセスです。
 
-    In cloud environments, we acknowledge up front that failures happen. Instead of trying to prevent failures altogether, the goal is to minimize the effects of a single failing component.
+    クラウド環境では、障害が発生することを事前に認識しています。障害を完全に防止しようとするのではなく、単一のコンポーネントに障害が発生した場合の影響を最小限に抑えることが目標です。
 
-    Testing is one way to minimize these effects. You should automate testing of your applications where possible, but you also need to be prepared for when they fail. When a failure happens, having backup and recovery strategies becomes important. Your tolerance for reduced functionality during a disaster is a business decision that varies from one application to the next. It might be acceptable for some applications to be temporarily unavailable, or partially available with reduced functionality or delayed processing. For other applications, any reduced functionality is unacceptable.
+    テストは、これらの影響を最小限に抑える 1 つの方法です。可能な場合はアプリケーションのテストを自動化する必要がありますが、失敗した場合に備えておく必要もあります。障害が発生した場合、バックアップとリカバリの戦略を立てることが重要になります。災害時の機能低下に対する許容度はビジネス上の決定であり、アプリケーションごとに異なります。一部のアプリケーションが一時的に利用できなくなったり、機能が低下したり処理が遅延したりして部分的に利用可能になったりすることは許容される場合があります。他のアプリケーションでは、機能の低下は受け入れられません。
 
-    Key points:
-    - Create and test a disaster recovery plan regularly using key failure scenarios.
-    - Design a disaster recovery strategy to run most applications with reduced functionality.
-    - Design a backup strategy that's tailored for the business requirements and circumstances of the application.
-    - Automate failover and failback steps and processes.
-    - Test and validate the failover and failback approach successfully at least once.
+    キーポイント：
+    - 主要な障害シナリオを使用して、災害復旧計画を定期的に作成し、テストします。
+    - ほとんどのアプリケーションを機能を制限して実行できるように災害復旧戦略を設計します。
+    - ビジネス要件とアプリケーションの状況に合わせたバックアップ戦略を設計します。
+    - フェイルオーバーとフェイルバックのステップとプロセスを自動化します。
+    - フェイルオーバーとフェイルバックのアプローチが少なくとも 1 回は正常にテストおよび検証されます。
   potentialBenefits: Enhances recovery speed and reliability
   pgVerified: true
   publishedToLearn: false
@@ -89,23 +87,22 @@
   tags: null
   learnMoreLink:
     - name: Backup and disaster recovery for Azure applications
-      url: "https://learn.microsoft.com/azure/well-architected/resiliency/backup-and-recovery"
-
-- description: Use chaos engineering to test Azure applications
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/resiliency/backup-and-recovery"
+- description: カオス エンジニアリングを使用して Azure アプリケーションをテストする
   aprlGuid: e10f11a5-9c5b-6c4c-a684-4d9f4063127a
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: Medium
   recommendationResourceType: WellArchitected/Test
   recommendationMetadataState: Active
-  longDescription: |
-    Ideally, you should apply chaos principles continuously. There's constant change in the environments in which software and hardware run, so monitoring the changes is key. By constantly applying stress or faults on components, you can help expose issues early, before small problems are compounded by many other factors.
+  longDescription: |-
+    理想的には、カオス原理を継続的に適用する必要があります。ソフトウェアとハードウェアが実行される環境は常に変化するため、変化を監視することが重要です。コンポーネントにストレスや障害を常に加えることにより、小さな問題が他の多くの要因によって悪化する前に、問題を早期に発見することができます。
 
-    Apply chaos engineering principles when you:
-    - Deploy new code.
-    - Add dependencies.
-    - Observe changes in usage patterns.
-    - Mitigate problems.
+    次の場合にカオス エンジニアリングの原則を適用します。
+    - 新しいコードをデプロイします。
+    - 依存関係を追加します。
+    - 使用パターンの変化を観察します。
+    - 問題を軽減します。
   potentialBenefits: Early issue detection, prevents compounding
   pgVerified: true
   publishedToLearn: false
@@ -114,21 +111,20 @@
   tags: null
   learnMoreLink:
     - name: Use chaos engineering to test Azure applications
-      url: "https://learn.microsoft.com/en-us/azure/well-architected/reliability/testing-strategy#fault-injection-and-chaos-engineering-guidance"
-
-- description: Test application fault resiliency
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/reliability/testing-strategy#fault-injection-and-chaos-engineering-guidance"
+- description: アプリケーションの障害回復力をテストする
   aprlGuid: c8ba80d4-20d9-456f-a2bd-8e6d488d8ff9
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: WellArchitected/Test
   recommendationMetadataState: Active
-  longDescription: |
-    High availability is a fundamental part of the SQL Database platform that works transparently for your database application. However, we recognize that you may want to test how the automatic failover operations initiated during planned or unplanned events would impact an application before you deploy it to production. You can manually trigger a failover by calling a special API to restart a database, or an elastic pool.
+  longDescription: |-
+    高可用性は、データベース アプリケーションに対して透過的に機能する SQL データベース プラットフォームの基本的な部分です。ただし、計画的または計画外のイベント中に開始された自動フェイルオーバー操作がアプリケーションにどのような影響を与えるかを、アプリケーションを実稼働環境にデプロイする前にテストしたい場合があることを私たちは認識しています。特別な API を呼び出してデータベースまたはエラスティック プールを再起動することで、フェールオーバーを手動でトリガーできます。
 
-    In the case of a zone-redundant serverless or provisioned General Purpose database or elastic pool, the API call would result in redirecting client connections to the new primary in an Availability Zone different from the Availability Zone of the old primary. So in addition to testing how failover impacts existing database sessions, you can also verify if it changes the end-to-end performance due to changes in network latency.
+    ゾーン冗長サーバーレスまたはプロビジョニングされた汎用データベースまたはエラスティック プールの場合、API 呼び出しにより、古いプライマリのアベイラビリティ ゾーンとは異なるアベイラビリティ ゾーン内の新しいプライマリにクライアント接続がリダイレクトされます。そのため、フェイルオーバーが既存のデータベース セッションにどのような影響を与えるかをテストするだけでなく、ネットワーク遅延の変化によりエンドツーエンドのパフォーマンスが変化するかどうかも検証できます。
 
-    Because the restart operation is intrusive and a large number of them could stress the platform, only one failover call is allowed every 15 minutes for each database or elastic pool.
+    再起動操作は煩雑であり、多数の操作がプラットフォームに負荷をかける可能性があるため、データベースまたはエラスティック プールごとに 15 分ごとに 1 回のフェールオーバー呼び出しのみが許可されます。
   potentialBenefits: Enhances fault resilience testing
   pgVerified: true
   publishedToLearn: false
@@ -137,4 +133,4 @@
   tags: null
   learnMoreLink:
     - name: Test application fault resiliency
-      url: "https://learn.microsoft.com/en-us/azure/azure-sql/database/high-availability-sla?view=azuresql&tabs=azure-powershell#testing-application-fault-resiliency"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-sql/database/high-availability-sla?view=azuresql&tabs=azure-powershell#testing-application-fault-resiliency"

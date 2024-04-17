@@ -15,4 +15,4 @@
   tags: null
   learnMoreLink:
     - name: Azure Resource Manager Overview
-      url: "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview#resource-group-location-alignment"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-resource-manager/management/overview#resource-group-location-alignment"

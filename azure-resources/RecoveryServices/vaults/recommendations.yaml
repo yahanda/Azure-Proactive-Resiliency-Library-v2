@@ -15,7 +15,7 @@
   tags: null
   learnMoreLink:
     - name: Setup network mapping for site recovery
-      url: "https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-network-mapping#set-up-ip-addressing-for-target-vms"
+      url: "https://learn.microsoft.com/ja-jp/azure/site-recovery/azure-to-azure-network-mapping#set-up-ip-addressing-for-target-vms"
 - description: Site Recovery テスト フェールオーバーを使用して VM の機能を検証し、ターゲットでのパフォーマンスをチェックします
   aprlGuid: 17e877f7-3a89-4205-8a24-0670de54ddcd
   recommendationTypeId: null
@@ -33,7 +33,7 @@
   tags: null
   learnMoreLink:
     - name: Run a test failover
-      url: "https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-tutorial-dr-drill#run-a-test-failover"
+      url: "https://learn.microsoft.com/ja-jp/azure/site-recovery/azure-to-azure-tutorial-dr-drill#run-a-test-failover"
 - description: クラシック アラートから Azure Recovery Services Vault の組み込みの Azure Monitor アラートに移行する
   aprlGuid: 2912472d-0198-4bdc-aa90-37f145790edc
   recommendationTypeId: null
@@ -51,7 +51,7 @@
   tags: null
   learnMoreLink:
     - name: Move to Azure monitor Alerts
-      url: "https://learn.microsoft.com/azure/backup/move-to-azure-monitor-alerts"
+      url: "https://learn.microsoft.com/ja-jp/azure/backup/move-to-azure-monitor-alerts"
     - name: Classic alerts retirement announcement
       url: "https://azure.microsoft.com/updates/transition-to-builtin-azure-monitor-alerts-for-recovery-services-vaults-in-azure-backup-by-31-march-2026/"
 - description: すべての Geo-Redundant Storage (GRS) Azure Recovery Services コンテナーのクロスリージョン リストアをオプトインする
@@ -71,10 +71,10 @@
   tags: null
   learnMoreLink:
     - name: Set Cross Region Restore
-      url: "https://learn.microsoft.com/azure/backup/backup-create-recovery-services-vault#set-cross-region-restore"
+      url: "https://learn.microsoft.com/ja-jp/azure/backup/backup-create-recovery-services-vault#set-cross-region-restore"
     - name: Azure Backup Best Practices
-      url: "https://learn.microsoft.com/azure/backup/guidance-best-practices"
+      url: "https://learn.microsoft.com/ja-jp/azure/backup/guidance-best-practices"
     - name: Minimum Role Requirements for Cross Region Restore
-      url: "https://learn.microsoft.com/azure/backup/backup-rbac-rs-vault#minimum-role-requirements-for-azure-vm-backup"
+      url: "https://learn.microsoft.com/ja-jp/azure/backup/backup-rbac-rs-vault#minimum-role-requirements-for-azure-vm-backup"
     - name: Recovery Services Vault
-      url: "https://learn.microsoft.com/azure/backup/backup-azure-arm-vms-prepare"
+      url: "https://learn.microsoft.com/ja-jp/azure/backup/backup-azure-arm-vms-prepare"

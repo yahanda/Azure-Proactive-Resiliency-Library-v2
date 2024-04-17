@@ -15,9 +15,9 @@
   tags: null
   learnMoreLink:
     - name: Import and export IoT Hub device identities in bulk
-      url: "https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-bulk-identity-mgmt"
+      url: "https://learn.microsoft.com/ja-jp/azure/iot-hub/iot-hub-bulk-identity-mgmt"
     - name: IoT Hub high availability and disaster recovery
-      url: "https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-ha-dr#manual-failover"
+      url: "https://learn.microsoft.com/ja-jp/azure/iot-hub/iot-hub-ha-dr#manual-failover"
 - description: 無料利用枠を使用しない
   aprlGuid: eeba3a49-fef0-481f-a471-7ff01139b474
   recommendationTypeId: null
@@ -35,7 +35,7 @@
   tags: null
   learnMoreLink:
     - name: Choose the right IoT Hub tier and size for your solution
-      url: "https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-scaling"
+      url: "https://learn.microsoft.com/ja-jp/azure/iot-hub/iot-hub-scaling"
 - description: アベイラビリティーゾーンの使用
   aprlGuid: 214cbc46-747e-4354-af6e-6bf0054196a5
   recommendationTypeId: null
@@ -53,7 +53,7 @@
   tags: null
   learnMoreLink:
     - name: Azure IoT Hub high availability and disaster recovery
-      url: "https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-ha-dr#availability-zones"
+      url: "https://learn.microsoft.com/ja-jp/azure/iot-hub/iot-hub-ha-dr#availability-zones"
 - description: デバイス プロビジョニング サービスを使用する
   aprlGuid: b1e1378d-4572-4414-bebd-b8872a6d4d1c
   recommendationTypeId: null
@@ -71,11 +71,11 @@
   tags: null
   learnMoreLink:
     - name: IoT Hub Device Provisioning Service (DPS) terminology
-      url: "https://learn.microsoft.com/en-us/azure/iot-dps/concepts-service"
+      url: "https://learn.microsoft.com/ja-jp/azure/iot-dps/concepts-service"
     - name: Best practices for large-scale IoT device deployments
-      url: "https://learn.microsoft.com/en-us/azure/iot-dps/concepts-deploy-at-scale"
+      url: "https://learn.microsoft.com/ja-jp/azure/iot-dps/concepts-deploy-at-scale"
     - name: IoT Hub Device Provisioning Service high availability and disaster recovery
-      url: "https://learn.microsoft.com/en-us/azure/iot-dps/iot-dps-ha-dr"
+      url: "https://learn.microsoft.com/ja-jp/azure/iot-dps/iot-dps-ha-dr"
 - description: フェイルオーバーガイドラインの定義
   aprlGuid: 02568a5d-335e-4e51-9f7c-fe2ada977300
   recommendationTypeId: null
@@ -93,7 +93,7 @@
   tags: null
   learnMoreLink:
     - name: IoT Hub high availability and disaster recovery
-      url: "https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-ha-dr"
+      url: "https://learn.microsoft.com/ja-jp/azure/iot-hub/iot-hub-ha-dr"
 - description: 無効化されたフォールバック ルート
   aprlGuid: e7dbd21f-b27a-4b8c-a901-cedb1e6d8e1e
   recommendationTypeId: null
@@ -111,4 +111,4 @@
   tags: null
   learnMoreLink:
     - name: Use message routing - Fallback route
-      url: "https://learn.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-messages-d2c#fallback-route"
+      url: "https://learn.microsoft.com/ja-jp/azure/iot-hub/iot-hub-devguide-messages-d2c#fallback-route"

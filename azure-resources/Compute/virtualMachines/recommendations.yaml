@@ -15,9 +15,9 @@
   tags: null
   learnMoreLink:
     - name: What has changed with Flexible orchestration mode
-      url: "https://learn.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-orchestration-modes#what-has-changed-with-flexible-orchestration-mode"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-orchestration-modes#what-has-changed-with-flexible-orchestration-mode"
     - name: Attach or detach a Virtual Machine to or from a Virtual Machine Scale Set
-      url: "https://learn.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-attach-detach-vm?branch=main&tabs=portal-1%2Cportal-2%2Cportal-3"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-attach-detach-vm?branch=main&tabs=portal-1%2Cportal-2%2Cportal-3"
 - description: アベイラビリティーゾーン全体に VM をデプロイする
   aprlGuid: 2bd0be95-a825-6f47-a8c6-3db1fb5eb387
   recommendationTypeId: null
@@ -35,7 +35,7 @@
   tags: null
   learnMoreLink:
     - name: Create virtual machines in an availability zone using the Azure portal
-      url: "https://learn.microsoft.com/azure/virtual-machines/create-portal-availability-zone?tabs=standard"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/create-portal-availability-zone?tabs=standard"
 - description: 可用性セットを使用した VM を VMSS Flex に移行する
   aprlGuid: a8d25876-7951-b646-b4e8-880c9031596b
   recommendationTypeId: null
@@ -53,7 +53,7 @@
   tags: null
   learnMoreLink:
     - name: Resiliency checklist for Virtual Machines
-      url: "https://learn.microsoft.com/azure/architecture/checklist/resiliency-per-service#virtual-machines"
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/checklist/resiliency-per-service#virtual-machines"
 - description: Azure Site Recovery を使用して VM をレプリケートする
   aprlGuid: cfe22a65-b1db-fd41-9e8e-d573922709ae
   recommendationTypeId: null
@@ -71,9 +71,9 @@
   tags: null
   learnMoreLink:
     - name: Resiliency checklist for Virtual Machines
-      url: "https://learn.microsoft.com/azure/architecture/checklist/resiliency-per-service#virtual-machines"
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/checklist/resiliency-per-service#virtual-machines"
     - name: Run a test failover (disaster recovery drill) to Azure
-      url: "https://learn.microsoft.com/azure/site-recovery/site-recovery-test-failover-to-azure"
+      url: "https://learn.microsoft.com/ja-jp/azure/site-recovery/site-recovery-test-failover-to-azure"
 - description: VM ディスクにマネージド ディスクを使用する
   aprlGuid: 122d11d7-b91f-8747-a562-f56b79bcfbdc
   recommendationTypeId: null
@@ -91,11 +91,11 @@
   tags: null
   learnMoreLink:
     - name: Migrate your Azure unmanaged disks by Sep 30, 2025
-      url: "https://learn.microsoft.com/azure/virtual-machines/unmanaged-disks-deprecation"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/unmanaged-disks-deprecation"
     - name: Migrate Windows VM from unmanaged disks to managed disks
-      url: "https://learn.microsoft.com/azure/virtual-machines/windows/convert-unmanaged-to-managed-disks"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/windows/convert-unmanaged-to-managed-disks"
     - name: Migrate Linux VM from unmanaged disks to managed disks
-      url: "https://learn.microsoft.com/azure/virtual-machines/linux/convert-unmanaged-to-managed-disks"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/linux/convert-unmanaged-to-managed-disks"
 - description: データ ディスク上のホスト データベース データ
   aprlGuid: 4ea2878f-0d69-8d4a-b715-afc10d1e538e
   recommendationTypeId: null
@@ -113,9 +113,9 @@
   tags: null
   learnMoreLink:
     - name: Introduction to Azure managed disks - Data disks
-      url: "https://learn.microsoft.com/azure/virtual-machines/managed-disks-overview#data-disk"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/managed-disks-overview#data-disk"
     - name: Azure managed disk types
-      url: "https://learn.microsoft.com/azure/virtual-machines/disks-types"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/disks-types"
 - description: Azure Backup サービスを使用して VM をバックアップする
   aprlGuid: 1981f704-97b9-b645-9c57-33f8ded9261a
   recommendationTypeId: null
@@ -133,7 +133,7 @@
   tags: null
   learnMoreLink:
     - name: What is the Azure Backup service?
-      url: "https://learn.microsoft.com/azure/backup/backup-overview"
+      url: "https://learn.microsoft.com/ja-jp/azure/backup/backup-overview"
 - description: 運用 VM は SSD ディスクを使用する必要があります
   aprlGuid: d3f3ee41-b9aa-d34d-b442-5d46d20232b2
   recommendationTypeId: null
@@ -151,7 +151,7 @@
   tags: null
   learnMoreLink:
     - name: Azure managed disk types
-      url: "https://learn.microsoft.com/azure/virtual-machines/disks-types#premium-ssd"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/disks-types#premium-ssd"
 - description: 停止状態の VM を確認する
   aprlGuid: 98b334c0-8578-6046-9e43-b6e8fce6318e
   recommendationTypeId: null
@@ -169,7 +169,7 @@
   tags: null
   learnMoreLink:
     - name: States and billing status of Azure Virtual Machines
-      url: "https://learn.microsoft.com/azure/virtual-machines/states-billing?context=%2Ftroubleshoot%2Fazure%2Fvirtual-machines%2Fcontext%2Fcontext#power-states-and-billing"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/states-billing?context=%2Ftroubleshoot%2Fazure%2Fvirtual-machines%2Fcontext%2Fcontext#power-states-and-billing"
 - description: 高速ネットワーク (AccelNet) を有効にする
   aprlGuid: dfedbeb1-1519-fc47-86a5-52f96cf07105
   recommendationTypeId: null
@@ -187,7 +187,7 @@
   tags: null
   learnMoreLink:
     - name: Accelerated Networking (AccelNet) overview
-      url: "https://learn.microsoft.com/azure/virtual-network/accelerated-networking-overview"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-network/accelerated-networking-overview"
 - description: AccelNet が有効になっている場合は、GuestOS NIC ドライバーを手動で更新する必要があります
   aprlGuid: 73d1bb04-7d3e-0d47-bc0d-63afe773b5fe
   recommendationTypeId: null
@@ -205,7 +205,7 @@
   tags: null
   learnMoreLink:
     - name: Accelerated Networking (AccelNet) overview
-      url: "https://learn.microsoft.com/azure/virtual-network/accelerated-networking-overview"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-network/accelerated-networking-overview"
 - description: VM にはパブリック IP が直接関連付けられていてはなりません
   aprlGuid: 1f629a30-c9d0-d241-82ee-6f2eb9d42cb4
   recommendationTypeId: null
@@ -223,7 +223,7 @@
   tags: null
   learnMoreLink:
     - name: Use Source Network Address Translation (SNAT) for outbound connections
-      url: "https://learn.microsoft.com/azure/load-balancer/load-balancer-outbound-connections"
+      url: "https://learn.microsoft.com/ja-jp/azure/load-balancer/load-balancer-outbound-connections"
 - description: VM ネットワーク インターフェイスと関連サブネットの両方に、ネットワーク セキュリティ グループ (NSG) が関連付けられています。
   aprlGuid: 82b3cf6b-9ae2-2e44-b193-10793213f676
   recommendationTypeId: null
@@ -241,7 +241,7 @@
   tags: null
   learnMoreLink:
     - name: How network security groups filter network traffic
-      url: "https://learn.microsoft.com/azure/virtual-network/network-security-group-how-it-works#intra-subnet-traffic"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-network/network-security-group-how-it-works#intra-subnet-traffic"
 - description: IP 転送はネットワーク仮想アプライアンスに対してのみ有効にする必要があります
   aprlGuid: 41a22a5e-5e08-9647-92d0-2ffe9ef1bdad
   recommendationTypeId: null
@@ -259,7 +259,7 @@
   tags: null
   learnMoreLink:
     - name: Enable or disable IP forwarding
-      url: "https://learn.microsoft.com/azure/virtual-network/virtual-network-network-interface?tabs=network-interface-portal#enable-or-disable-ip-forwarding"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-network/virtual-network-network-interface?tabs=network-interface-portal#enable-or-disable-ip-forwarding"
 - description: 顧客の DNS サーバーは仮想ネットワーク レベルで構成する必要があります
   aprlGuid: 1cf8fe21-9593-1e4e-966b-779a294c0d30
   recommendationTypeId: null
@@ -277,7 +277,7 @@
   tags: null
   learnMoreLink:
     - name: Name resolution for resources in Azure virtual networks
-      url: "https://learn.microsoft.com/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances"
 - description: 共有ディスクはクラスタ化されたサーバーでのみ有効にする必要があります
   aprlGuid: 3263a64a-c256-de48-9818-afd3cbc55c2a
   recommendationTypeId: null
@@ -295,9 +295,9 @@
   tags: null
   learnMoreLink:
     - name: Azure Shared Disk Introduction
-      url: "https://learn.microsoft.com/azure/virtual-machines/disks-shared"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/disks-shared"
     - name: Enable Shared Disks
-      url: "https://learn.microsoft.com/azure/virtual-machines/disks-shared-enable?tabs=azure-portal"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/disks-shared-enable?tabs=azure-portal"
 - description: VM ディスクへのネットワーク アクセスは、パブリック アクセスを無効にし、プライベート アクセスを有効に設定する必要があります。
   aprlGuid: 70b1d2be-e6c4-b54e-9959-b1b690f9e485
   recommendationTypeId: null
@@ -315,7 +315,7 @@
   tags: null
   learnMoreLink:
     - name: Restrict import/export access for managed disks using Azure Private Link
-      url: "https://learn.microsoft.com/azure/virtual-machines/disks-enable-private-links-for-import-export-portal"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/disks-enable-private-links-for-import-export-portal"
 - description: VM が Azure ポリシーに準拠していることを確認する
   aprlGuid: c42343ae-2712-2843-a285-3437eb0b28a1
   recommendationTypeId: null
@@ -333,9 +333,9 @@
   tags: null
   learnMoreLink:
     - name: Policy-driven governance
-      url: "https://learn.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/design-principles#policy-driven-governance"
+      url: "https://learn.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/landing-zone/design-principles#policy-driven-governance"
     - name: Azure Policy Regulatory Compliance controls for Azure Virtual Machines
-      url: "https://learn.microsoft.com/azure/virtual-machines/security-policy"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/security-policy"
 - description: マネージド ディスクの高度な暗号化オプションを有効にする
   aprlGuid: f0a97179-133a-6e4f-8a49-8a44da73ffce
   recommendationTypeId: null
@@ -353,7 +353,7 @@
   tags: null
   learnMoreLink:
     - name: Overview of managed disk encryption options
-      url: "https://learn.microsoft.com/azure/virtual-machines/disk-encryption-overview"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/disk-encryption-overview"
 - description: VM インサイトを有効にする
   aprlGuid: b72214bb-e879-5f4b-b9cd-642db84f36f4
   recommendationTypeId: null
@@ -371,9 +371,9 @@
   tags: null
   learnMoreLink:
     - name: Overview of VM insights
-      url: "https://learn.microsoft.com/azure/azure-monitor/vm/vminsights-overview"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/vm/vminsights-overview"
     - name: Did the extension install properly?
-      url: "https://learn.microsoft.com/azure/azure-monitor/vm/vminsights-troubleshoot#did-the-extension-install-properly"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/vm/vminsights-troubleshoot#did-the-extension-install-properly"
 - description: すべての Azure 仮想マシンの診断設定を構成する
   aprlGuid: 4a9d8973-6dba-0042-b3aa-07924877ebd5
   recommendationTypeId: null
@@ -391,7 +391,7 @@
   tags: null
   learnMoreLink:
     - name: Diagnostic settings in Azure Monitor
-      url: "https://learn.microsoft.com/azure/azure-monitor/essentials/diagnostic-settings?tabs=portal"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/essentials/diagnostic-settings?tabs=portal"
 - description: VM のメンテナンス構成を使用する
   aprlGuid: 52ab9e5c-eec0-3148-8bd7-b6dd9e1be870
   recommendationTypeId: null
@@ -409,7 +409,7 @@
   tags: null
   learnMoreLink:
     - name: Use maintenance configurations to control and manage the VM updates
-      url: "https://learn.microsoft.com/azure/virtual-machines/maintenance-configurations"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/maintenance-configurations"
 - description: 一定のフル CPU パフォーマンスが必要な運用環境には A シリーズ VM または B シリーズ VM を使用しないでください。
   aprlGuid: 3201dba8-d1da-4826-98a4-104066545170
   recommendationTypeId: null
@@ -427,7 +427,7 @@
   tags: null
   learnMoreLink:
     - name: B-series burstable virtual machine sizes
-      url: "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes-b-series-burstable"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/sizes-b-series-burstable"
 - description: ミッションクリティカルなワークロードには、Premium または Ultra ディスクを使用する必要があります
   aprlGuid: df0ff862-814d-45a3-95e4-4fad5a244ba6
   recommendationTypeId: null
@@ -445,7 +445,7 @@
   tags: null
   learnMoreLink:
     - name: Disk type comparison and decision tree
-      url: "https://learn.microsoft.com/en-us/azure/virtual-machines/disks-types#disk-type-comparison"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/disks-types#disk-type-comparison"
 - description: メンテナンスが重要なワークロードには Azure Boost VM を使用する
   aprlGuid: 9ab499d8-8844-424d-a2d4-8f53690eb8f8
   recommendationTypeId: null
@@ -463,7 +463,7 @@
   tags: null
   learnMoreLink:
     - name: Microsoft Azure Boost
-      url: "https://learn.microsoft.com/azure/azure-boost/overview"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-boost/overview"
     - name: Announcing the general availability of Azure Boost
       url: "https://aka.ms/AzureBoostGABlog"
 - description: メンテナンスが重要なワークロード VM のスケジュールされたイベントを有効にする
@@ -483,8 +483,8 @@
   tags: null
   learnMoreLink:
     - name: Monitor scheduled events for your Azure VMs
-      url: "https://learn.microsoft.com/azure/virtual-machines/windows/scheduled-event-service"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/windows/scheduled-event-service"
     - name: Azure Metadata Service Scheduled Events for Linux VMs
-      url: "https://learn.microsoft.com/azure/virtual-machines/linux/scheduled-events"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/linux/scheduled-events"
     - name: Azure Metadata Service Scheduled Events for Windows VMs
-      url: "https://learn.microsoft.com/azure/virtual-machines/windows/scheduled-events"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/windows/scheduled-events"

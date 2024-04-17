@@ -15,7 +15,7 @@
   tags: null
   learnMoreLink:
     - name: Enable diagnostics logging for apps in Azure App Service
-      url: "https://learn.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs"
+      url: "https://learn.microsoft.com/ja-jp/azure/app-service/troubleshoot-diagnostic-logs"
 - description: パフォーマンスを監視する
   aprlGuid: a7e8bb3d-8ceb-442d-b26f-007cd63f9ffc
   recommendationTypeId: null
@@ -33,9 +33,9 @@
   tags: null
   learnMoreLink:
     - name: Application Insights
-      url: "https://learn.microsoft.com/azure/application-insights/app-insights-overview"
+      url: "https://learn.microsoft.com/ja-jp/azure/application-insights/app-insights-overview"
     - name: Application monitoring for Azure App Service
-      url: "https://learn.microsoft.com/azure/azure-monitor/app/azure-web-apps"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/app/azure-web-apps"
 - description: Web アプリを Web API から分離する
   aprlGuid: 78a5c033-ff51-4332-8a71-83464c34494b
   recommendationTypeId: null
@@ -53,7 +53,7 @@
   tags: null
   learnMoreLink:
     - name: Resiliency checklist for specific Azure services
-      url: "https://learn.microsoft.com/azure/architecture/checklist/resiliency-per-service#app-service"
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/checklist/resiliency-per-service#app-service"
 - description: ログ用に別のストレージ アカウントを作成する
   aprlGuid: 3f9ddb59-0bb3-4acb-9c9b-99aa1776f0ab
   recommendationTypeId: null
@@ -71,7 +71,7 @@
   tags: null
   learnMoreLink:
     - name: Resiliency checklist
-      url: "https://learn.microsoft.com/azure/architecture/checklist/resiliency-per-service#app-service"
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/checklist/resiliency-per-service#app-service"
 - description: ステージング スロットにデプロイする
   aprlGuid: a1d91661-32d4-430b-b3b6-5adeb0975df7
   recommendationTypeId: null
@@ -89,7 +89,7 @@
   tags: null
   learnMoreLink:
     - name: Set up staging environments in Azure App Service
-      url: "https://learn.microsoft.com/azure/app-service-web/web-sites-staged-publishing"
+      url: "https://learn.microsoft.com/ja-jp/azure/app-service-web/web-sites-staged-publishing"
 - description: 設定をアプリ設定として保存する
   aprlGuid: 0b80b67c-afbe-4988-ad58-a85a146b681e
   recommendationTypeId: null
@@ -107,4 +107,4 @@
   tags: null
   learnMoreLink:
     - name: Configure web apps in Azure App Service
-      url: "https://learn.microsoft.com/azure/app-service-web/web-sites-configure"
+      url: "https://learn.microsoft.com/ja-jp/azure/app-service-web/web-sites-configure"

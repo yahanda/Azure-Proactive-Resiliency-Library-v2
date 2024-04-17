@@ -15,13 +15,13 @@
   tags: null
   learnMoreLink:
     - name: Azure Virtual Network - Concepts and best practices | Microsoft Learn
-      url: "https://learn.microsoft.com/azure/virtual-network/concepts-and-best-practices"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-network/concepts-and-best-practices"
     - name: GatewaySUbnet
-      url: "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#gwsub"
+      url: "https://learn.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#gwsub"
     - name: Can I associate a network security group (NSG) to the RouteServerSubnet?
-      url: "https://learn.microsoft.com/en-us/azure/route-server/route-server-faq#can-i-associate-a-network-security-group-nsg-to-the-routeserversubnet"
+      url: "https://learn.microsoft.com/ja-jp/azure/route-server/route-server-faq#can-i-associate-a-network-security-group-nsg-to-the-routeserversubnet"
     - name: Are Network Security Groups (NSGs) supported on the AzureFirewallSubnet?
-      url: "https://learn.microsoft.com/en-us/azure/firewall/firewall-faq#are-network-security-groups--nsgs--supported-on-the-azurefirewallsubnet"
+      url: "https://learn.microsoft.com/ja-jp/azure/firewall/firewall-faq#are-network-security-groups--nsgs--supported-on-the-azurefirewallsubnet"
 - description: Azure DDoS Standard Protection Plan を使用して Azure VNet のパブリック エンドポイントをシールドする
   aprlGuid: 69ea1185-19b7-de40-9da1-9e8493547a5c
   recommendationTypeId: null
@@ -39,7 +39,7 @@
   tags: null
   learnMoreLink:
     - name: Reliability and Azure Virtual Network - Microsoft Azure Well-Architected Framework | Microsoft Learn
-      url: "https://learn.microsoft.com/azure/architecture/framework/services/networking/azure-virtual-network/reliability"
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/framework/services/networking/azure-virtual-network/reliability"
 - description: 利用可能な場合は、PaaS サービスのサービス エンドポイントの代わりにプライベート エンドポイントを使用します
   aprlGuid: 24ae3773-cc2c-3649-88de-c9788e25b463
   recommendationTypeId: null
@@ -57,8 +57,8 @@
   tags: null
   learnMoreLink:
     - name: Azure Virtual Network FAQ | Microsoft Learn
-      url: "https://learn.microsoft.com/azure/virtual-network/virtual-networks-faq"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-network/virtual-networks-faq"
     - name: Reliability and Network connectivity - Microsoft Azure Well-Architected Framework | Microsoft LearnNetworking Reliability
-      url: "https://learn.microsoft.com/azure/architecture/framework/services/networking/network-connectivity/reliability"
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/framework/services/networking/network-connectivity/reliability"
     - name: Azure Private Link availability
-      url: "https://learn.microsoft.com/en-us/azure/private-link/availability"
+      url: "https://learn.microsoft.com/ja-jp/azure/private-link/availability"

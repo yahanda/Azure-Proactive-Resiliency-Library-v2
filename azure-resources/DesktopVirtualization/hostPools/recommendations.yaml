@@ -17,7 +17,7 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-validation-environment?tabs=azure-portal"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-desktop/configure-validation-environment?tabs=azure-portal"
 - description: (プール) スケジュールされたエージェント更新を構成する
   aprlGuid: 9fc522c1-d5b0-4bad-8169-1e1d32855afd
   recommendationTypeId: null
@@ -36,7 +36,7 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/azure/virtual-desktop/scheduled-agent-updates"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-desktop/scheduled-agent-updates"
 - description: (プール) 計画された更新をテストするための検証プールを作成します。
   aprlGuid: 0a22b144-6fa7-4032-be77-fa64152858eb
   recommendationTypeId: null
@@ -57,7 +57,7 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/azure/virtual-desktop/configure-validation-environment?tabs=azure-portal"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-desktop/configure-validation-environment?tabs=azure-portal"
 - description: AVD のサービスの健全性とリソースの健全性を監視する
   aprlGuid: a75a20e7-8cc0-4f7b-b4a9-e2476bd72429
   recommendationTypeId: null
@@ -77,7 +77,7 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/monitoring#resource-health"
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/azure-virtual-desktop/monitoring#resource-health"
 - description: スケーリング プランはリージョンごとに作成する必要があり、リージョン間でスケールすることはできません。
   aprlGuid: e091419d-10ba-4a8e-bdb0-67380cc021a9
   recommendationTypeId: null
@@ -95,4 +95,4 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/azure/virtual-desktop/autoscale-scaling-plan?tabs=portal"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-desktop/autoscale-scaling-plan?tabs=portal"

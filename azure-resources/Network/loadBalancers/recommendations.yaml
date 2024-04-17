@@ -15,9 +15,9 @@
   tags: null
   learnMoreLink:
     - name: Reliability and Azure Load Balancer
-      url: "https://learn.microsoft.com/azure/architecture/framework/services/networking/azure-load-balancer/reliability"
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/framework/services/networking/azure-load-balancer/reliability"
     - name: Resiliency checklist for specific Azure services- Azure Load Balancer
-      url: "https://learn.microsoft.com/azure/architecture/checklist/resiliency-per-service#azure-load-balancer"
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/checklist/resiliency-per-service#azure-load-balancer"
 - description: バックエンド プールに少なくとも 2 つのインスタンスが含まれていることを確認してください
   aprlGuid: 6d82d042-6d61-ad49-86f0-6a5455398081
   recommendationTypeId: null
@@ -35,7 +35,7 @@
   tags: null
   learnMoreLink:
     - name: Resiliency checklist for specific Azure services- Azure Load Balancer
-      url: "https://learn.microsoft.com/azure/architecture/checklist/resiliency-per-service#azure-load-balancer"
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/checklist/resiliency-per-service#azure-load-balancer"
 - description: 運用ワークロードのアウトバウンド ルールの代わりに NAT ゲートウェイを使用する
   aprlGuid: 8d319a05-677b-944f-b9b4-ca0fb42e883c
   recommendationTypeId: null
@@ -53,7 +53,7 @@
   tags: null
   learnMoreLink:
     - name: Resiliency checklist for specific Azure services- Azure Load Balancer
-      url: "https://learn.microsoft.com/azure/architecture/checklist/resiliency-per-service#azure-load-balancer"
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/checklist/resiliency-per-service#azure-load-balancer"
 - description: Standard Load Balancer がゾーン冗長であることを確認する
   aprlGuid: 621dbc78-3745-4d32-8eac-9e65b27b7512
   recommendationTypeId: null
@@ -71,4 +71,4 @@
   tags: null
   learnMoreLink:
     - name: Load Balancer and Availability Zones
-      url: "https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-standard-availability-zones#zone-redundant"
+      url: "https://learn.microsoft.com/ja-jp/azure/load-balancer/load-balancer-standard-availability-zones#zone-redundant"

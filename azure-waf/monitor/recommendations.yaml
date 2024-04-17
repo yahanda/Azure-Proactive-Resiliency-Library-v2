@@ -1,22 +1,22 @@
-﻿- description: Make sure your application's health is being monitored
+- description: アプリケーションの健全性が監視されていることを確認してください
   aprlGuid: 46fb4540-ecac-6e49-bc10-34c7792eb35d
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
   recommendationImpact: Medium
   recommendationResourceType: WellArchitected/Monitor
   recommendationMetadataState: Active
-  longDescription: |
-    Monitoring and diagnostics are crucial for availability and resiliency. If something fails, you need to know that it failed, when it failed, and why.
+  longDescription: |-
+    監視と診断は、可用性と復元力にとって非常に重要です。何かが失敗した場合は、失敗したこと、いつ、なぜ失敗したかを知る必要があります。
 
-    Monitoring isn't the same as failure detection. For example, your application might detect a transient error and retry, avoiding downtime. It should also log the retry operation so that you can monitor the error rate to get an overall picture of application health.
+    監視は障害の検出と同じではありません。たとえば、アプリケーションは一時的なエラーを検出して再試行し、ダウンタイムを回避できます。また、エラー率を監視してアプリケーションの健全性の全体像を把握できるように、再試行操作をログに記録する必要もあります。
 
-    Key points:
-    - Define alerts that are actionable and effectively prioritized.
-    - Create alerts that poll for services nearing their limits and quotas.
-    - Use application instrumentation to detect and resolve performance anomalies.
-    - Track the progress of long-running processes.
-    - Troubleshoot issues to gain an overall view of application health.
-    - Document how to analyze, diagnose, and respond to signals being monitored
+    キーポイント：
+    - 実用的で効果的に優先順位が付けられたアラートを定義します。
+    - 制限とクォータに近づいているサービスをポーリングするアラートを作成します。
+    - アプリケーション インストルメンテーションを使用して、パフォーマンスの異常を検出して解決します。
+    - 長時間実行プロセスの進行状況を追跡します。
+    - 問題のトラブルシューティングを行い、アプリケーションの健全性の全体像を把握します。
+    - 監視されている信号を分析、診断、対応する方法を文書化します。
   potentialBenefits: Enhanced availability and issue tracking
   pgVerified: true
   publishedToLearn: false
@@ -25,25 +25,24 @@
   tags: null
   learnMoreLink:
     - name: Monitoring application health for reliability
-      url: "https://learn.microsoft.com/azure/well-architected/resiliency/monitoring"
-
-- description: Define a health model based on performance, availability, and recovery targets
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/resiliency/monitoring"
+- description: パフォーマンス、可用性、回復目標に基づいて健全性モデルを定義する
   aprlGuid: 5dd7a9a3-fb79-004d-bc89-c9ef79890900
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
   recommendationImpact: Low
   recommendationResourceType: WellArchitected/Monitor
   recommendationMetadataState: Active
-  longDescription: |
-    The health model should be able to surface the health of critical system flows or key subsystems to ensure that appropriate operational prioritization is applied.
+  longDescription: |-
+    正常性モデルは、適切な運用上の優先順位付けが確実に適用されるように、重要なシステム フローまたは主要なサブシステムの正常性を明らかにできる必要があります。
 
-    For example, the health model should be able to represent the current state of the user sign-in transaction flow. The health model shouldn't treat all failures the same. The health model should distinguish between transient and non transient faults. It should clearly distinguish between expected-transient but recoverable failures and a true disaster state.
+    たとえば、正常性モデルは、ユーザーのサインイン トランザクション フローの現在の状態を表現できる必要があります。健全性モデルでは、すべての障害を同じように扱うべきではありません。健全性モデルでは、一時的な障害と非一時的な障害を区別する必要があります。予想される一時的だが回復可能な障害と、真の災害状態を明確に区別する必要があります。
 
-    Key points:
-    - Know how to tell if an application is healthy or unhealthy.
-    - Understand the effects of logs in diagnostic data.
-    - Ensure the consistent use of diagnostic settings across the application.
-    - Use critical system flows in your health model.
+    キーポイント：
+    - アプリケーションが正常か異常かを判断する方法を知っています。
+    - 診断データ内のログの影響を理解します。
+    - アプリケーション全体で診断設定を一貫して使用できるようにします。
+    - 健康モデルで重要なシステム フローを使用します。
   potentialBenefits: Enhanced system health insights
   pgVerified: true
   publishedToLearn: false
@@ -52,19 +51,18 @@
   tags: null
   learnMoreLink:
     - name: Health modeling for reliability
-      url: "https://learn.microsoft.com/azure/well-architected/resiliency/monitor-model"
-
-- description: Create Dashboards and Alerts for Azure Platform resources
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/resiliency/monitor-model"
+- description: Azure プラットフォーム リソースのダッシュボードとアラートを作成する
   aprlGuid: 1691bfea-c9fd-0948-969a-03e5abcab299
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
   recommendationImpact: Low
   recommendationResourceType: WellArchitected/Monitor
   recommendationMetadataState: Active
-  longDescription: |
-    In this stage, telemetry data is presented so that an operator can quickly notice problems or trends.
+  longDescription: |-
+    この段階では、オペレーターが問題や傾向にすぐに気づくことができるように、テレメトリ データが表示されます。
 
-    Examples include Workbook, Dashboards or email alerts. With Azure Workbooks and/or dashboards, you can build a single pane of glass view of monitoring graphs originating from Application Insights, Log Analytics, Azure Monitor metrics and service health. With Azure Monitor alerts, you can create alerts on service health and resource health.
+    例には、ワークブック、ダッシュボード、電子メール アラートなどがあります。 Azure ワークブックやダッシュボードを使用すると、Application Insights、Log Analytics、Azure Monitor メトリック、およびサービスの正常性から発生する監視グラフの単一ペインのビューを構築できます。 Azure Monitor アラートを使用すると、サービスの正常性とリソースの正常性に関するアラートを作成できます。
   potentialBenefits: Quick issue detection and response
   pgVerified: true
   publishedToLearn: false
@@ -73,23 +71,22 @@
   tags: null
   learnMoreLink:
     - name: Azure Workbooks templates
-      url: "https://learn.microsoft.com/azure/azure-monitor/visualize/workbooks-templates"
-
-- description: Ensure that the right people in your organization will be notified about any future service issues
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/visualize/workbooks-templates"
+- description: 今後のサービスの問題については、組織内の適切な担当者に確実に通知されるようにする
   aprlGuid: 1422b388-5d23-5641-ba1c-139a59fb7b4c
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
   recommendationImpact: Medium
   recommendationResourceType: WellArchitected/Monitor
   recommendationMetadataState: Active
-  longDescription: |
-    Azure offers a suite of experiences to keep you informed about the health of your cloud resources.
+  longDescription: |-
+    Azure は、クラウド リソースの正常性に関する情報を常に提供するための一連のエクスペリエンスを提供します。
 
-    The Service Health portal tracks four types of health events that may impact your resources:
-    - Service issues - Problems in the Azure services that affect you right now (Outages)
-    - Planned maintenance - Upcoming maintenance that can affect the availability of your services in the future.
-    - Health advisories - Changes in Azure services that require your attention. Examples include deprecation of Azure features or upgrade requirements (e.g upgrade to a supported PHP framework).
-    - Security advisories - Security related notifications or violations that may affect the availability of your Azure services.
+    Service Health ポータルは、リソースに影響を与える可能性のある 4 種類の正常性イベントを追跡します。
+    - サービスの問題 - 現在影響を受ける Azure サービスの問題 (停止)
+    - 計画されたメンテナンス - 将来のサービスの可用性に影響を与える可能性のある今後のメンテナンス。
+    - 健康に関する勧告 - 注意が必要な Azure サービスの変更。例には、Azure 機能の非推奨やアップグレード要件 (サポートされている PHP フレームワークへのアップグレードなど) が含まれます。
+    - セキュリティ勧告 - Azure サービスの可用性に影響を与える可能性のあるセキュリティ関連の通知または違反。
   potentialBenefits: Quick issue alerts to key personnel
   pgVerified: true
   publishedToLearn: false
@@ -98,17 +95,16 @@
   tags: null
   learnMoreLink:
     - name: Create a Service Health alert using the Azure portal
-      url: "https://learn.microsoft.com/azure/service-health/alerts-activity-log-service-notifications-portal#create-a-service-health-alert-using-the-azure-portal"
-
-- description: Utilize built-in Resilience policies
+      url: "https://learn.microsoft.com/ja-jp/azure/service-health/alerts-activity-log-service-notifications-portal#create-a-service-health-alert-using-the-azure-portal"
+- description: 組み込みの復元ポリシーを利用する
   aprlGuid: 2af4f8c2-bafc-4808-88df-0af009a019b5
   recommendationTypeId: null
   recommendationControl: Governance
   recommendationImpact: Medium
   recommendationResourceType: WellArchitected/Monitor
   recommendationMetadataState: Active
-  longDescription: |
-    Utilize Azure's built-in Resilience policies to audit and enforce resilient configurations of Azure services. Azure Policy helps to enforce organizational standards and to assess compliance at-scale.
+  longDescription: |-
+    Azure の組み込みの復元ポリシーを利用して、Azure サービスの復元構成を監査し、適用します。 Azure Policy は、組織の標準を適用し、大規模なコンプライアンスを評価するのに役立ちます。
   potentialBenefits: Ensures compliance and upscale resilience
   pgVerified: true
   publishedToLearn: false
@@ -119,4 +115,4 @@
     - name: Built-in Resilience policy definitions
       url: "https://github.com/Azure/azure-policy/tree/master/built-in-policies/policyDefinitions/Resilience"
     - name: Get policy compliance data
-      url: "https://learn.microsoft.com/azure/governance/policy/how-to/get-compliance-data"
+      url: "https://learn.microsoft.com/ja-jp/azure/governance/policy/how-to/get-compliance-data"

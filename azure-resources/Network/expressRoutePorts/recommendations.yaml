@@ -15,7 +15,7 @@
   tags: null
   learnMoreLink:
     - name: How to configure ExpressRoute Direct Change Admin State of links
-      url: "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-erdirect#state"
+      url: "https://learn.microsoft.com/ja-jp/azure/expressroute/expressroute-howto-erdirect#state"
 - description: ExpressRoute Direct を過剰にサブスクライブしないようにしてください
   aprlGuid: 0bee356b-7348-4799-8cab-0c71ffe13018
   recommendationTypeId: null
@@ -33,7 +33,7 @@
   tags: null
   learnMoreLink:
     - name: About ExpressRoute Direct Circuit Sizes
-      url: "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-erdirect-about?source=recommendations#circuit-sizes"
+      url: "https://learn.microsoft.com/ja-jp/azure/expressroute/expressroute-erdirect-about?source=recommendations#circuit-sizes"
 - description: ExpressRoute Direct Circuits 全体にレート制限を実装してネットワーク フローを最適化する
   aprlGuid: d40c769d-2f08-4980-8d8f-a386946276e6
   recommendationTypeId: null
@@ -51,4 +51,4 @@
   tags: null
   learnMoreLink:
     - name: Rate limiting for ExpressRoute Direct circuits (Preview)
-      url: "https://learn.microsoft.com/en-us/azure/expressroute/rate-limit"
+      url: "https://learn.microsoft.com/ja-jp/azure/expressroute/rate-limit"

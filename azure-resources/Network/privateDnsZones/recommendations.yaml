@@ -15,7 +15,7 @@
   tags: null
   learnMoreLink:
     - name: Protecting private DNS Zones and Records - Azure DNS
-      url: "https://learn.microsoft.com/en-us/azure/dns/dns-protect-private-zones-recordsets"
+      url: "https://learn.microsoft.com/ja-jp/azure/dns/dns-protect-private-zones-recordsets"
 - description: プライベート DNS ゾーンの状態を監視し、アラートを設定する
   aprlGuid: ab896e8c-49b9-2c44-adec-98339aff7821
   recommendationTypeId: null
@@ -33,7 +33,7 @@
   tags: null
   learnMoreLink:
     - name: Scenarios for Azure Private DNS zones
-      url: "https://learn.microsoft.com/en-us/azure/dns/private-dns-scenarios"
+      url: "https://learn.microsoft.com/ja-jp/azure/dns/private-dns-scenarios"
 - description: 本番ゾーンと DR ゾーンを同一のワークロードとリソースのフェイルオーバー エントリで調整します。
   aprlGuid: 1e02335c-1f90-fd4e-a5a5-d359c7b22d70
   recommendationTypeId: null
@@ -51,4 +51,4 @@
   tags: null
   learnMoreLink:
     - name: Scenarios for Azure Private DNS zones
-      url: "https://learn.microsoft.com/en-us/azure/dns/private-dns-scenarios"
+      url: "https://learn.microsoft.com/ja-jp/azure/dns/private-dns-scenarios"

@@ -15,7 +15,7 @@
   tags: null
   learnMoreLink:
     - name: Active Geo Replication
-      url: "https://learn.microsoft.com/en-us/azure/azure-sql/database/active-geo-replication-overview"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-sql/database/active-geo-replication-overview"
 - description: アプリの自動フェイルオーバー グループには、一貫性を保つためにすべての関連データベースを含める必要があります
   aprlGuid: 943c168a-2ec2-a94c-8015-85732a1b4859
   recommendationTypeId: null
@@ -33,9 +33,9 @@
   tags: null
   learnMoreLink:
     - name: AutoFailover Groups
-      url: "https://learn.microsoft.com/en-us/azure/azure-sql/database/auto-failover-group-overview?tabs=azure-powershell"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-sql/database/auto-failover-group-overview?tabs=azure-powershell"
     - name: DR Design
-      url: "https://learn.microsoft.com/en-us/azure/azure-sql/database/designing-cloud-solutions-for-disaster-recovery"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-sql/database/designing-cloud-solutions-for-disaster-recovery"
 - description: ゾーン冗長データベースを使用する
   aprlGuid: c0085c32-84c0-c247-bfa9-e70977cbf108
   recommendationTypeId: null
@@ -53,7 +53,7 @@
   tags: null
   learnMoreLink:
     - name: Zone Redundant Databases
-      url: "https://learn.microsoft.com/en-us/azure/azure-sql/database/high-availability-sla"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-sql/database/high-availability-sla"
 - description: 再試行ロジックの実装
   aprlGuid: cbb17a29-64fb-c943-95d0-8df814a37c40
   recommendationTypeId: null
@@ -71,7 +71,7 @@
   tags: null
   learnMoreLink:
     - name: How to Implement Retry Logic
-      url: "https://learn.microsoft.com/en-us/azure/azure-sql/database/troubleshoot-common-connectivity-issues"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-sql/database/troubleshoot-common-connectivity-issues"
 - description: Azure SQL データベースをほぼリアルタイムで監視し、信頼性に関するインシデントを検出します
   aprlGuid: 7e7daec9-6a81-3546-a4cc-9aef72fec1f7
   recommendationTypeId: null
@@ -89,11 +89,11 @@
   tags: null
   learnMoreLink:
     - name: Azure Monitor
-      url: "https://learn.microsoft.com/en-us/azure/azure-monitor/insights/azure-sql#analyze-data-and-create-alerts"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/insights/azure-sql#analyze-data-and-create-alerts"
     - name: Azure SQL Database Monitoring
-      url: "https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-sql-database-azure-monitor"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-sql/database/monitoring-sql-database-azure-monitor"
     - name: Monitoring SQL Database Reference
-      url: "https://learn.microsoft.com/en-us/azure/azure-sql/database/monitoring-sql-database-azure-monitor-reference"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-sql/database/monitoring-sql-database-azure-monitor-reference"
 - description: キーをバックアップする
   aprlGuid: d6ef87aa-574e-584e-a955-3e6bb8b5425b
   recommendationTypeId: null
@@ -111,6 +111,6 @@
   tags: null
   learnMoreLink:
     - name: Azure Key Vault
-      url: "https://learn.microsoft.com/en-us/azure/key-vault/general/overview"
+      url: "https://learn.microsoft.com/ja-jp/azure/key-vault/general/overview"
     - name: Getting Started with Always Encrypted
-      url: "https://learn.microsoft.com/en-us/azure/azure-sql/database/always-encrypted-landing?view=azuresql"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-sql/database/always-encrypted-landing?view=azuresql"

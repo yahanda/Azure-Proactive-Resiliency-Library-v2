@@ -15,7 +15,7 @@
   tags: null
   learnMoreLink:
     - name: Diagnostic settings in Azure Monitor
-      url: "https://learn.microsoft.com/azure/azure-monitor/essentials/diagnostic-settings"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/essentials/diagnostic-settings"
 - description: Azure Monitor を使用してネットワーク セキュリティ グループの変更を監視する
   aprlGuid: 8bb4a57b-55e4-d24e-9c19-2679d8bc779f
   recommendationTypeId: null
@@ -33,7 +33,7 @@
   tags: null
   learnMoreLink:
     - name: Azure Monitor activity log
-      url: "https://learn.microsoft.com/azure/azure-monitor/essentials/activity-log?tabs=powershell"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/essentials/activity-log?tabs=powershell"
 - description: ネットワーク セキュリティ グループのロックを構成して、偶発的な変更や削除を回避します。
   aprlGuid: 52ac35e8-9c3e-f84d-8ce8-2fab955333d3
   recommendationTypeId: null
@@ -51,7 +51,7 @@
   tags: null
   learnMoreLink:
     - name: Lock your resources to protect your infrastructure
-      url: "https://learn.microsoft.com/azure/azure-resource-manager/management/lock-resources?toc=%2Fazure%2Fvirtual-network%2Ftoc.json&tabs=json"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-resource-manager/management/lock-resources?toc=%2Fazure%2Fvirtual-network%2Ftoc.json&tabs=json"
 - description: NSGフローログの構成
   aprlGuid: da1a3c06-d1d5-a940-9a99-fcc05966fe7c
   recommendationTypeId: null
@@ -69,7 +69,7 @@
   tags: null
   learnMoreLink:
     - name: Flow logging for network security groups
-      url: "https://learn.microsoft.com/azure/network-watcher/network-watcher-nsg-flow-logging-overview"
+      url: "https://learn.microsoft.com/ja-jp/azure/network-watcher/network-watcher-nsg-flow-logging-overview"
 - description: NSG にはデフォルトのセキュリティ ルールしかありません。必要なルールを必ず設定してください。
   aprlGuid: 8291c1fa-650c-b44b-b008-4deb7465919d
   recommendationTypeId: null
@@ -87,4 +87,4 @@
   tags: null
   learnMoreLink:
     - name: Security rules
-      url: "https://learn.microsoft.com/azure/virtual-network/network-security-groups-overview#security-rules"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-network/network-security-groups-overview#security-rules"

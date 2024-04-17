@@ -15,9 +15,9 @@
   tags: null
   learnMoreLink:
     - name: Public IP addresses - Availability Zones
-      url: "https://learn.microsoft.com/azure/virtual-network/ip-services/public-ip-addresses#availability-zone"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-network/ip-services/public-ip-addresses#availability-zone"
     - name: Upgrading a basic public IP address to Standard SKU
-      url: "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-basic-upgrade-guidance#steps-to-complete-the-upgrade"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-network/ip-services/public-ip-basic-upgrade-guidance#steps-to-complete-the-upgrade"
 - description: SNAT の枯渇を避けるために、送信接続に NAT ゲートウェイを使用する
   aprlGuid: 1adba190-5c4c-e646-8527-dd1b2a6d8b15
   recommendationTypeId: null
@@ -35,9 +35,9 @@
   tags: null
   learnMoreLink:
     - name: Use NAT GW for outbound connectivity
-      url: "https://learn.microsoft.com/azure/advisor/advisor-reference-reliability-recommendations#use-nat-gateway-for-outbound-connectivity"
+      url: "https://learn.microsoft.com/ja-jp/azure/advisor/advisor-reference-reliability-recommendations#use-nat-gateway-for-outbound-connectivity"
     - name: TCP and SNAT Ports
-      url: "https://learn.microsoft.com/azure/architecture/framework/services/compute/azure-app-service/reliability#tcp-and-snat-ports"
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/framework/services/compute/azure-app-service/reliability#tcp-and-snat-ports"
 - description: Basic SKU のパブリック IP アドレスを Standard SKU にアップグレードする
   aprlGuid: 5cea1501-6fe4-4ec4-ac8f-f72320eb18d3
   recommendationTypeId: null
@@ -55,6 +55,6 @@
   tags: null
   learnMoreLink:
     - name: Upgrading a basic public IP address to Standard SKU - Guidance
-      url: "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-basic-upgrade-guidance"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-network/ip-services/public-ip-basic-upgrade-guidance"
     - name: Upgrade to Standard SKU public IP addresses in Azure by 30 September 2025 as Basic SKU will be retired
-      url: "https://azure.microsoft.com/en-us/updates/upgrade-to-standard-sku-public-ip-addresses-in-azure-by-30-september-2025-basic-sku-will-be-retired/"
+      url: "https://azure.microsoft.com/ja-jp/updates/upgrade-to-standard-sku-public-ip-addresses-in-azure-by-30-september-2025-basic-sku-will-be-retired/"

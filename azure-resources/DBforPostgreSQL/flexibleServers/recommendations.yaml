@@ -15,7 +15,7 @@
   tags: null
   learnMoreLink:
     - name: Overview of high availability with Azure Database for PostgreSQL
-      url: "https://learn.microsoft.com/azure/postgresql/flexible-server/concepts-high-availability"
+      url: "https://learn.microsoft.com/ja-jp/azure/postgresql/flexible-server/concepts-high-availability"
 - description: カスタム メンテナンス スケジュールを有効にする
   aprlGuid: b2bad57d-7e03-4c0f-9024-597c9eb295bb
   recommendationTypeId: null
@@ -33,4 +33,4 @@
   tags: null
   learnMoreLink:
     - name: Scheduled maintenance in Azure Database for PostgreSQL - Flexible Server
-      url: "https://learn.microsoft.com/azure/postgresql/flexible-server/concepts-maintenance"
+      url: "https://learn.microsoft.com/ja-jp/azure/postgresql/flexible-server/concepts-maintenance"

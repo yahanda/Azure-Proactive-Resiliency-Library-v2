@@ -15,11 +15,11 @@
   tags: null
   learnMoreLink:
     - name: Azure Traffic Manager endpoint monitoring
-      url: "https://learn.microsoft.com/azure/traffic-manager/traffic-manager-monitoring"
+      url: "https://learn.microsoft.com/ja-jp/azure/traffic-manager/traffic-manager-monitoring"
     - name: Enable or disable health checks
-      url: "https://learn.microsoft.com/azure/traffic-manager/traffic-manager-monitoring#enable-or-disable-health-checks-preview"
+      url: "https://learn.microsoft.com/ja-jp/azure/traffic-manager/traffic-manager-monitoring#enable-or-disable-health-checks-preview"
     - name: Troubleshooting degraded state on Azure Traffic Manager
-      url: "https://learn.microsoft.com/azure/traffic-manager/traffic-manager-troubleshooting-degraded"
+      url: "https://learn.microsoft.com/ja-jp/azure/traffic-manager/traffic-manager-troubleshooting-degraded"
 - description: トラフィック マネージャー プロファイルには複数のエンドポイントが必要です
   aprlGuid: 5b422a7f-8caa-3d48-becb-511599e5bba9
   recommendationTypeId: null
@@ -37,7 +37,7 @@
   tags: null
   learnMoreLink:
     - name: Traffic Manager Endpoint Types
-      url: "https://learn.microsoft.com/azure/traffic-manager/traffic-manager-endpoint-types"
+      url: "https://learn.microsoft.com/ja-jp/azure/traffic-manager/traffic-manager-endpoint-types"
 - description: 別のリージョン内に少なくとも 1 つのエンドポイントを構成する
   aprlGuid: 1ad9d7b7-9692-1441-a8f4-93792efbe97a
   recommendationTypeId: null
@@ -55,7 +55,7 @@
   tags: null
   learnMoreLink:
     - name: Reliability recommendations
-      url: "https://learn.microsoft.com/azure/advisor/advisor-reference-reliability-recommendations#add-at-least-one-more-endpoint-to-the-profile-preferably-in-another-azure-region"
+      url: "https://learn.microsoft.com/ja-jp/azure/advisor/advisor-reference-reliability-recommendations#add-at-least-one-more-endpoint-to-the-profile-preferably-in-another-azure-region"
 - description: エンドポイントが地理的プロファイルに対して (全世界) に設定されていることを確認します
   aprlGuid: c31f76a0-48cd-9f44-aa43-99ee904db9bc
   recommendationTypeId: null
@@ -73,6 +73,6 @@
   tags: null
   learnMoreLink:
     - name: Add an endpoint configured to "All (World)"
-      url: "https://learn.microsoft.com/azure/advisor/advisor-reference-reliability-recommendations#add-an-endpoint-configured-to-all-world"
+      url: "https://learn.microsoft.com/ja-jp/azure/advisor/advisor-reference-reliability-recommendations#add-an-endpoint-configured-to-all-world"
     - name: Traffic Manager profile - GeographicProfile (Add an endpoint configured to ""All (World)"").
       url: "https://aka.ms/Rf7vc5"

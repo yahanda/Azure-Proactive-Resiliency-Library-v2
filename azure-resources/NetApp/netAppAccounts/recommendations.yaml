@@ -15,7 +15,7 @@
   tags: null
   learnMoreLink:
     - name: Service levels for Azure NetApp Files | Microsoft Learn
-      url: "https://learn.microsoft.com/azure/azure-netapp-files/azure-netapp-files-service-levels"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-netapp-files/azure-netapp-files-service-levels"
 - description: Azure NetApp Files での運用に標準のネットワーク機能を使用する
   aprlGuid: ab984130-c57b-6c4a-8d04-6723b4e1bdb6
   recommendationTypeId: null
@@ -33,7 +33,7 @@
   tags: null
   learnMoreLink:
     - name: Guidelines for Azure NetApp Files network planning | Microsoft Learn
-      url: "https://learn.microsoft.com/azure/azure-netapp-files/azure-netapp-files-network-topologies"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-netapp-files/azure-netapp-files-network-topologies"
 - description: Azure NetApp Files での高可用性のために可用性ゾーンを使用する
   aprlGuid: 47d100a5-7f85-5742-967a-67eb5081240a
   recommendationTypeId: null
@@ -51,7 +51,7 @@
   tags: null
   learnMoreLink:
     - name: Use availability zones for high availability in Azure NetApp Files | Microsoft Learn
-      url: "https://learn.microsoft.com/azure/azure-netapp-files/use-availability-zones"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-netapp-files/use-availability-zones"
 - description: Azure NetApp Files でのデータ保護にスナップショットを使用する
   aprlGuid: 72827434-c773-4345-9493-34848ddf5803
   recommendationTypeId: null
@@ -69,7 +69,7 @@
   tags: null
   learnMoreLink:
     - name: How Azure NetApp Files snapshots work | Microsoft Learn
-      url: "https://learn.microsoft.com/azure/azure-netapp-files/snapshots-introduction"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-netapp-files/snapshots-introduction"
 - description: Azure NetApp Files でデータ保護のためのバックアップを有効にする
   aprlGuid: b2fb3e60-97ec-e34d-af29-b16a0d61c2ac
   recommendationTypeId: null
@@ -87,7 +87,7 @@
   tags: null
   learnMoreLink:
     - name: Understand Azure NetApp Files backup | Microsoft Learn
-      url: "https://learn.microsoft.com/azure/azure-netapp-files/backup-introduction"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-netapp-files/backup-introduction"
 - description: Azure NetApp Files ボリュームのクロスリージョン レプリケーションを有効にする
   aprlGuid: e30317d2-c502-4dfe-a2d3-0a737cc79545
   recommendationTypeId: null
@@ -105,7 +105,7 @@
   tags: null
   learnMoreLink:
     - name: Cross-region replication of Azure NetApp Files volumes
-      url: "https://learn.microsoft.com/en-us/azure/azure-netapp-files/cross-region-replication-introduction"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-netapp-files/cross-region-replication-introduction"
 - description: Azure NetApp Files ボリュームのクロスゾーン レプリケーションを有効にする
   aprlGuid: e3d742e1-dacd-9b48-b6b1-510ec9f87c96
   recommendationTypeId: null
@@ -123,7 +123,7 @@
   tags: null
   learnMoreLink:
     - name: Cross-zone replication of Azure NetApp Files volumes | Microsoft Learn
-      url: "https://learn.microsoft.com/azure/azure-netapp-files/cross-zone-replication-introduction"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-netapp-files/cross-zone-replication-introduction"
 - description: Azure NetApp Files メトリックを監視して、使用パターンとパフォーマンスをより深く理解する
   aprlGuid: 2f579fc9-e599-0d44-8b97-254f50ae04d8
   recommendationTypeId: null
@@ -141,7 +141,7 @@
   tags: null
   learnMoreLink:
     - name: Ways to monitor Azure NetApp Files | Microsoft Learn
-      url: "https://learn.microsoft.com/azure/azure-netapp-files/monitor-azure-netapp-files"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-netapp-files/monitor-azure-netapp-files"
 - description: Azure ポリシーを使用して標準を適用し、Azure NetApp Files のコンプライアンスを評価します
   aprlGuid: 687ae58f-517f-ca43-90fe-922497e61283
   recommendationTypeId: null
@@ -159,9 +159,9 @@
   tags: null
   learnMoreLink:
     - name: Azure Policy definitions for Azure NetApp Files | Microsoft Learn
-      url: "https://learn.microsoft.com/azure/azure-netapp-files/azure-policy-definitions"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-netapp-files/azure-policy-definitions"
     - name: Creating custom policy definitions | Microsoft Learn
-      url: "https://learn.microsoft.com/azure/governance/policy/tutorials/create-custom-policy-definition"
+      url: "https://learn.microsoft.com/ja-jp/azure/governance/policy/tutorials/create-custom-policy-definition"
 - description: Azure NetApp Files ボリュームへのデフォルトのアクセスを制限する
   aprlGuid: cfa2244b-5436-47de-8287-b217875d3b0a
   recommendationTypeId: null
@@ -179,15 +179,15 @@
   tags: null
   learnMoreLink:
     - name: Configure network features for an Azure NetApp Files volume
-      url: "https://learn.microsoft.com/azure/azure-netapp-files/configure-network-features"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-netapp-files/configure-network-features"
     - name: Manage SMB share ACLs in Azure NetApp Files
-      url: "https://learn.microsoft.com/azure/azure-netapp-files/manage-smb-share-access-control-lists"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-netapp-files/manage-smb-share-access-control-lists"
     - name: Configure export policy for NFS or dual-protocol volumes
-      url: "https://learn.microsoft.com/azure/azure-netapp-files/azure-netapp-files-configure-export-policy"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-netapp-files/azure-netapp-files-configure-export-policy"
     - name: Configure access control lists on NFSv4.1 volumes for Azure NetApp Files
-      url: "https://learn.microsoft.com/azure/azure-netapp-files/configure-access-control-lists"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-netapp-files/configure-access-control-lists"
     - name: Configure Unix permissions and change ownership mode for NFS and dual-protocol volumes
-      url: "https://learn.microsoft.com/azure/azure-netapp-files/configure-unix-permissions-change-ownership-mode"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-netapp-files/configure-unix-permissions-change-ownership-mode"
 - description: サポートされているアプリケーションに対して SMB の継続的可用性を利用する
   aprlGuid: d1e7ccc3-e6c1-40e9-a36e-fd134711c808
   recommendationTypeId: null
@@ -205,7 +205,7 @@
   tags: null
   learnMoreLink:
     - name: Do I need to take special precautions for SMB-based applications? | Microsoft Learn
-      url: "https://learn.microsoft.com/azure/azure-netapp-files/faq-application-resilience#do-i-need-to-take-special-precautions-for-smb-based-applications"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-netapp-files/faq-application-resilience#do-i-need-to-take-special-precautions-for-smb-based-applications"
 - description: サービスメンテナンスイベントに対するアプリケーションの復元力を確保
   aprlGuid: 60f36f9b-fac9-4160-bbf5-57af04da4f53
   recommendationTypeId: null
@@ -223,4 +223,4 @@
   tags: null
   learnMoreLink:
     - name: What do you recommend for handling potential application disruptions due to storage service maintenance events? | Microsoft Learn
-      url: "https://learn.microsoft.com/azure/azure-netapp-files/faq-application-resilience#what-do-you-recommend-for-handling-potential-application-disruptions-due-to-storage-service-maintenance-events"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-netapp-files/faq-application-resilience#what-do-you-recommend-for-handling-potential-application-disruptions-due-to-storage-service-maintenance-events"

@@ -15,7 +15,7 @@
   tags: null
   learnMoreLink:
     - name: About ExpressRoute FastPath
-      url: "https://learn.microsoft.com/en-us/azure/expressroute/about-fastpath"
+      url: "https://learn.microsoft.com/ja-jp/azure/expressroute/about-fastpath"
 - description: 誤って削除されないように接続に Azure リソース ロックを構成する
   aprlGuid: a5f3a4bd-4cf1-4196-a3cb-f5a0876198b2
   recommendationTypeId: null
@@ -33,4 +33,4 @@
   tags: null
   learnMoreLink:
     - name: Protect your Azure resources with a lock - Azure Resource Manager | Microsoft Learn
-      url: "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources?tabs=json"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-resource-manager/management/lock-resources?tabs=json"

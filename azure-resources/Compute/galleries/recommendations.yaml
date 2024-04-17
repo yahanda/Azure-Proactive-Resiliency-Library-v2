@@ -15,7 +15,7 @@
   tags: null
   learnMoreLink:
     - name: Compute Gallery best practices
-      url: "https://learn.microsoft.com/en-us/azure/virtual-machines/azure-compute-gallery#best-practices"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/azure-compute-gallery#best-practices"
 - description: イメージ バージョンにはゾーン冗長ストレージを使用する必要があります
   aprlGuid: 488dcc8b-f2e3-40ce-bf95-73deb2db095f
   recommendationTypeId: null
@@ -33,9 +33,9 @@
   tags: null
   learnMoreLink:
     - name: Compute Gallery best practices
-      url: "https://learn.microsoft.com/en-us/azure/virtual-machines/azure-compute-gallery#best-practices"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/azure-compute-gallery#best-practices"
     - name: Zone-redundant storage
-      url: "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy#zone-redundant-storage"
+      url: "https://learn.microsoft.com/ja-jp/azure/storage/common/storage-redundancy#zone-redundant-storage"
 - description: 可能な場合は、TrustedLaunchSupported イメージの作成を検討してください。
   aprlGuid: 1c5e1e58-4e56-491c-8529-10f37af9d4ed
   recommendationTypeId: null
@@ -53,8 +53,8 @@
   tags: null
   learnMoreLink:
     - name: Compute Gallery best practices
-      url: "https://learn.microsoft.com/en-us/azure/virtual-machines/azure-compute-gallery#best-practices"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/azure-compute-gallery#best-practices"
     - name: Generation 1 vs Generation 2 in Hyper-V
-      url: "https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/plan/should-i-create-a-generation-1-or-2-virtual-machine-in-hyper-v"
+      url: "https://learn.microsoft.com/ja-jp/windows-server/virtualization/hyper-v/plan/should-i-create-a-generation-1-or-2-virtual-machine-in-hyper-v"
     - name: Images in Compute gallery
-      url: "https://learn.microsoft.com/en-us/azure/virtual-machines/shared-image-galleries?tabs=azure-cli"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/shared-image-galleries?tabs=azure-cli"

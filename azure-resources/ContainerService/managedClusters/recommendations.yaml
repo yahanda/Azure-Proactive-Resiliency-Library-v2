@@ -15,9 +15,9 @@
   tags: null
   learnMoreLink:
     - name: AKS Availability Zones
-      url: "https://learn.microsoft.com/en-us/azure/aks/availability-zones"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/availability-zones"
     - name: Zone Balancing
-      url: "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-use-availability-zones#zone-balancing"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-use-availability-zones#zone-balancing"
 - description: システムポッドとアプリケーションポッドを分離する
   aprlGuid: 5ee083cd-6ac3-4a83-8913-9549dd36cf56
   recommendationTypeId: null
@@ -35,7 +35,7 @@
   tags: null
   learnMoreLink:
     - name: System and user node pools
-      url: "https://learn.microsoft.com/en-us/azure/aks/use-system-pools?tabs=azure-cli#system-and-user-node-pools"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/use-system-pools?tabs=azure-cli#system-and-user-node-pools"
 - description: ローカルアカウントを無効にする
   aprlGuid: ca324d71-54b0-4a3e-b9e4-10e767daa9fc
   recommendationTypeId: null
@@ -53,11 +53,11 @@
   tags: null
   learnMoreLink:
     - name: Entra integration
-      url: "https://learn.microsoft.com/en-us/azure/aks/concepts-identity#azure-ad-integration"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/concepts-identity#azure-ad-integration"
     - name: Use Azure role-based access control for AKS
-      url: "https://learn.microsoft.com/en-us/azure/aks/manage-azure-rbac?source=recommendations"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/manage-azure-rbac?source=recommendations"
     - name: Manage AKS local accounts
-      url: "https://learn.microsoft.com/en-us/azure/aks/manage-local-accounts-managed-azure-ad?source=recommendations"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/manage-local-accounts-managed-azure-ad?source=recommendations"
 - description: IP を動的に割り当てるために Azure CNI ネットワークを構成する
   aprlGuid: c22db132-399b-4e7c-995d-577a60881be8
   recommendationTypeId: null
@@ -75,9 +75,9 @@
   tags: null
   learnMoreLink:
     - name: Configure Azure CNI networking
-      url: "https://learn.microsoft.com/en-us/azure/aks/configure-azure-cni-dynamic-ip-allocation"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/configure-azure-cni-dynamic-ip-allocation"
     - name: Configure Azure CNI Overlay networking
-      url: "https://learn.microsoft.com/en-us/azure/aks/azure-cni-overlay"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/azure-cni-overlay"
 - description: 既存のクラスターでクラスター オートスケーラーを有効にする
   aprlGuid: 902c82ff-4910-4b61-942d-0d6ef7f39b67
   recommendationTypeId: null
@@ -95,13 +95,13 @@
   tags: null
   learnMoreLink:
     - name: Use the Cluster Autoscaler on AKS
-      url: "https://learn.microsoft.com/azure/aks/cluster-autoscaler?tabs=azure-cli"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/cluster-autoscaler?tabs=azure-cli"
     - name: Best practices for advanced scheduler features
-      url: "https://learn.microsoft.com/azure/aks/operator-best-practices-advanced-scheduler"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/operator-best-practices-advanced-scheduler"
     - name: Node pool scaling considerations and best practices
-      url: "https://learn.microsoft.com/azure/aks/best-practices-performance-scale-large#node-pool-scaling"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/best-practices-performance-scale-large#node-pool-scaling"
     - name: Best practices for basic scheduler features
-      url: "https://learn.microsoft.com/azure/aks/operator-best-practices-scheduler"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/operator-best-practices-scheduler"
 - description: Azure Kubernetes サービスをバックアップする
   aprlGuid: 269a9f1a-6675-460a-831e-b05a887a8c4b
   recommendationTypeId: null
@@ -119,9 +119,9 @@
   tags: null
   learnMoreLink:
     - name: AKS Backups
-      url: "https://learn.microsoft.com/en-us/azure/backup/azure-kubernetes-service-cluster-backup"
+      url: "https://learn.microsoft.com/ja-jp/azure/backup/azure-kubernetes-service-cluster-backup"
     - name: Best Practices for AKS Backups
-      url: "https://learn.microsoft.com/en-us/azure/aks/operator-best-practices-storage"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/operator-best-practices-storage"
 - description: AKS バージョンのアップグレードを計画する
   aprlGuid: e6188d3b-7fbc-4ecf-a37b-b658f9efcdc4
   recommendationTypeId: null
@@ -139,11 +139,11 @@
   tags: null
   learnMoreLink:
     - name: Updating to the latest AKS version
-      url: "https://learn.microsoft.com/azure/aks/operator-best-practices-cluster-security?tabs=azure-cli#regularly-update-to-the-latest-version-of-kubernetes"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/operator-best-practices-cluster-security?tabs=azure-cli#regularly-update-to-the-latest-version-of-kubernetes"
     - name: Upgrade cluster
-      url: "https://learn.microsoft.com/azure/aks/upgrade-cluster?tabs=azure-cli"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/upgrade-cluster?tabs=azure-cli"
     - name: Auto-upgrading cluster
-      url: "https://learn.microsoft.com/azure/aks/auto-upgrade-cluster"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/auto-upgrade-cluster"
 - description: マルチゾーン AKS を実行する場合は永続ボリュームにゾーン冗長ストレージを使用する
   aprlGuid: d3111036-355d-431b-ab49-8ddad042800b
   recommendationTypeId: null
@@ -161,15 +161,15 @@
   tags: null
   learnMoreLink:
     - name: Availability zones overview
-      url: "https://learn.microsoft.com/azure/reliability/availability-zones-overview?tabs=azure-cli"
+      url: "https://learn.microsoft.com/ja-jp/azure/reliability/availability-zones-overview?tabs=azure-cli"
     - name: Zone-redundant storage
-      url: "https://learn.microsoft.com/azure/storage/common/storage-redundancy#zone-redundant-storage"
+      url: "https://learn.microsoft.com/ja-jp/azure/storage/common/storage-redundancy#zone-redundant-storage"
     - name: ZRS disks
-      url: "https://learn.microsoft.com/azure/virtual-machines/disks-redundancy#zone-redundant-storage-for-managed-disks"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/disks-redundancy#zone-redundant-storage-for-managed-disks"
     - name: Convert a disk from LRS to ZRS
-      url: "https://learn.microsoft.com/azure/virtual-machines/disks-migrate-lrs-zrs"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/disks-migrate-lrs-zrs"
     - name: Enable multi-zone storage redundancy in Azure Container Storage
-      url: "https://learn.microsoft.com/azure/storage/container-storage/enable-multi-zone-redundancy"
+      url: "https://learn.microsoft.com/ja-jp/azure/storage/container-storage/enable-multi-zone-redundancy"
 - description: ツリー内ドライバーを使用して永続ボリュームを Azure CSI ドライバーにアップグレードする
   aprlGuid: b002c030-72e6-4a37-8217-1cb276c43169
   recommendationTypeId: null
@@ -187,9 +187,9 @@
   tags: null
   learnMoreLink:
     - name: CSI Storage Drivers
-      url: "https://learn.microsoft.com/azure/aks/csi-storage-drivers"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/csi-storage-drivers"
     - name: CSI Migrate in Tree Volumes
-      url: "https://learn.microsoft.com/azure/aks/csi-migrate-in-tree-volumes"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/csi-migrate-in-tree-volumes"
 - description: リソース クォータを実装して、Kubernetes リソースがハード リソース制限を超えないようにする
   aprlGuid: 9a1c17e5-c9a0-43db-b920-adaf54d1bcb7
   recommendationTypeId: null
@@ -225,9 +225,9 @@
   tags: null
   learnMoreLink:
     - name: Virtual Nodes
-      url: "https://learn.microsoft.com/azure/aks/virtual-nodes"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/virtual-nodes"
     - name: Azure Container Instances
-      url: "https://learn.microsoft.com/azure/container-instances/container-instances-overview"
+      url: "https://learn.microsoft.com/ja-jp/azure/container-instances/container-instances-overview"
 - description: AKS レベルを Standard に更新します
   aprlGuid: 0611251f-e70f-4243-8ddd-cfe894bec2e7
   recommendationTypeId: null
@@ -245,9 +245,9 @@
   tags: null
   learnMoreLink:
     - name: Pricing Tiers
-      url: "https://learn.microsoft.com/en-us/azure/aks/free-standard-pricing-tiers"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/free-standard-pricing-tiers"
     - name: AKS Baseline Architecture
-      url: "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/baseline-aks?toc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fazure%2Faks%2Ftoc.json&bc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fazure%2Fbread%2Ftoc.json#kubernetes-api-server-sla"
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/reference-architectures/containers/aks/baseline-aks?toc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fazure%2Faks%2Ftoc.json&bc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fazure%2Fbread%2Ftoc.json#kubernetes-api-server-sla"
 - description: AKS 監視を有効にする
   aprlGuid: dcaf8128-94bd-4d53-9235-3a0371df6b74
   recommendationTypeId: null
@@ -265,7 +265,7 @@
   tags: null
   learnMoreLink:
     - name: Monitor AKS
-      url: "https://learn.microsoft.com/azure/aks/monitor-aks"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/monitor-aks"
 - description: AKS クラスターでエフェメラル OS ディスクを使用する
   aprlGuid: a7bfcc18-b0d8-4d37-81f3-8131ed8bead5
   recommendationTypeId: null
@@ -283,9 +283,9 @@
   tags: null
   learnMoreLink:
     - name: Ephemeral OS disk
-      url: "https://learn.microsoft.com/azure/aks/concepts-storage#ephemeral-os-disk"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/concepts-storage#ephemeral-os-disk"
     - name: Configure an AKS cluster
-      url: "https://learn.microsoft.com/azure/aks/cluster-configuration"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/cluster-configuration"
     - name: Everything you want to know about ephemeral OS disks and AKS
       url: "https://learn.microsoft.com/samples/azure-samples/aks-ephemeral-os-disk/aks-ephemeral-os-disk/"
 - description: AKS 用に構成された Azure ポリシーを有効にして修復する
@@ -305,9 +305,9 @@
   tags: null
   learnMoreLink:
     - name: AKS Baseline - Policy Management
-      url: "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/baseline-aks?toc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fazure%2Faks%2Ftoc.json&bc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fazure%2Fbread%2Ftoc.json#policy-management"
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/reference-architectures/containers/aks/baseline-aks?toc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fazure%2Faks%2Ftoc.json&bc=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fazure%2Fbread%2Ftoc.json#policy-management"
     - name: Built-in Policy Definitions for AKS
-      url: "https://learn.microsoft.com/en-us/azure/aks/policy-reference"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/policy-reference"
 - description: DevOps フレームワークを使用する場合は GitOps を有効にする
   aprlGuid: 5f3cbd68-692a-4121-988c-9770914859a9
   recommendationTypeId: null
@@ -325,9 +325,9 @@
   tags: null
   learnMoreLink:
     - name: GitOps with AKS
-      url: "https://learn.microsoft.com/en-us/azure/architecture/guide/aks/aks-cicd-github-actions-and-gitops"
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/guide/aks/aks-cicd-github-actions-and-gitops"
     - name: GitOps for AKS - Reference Architecture
-      url: "https://learn.microsoft.com/en-us/azure/architecture/example-scenario/gitops-aks/gitops-blueprint-aks"
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/example-scenario/gitops-aks/gitops-blueprint-aks"
 - description: アプリケーション要件に基づいてアフィニティ ルールまたは非アフィニティ ルールを構成する
   aprlGuid: 928fcc6f-5e9a-42d9-9bd4-260af42de2e5
   recommendationTypeId: null
@@ -403,7 +403,7 @@
   tags: null
   learnMoreLink:
     - name: System nodepools
-      url: "https://learn.microsoft.com/azure/aks/use-system-pools?tabs=azure-cli"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/use-system-pools?tabs=azure-cli"
 - description: ユーザーのノードプール数を構成する
   aprlGuid: 005ccbbd-aeab-46ef-80bd-9bd4479412ec
   recommendationTypeId: null
@@ -421,7 +421,7 @@
   tags: null
   learnMoreLink:
     - name: Azure Well-Architected Framework review for Azure Kubernetes Service (AKS)
-      url: "https://learn.microsoft.com/azure/well-architected/service-guides/azure-kubernetes-service#design-checklist"
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/service-guides/azure-kubernetes-service#design-checklist"
 - description: ポッド中断バジェット (PDB) を構成する
   aprlGuid: a08a06a0-e41a-4b99-83bb-69ce8bca54cb
   recommendationTypeId: null
@@ -441,7 +441,7 @@
     - name: Configure PDBs
       url: "https://kubernetes.io/docs/tasks/run-application/configure-pdb/"
     - name: Plan availability using PDBs
-      url: "https://learn.microsoft.com/azure/aks/operator-best-practices-scheduler#plan-for-availability-using-pod-disruption-budgets"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/operator-best-practices-scheduler#plan-for-availability-using-pod-disruption-budgets"
 - description: ノードプールのサブネット サイズは、最大の自動スケール設定に対応する必要があります
   aprlGuid: e620fa98-7a40-41a0-bfc9-b4407297fb58
   recommendationTypeId: null
@@ -459,7 +459,7 @@
   tags: null
   learnMoreLink:
     - name: AKS Networking
-      url: "https://learn.microsoft.com/azure/aks/concepts-network"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/concepts-network"
 - description: 名前空間レベルでリソース クォータを強制する
   aprlGuid: d479df28-d367-4ef0-8b86-0495ab94fabd
   recommendationTypeId: null
@@ -477,4 +477,4 @@
   tags: null
   learnMoreLink:
     - name: Resource quotas
-      url: "https://learn.microsoft.com/azure/aks/operator-best-practices-scheduler#enforce-resource-quotas"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/operator-best-practices-scheduler#enforce-resource-quotas"

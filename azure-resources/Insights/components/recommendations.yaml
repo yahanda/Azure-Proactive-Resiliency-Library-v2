@@ -15,4 +15,4 @@
   tags: null
   learnMoreLink:
     - name: Migrate an Application Insights classic resource to a workspace-based resource
-      url: "https://learn.microsoft.com/en-us/azure/azure-monitor/app/convert-classic-resource"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/app/convert-classic-resource"

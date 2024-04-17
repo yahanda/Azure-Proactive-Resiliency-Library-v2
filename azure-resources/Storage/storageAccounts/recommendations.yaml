@@ -15,9 +15,9 @@
   tags: null
   learnMoreLink:
     - name: Azure Storage redundancy
-      url: "https://learn.microsoft.com/azure/storage/common/storage-redundancy"
+      url: "https://learn.microsoft.com/ja-jp/azure/storage/common/storage-redundancy"
     - name: Change the redundancy configuration for a storage account
-      url: "https://learn.microsoft.com/azure/storage/common/redundancy-migration"
+      url: "https://learn.microsoft.com/ja-jp/azure/storage/common/redundancy-migration"
 - description: 従来のストレージ アカウントを使用しないでください
   aprlGuid: 63ad027e-611c-294b-acc5-8e3234db9a40
   recommendationTypeId: null
@@ -37,7 +37,7 @@
     - name: Azure classic storage accounts retirement announcement
       url: "https://azure.microsoft.com/updates/classic-azure-storage-accounts-will-be-retired-on-31-august-2024/"
     - name: Migrate your classic storage accounts to Azure Resource Manager
-      url: "https://learn.microsoft.com/azure/storage/common/classic-account-migration-overview"
+      url: "https://learn.microsoft.com/ja-jp/azure/storage/common/classic-account-migration-overview"
 - description: パフォーマンス層がワークロードごとに設定されていることを確認する
   aprlGuid: 5587ef77-7a05-a74d-9c6e-449547a12f27
   recommendationTypeId: null
@@ -55,15 +55,15 @@
   tags: null
   learnMoreLink:
     - name: Types of storage accounts
-      url: "https://learn.microsoft.com/azure/storage/common/storage-account-overview#types-of-storage-accounts"
+      url: "https://learn.microsoft.com/ja-jp/azure/storage/common/storage-account-overview#types-of-storage-accounts"
     - name: Scalability and performance targets for standard storage accounts
-      url: "https://learn.microsoft.com/azure/storage/common/scalability-targets-standard-account"
+      url: "https://learn.microsoft.com/ja-jp/azure/storage/common/scalability-targets-standard-account"
     - name: Performance and scalability checklist for Blob storage
-      url: "https://learn.microsoft.com/azure/storage/blobs/storage-performance-checklist"
+      url: "https://learn.microsoft.com/ja-jp/azure/storage/blobs/storage-performance-checklist"
     - name: Scalability and performance targets for Blob storage
-      url: "https://learn.microsoft.com/azure/storage/blobs/scalability-targets"
+      url: "https://learn.microsoft.com/ja-jp/azure/storage/blobs/scalability-targets"
     - name: Premium block blob storage accounts
-      url: "https://learn.microsoft.com/azure/storage/blobs/storage-blob-block-blob-premium"
+      url: "https://learn.microsoft.com/ja-jp/azure/storage/blobs/storage-blob-block-blob-premium"
 - description: データの回復のために論理的な削除を有効にする
   aprlGuid: 03263c57-c869-3841-9e0a-3dbb9ef3e28d
   recommendationTypeId: null
@@ -99,7 +99,7 @@
   tags: null
   learnMoreLink:
     - name: Blob versioning
-      url: "https://learn.microsoft.com/azure/storage/blobs/versioning-overview "
+      url: "https://learn.microsoft.com/ja-jp/azure/storage/blobs/versioning-overview "
 - description: データ損失を防ぐために GPv2 アカウントのポイントインタイム復元を有効にする
   aprlGuid: 1b965cb9-7629-214e-b682-6bf6e450a100
   recommendationTypeId: null
@@ -117,9 +117,9 @@
   tags: null
   learnMoreLink:
     - name: Point-in-time restore for block blobs
-      url: "https://learn.microsoft.com/azure/storage/blobs/point-in-time-restore-overview"
+      url: "https://learn.microsoft.com/ja-jp/azure/storage/blobs/point-in-time-restore-overview"
     - name: Perform a point-in-time restore on block blob data
-      url: "https://learn.microsoft.com/azure/storage/blobs/point-in-time-restore-manage?tabs=portal"
+      url: "https://learn.microsoft.com/ja-jp/azure/storage/blobs/point-in-time-restore-manage?tabs=portal"
 - description: すべての BLOB ストレージ アカウントを監視する
   aprlGuid: 96cb8331-6b06-8242-8ce8-4e2f665dc679
   recommendationTypeId: null
@@ -137,9 +137,9 @@
   tags: null
   learnMoreLink:
     - name: Monitor Azure Blob Storage
-      url: "https://learn.microsoft.com/azure/storage/blobs/monitor-blob-storage"
+      url: "https://learn.microsoft.com/ja-jp/azure/storage/blobs/monitor-blob-storage"
     - name: Best practices for monitoring Azure Blob Storage
-      url: "https://learn.microsoft.com/azure/storage/blobs/blob-storage-monitoring-scenarios"
+      url: "https://learn.microsoft.com/ja-jp/azure/storage/blobs/blob-storage-monitoring-scenarios"
 - description: 従来のストレージ アカウントを v2 ストレージ アカウントにアップグレードすることを検討してください。
   aprlGuid: 2ad78dec-5a4d-4a30-8fd1-8584335ad781
   recommendationTypeId: null
@@ -157,6 +157,6 @@
   tags: null
   learnMoreLink:
     - name: Legacy storage account types
-      url: "https://learn.microsoft.com/azure/storage/common/storage-account-overview#legacy-storage-account-types"
+      url: "https://learn.microsoft.com/ja-jp/azure/storage/common/storage-account-overview#legacy-storage-account-types"
     - name: Upgrade to a general-purpose v2 storage account
-      url: "https://learn.microsoft.com/azure/storage/common/storage-account-upgrade"
+      url: "https://learn.microsoft.com/ja-jp/azure/storage/common/storage-account-upgrade"

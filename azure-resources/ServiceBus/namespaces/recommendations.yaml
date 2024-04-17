@@ -15,8 +15,8 @@
   tags: null
   learnMoreLink:
     - name: Service Bus and reliability
-      url: "https://learn.microsoft.com/en-us/azure/well-architected/services/messaging/service-bus/reliability"
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/services/messaging/service-bus/reliability"
     - name: Azure Service Bus Geo-disaster recovery
-      url: "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-geo-dr#availability-zones"
+      url: "https://learn.microsoft.com/ja-jp/azure/service-bus-messaging/service-bus-geo-dr#availability-zones"
     - name: Insulate Azure Service Bus applications against outages and disasters
-      url: "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-outages-disasters"
+      url: "https://learn.microsoft.com/ja-jp/azure/service-bus-messaging/service-bus-outages-disasters"

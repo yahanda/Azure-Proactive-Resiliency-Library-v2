@@ -15,13 +15,13 @@
   tags: null
   learnMoreLink:
     - name: Azure Load Balancing Options
-      url: "https://learn.microsoft.com/azure/architecture/guide/technology-choices/load-balancing-overview"
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/guide/technology-choices/load-balancing-overview"
     - name: Azure Traffic Manager
-      url: "https://learn.microsoft.com/azure/traffic-manager/traffic-manager-overview"
+      url: "https://learn.microsoft.com/ja-jp/azure/traffic-manager/traffic-manager-overview"
     - name: Azure Front Door
-      url: "https://learn.microsoft.com/azure/frontdoor/front-door-overview"
+      url: "https://learn.microsoft.com/ja-jp/azure/frontdoor/front-door-overview"
     - name: Mission-critical global content delivery
-      url: "https://learn.microsoft.com/en-us/azure/architecture/guide/networking/global-web-applications/mission-critical-content-delivery"
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/guide/networking/global-web-applications/mission-critical-content-delivery"
 - description: オリジンへのトラフィックを制限する
   aprlGuid: 6c40b7ae-2bea-5748-be1a-9e9e3b834649
   recommendationTypeId: null
@@ -39,7 +39,7 @@
   tags: null
   learnMoreLink:
     - name: Secure traffic to Azure Front Door origins
-      url: "https://learn.microsoft.com/azure/frontdoor/origin-security?tabs=app-service-functions&pivots=front-door-standard-premium"
+      url: "https://learn.microsoft.com/ja-jp/azure/frontdoor/origin-security?tabs=app-service-functions&pivots=front-door-standard-premium"
 - description: 最新の API バージョンと SDK バージョンを使用する
   aprlGuid: 52bc9a7b-23c8-bc4c-9d2a-7bc43b50104a
   recommendationTypeId: null
@@ -79,11 +79,11 @@
   tags: null
   learnMoreLink:
     - name: Monitor metrics and logs in Azure Front Door
-      url: "https://learn.microsoft.com/azure/frontdoor/front-door-diagnostics?pivots=front-door-standard-premium"
+      url: "https://learn.microsoft.com/ja-jp/azure/frontdoor/front-door-diagnostics?pivots=front-door-standard-premium"
     - name: WAF logs
-      url: "https://learn.microsoft.com/azure/web-application-firewall/afds/waf-front-door-monitor?pivots=front-door-standard-premium#waf-logs"
+      url: "https://learn.microsoft.com/ja-jp/azure/web-application-firewall/afds/waf-front-door-monitor?pivots=front-door-standard-premium#waf-logs"
     - name: Configure Azure Front Door logs
-      url: "https://learn.microsoft.com/azure/frontdoor/standard-premium/how-to-logs"
+      url: "https://learn.microsoft.com/ja-jp/azure/frontdoor/standard-premium/how-to-logs"
 - description: エンドツーエンド TLS を使用する
   aprlGuid: d9bd6780-0d6f-cd4c-bc66-8ddcab12f3d1
   recommendationTypeId: null
@@ -101,7 +101,7 @@
   tags: null
   learnMoreLink:
     - name: End-to-end TLS with Azure Front Door
-      url: "https://learn.microsoft.com/azure/frontdoor/end-to-end-tls?pivots=front-door-standard-premium"
+      url: "https://learn.microsoft.com/ja-jp/azure/frontdoor/end-to-end-tls?pivots=front-door-standard-premium"
 - description: HTTP から HTTPS へのリダイレクトを使用する
   aprlGuid: 24ab9f11-a3e4-3043-a985-22cf94c4933a
   recommendationTypeId: null
@@ -119,7 +119,7 @@
   tags: null
   learnMoreLink:
     - name: Create HTTP to HTTPS redirect rule
-      url: "https://learn.microsoft.com/azure/frontdoor/front-door-how-to-redirect-https#create-http-to-https-redirect-rule"
+      url: "https://learn.microsoft.com/ja-jp/azure/frontdoor/front-door-how-to-redirect-https#create-http-to-https-redirect-rule"
 - description: マネージド TLS 証明書を使用する
   aprlGuid: 29d65c41-2fad-d142-95eb-9eab95f6c0a5
   recommendationTypeId: null
@@ -137,7 +137,7 @@
   tags: null
   learnMoreLink:
     - name: Configure HTTPS on an Azure Front Door custom domain using the Azure portal
-      url: "https://learn.microsoft.com/azure/frontdoor/standard-premium/how-to-configure-https-custom-domain?tabs=powershell"
+      url: "https://learn.microsoft.com/ja-jp/azure/frontdoor/standard-premium/how-to-configure-https-custom-domain?tabs=powershell"
 - description: 顧客管理の証明書には最新バージョンを使用してください
   aprlGuid: 4638c2c0-03de-6d42-9e09-82ee4478cbf3
   recommendationTypeId: null
@@ -155,7 +155,7 @@
   tags: null
   learnMoreLink:
     - name: Select the certificate for Azure Front Door to deploy
-      url: "https://learn.microsoft.com/azure/frontdoor/standard-premium/how-to-configure-https-custom-domain?tabs=powershell#select-the-certificate-for-azure-front-door-to-deploy"
+      url: "https://learn.microsoft.com/ja-jp/azure/frontdoor/standard-premium/how-to-configure-https-custom-domain?tabs=powershell#select-the-certificate-for-azure-front-door-to-deploy"
 - description: Front Door とオリジンで同じドメイン名を使用する
   aprlGuid: cd6a32af-747a-e649-82a7-a98f528ca842
   recommendationTypeId: null
@@ -173,7 +173,7 @@
   tags: null
   learnMoreLink:
     - name: Preserve the original HTTP host name between a reverse proxy and its back-end web application
-      url: "https://learn.microsoft.com/azure/architecture/best-practices/host-name-preservation"
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/best-practices/host-name-preservation"
 - description: WAFを有効にする
   aprlGuid: 1bd2b7e8-400f-e64a-99a2-c572f7b08a62
   recommendationTypeId: null
@@ -191,7 +191,7 @@
   tags: null
   learnMoreLink:
     - name: Web Application Firewall on Azure Front Door
-      url: "https://learn.microsoft.com/azure/frontdoor/web-application-firewall"
+      url: "https://learn.microsoft.com/ja-jp/azure/frontdoor/web-application-firewall"
 - description: オリジン グループにオリジンが 1 つしかない場合、正常性プローブを無効にする
   aprlGuid: 38f3d542-6de6-a44b-86c6-97e3be690281
   recommendationTypeId: null
@@ -209,7 +209,7 @@
   tags: null
   learnMoreLink:
     - name: Health probes
-      url: "https://learn.microsoft.com/azure/frontdoor/health-probes"
+      url: "https://learn.microsoft.com/ja-jp/azure/frontdoor/health-probes"
 - description: 健全性プローブのエンドポイントを選択する
   aprlGuid: 5225bba3-28ec-1e43-8986-7eedfd466d65
   recommendationTypeId: null
@@ -227,7 +227,7 @@
   tags: null
   learnMoreLink:
     - name: Health Endpoint Monitoring pattern
-      url: "https://learn.microsoft.com/azure/architecture/patterns/health-endpoint-monitoring"
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/patterns/health-endpoint-monitoring"
 - description: HEAD ヘルス プローブを使用する
   aprlGuid: 5783defe-b49e-d947-84f7-d8677593f324
   recommendationTypeId: null
@@ -245,7 +245,7 @@
   tags: null
   learnMoreLink:
     - name: Supported HTTP methods for health probes
-      url: "https://learn.microsoft.com/azure/frontdoor/health-probes#supported-http-methods-for-health-probes"
+      url: "https://learn.microsoft.com/ja-jp/azure/frontdoor/health-probes#supported-http-methods-for-health-probes"
 - description: Azure Front Door で geo フィルタリングを使用する
   aprlGuid: b515690d-3bf9-3a49-8d38-188e0fd45896
   recommendationTypeId: null
@@ -263,7 +263,7 @@
   tags: null
   learnMoreLink:
     - name: Geo filter WAF policy - GeoMatch
-      url: "https://learn.microsoft.com/azure/web-application-firewall/afds/waf-front-door-geo-filtering"
+      url: "https://learn.microsoft.com/ja-jp/azure/web-application-firewall/afds/waf-front-door-geo-filtering"
 - description: Azure Front Door のプライベート リンクでオリジンを保護する
   aprlGuid: 1cfe7834-56ec-ff41-b11d-993734705dba
   recommendationTypeId: null
@@ -281,4 +281,4 @@
   tags: null
   learnMoreLink:
     - name: Private link for Azure Front Door
-      url: "https://learn.microsoft.com/azure/frontdoor/private-link"
+      url: "https://learn.microsoft.com/ja-jp/azure/frontdoor/private-link"

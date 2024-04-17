@@ -1,21 +1,21 @@
-﻿- description: Implement proactive Incident Response
+- description: プロアクティブなインシデント対応を実装する
   aprlGuid: daf605e4-d3fd-fc42-819a-e3ec084ffda6
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: High
   recommendationResourceType: WellArchitected/Respond
   recommendationMetadataState: Active
-  longDescription: |
-    Prevention of all problems is a laudable, but impossible goal. Things will go wrong, so we need a plan to limit the impact on our end users and return operations to normal as quickly as possible.
+  longDescription: |-
+    すべての問題を防ぐことは賞賛に値しますが、不可能な目標です。物事がうまくいかなくなる可能性があるため、エンドユーザーへの影響を制限し、できるだけ早く業務を通常に戻す計画が必要です。
 
-    The key is to respond with urgency, rather than react. A reaction tends to be more impulsive and based in the present moment, without consideration of long-term effects. A response is well-thought-out, organized, and information based.
+    重要なのは、反応するのではなく、迅速に対応することです。反応は長期的な影響を考慮せず、より衝動的で現時点に基づいたものになる傾向があります。対応はよく考えられ、組織化され、情報に基づいて行われます。
 
-    Your incident response approach determines your effectiveness at:
-    - Understanding what's going on (diagnosing the problem)
-    - Triaging (determining the urgency) and prioritizing the problem
-    - Engaging the right resources to mitigate the issue(s)
-    - Communicating with stakeholders about the problem.
-    - After the problem has been remediated, you can then learn from the incident through a post-incident review process. That's an important subject which has a whole separate module worth of discussion.
+    インシデント対応アプローチの有効性は、次の点で決まります。
+    - 何が起こっているのかを理解する (問題を診断する)
+    - 問題のトリアージ（緊急性の判断）と優先順位付け
+    - 問題を軽減するために適切なリソースを活用する
+    - 問題について関係者とコミュニケーションをとる。
+    - 問題が修復された後は、インシデント後のレビュー プロセスを通じてインシデントから学ぶことができます。これは、別のモジュールで議論する価値のある重要なテーマです。
   potentialBenefits: Quicker recovery, less impact
   pgVerified: true
   publishedToLearn: false
@@ -27,16 +27,15 @@
       url: "https://learn.microsoft.com/training/modules/improve-reliability-incidents/2-importance"
     - name: Incident tracking
       url: "https://learn.microsoft.com/training/modules/improve-reliability-incidents/5-tracking"
-
-- description: test rosanto 0
+- description: ロサント 0 をテストします
   aprlGuid: e23933c9-fe33-495d-a7b3-b3e7f9befd49
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: High
   recommendationResourceType: WellArchitected/Respond
   recommendationMetadataState: Active
-  longDescription: |
-    This is just a test recommendation.
+  longDescription: |-
+    これは単なるテストの推奨事項です。
   potentialBenefits: Quicker recovery, less impact
   pgVerified: true
   publishedToLearn: false
@@ -48,16 +47,15 @@
       url: "https://learn.microsoft.com/training/modules/improve-reliability-incidents/2-importance"
     - name: Incident tracking
       url: "https://learn.microsoft.com/training/modules/improve-reliability-incidents/5-tracking"
-
-- description: test rosanto 1
+- description: ロサントテスト1
   aprlGuid: 0dfc07d4-a6fd-4472-bcbb-d7253c5e877b
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: Medium
   recommendationResourceType: WellArchitected/Respond
   recommendationMetadataState: Active
-  longDescription: |
-    This is just a test recommendation.
+  longDescription: |-
+    これは単なるテストの推奨事項です。
   potentialBenefits: Quicker recovery, less impact
   pgVerified: true
   publishedToLearn: false
@@ -69,16 +67,15 @@
       url: "https://learn.microsoft.com/training/modules/improve-reliability-incidents/2-importance"
     - name: Incident tracking
       url: "https://learn.microsoft.com/training/modules/improve-reliability-incidents/5-tracking"
-
-- description: test rosanto 2
+- description: ロサント2をテストする
   aprlGuid: 9431f6ff-df6f-4506-a8da-68ee5a53b9c6
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: Medium
   recommendationResourceType: WellArchitected/Respond
   recommendationMetadataState: Disabled
-  longDescription: |
-    This is just a test recommendation.
+  longDescription: |-
+    これは単なるテストの推奨事項です。
   potentialBenefits: Quicker recovery, less impact
   pgVerified: true
   publishedToLearn: false

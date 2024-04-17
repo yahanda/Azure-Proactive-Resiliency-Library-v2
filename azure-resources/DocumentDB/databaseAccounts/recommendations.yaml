@@ -15,9 +15,9 @@
   tags: null
   learnMoreLink:
     - name: Distribute data globally with Azure Cosmos DB | Microsoft Learn
-      url: "https://learn.microsoft.com/en-us/azure/cosmos-db/distribute-data-globally"
+      url: "https://learn.microsoft.com/ja-jp/azure/cosmos-db/distribute-data-globally"
     - name: Tips for building highly available applications | Microsoft Learn
-      url: "https://learn.microsoft.com/en-us/azure/cosmos-db/high-availability#tips-for-building-highly-available-applications"
+      url: "https://learn.microsoft.com/ja-jp/azure/cosmos-db/high-availability#tips-for-building-highly-available-applications"
 - description: 単一の書き込みリージョンを持つマルチリージョン アカウントのサービス管理フェイルオーバーを有効にする
   aprlGuid: 9cabded7-a1fc-6e4a-944b-d7dd98ea31a2
   recommendationTypeId: null
@@ -35,7 +35,7 @@
   tags: null
   learnMoreLink:
     - name: Manage an Azure Cosmos DB account by using the Azure portal | Microsoft Learn
-      url: "https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-manage-database-account#automatic-failover"
+      url: "https://learn.microsoft.com/ja-jp/azure/cosmos-db/how-to-manage-database-account#automatic-failover"
 - description: マルチリージョン書き込み機能を評価する
   aprlGuid: 9ce78192-74a0-104c-b5bb-9a443f941649
   recommendationTypeId: null
@@ -53,9 +53,9 @@
   tags: null
   learnMoreLink:
     - name: Distribute data globally with Azure Cosmos DB | Microsoft Learn
-      url: "https://learn.microsoft.com/en-us/azure/cosmos-db/distribute-data-globally"
+      url: "https://learn.microsoft.com/ja-jp/azure/cosmos-db/distribute-data-globally"
     - name: Conflict resolution types and resolution policies in Azure Cosmos DB | Microsoft Learn
-      url: "https://learn.microsoft.com/en-us/azure/cosmos-db/conflict-resolution-policies"
+      url: "https://learn.microsoft.com/ja-jp/azure/cosmos-db/conflict-resolution-policies"
 - description: データ耐久性要件を反映した適切な整合性モードを選択する
   aprlGuid: 23ebe97d-c546-204b-8b0d-00e61a5524f7
   recommendationTypeId: null
@@ -73,7 +73,7 @@
   tags: null
   learnMoreLink:
     - name: Consistency level choices - Azure Cosmos DB | Microsoft Learn
-      url: "https://learn.microsoft.com/en-us/azure/cosmos-db/consistency-levels"
+      url: "https://learn.microsoft.com/ja-jp/azure/cosmos-db/consistency-levels"
 - description: 継続的バックアップ モードを構成する
   aprlGuid: e544520b-8505-7841-9e77-1f1974ee86ec
   recommendationTypeId: null
@@ -91,7 +91,7 @@
   tags: null
   learnMoreLink:
     - name: Continuous backup with point in time restore feature in Azure Cosmos DB | Microsoft Learn
-      url: "https://learn.microsoft.com/en-us/azure/cosmos-db/continuous-backup-restore-introduction"
+      url: "https://learn.microsoft.com/ja-jp/azure/cosmos-db/continuous-backup-restore-introduction"
 - description: クエリ結果が完全に排出されていることを確認する
   aprlGuid: c006604a-0d29-684c-99f0-9729cb40dac5
   recommendationTypeId: null
@@ -109,7 +109,7 @@
   tags: null
   learnMoreLink:
     - name: Pagination in Azure Cosmos DB | Microsoft Learn
-      url: "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/query/pagination#handling-multiple-pages-of-results"
+      url: "https://learn.microsoft.com/ja-jp/azure/cosmos-db/nosql/query/pagination#handling-multiple-pages-of-results"
 - description: クライアントでシングルトン パターンを維持する
   aprlGuid: 7eb32cf9-9a42-1540-acf8-597cbba8a418
   recommendationTypeId: null
@@ -127,7 +127,7 @@
   tags: null
   learnMoreLink:
     - name: Designing resilient applications with Azure Cosmos DB SDKs | Microsoft Learn
-      url: "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/conceptual-resilient-sdk-applications"
+      url: "https://learn.microsoft.com/ja-jp/azure/cosmos-db/nosql/conceptual-resilient-sdk-applications"
 - description: クライアントに再試行ロジックを実装する
   aprlGuid: fa6ac22f-0584-bb4b-80e4-80f4755d1a97
   recommendationTypeId: null
@@ -145,7 +145,7 @@
   tags: null
   learnMoreLink:
     - name: Designing resilient applications with Azure Cosmos DB SDKs | Microsoft Learn
-      url: "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/conceptual-resilient-sdk-applications"
+      url: "https://learn.microsoft.com/ja-jp/azure/cosmos-db/nosql/conceptual-resilient-sdk-applications"
 - description: Cosmos DB の健全性を監視し、アラートを設定する
   aprlGuid: deaea200-013c-414b-ac9f-bfa7a7fb13f0
   recommendationTypeId: null
@@ -163,4 +163,4 @@
   tags: null
   learnMoreLink:
     - name: Create alerts for Azure Cosmos DB using Azure Monitor | Microsoft Learn
-      url: "https://learn.microsoft.com/en-us/azure/cosmos-db/create-alerts"
+      url: "https://learn.microsoft.com/ja-jp/azure/cosmos-db/create-alerts"

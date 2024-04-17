@@ -1,14 +1,14 @@
-﻿- description: Consider deploying your application across multiple zones
+- description: アプリケーションを複数のゾーンにデプロイすることを検討してください
   aprlGuid: 063d7237-5f68-5d42-b3d1-43144b3630b5
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: WellArchitected/Design
   recommendationMetadataState: Active
-  longDescription: |
-    Design your application architecture to use availability zones within a region. Availability zones can be used to optimize application availability within a region by providing datacenter-level fault tolerance. However, the application architecture must not share dependencies between zones to use them effectively.
+  longDescription: |-
+    リージョン内の可用性ゾーンを使用するようにアプリケーション アーキテクチャを設計します。アベイラビリティーゾーンを使用すると、データセンターレベルのフォールトトレランスを提供することで、リージョン内のアプリケーションの可用性を最適化できます。ただし、ゾーンを効果的に使用するには、アプリケーション アーキテクチャがゾーン間で依存関係を共有してはなりません。
 
-    Consider if component proximity is required for application performance reasons. If all or part of the application is highly sensitive to latency, components might need to be co-located which can limit the applicability of multi-region and multi-zone strategies.
+    アプリケーションのパフォーマンス上の理由から、コンポーネントの近接性が必要かどうかを検討してください。アプリケーションのすべてまたは一部が遅延の影響を非常に受けやすい場合、コンポーネントを同じ場所に配置する必要がある場合があり、これによりマルチリージョンおよびマルチゾーン戦略の適用が制限される可能性があります。
   potentialBenefits: Enhanced app availability and fault tolerance
   pgVerified: true
   publishedToLearn: false
@@ -17,21 +17,20 @@
   tags: null
   learnMoreLink:
     - name: Use Availability Zones
-      url: "https://learn.microsoft.com/azure/reliability/availability-zones-overview#availability-zones"
-
-- description: Consider deploying your application across multiple regions
+      url: "https://learn.microsoft.com/ja-jp/azure/reliability/availability-zones-overview#availability-zones"
+- description: アプリケーションを複数のリージョンにデプロイすることを検討してください
   aprlGuid: 8a497b6d-d065-0d43-a7d9-e3f8eebfe0f4
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: High
   recommendationResourceType: WellArchitected/Design
   recommendationMetadataState: Active
-  longDescription: |
-    If your application is deployed to a single region, and the region becomes unavailable, your application will also be unavailable. This might be unacceptable under the terms of your application's SLA.
+  longDescription: |-
+    アプリケーションが単一のリージョンにデプロイされている場合、そのリージョンが使用できなくなると、アプリケーションも使用できなくなります。これは、アプリケーションの SLA 条件では受け入れられない可能性があります。
 
-    If so, consider deploying your application and its services across multiple regions. A multiregional deployment can use an active-active or active-passive configuration.
+    その場合は、アプリケーションとそのサービスを複数のリージョンにデプロイすることを検討してください。マルチリージョン展開では、アクティブ/アクティブ構成またはアクティブ/パッシブ構成を使用できます。
 
-    An active-active configuration distributes requests across multiple active regions. An active-passive configuration keeps warm instances in the secondary region, but doesn't send traffic there unless the primary region fails.
+    アクティブ/アクティブ構成では、リクエストが複数のアクティブなリージョンに分散されます。アクティブ/パッシブ構成では、セカンダリ リージョンにウォーム インスタンスが保持されますが、プライマリ リージョンに障害が発生しない限り、セカンダリ リージョンにトラフィックは送信されません。
   potentialBenefits: Enhances app availability and SLA compliance
   pgVerified: true
   publishedToLearn: false
@@ -40,23 +39,22 @@
   tags: null
   learnMoreLink:
     - name: Design reliable Azure applications
-      url: "https://learn.microsoft.com/azure/well-architected/resiliency/app-design"
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/resiliency/app-design"
     - name: Cross-region replication in Azure Business continuity and disaster recovery
-      url: "https://learn.microsoft.com/azure/reliability/cross-region-replication-azure"
-
-- description: Ensure that all fault-points and fault-modes are understood and operationalized
+      url: "https://learn.microsoft.com/ja-jp/azure/reliability/cross-region-replication-azure"
+- description: すべての障害点と障害モードが理解され、運用可能であることを確認する
   aprlGuid: 99ebe682-6306-6446-bfc7-cf6610ebfa02
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: WellArchitected/Design
   recommendationMetadataState: Active
-  longDescription: |
-    Ensure that all fault-points and fault-modes are understood and operationalized.
+  longDescription: |-
+    すべての障害点と障害モードが理解され、運用可能であることを確認します。
 
-    Failure mode analysis (FMA) is a process for building resiliency into a system, by identifying possible failure points in the system. The FMA should be part of the architecture and design phases, so that you can build failure recovery into the system from the beginning.
+    障害モード分析 (FMA) は、システム内の潜在的な障害点を特定することにより、システムに回復力を構築するプロセスです。 FMA は、最初からシステムに障害回復機能を組み込むことができるように、アーキテクチャおよび設計フェーズの一部である必要があります。
 
-    Identify all fault-points and fault-modes. Fault-points describe the elements within an application architecture which can fail, while fault-modes capture the various ways by which a fault-point may fail. To ensure an application is resilient to end-to-end failures, it is essential that all fault-points and fault-modes are understood and operationalized.
+    すべての障害点と障害モードを特定します。障害点は、障害が発生する可能性のあるアプリケーション アーキテクチャ内の要素を記述します。一方、障害モードは、障害点が障害を起こすさまざまな方法をキャプチャします。アプリケーションがエンドツーエンドの障害に対して確実に回復できるようにするには、すべての障害点と障害モードを理解し、運用できることが重要です。
   potentialBenefits: Enhanced system resiliency
   pgVerified: true
   publishedToLearn: false
@@ -65,19 +63,18 @@
   tags: null
   learnMoreLink:
     - name: Failure mode analysis for Azure applications
-      url: "https://learn.microsoft.com/azure/architecture/resiliency/failure-mode-analysis"
-
-- description: Use PaaS Azure services instead of IaaS
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/resiliency/failure-mode-analysis"
+- description: IaaS の代わりに PaaS Azure サービスを使用する
   aprlGuid: 097651d8-6e62-314a-9299-a0234ffd190e
   recommendationTypeId: null
   recommendationControl: Scalability
   recommendationImpact: Medium
   recommendationResourceType: WellArchitected/Design
   recommendationMetadataState: Active
-  longDescription: |
-    PaaS provides a framework for developing and running apps. As with IaaS, the PaaS provider hosts and maintains the platform's servers, networks, storage, and other computing resources. But PaaS also includes tools, services, and systems that support the web application lifecycle.
+  longDescription: |-
+    PaaS は、アプリを開発および実行するためのフレームワークを提供します。 IaaS と同様に、PaaS プロバイダーはプラットフォームのサーバー、ネットワーク、ストレージ、その他のコンピューティング リソースをホストし、維持します。ただし、PaaS には、Web アプリケーションのライフサイクルをサポートするツール、サービス、システムも含まれています。
 
-    Developers use the platform to build apps without having to manage backups, security solutions, upgrades, and other administrative tasks.
+    開発者はこのプラットフォームを使用して、バックアップ、セキュリティ ソリューション、アップグレード、その他の管理タスクを管理することなくアプリを構築できます。
   potentialBenefits: Saves time, enhances security, simplifies app lifecycle
   pgVerified: true
   publishedToLearn: false
@@ -86,19 +83,18 @@
   tags: null
   learnMoreLink:
     - name: Use platform as a service (PaaS) options
-      url: "https://learn.microsoft.com/azure/architecture/guide/design-principles/managed-services"
-
-- description: Design the application to scale out
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/guide/design-principles/managed-services"
+- description: スケールアウトするようにアプリケーションを設計する
   aprlGuid: 7f4c76d7-f9d4-d643-ab73-4d8f27fd7ed9
   recommendationTypeId: null
   recommendationControl: Scalability
   recommendationImpact: High
   recommendationResourceType: WellArchitected/Design
   recommendationMetadataState: Active
-  longDescription: |
-    Azure provides elastic scalability and you should design to scale out. However, applications must leverage a scale-unit approach to navigate service and subscription limits to ensure that individual components and the application as a whole can scale horizontally. Don't forget about scale in, which is important to reduce cost.
+  longDescription: |-
+    Azure は柔軟なスケーラビリティを提供するため、スケールアウトするように設計する必要があります。ただし、アプリケーションはスケール ユニット アプローチを活用してサービスとサブスクリプションの制限を乗り越え、個々のコンポーネントとアプリケーション全体が水平方向に拡張できるようにする必要があります。コスト削減にはスケールインを忘れないでください。
 
-    For example, scale in and out for App Service is done via rules. Often customers write scale out rules and never write scale in rules, which leaves the App Service more expensive.
+    たとえば、App Service のスケールインとスケールアウトはルールによって行われます。多くの場合、顧客はスケール アウト ルールを作成し、スケール イン ルールをまったく作成しないため、App Service のコストが高くなります。
   potentialBenefits: Enhances scalability and cost efficiency
   pgVerified: true
   publishedToLearn: false
@@ -107,22 +103,21 @@
   tags: null
   learnMoreLink:
     - name: Design to scale out
-      url: "https://learn.microsoft.com/azure/architecture/guide/design-principles/scale-out"
-
-- description: Create a landing zone for the workload following the Microsoft Cloud Adoption Framework
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/guide/design-principles/scale-out"
+- description: Microsoft Cloud 導入フレームワークに従ってワークロードのランディング ゾーンを作成する
   aprlGuid: 6132a11a-3ea0-e64c-877b-f01ca1de79d4
   recommendationTypeId: null
   recommendationControl: Governance
   recommendationImpact: Low
   recommendationResourceType: WellArchitected/Design
   recommendationMetadataState: Active
-  longDescription: |
-    From a workload perspective, a landing zone refers to a prepared platform into which the application gets deployed. A landing zone implementation can have compute, data sources, access controls, and networking components already provisioned. With the required plumbing ready in place; the workload needs to plug into it. When considering the overall security, a landing zone offers centralized security capabilities that adds a threat mitigation layer for the workload.
+  longDescription: |-
+    ワークロードの観点から見ると、ランディング ゾーンは、アプリケーションがデプロイされる準備されたプラットフォームを指します。ランディング ゾーンの実装には、コンピューティング、データ ソース、アクセス制御、およびネットワーキング コンポーネントがすでにプロビジョニングされている場合があります。必要な配管が所定の位置に準備されていること。ワークロードをそれに接続する必要があります。全体的なセキュリティを考慮すると、ランディング ゾーンはワークロードの脅威軽減レイヤーを追加する一元化されたセキュリティ機能を提供します。
 
-    Implementations can vary but here are some common strategies that enhance the security posture.
-    - Isolation through segmentation. You can isolate assets at several layers from Azure enrollment down to a subscription that has the resources for the workload.
-    - Consistent adoption of organizational policies, enforce creation and deletion of services and their configuration through Azure Policy.
-    - Configurations that align with principles of Zero Trust. For instance an implementation might have network connectivity to on-premises data centers.
+    実装はさまざまですが、セキュリティ体制を強化する一般的な戦略をいくつか紹介します。
+    - セグメンテーションによる分離。 Azure の登録から、ワークロードのリソースを含むサブスクリプションまで、いくつかのレイヤーで資産を分離できます。
+    - 組織ポリシーを一貫して導入し、Azure Policy を通じてサービスとその構成の作成と削除を強制します。
+    - ゼロトラストの原則に沿った構成。たとえば、実装にはオンプレミス データ センターへのネットワーク接続が含まれる場合があります。
   potentialBenefits: Enhances security and speeds deployment
   pgVerified: true
   publishedToLearn: false
@@ -131,29 +126,28 @@
   tags: null
   learnMoreLink:
     - name: Azure landing zone integration
-      url: "https://learn.microsoft.com/azure/well-architected/security/design-governance-landing-zone"
-
-- description: Design a BCDR strategy that will help to meet the business requirements
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/security/design-governance-landing-zone"
+- description: ビジネス要件を満たすのに役立つ BCDR 戦略を設計する
   aprlGuid: b09061cb-d536-1347-9957-390c2d0cfa3d
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: High
   recommendationResourceType: WellArchitected/Design
   recommendationMetadataState: Active
-  longDescription: |
-    Disaster recovery is the process of restoring application functionality after a catastrophic loss. In cloud environments, we acknowledge up front that failures happen. Instead of trying to prevent failures altogether, the goal is to minimize the effects of a single failing component.
+  longDescription: |-
+    災害復旧は、壊滅的な損失の後にアプリケーションの機能を復元するプロセスです。クラウド環境では、障害が発生することを事前に認識しています。障害を完全に防止しようとするのではなく、単一のコンポーネントに障害が発生した場合の影響を最小限に抑えることが目標です。
 
-    Testing is one way to minimize these effects. You should automate testing of your applications where possible, but you also need to be prepared for when they fail. When a failure happens, having backup and recovery strategies becomes important. Your tolerance for reduced functionality during a disaster is a business decision that varies from one application to the next.
+    テストは、これらの影響を最小限に抑える 1 つの方法です。可能な場合はアプリケーションのテストを自動化する必要がありますが、失敗した場合に備えておく必要もあります。障害が発生した場合、バックアップとリカバリの戦略を立てることが重要になります。災害時の機能低下に対する許容度はビジネス上の決定であり、アプリケーションごとに異なります。
 
-    It might be acceptable for some applications to be temporarily unavailable, or partially available with reduced functionality or delayed processing. For other applications, any reduced functionality is unacceptable.
+    一部のアプリケーションが一時的に利用できなくなったり、機能が低下したり処理が遅延したりして部分的に利用可能になったりすることは許容される場合があります。他のアプリケーションでは、機能の低下は受け入れられません。
 
-    Key points:
+    キーポイント：
 
-    - Create and test a disaster recovery plan regularly using key failure scenarios.
-    - Design a disaster recovery strategy to run most applications with reduced functionality.
-    - Design a backup strategy that's tailored for the business requirements and circumstances of the application.
-    - Automate failover and failback steps and processes.
-    - Test and validate the failover and failback approach successfully at least once.
+    - 主要な障害シナリオを使用して、災害復旧計画を定期的に作成し、テストします。
+    - ほとんどのアプリケーションを機能を制限して実行できるように災害復旧戦略を設計します。
+    - ビジネス要件とアプリケーションの状況に合わせたバックアップ戦略を設計します。
+    - フェイルオーバーとフェイルバックのステップとプロセスを自動化します。
+    - フェイルオーバーとフェイルバックのアプローチが少なくとも 1 回は正常にテストおよび検証されます。
   potentialBenefits: Minimizes disaster impact, ensures operational continuity
   pgVerified: true
   publishedToLearn: false
@@ -162,22 +156,21 @@
   tags: null
   learnMoreLink:
     - name: Backup and disaster recovery for Azure applications
-      url: "https://learn.microsoft.com/azure/well-architected/resiliency/backup-and-recovery"
-
-- description: Provide security assurance through identity management
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/resiliency/backup-and-recovery"
+- description: ID管理によるセキュリティ保証の提供
   aprlGuid: 835e616d-78e6-7f4c-a48b-6f80382a48cf
   recommendationTypeId: null
   recommendationControl: Security
   recommendationImpact: Medium
   recommendationResourceType: WellArchitected/Design
   recommendationMetadataState: Active
-  longDescription: |
-    Provide security assurance through identity management: the process of authenticating and authorizing security principals. Use identity management services to authenticate and grant permission to users, partners, customers, applications, services, and other entities. Identity management is typically a centralized function not controlled by the workload team as a part of the workload's architecture.
+  longDescription: |-
+    ID 管理を通じてセキュリティを保証します。つまり、セキュリティ プリンシパルを認証および認可するプロセスです。 ID 管理サービスを使用して、ユーザー、パートナー、顧客、アプリケーション、サービス、その他のエンティティを認証し、権限を付与します。 ID 管理は通常、ワークロード アーキテクチャの一部としてワークロード チームによって制御されない集中機能です。
 
-    - Define clear lines of responsibility and separation of duties for each function. Restrict access based on a need-to-know basis and least privilege security principles.
-    - Assign permissions to users, groups, and applications at a certain scope through Azure RBAC. Use built-in roles when possible.
-    - Prevent deletion or modification of a resource, resource group, or subscription through management locks.
-    - Use managed identities to access resources in Azure.
+    - 各機能の明確な責任範囲と職務の分離を定義します。必知事項と最小権限のセキュリティ原則に基づいてアクセスを制限します。
+    - Azure RBAC を通じて、特定のスコープでユーザー、グループ、アプリケーションにアクセス許可を割り当てます。可能な場合は、組み込みの役割を使用してください。
+    - 管理ロックによるリソース、リソース グループ、またはサブスクリプションの削除または変更を防止します。
+    - マネージド ID を使用して Azure のリソースにアクセスします。
   potentialBenefits: Enhanced access control and security
   pgVerified: true
   publishedToLearn: false
@@ -186,25 +179,24 @@
   tags: null
   learnMoreLink:
     - name: Azure identity and access management considerations
-      url: "https://learn.microsoft.com/azure/well-architected/security/design-identity"
-
-- description: Addressing security risks minimizes downtime and data loss from exposures
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/security/design-identity"
+- description: セキュリティリスクに対処することで、漏洩によるダウンタイムとデータ損失を最小限に抑えます。
   aprlGuid: c5d8f87e-45ef-1644-a4aa-95ec08b88109
   recommendationTypeId: null
   recommendationControl: Security
   recommendationImpact: High
   recommendationResourceType: WellArchitected/Design
   recommendationMetadataState: Active
-  longDescription: |
-    Security is one of the most important aspects of any architecture. It provides the following assurances against deliberate attacks and abuse of your valuable data and systems: Confidentiality ,Integrity, and Availability.
-    The security of complex systems depends on understanding the business context, social context, and technical context. As you design your system, cover these areas:
+  longDescription: |-
+    セキュリティは、あらゆるアーキテクチャにおいて最も重要な側面の 1 つです。これにより、貴重なデータやシステムの意図的な攻撃や悪用に対して、機密性、完全性、可用性が保証されます。
+    複雑なシステムのセキュリティは、ビジネス コンテキスト、社会的コンテキスト、および技術的コンテキストの理解に依存します。システムを設計する際には、次の領域をカバーしてください。
 
-    - Ensure that the identity provider (AAD/ADFS/AD/Other) is highly available and aligns with application availability and recovery targets.
-    - All external application endpoints are secured.
-    - Communication to Azure PaaS services secured using Virtual Network Service Endpoints or Private Link.
-    - Keys and secrets are backed-up to geo-redundant storage, and are still available in a failover case.
-    - Ensure that the process for key rotation is automated and tested.
-    - Emergency access break glass accounts have been tested and secured for recovering from Identity provider failure scenarios.
+    - ID プロバイダー (AAD/ADFS/AD/その他) が高可用性であり、アプリケーションの可用性と回復ターゲットと一致していることを確認します。
+    - すべての外部アプリケーション エンドポイントはセキュリティで保護されています。
+    - 仮想ネットワーク サービス エンドポイントまたはプライベート リンクを使用して保護された Azure PaaS サービスへの通信。
+    - キーとシークレットは地理的冗長ストレージにバックアップされ、フェイルオーバーの場合でも引き続き使用できます。
+    - キーのローテーションのプロセスが自動化され、テストされていることを確認します。
+    - 緊急アクセス ブレークグラス アカウントは、アイデンティティ プロバイダーの障害シナリオから回復できるようにテストされ、保護されています。
   potentialBenefits: Minimizes downtime and data loss
   pgVerified: true
   publishedToLearn: false
@@ -213,4 +205,4 @@
   tags: null
   learnMoreLink:
     - name: Security design principles
-      url: "https://learn.microsoft.com/azure/well-architected/security/security-principles"
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/security/security-principles"

@@ -15,9 +15,9 @@
   tags: null
   learnMoreLink:
     - name: Log Analytics workspace data export in Azure Monitor
-      url: "https://learn.microsoft.com/azure/azure-monitor/logs/logs-data-export"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/logs/logs-data-export"
     - name: Azure Monitor configuration recommendations
-      url: "https://learn.microsoft.com/azure/azure-monitor/best-practices-logs#configuration-recommendations"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/best-practices-logs#configuration-recommendations"
 - description: Log Analytics ワークスペースの正常性状態アラート ルールを作成する
   aprlGuid: 4b77191c-cc3c-8c4e-844b-0f56d0927890
   recommendationTypeId: null
@@ -35,9 +35,9 @@
   tags: null
   learnMoreLink:
     - name: Monitor Log Analytics workspace health
-      url: "https://learn.microsoft.com/azure/azure-monitor/logs/log-analytics-workspace-health"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/logs/log-analytics-workspace-health"
     - name: Azure Monitor configuration recommendations
-      url: "https://learn.microsoft.com/azure/azure-monitor/best-practices-logs#configuration-recommendations"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/best-practices-logs#configuration-recommendations"
 - description: 最小限のログ記録とログの保持を構成する
   aprlGuid: 7a0063ee-98a0-4634-823b-310a67f798cc
   recommendationTypeId: null
@@ -55,8 +55,8 @@
   tags: null
   learnMoreLink:
     - name: Data retention and archive in Azure Monitor Logs
-      url: "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-retention-archive?tabs=portal-1%2Cportal-2"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/logs/data-retention-archive?tabs=portal-1%2Cportal-2"
     - name: Run search jobs in Azure Monitor
-      url: "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/search-jobs?tabs=portal-1%2Cportal-2"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/logs/search-jobs?tabs=portal-1%2Cportal-2"
     - name: Restore logs in Azure Monitor
-      url: "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/restore?tabs=api-1"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/logs/restore?tabs=api-1"

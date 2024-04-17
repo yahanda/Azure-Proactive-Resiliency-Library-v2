@@ -15,7 +15,7 @@
   tags: null
   learnMoreLink:
     - name: Azure Event Hubs - Geo-disaster recovery
-      url: "https://learn.microsoft.com/azure/event-hubs/event-hubs-geo-dr?tabs=portal#availability-zones"
+      url: "https://learn.microsoft.com/ja-jp/azure/event-hubs/event-hubs-geo-dr?tabs=portal#availability-zones"
 - description: Event Hub Standard レベルで自動インフレを有効にする
   aprlGuid: fbfef3df-04a5-41b2-a8fd-b8541eb04956
   recommendationTypeId: null
@@ -33,4 +33,4 @@
   tags: null
   learnMoreLink:
     - name: Azure Event Hubs - Automatically scale throughput units
-      url: "https://learn.microsoft.com/azure/event-hubs/event-hubs-auto-inflate"
+      url: "https://learn.microsoft.com/ja-jp/azure/event-hubs/event-hubs-auto-inflate"

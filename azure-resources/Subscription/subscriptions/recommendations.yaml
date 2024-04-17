@@ -15,7 +15,7 @@
   tags: null
   learnMoreLink:
     - name: Citrix Limits
-      url: "https://docs.citrix.com/en-us/citrix-daas-azure/limits"
+      url: "https://docs.citrix.com/ja-jp/citrix-daas-azure/limits"
 - description: サブスクリプションはテナント ルート管理グループの下に配置しないでください
   aprlGuid: 5ada5ffa-7149-4e49-9fbf-e67be7c2594c
   recommendationTypeId: null
@@ -33,6 +33,6 @@
   tags: null
   learnMoreLink:
     - name: Management group recommendations
-      url: "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/resource-org-management-groups#management-group-recommendations"
+      url: "https://learn.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/landing-zone/design-area/resource-org-management-groups#management-group-recommendations"
     - name: Root management group for each directory
-      url: "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview#root-management-group-for-each-directory"
+      url: "https://learn.microsoft.com/ja-jp/azure/governance/management-groups/overview#root-management-group-for-each-directory"

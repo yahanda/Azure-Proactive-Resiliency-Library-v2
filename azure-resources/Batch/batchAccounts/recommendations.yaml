@@ -15,7 +15,7 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/azure/reliability/reliability-batch#cross-region-disaster-recovery-and-business-continuity"
+      url: "https://learn.microsoft.com/ja-jp/azure/reliability/reliability-batch#cross-region-disaster-recovery-and-business-continuity"
 - description: アベイラビリティーゾーン全体で Azure Batch プールを作成する
   aprlGuid: 71cfab8f-d588-4742-b175-b6e07ae48dbd
   recommendationTypeId: null
@@ -33,4 +33,4 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/azure/batch/create-pool-availability-zones"
+      url: "https://learn.microsoft.com/ja-jp/azure/batch/create-pool-availability-zones"

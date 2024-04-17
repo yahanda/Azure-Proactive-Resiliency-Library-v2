@@ -15,7 +15,7 @@
   tags: null
   learnMoreLink:
     - name: Designing for disaster recovery with ExpressRoute private peering
-      url: "https://learn.microsoft.com/azure/expressroute/designing-for-disaster-recovery-with-expressroute-privatepeering"
+      url: "https://learn.microsoft.com/ja-jp/azure/expressroute/designing-for-disaster-recovery-with-expressroute-privatepeering"
 - description: ゾーン冗長 ExpressRoute ゲートウェイ SKU を使用する
   aprlGuid: bbe668b7-eb5c-c746-8b82-70afdedf0cae
   recommendationTypeId: null
@@ -33,11 +33,11 @@
   tags: null
   learnMoreLink:
     - name: About ExpressRoute virtual network gateways - Zone-redundant gateway SKUs
-      url: "https://learn.microsoft.com/azure/expressroute/expressroute-about-virtual-network-gateways#zrgw"
+      url: "https://learn.microsoft.com/ja-jp/azure/expressroute/expressroute-about-virtual-network-gateways#zrgw"
     - name: About zone-redundant virtual network gateway in Azure availability zones
-      url: "https://learn.microsoft.com/azure/vpn-gateway/about-zone-redundant-vnet-gateways"
+      url: "https://learn.microsoft.com/ja-jp/azure/vpn-gateway/about-zone-redundant-vnet-gateways"
     - name: Create a zone-redundant virtual network gateway in Azure Availability Zones
-      url: "https://learn.microsoft.com/azure/vpn-gateway/create-zone-redundant-vnet-gateway"
+      url: "https://learn.microsoft.com/ja-jp/azure/vpn-gateway/create-zone-redundant-vnet-gateway"
 - description: ExpressRoute ゲートウェイの Azure リソース ロックを構成して、誤って削除されないようにする
   aprlGuid: c0f23a92-d322-4d4d-97e9-a238b5e3bbb8
   recommendationTypeId: null
@@ -55,7 +55,7 @@
   tags: null
   learnMoreLink:
     - name: Protect your Azure resources with a lock - Azure Resource Manager | Microsoft Learn
-      url: "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources?tabs=json"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-resource-manager/management/lock-resources?tabs=json"
 - description: ExpressRoute ゲートウェイのゲートウェイの正常性を監視する
   aprlGuid: 1c34faa8-8b99-974c-adbf-71922eae943c
   recommendationTypeId: null
@@ -73,9 +73,9 @@
   tags: null
   learnMoreLink:
     - name: ExpressRoute monitoring, metrics, and alerts | ExpressRoute gateways
-      url: "https://learn.microsoft.com/azure/expressroute/expressroute-monitoring-metrics-alerts#expressroute-gateways"
+      url: "https://learn.microsoft.com/ja-jp/azure/expressroute/expressroute-monitoring-metrics-alerts#expressroute-gateways"
     - name: Azure ExpressRoute Insights using Network Insights
-      url: "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-network-insights"
+      url: "https://learn.microsoft.com/ja-jp/azure/expressroute/expressroute-network-insights"
 - description: VNet 間の通信に ExpressRoute 回線の使用を避ける
   aprlGuid: 194c14ac-0d7a-5a48-ae32-75fa450ee564
   recommendationTypeId: null
@@ -93,7 +93,7 @@
   tags: null
   learnMoreLink:
     - name: About ExpressRoute virtual network gateways - VNet-to-VNet connectivity
-      url: "https://learn.microsoft.com/azure/expressroute/expressroute-about-virtual-network-gateways#vnet-to-vnet-connectivity"
+      url: "https://learn.microsoft.com/ja-jp/azure/expressroute/expressroute-about-virtual-network-gateways#vnet-to-vnet-connectivity"
 - description: 顧客制御の ExpressRoute ゲートウェイ メンテナンスを構成する
   aprlGuid: 3e115044-a3aa-433e-be01-ce17d67e50da
   recommendationTypeId: null
@@ -111,7 +111,7 @@
   tags: null
   learnMoreLink:
     - name: Configure customer-controlled maintenance for your virtual network gateway - ExpressRoute | Microsoft Learn
-      url: "https://learn.microsoft.com/en-us/azure/expressroute/customer-controlled-gateway-maintenance#azure-portal-steps"
+      url: "https://learn.microsoft.com/ja-jp/azure/expressroute/customer-controlled-gateway-maintenance#azure-portal-steps"
 - description: ゾーン冗長 VPN ゲートウェイを選択する
   aprlGuid: 5b1933a6-90e4-f642-a01f-e58594e5aab2
   recommendationTypeId: null
@@ -129,9 +129,9 @@
   tags: null
   learnMoreLink:
     - name: Zone redundant Virtual network gateway in availability zone
-      url: "https://learn.microsoft.com/azure/vpn-gateway/about-zone-redundant-vnet-gateways"
+      url: "https://learn.microsoft.com/ja-jp/azure/vpn-gateway/about-zone-redundant-vnet-gateways"
     - name: Gateway SKU
-      url: "https://learn.microsoft.com/azure/vpn-gateway/about-zone-redundant-vnet-gateways#gwskus"
+      url: "https://learn.microsoft.com/ja-jp/azure/vpn-gateway/about-zone-redundant-vnet-gateways#gwskus"
     - name: SLA summary for Azure services
       url: "https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services?lang=1"
 - description: VPN ゲートウェイを使用したアクティブ/アクティブ モードの計画
@@ -151,9 +151,9 @@
   tags: null
   learnMoreLink:
     - name: Active-active VPN gateway
-      url: "https://learn.microsoft.com/azure/vpn-gateway/active-active-portal#gateway"
+      url: "https://learn.microsoft.com/ja-jp/azure/vpn-gateway/active-active-portal#gateway"
     - name: Gateway SKU
-      url: "https://learn.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#gwsku"
+      url: "https://learn.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings#gwsku"
 - description: アクティブ/アクティブ VPN コンセントレータをオンプレミスに導入して、VPN ゲートウェイの復元力を最大限に高めます
   aprlGuid: af11fc4c-c06c-4f4c-b98d-6eee6d5c4c70
   recommendationTypeId: null
@@ -171,7 +171,7 @@
   tags: null
   learnMoreLink:
     - name: Dual-redundancy active-active VPN gateways for both Azure and on-premises networks
-      url: "https://learn.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable#dual-redundancy-active-active-vpn-gateways-for-both-azure-and-on-premises-networks"
+      url: "https://learn.microsoft.com/ja-jp/azure/vpn-gateway/vpn-gateway-highlyavailable#dual-redundancy-active-active-vpn-gateways-for-both-azure-and-on-premises-networks"
 - description: VPN ゲートウェイの接続と状態を監視する
   aprlGuid: 9eab120e-f6d3-ee49-ba0d-766562ce7df1
   recommendationTypeId: null
@@ -189,7 +189,7 @@
   tags: null
   learnMoreLink:
     - name: VPN gateway data reference
-      url: "https://learn.microsoft.com/azure/vpn-gateway/monitor-vpn-gateway-reference"
+      url: "https://learn.microsoft.com/ja-jp/azure/vpn-gateway/monitor-vpn-gateway-reference"
 - description: VPN ゲートウェイ サービスの健全性を有効にする
   aprlGuid: 9186dae0-7ddc-8f4b-bea5-55538cea4893
   recommendationTypeId: null
@@ -207,9 +207,9 @@
   tags: null
   learnMoreLink:
     - name: Getting started with Azure Metrics Explorer
-      url: "https://learn.microsoft.com/azure/azure-monitor/essentials/metrics-getting-started"
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/essentials/metrics-getting-started"
     - name: Monitor VPN gateway
-      url: "https://learn.microsoft.com/azure/vpn-gateway/monitor-vpn-gateway-reference#metrics"
+      url: "https://learn.microsoft.com/ja-jp/azure/vpn-gateway/monitor-vpn-gateway-reference#metrics"
 - description: ゾーン冗長パブリック IP を備えたゾーン冗長 VPN ゲートウェイを展開する
   aprlGuid: 4bae5a28-5cf4-40d9-bcf1-623d28f6d917
   recommendationTypeId: null
@@ -227,4 +227,4 @@
   tags: null
   learnMoreLink:
     - name: About zone-redundant virtual network gateway in Azure availability zones
-      url: "https://learn.microsoft.com/azure/vpn-gateway/about-zone-redundant-vnet-gateways"
+      url: "https://learn.microsoft.com/ja-jp/azure/vpn-gateway/about-zone-redundant-vnet-gateways"

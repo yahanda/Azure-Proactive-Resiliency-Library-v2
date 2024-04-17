@@ -15,9 +15,9 @@
   tags: null
   learnMoreLink:
     - name: Change your API Management service tier
-      url: "https://learn.microsoft.com/en-us/azure/api-management/upgrade-and-scale#change-your-api-management-service-tier"
+      url: "https://learn.microsoft.com/ja-jp/azure/api-management/upgrade-and-scale#change-your-api-management-service-tier"
     - name: Migrate Azure API Management to availability zone support
-      url: "https://learn.microsoft.com/en-us/azure/reliability/migrate-api-mgt"
+      url: "https://learn.microsoft.com/ja-jp/azure/reliability/migrate-api-mgt"
 - description: Premium API Management インスタンスでアベイラビリティーゾーンを有効にする
   aprlGuid: 740f2c1c-8857-4648-80eb-47d2c56d5a50
   recommendationTypeId: null
@@ -35,9 +35,9 @@
   tags: null
   learnMoreLink:
     - name: Ensure API Management availability and reliability
-      url: "https://learn.microsoft.com/en-us/azure/api-management/high-availability#availability-zones"
+      url: "https://learn.microsoft.com/ja-jp/azure/api-management/high-availability#availability-zones"
     - name: Migrate Azure API Management to availability zone support
-      url: "https://learn.microsoft.com/en-us/azure/reliability/migrate-api-mgt"
+      url: "https://learn.microsoft.com/ja-jp/azure/reliability/migrate-api-mgt"
 - description: プラットフォーム バージョン stv2 にアップグレードする
   aprlGuid: e35cf148-8eee-49d1-a1c9-956160f99e0b
   recommendationTypeId: null
@@ -55,6 +55,6 @@
   tags: null
   learnMoreLink:
     - name: Azure API Management - stv1 platform retirement (August 2024)
-      url: "https://learn.microsoft.com/en-us/azure/api-management/breaking-changes/stv1-platform-retirement-august-2024"
+      url: "https://learn.microsoft.com/ja-jp/azure/api-management/breaking-changes/stv1-platform-retirement-august-2024"
     - name: Azure API Management compute platform
-      url: "https://learn.microsoft.com/en-us/azure/api-management/compute-infrastructure"
+      url: "https://learn.microsoft.com/ja-jp/azure/api-management/compute-infrastructure"

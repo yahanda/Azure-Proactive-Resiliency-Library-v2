@@ -1,12 +1,12 @@
-- description: Use Private link when connecting to File Share or Key Vault
+- description: ファイル共有または Key Vault に接続するときにプライベート リンクを使用する
   aprlGuid: dc55be60-6f8c-461e-a9d5-a3c7686ed94e
   recommendationTypeId: null
   recommendationControl: Security
   recommendationImpact: Medium
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    Private Link is available for other Azure services that work in conjunction with Azure Virtual Desktop, such as Azure Files and Key Vault. From a resiliency standpoint, we recommending implementing private endpoints for these services to reduce exposure to potential internet-related issues such as latency, packet loss, and/or downtime. This can lead to more reliable communication between AVD and dependent services.
+  longDescription: |-
+    Private Link は、Azure Files や Key Vault など、Azure Virtual Desktop と連携して動作する他の Azure サービスで使用できます。復元力の観点から、レイテンシー、パケット損失、ダウンタイムなどの潜在的なインターネット関連の問題にさらされる可能性を軽減するために、これらのサービスにプライベート エンドポイントを実装することをお勧めします。これにより、AVD と依存サービス間の通信の信頼性が向上します。
   potentialBenefits: Enhances AVD reliability
   pgVerified: true
   publishedToLearn: false
@@ -15,20 +15,19 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/azure/architecture/example-scenario/wvd/windows-virtual-desktop#azure-virtual-desktop-limitations"
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/example-scenario/wvd/windows-virtual-desktop#azure-virtual-desktop-limitations"
     - name: Private Link
-      url: "https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/networking#private-endpoints-private-link"
-
-- description: Deploy Domain Controllers and DNS Servers in Azure Virtual Network Across Availability Zones
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/azure-virtual-desktop/networking#private-endpoints-private-link"
+- description: アベイラビリティーゾーン全体の Azure 仮想ネットワークにドメイン コントローラーと DNS サーバーをデプロイする
   aprlGuid: 99bf5c94-aa68-4bb3-8b7f-45d1c5f09b5d
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    When using an AD DS identity solution with AVD, it is recommended to deploy domain controllers and DNS servers on Azure virtual machines across availability zones. This improves the environment's reliability by removing a dependency on an on-premises service and improves performance by creating a shorter path for user authentication.
-    This recommendation is not relevant when you are utilizing Microsoft Entra as the identity provider.
+  longDescription: |-
+    AVD で AD DS ID ソリューションを使用する場合は、可用性ゾーン全体の Azure 仮想マシンにドメイン コントローラーと DNS サーバーをデプロイすることをお勧めします。これにより、オンプレミス サービスへの依存関係が削除されて環境の信頼性が向上し、ユーザー認証のパスが短縮されてパフォーマンスが向上します。
+    Microsoft Entra を ID プロバイダーとして利用している場合、この推奨事項は関係ありません。
   potentialBenefits: Enhanced reliability and performance
   pgVerified: true
   publishedToLearn: false
@@ -37,17 +36,16 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/azure/architecture/example-scenario/identity/adds-extend-domain#reliability"
-
-- description: Implement RDP Shortpath for Public or Managed Networks
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/example-scenario/identity/adds-extend-domain#reliability"
+- description: パブリックまたはマネージド ネットワーク用の RDP ショートパスを実装する
   aprlGuid: 3835b4b3-0479-4be8-9ffd-34ae29fa33b9
   recommendationTypeId: null
   recommendationControl: Other Best Practices
   recommendationImpact: Medium
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    It is recommended to enable RDP Shortpath for AVD. RDP Shortpath is a feature of Azure Virtual Desktop that establishes a direct UDP-based transport between a supported Windows Remote Desktop client and session host. By default, Remote Desktop Protocol (RDP) tries to establish connection using UDP and uses a TCP-based reverse connect transport as a fallback connection mechanism. TCP-based reverse connect transport provides the best compatibility with various networking configurations and has a high success rate for establishing RDP connections. UDP-based transport offers better connection reliability and more consistent latency.
+  longDescription: |-
+    AVD の RDP ショートパスを有効にすることをお勧めします。 RDP ショートパスは、サポートされている Windows リモート デスクトップ クライアントとセッション ホスト間に直接 UDP ベースのトランスポートを確立する Azure Virtual Desktop の機能です。デフォルトでは、リモート デスクトップ プロトコル (RDP) は UDP を使用して接続を確立しようとし、フォールバック接続メカニズムとして TCP ベースのリバース接続トランスポートを使用します。 TCP ベースのリバース接続トランスポートは、さまざまなネットワーク構成との最高の互換性を提供し、RDP 接続の確立に高い成功率をもたらします。 UDP ベースのトランスポートにより、接続の信頼性が向上し、遅延がより安定します。
   potentialBenefits: Better reliability and consistent latency
   pgVerified: true
   publishedToLearn: false
@@ -56,17 +54,16 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/azure/virtual-desktop/rdp-shortpath?tabs=managed-networks"
-
-- description: Implement a Multi-Region BCDR Plan
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-desktop/rdp-shortpath?tabs=managed-networks"
+- description: マルチリージョン BCDR 計画の導入
   aprlGuid: 0714d039-535e-468d-9732-e32b5c094faa
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: Medium
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    It is recommended to adopt a multi-region deployment (active-active) for AVD. Each region should contain at least identity, name resolution, AVD management resources, and session hosts in case of a primary region outage.
+  longDescription: |-
+    AVD にはマルチリージョン展開 (アクティブ/アクティブ) を採用することをお勧めします。各リージョンには、プライマリ リージョンが停止した場合に備えて、少なくとも ID、名前解決、AVD 管理リソース、およびセッション ホストが含まれている必要があります。
   potentialBenefits: Enhanced resilience and uptime
   pgVerified: true
   publishedToLearn: false
@@ -75,19 +72,18 @@
   tags: null
   learnMoreLink:
     - name: Multi-region BCDR
-      url: "https://learn.microsoft.com/en-us/azure/architecture/example-scenario/wvd/azure-virtual-desktop-multi-region-bcdr"
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/example-scenario/wvd/azure-virtual-desktop-multi-region-bcdr"
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/business-continuity#active-active-scenarios"
-
-- description: Store Golden Image Redundantly for Disaster Recovery
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/azure-virtual-desktop/business-continuity#active-active-scenarios"
+- description: 災害復旧のためにゴールデン イメージを冗長的に保存する
   aprlGuid: 0bf1a2bb-7617-4ab2-a784-e7ea40c5f01b
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: Low
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    If a full BCDR strategy is not in place, consider using zone-redundant storage to store golden images across availability zones. Having the image available will allow for faster recovery in case of zonal or regional outage.
+  longDescription: |-
+    完全な BCDR 戦略が導入されていない場合は、ゾーン冗長ストレージを使用してアベイラビリティ ゾーン全体にゴールデン イメージを保存することを検討してください。イメージを利用できるようにすると、ゾーンまたはリージョンの停止が発生した場合に、より迅速に回復できます。
   potentialBenefits: Faster recovery from outages
   pgVerified: true
   publishedToLearn: false
@@ -96,21 +92,20 @@
   tags: null
   learnMoreLink:
     - name: Golden Image
-      url: "https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/business-continuity#golden-images"
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/azure-virtual-desktop/business-continuity#golden-images"
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/application-delivery#fault-tolerance"
-
-- description: Capacity Planning for AVD Resources
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/azure-virtual-desktop/application-delivery#fault-tolerance"
+- description: AVD リソースのキャパシティ プランニング
   aprlGuid: ef4b3561-c85f-47cf-8cb0-51fae9ddf929
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: Low
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    Monitor and plan for subscription limits and API throttling limits. Closely monitor your Azure Virtual Desktop deployments, and keep track of resource usage within your subscription. By proactively monitoring capacity, you can identify potential challenges early on, and you can take suitable actions to avoid reaching limits.
-    Consider scaling across multiple subscriptions if further scaling is required, or work with Azure support to adjust limits based on your business requirements.
-    To handle a large number of users, consider scaling horizontally by creating multiple host pools.
+  longDescription: |-
+    サブスクリプション制限と API スロットル制限を監視し、計画します。 Azure Virtual Desktop のデプロイを注意深く監視し、サブスクリプション内のリソースの使用状況を追跡します。キャパシティをプロアクティブに監視することで、潜在的な課題を早期に特定し、制限に達しないように適切な措置を講じることができます。
+    さらにスケーリングが必要な場合は、複数のサブスクリプションにわたるスケーリングを検討するか、Azure サポートと協力してビジネス要件に基づいて制限を調整してください。
+    多数のユーザーを処理するには、複数のホスト プールを作成して水平方向にスケーリングすることを検討してください。
   potentialBenefits: Avoids limits, ensures smooth scaling
   pgVerified: true
   publishedToLearn: false
@@ -119,25 +114,24 @@
   tags: null
   learnMoreLink:
     - name: Capacity Planning
-      url: "https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/business-continuity#capacity-planning"
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/azure-virtual-desktop/business-continuity#capacity-planning"
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/azure/architecture/example-scenario/wvd/windows-virtual-desktop#azure-virtual-desktop-limitations"
-
-- description: Ensure that FSLogix Storage Account is Redundant
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/example-scenario/wvd/windows-virtual-desktop#azure-virtual-desktop-limitations"
+- description: FSLogix ストレージ アカウントが冗長であることを確認する
   aprlGuid: ed1f0327-0914-49e8-9518-16acb0d6b8d6
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: Medium
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    It is important to ensure the redundancy of our user profiles when using FSLogix. When using FSLogix with AVD, it is deployed on a file share in a storage account. Data in an Azure Storage account is always replicated three times in the primary region. Below are the options for how your data is replicated in the primary or paired region:
-    LRS for least expensive replication (not recommended for apps with high availability and durability).
-    - LRS provides eleven 9s durability and replicates three time in a single physical location.
-    - ZRS is recommended for apps requiring high availability across zones. ZRS provides twelve 9s durability. Replicated across three availability zones
-    - GRS replicates an additional three copies to secondary region and provides sixteen 9s durability.
-    - GZRS provides both high availability and redundancy across geo replication. It provides sixteen 9s durability over a given year.
-    Generally, it is recommended to store your data as secure and redundant as possible.
+  longDescription: |-
+    FSLogix を使用する場合は、ユーザー プロファイルの冗長性を確保することが重要です。 AVD で FSLogix を使用する場合、FSLogix はストレージ アカウントのファイル共有にデプロイされます。 Azure ストレージ アカウント内のデータは、プライマリ リージョンで常に 3 回レプリケートされます。以下は、プライマリ リージョンまたはペアのリージョンでデータをレプリケートする方法のオプションです。
+    最も安価なレプリケーション用の LRS (高可用性と耐久性を備えたアプリには推奨されません)。
+    - LRS は、9 秒の耐久性を 11 回提供し、単一の物理的な場所で 3 回レプリケートします。
+    - ZRS は、ゾーン間での高可用性を必要とするアプリに推奨されます。 ZRS は 9 の耐久性を 12 回提供します。 3 つのアベイラビリティーゾーンにわたってレプリケートされる
+    - GRS は追加の 3 つのコピーをセカンダリ リージョンにレプリケートし、16 回の 9 の耐久性を提供します。
+    - GZRS は、geo レプリケーション全体で高可用性と冗長性の両方を提供します。これにより、1 年間に 16 回の 9 の耐久性が得られます。
+    一般に、データは可能な限り安全かつ冗長的に保存することをお勧めします。
   potentialBenefits: Improves data durability and availability
   pgVerified: true
   publishedToLearn: false
@@ -146,17 +140,16 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/azure/well-architected/azure-virtual-desktop/storage#user-profiles"
-
-- description: Enable Azure Backup for FSLogix Storage Account
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/azure-virtual-desktop/storage#user-profiles"
+- description: FSLogix ストレージ アカウントの Azure Backup を有効にする
   aprlGuid: 0025ed2e-41f4-4ada-93c1-12484cef8b0c
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: Medium
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    It is recommended to enable backup on the FSLogix Storage Account. Ensuring the user profiles are resilient will allow user data and experience to be consistent through outages.
+  longDescription: |-
+    FSLogix ストレージ アカウントでバックアップを有効にすることをお勧めします。ユーザー プロファイルの回復力を確保することで、障害が発生してもユーザー データとエクスペリエンスを一貫したものにすることができます。
   potentialBenefits: Ensures data resilience and consistency
   pgVerified: true
   publishedToLearn: false
@@ -165,19 +158,18 @@
   tags: null
   learnMoreLink:
     - name: FSLogix
-      url: "https://learn.microsoft.com/en-us/fslogix/overview-what-is-fslogix"
+      url: "https://learn.microsoft.com/ja-jp/fslogix/overview-what-is-fslogix"
     - name: Backup Storage Account
-      url: https://learn.microsoft.com/en-us/azure/backup/blob-backup-configure-manage?tabs=operational-backup
-
-- description: Validate AVD Session Host Connectivity to the AVD Control Plane and UDP Ports open if in use
+      url: https://learn.microsoft.com/ja-jp/azure/backup/blob-backup-configure-manage?tabs=operational-backup
+- description: AVD コントロール プレーンへの AVD セッション ホストの接続を検証し、使用中の場合は UDP ポートが開いているかどうかを検証します。
   aprlGuid: e718ac1a-ebab-4f75-9e4a-1a5ccef20d1f
   recommendationTypeId: null
   recommendationControl: Governance
   recommendationImpact: Medium
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    Ensure that AVD session hosts can effectively communicate with the AVD control plane and that UDP ports are open if UDP is utilized. Validate the connectivity of VMs to the AVD Control Plane and confirm the accessibility of UDP TURN ports. Whitelist global URLs and ensure that UDP/TURN ports are open and accessible to facilitate smooth user connections. Proper connectivity validation guarantees optimal performance and user experience within the AVD environment.
+  longDescription: |-
+    AVD セッション ホストが AVD コントロール プレーンと効果的に通信できること、および UDP が使用されている場合は UDP ポートが開いていることを確認します。 VM の AVD コントロール プレーンへの接続を検証し、UDP TURN ポートのアクセス可能性を確認します。グローバル URL をホワイトリストに登録し、UDP/TURN ポートが開いていてアクセスできることを確認し、スムーズなユーザー接続を促進します。適切な接続検証により、AVD 環境内で最適なパフォーマンスとユーザー エクスペリエンスが保証されます。
   potentialBenefits: Enhanced performance & user experience
   pgVerified: true
   publishedToLearn: false
@@ -186,18 +178,17 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/azure/virtual-desktop/troubleshoot-rdp-shortpath"
-
-- description: Ensure Secondary Entra ID connect synchronization server
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-desktop/troubleshoot-rdp-shortpath"
+- description: セカンダリ Entra ID が同期サーバーに接続されていることを確認する
   aprlGuid: d984eaf9-0fa1-4f8d-a326-bda751993c6f
   recommendationTypeId: null
   recommendationControl: Security
   recommendationImpact: Low
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    Hybrid - Entra ID Connect best to run in Azure but can be hosted on-prem. Secondary or more VMs should be setup in staging mode in event of failover.
-    Set up secondary server in staging mode for Entra Connect for syncing to Entra in case of primary server outage.
+  longDescription: |-
+    ハイブリッド - Entra ID Connect は Azure で実行するのが最適ですが、オンプレミスでホストすることもできます。フェールオーバーが発生した場合には、セカンダリ以上の VM をステージング モードでセットアップする必要があります。
+    プライマリ サーバーが停止した場合に Entra と同期できるように、Entra Connect のステージング モードでセカンダリ サーバーをセットアップします。
   potentialBenefits: Improved failover reliability
   pgVerified: true
   publishedToLearn: false
@@ -206,18 +197,17 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-install-multiple-domains"
-
-- description: Deploy paired Domain Controllers in the same region as AVD session hosts
+      url: "https://learn.microsoft.com/ja-jp/entra/identity/hybrid/connect/how-to-connect-install-multiple-domains"
+- description: ペアになったドメイン コントローラーを AVD セッション ホストと同じリージョンにデプロイする
   aprlGuid: d61f6ee8-de1b-4fd9-9ce3-316cfe11ee05
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: High
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    Ensure each region with session hosts has multiple domain controllers in the same region to support high availability with regards to identity.
-    For a hybrid scenario, each Azure region with AVD session hosts should have Active Directory Domain Controllers in Azure and use Availability Zones or Availability Sets for resilience within the region. This also mitigates dependency on ER/VPN/Inter-Azure dependencies.
+  longDescription: |-
+    ID に関する高可用性をサポートするために、セッション ホストのある各リージョンに同じリージョン内に複数のドメイン コントローラーがあることを確認します。
+    ハイブリッド シナリオの場合、AVD セッション ホストを含む各 Azure リージョンには、Azure 内に Active Directory ドメイン コントローラーがあり、リージョン内の復元力のために可用性ゾーンまたは可用性セットを使用する必要があります。これにより、ER/VPN/Azure 間の依存関係への依存も軽減されます。
   potentialBenefits: Enhanced identity resilience
   pgVerified: true
   publishedToLearn: false
@@ -226,17 +216,16 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/azure/architecture/example-scenario/azure-virtual-desktop/azure-virtual-desktop-multi-region-bcdr"
-
-- description: Ensure DNS regions are replicated to avoid single point of failure
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/example-scenario/azure-virtual-desktop/azure-virtual-desktop-multi-region-bcdr"
+- description: 単一障害点を回避するために DNS 領域が複製されていることを確認する
   aprlGuid: e1a34ac6-8761-4020-b537-d60c0be7514e
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: Medium
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    Active Directory Domain Services (AD DS) integrated DNS/other should target Secondary/Tertiary customer DNS across multi-region zones. If using custom DNS, ensure there are redundant DNS servers to avoid a single point of failure.
+  longDescription: |-
+    Active Directory ドメイン サービス (AD DS) 統合 DNS/その他は、マルチリージョン ゾーン全体のセカンダリ/ターシャリ顧客 DNS をターゲットにする必要があります。カスタム DNS を使用する場合は、単一障害点を避けるために冗長 DNS サーバーがあることを確認してください。
   potentialBenefits: Improves uptime & resilience
   pgVerified: true
   publishedToLearn: false
@@ -245,18 +234,17 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/azure/architecture/example-scenario/azure-virtual-desktop/azure-virtual-desktop-multi-region-bcdr"
-
-- description: Create updated image version and replace session hosts rather than updating host directly
+      url: "https://learn.microsoft.com/ja-jp/azure/architecture/example-scenario/azure-virtual-desktop/azure-virtual-desktop-multi-region-bcdr"
+- description: ホストを直接更新するのではなく、更新されたイメージ バージョンを作成してセッション ホストを置き換えます
   aprlGuid: 2831dab9-6a43-44a1-8aec-90a8e84894bc
   recommendationTypeId: null
   recommendationControl: Governance
   recommendationImpact: Low
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    Establish a systematic process for handling image updates within your Azure Virtual Desktop environment. Instead of directly updating individual session hosts, create a new version of the updated image. This process involves creating and configuring a golden image with the necessary updates and configurations. Once the new image is prepared, replace existing session hosts with instances using the updated image. This approach ensures consistency across all session hosts and minimizes the risk of configuration drift. Additionally, it enables quick rollback to a previous image version in case of any issues with the update. Implementing this process helps streamline maintenance activities and ensures that all session hosts are up-to-date with the latest configurations and updates.
-    has context menu
+  longDescription: |-
+    Azure Virtual Desktop 環境内でイメージの更新を処理するための体系的なプロセスを確立します。個々のセッション ホストを直接更新する代わりに、更新されたイメージの新しいバージョンを作成します。このプロセスには、必要な更新と構成を含むゴールデン イメージの作成と構成が含まれます。新しいイメージが準備されたら、更新されたイメージを使用して既存のセッション ホストをインスタンスに置き換えます。このアプローチにより、すべてのセッション ホスト間で一貫性が保証され、構成のドリフトのリスクが最小限に抑えられます。さらに、更新で問題が発生した場合に、以前のイメージ バージョンに迅速にロールバックできます。このプロセスを実装すると、メンテナンス作業が合理化され、すべてのセッション ホストが最新の構成と更新で最新の状態になることが保証されます。
+    コンテキストメニューがある
   potentialBenefits: Ensures consistency; minimizes drift
   pgVerified: true
   publishedToLearn: false
@@ -265,17 +253,16 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/training/modules/create-manage-session-host-image/"
-
-- description: Use Azure Site Recovery or Backups on VMs supporting personal desktops
+      url: "https://learn.microsoft.com/ja-jp/training/modules/create-manage-session-host-image/"
+- description: 個人デスクトップをサポートする VM で Azure Site Recovery またはバックアップを使用する
   aprlGuid: 38721758-2cc2-4d6b-b7b7-8b47dadbf7df
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: Medium
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    Leverage Azure Site Recovery (ASR) or implement Azure Backup for personal host pools for seamless failover and failback capabilities, enabling the replication of VMs supporting personal desktops to a secondary Azure region. In the event of a disaster or unexpected outage, this ensures the recovery of these VMs from a known-state.
+  longDescription: |-
+    Azure Site Recovery (ASR) を活用するか、個人用ホスト プールに Azure Backup を実装して、シームレスなフェールオーバーおよびフェールバック機能を実現し、個人用デスクトップをサポートする VM のセカンダリ Azure リージョンへのレプリケーションを可能にします。これにより、災害や予期せぬ停止が発生した場合でも、これらの VM を既知の状態から確実に回復できます。
   potentialBenefits: Ensures VM recovery & failover
   pgVerified: true
   publishedToLearn: false
@@ -284,18 +271,17 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/azure/virtual-desktop/scheduled-agent-updates"
-
-- description: Ensure a unique OU when deploying VMs to Domain
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-desktop/scheduled-agent-updates"
+- description: VM をドメインにデプロイするときに一意の OU を確保する
   aprlGuid: 939cb85c-102a-4e0a-ab82-5c92116d3778
   recommendationTypeId: null
   recommendationControl: Governance
   recommendationImpact: Medium
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    Hybrid VMs should be in a unique OU.
-    When using AD-joined session hosts will benefit from using a unique OU to target specific AVD configurations per hostpool. Examples include Fslogix, time out limits, session controls, and much more. It's also important to segment Prod and DR organization units to ensure resources are configured per environment.
+  longDescription: |-
+    ハイブリッド VM は一意の OU に存在する必要があります。
+    AD 参加セッションを使用する場合、ホストは一意の OU を使用してホストプールごとに特定の AVD 構成をターゲットにすることで利点を得ることができます。例には、Fslogix、タイムアウト制限、セッション制御などが含まれます。リソースが環境ごとに構成されていることを確認するために、本番環境と DR 組織単位をセグメント化することも重要です。
   potentialBenefits: Improved AVD hostpool config & segmentation
   pgVerified: true
   publishedToLearn: false
@@ -304,17 +290,16 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/virtual-dc/adds-on-azure-vm#configure-the-vms-and-install-active-directory-domain-services"
-
-- description: Ensure the standard FSLogix configuration is deployed
+      url: "https://learn.microsoft.com/ja-jp/windows-server/identity/ad-ds/deploy/virtual-dc/adds-on-azure-vm#configure-the-vms-and-install-active-directory-domain-services"
+- description: 標準の FSLogix 構成が展開されていることを確認します。
   aprlGuid: c15b2b73-52a1-4db2-88dd-d592424ff4e4
   recommendationTypeId: null
   recommendationControl: Governance
   recommendationImpact: High
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    Ensure all session hosts have the standard FSLogix configuration deployed. Regularly validate settings for consistency and alignment with best practices.
+  longDescription: |-
+    すべてのセッション ホストに標準の FSLogix 構成が展開されていることを確認します。設定の一貫性とベスト プラクティスとの整合性を定期的に検証します。
   potentialBenefits: Optimized session reliability and performance
   pgVerified: true
   publishedToLearn: false
@@ -323,17 +308,16 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/fslogix/reference-configuration-settings?tabs=profiles"
-
-- description: Ensure user permissions are set correctly on SMB shares
+      url: "https://learn.microsoft.com/ja-jp/fslogix/reference-configuration-settings?tabs=profiles"
+- description: ユーザー権限がSMB共有に正しく設定されていることを確認してください
   aprlGuid: 7b170ddd-5770-4945-9bc3-cd1ccf5f8672
   recommendationTypeId:
   recommendationControl: Security
   recommendationImpact: High
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    Verify user permissions are correctly set on SMB shares so that users have appropriate access to only their own profile and not other user profiles, while administrators have full access at the root volume. Also ensure secondary storage path permissions are set in case of a DR event.
+  longDescription: |-
+    ユーザー権限が SMB 共有に正しく設定されていることを確認して、ユーザーは自分のプロファイルのみに適切なアクセス権を持ち、他のユーザー プロファイルにはアクセスできず、管理者はルート ボリュームにフル アクセス権を持ちます。また、DR イベントの場合に備えて、セカンダリ ストレージ パスのアクセス許可が設定されていることを確認してください。
   potentialBenefits: Enhanced security & disaster recovery
   pgVerified: true
   publishedToLearn: false
@@ -342,17 +326,16 @@
   tags:
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/fslogix/how-to-configure-storage-permissions"
-
-- description: Configure Diagnostic Settings for FSLogix logs and enable review for accounts
+      url: "https://learn.microsoft.com/ja-jp/fslogix/how-to-configure-storage-permissions"
+- description: FSLogix ログの診断設定を構成し、アカウントのレビューを有効にする
   aprlGuid: 483f5a00-84a0-49f7-903b-ef6f1fc0c389
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
   recommendationImpact: Medium
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    Regularly review FSLogix logs for errors and issues related to login and mounting the profile. Events can be reviewed by looking locally inside the Session Host and also in Log Analytics when the Azure Monitor Agent is used.
+  longDescription: |-
+    ログインとプロファイルのマウントに関連するエラーや問題がないか、FSLogix ログを定期的に確認してください。イベントは、セッション ホスト内でローカルに確認することによって確認できます。また、Azure Monitor エージェントが使用されている場合は Log Analytics で確認することもできます。
   potentialBenefits: Enhanced AVD error tracking and resolution
   pgVerified: true
   publishedToLearn: false
@@ -361,17 +344,16 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/fslogix/troubleshooting-events-logs-diagnostics"
-
-- description: Manually update new FSLogix image when available
+      url: "https://learn.microsoft.com/ja-jp/fslogix/troubleshooting-events-logs-diagnostics"
+- description: 新しい FSLogix イメージが利用可能な場合は手動で更新します
   aprlGuid: d51e0a70-8b50-4be3-af8a-7c9065e47360
   recommendationTypeId: null
   recommendationControl: Governance
   recommendationImpact: Low
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    Ensure a process is in place to regularly check for FSLogix agent upgrades and maintain FSLogix up to date. We recommend customers upgrade to the latest version of FSLogix as quickly as their deployment process can allow. FSLogix will provide hotfix releases which address current and potential bugs that impact customer deployments. Additionally, it is the first requirement when opening any support case.
+  longDescription: |-
+    FSLogix エージェントのアップグレードを定期的にチェックし、FSLogix を最新の状態に維持するプロセスが導入されていることを確認します。お客様には、導入プロセスが許す限り速やかに FSLogix の最新バージョンにアップグレードすることをお勧めします。 FSLogix は、顧客の導入に影響を与える現在および潜在的なバグに対処するホットフィックス リリースを提供します。さらに、これはサポート ケースを開始する際の最初の要件です。
   potentialBenefits: Enhanced reliability & support
   pgVerified: true
   publishedToLearn: false
@@ -380,18 +362,17 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/fslogix/how-to-install-fslogix"
-
-- description: Turn on Continuous Availability for ANF if using App Attach
+      url: "https://learn.microsoft.com/ja-jp/fslogix/how-to-install-fslogix"
+- description: アプリの接続を使用する場合は、AND の継続的可用性をオンにします
   aprlGuid: 9b2301af-9cac-4f1a-871a-f17475d01812
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: Medium
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    Turn on Continuous Availability if using Azure Netapp Files.
-    Verify the number of users connecting to each file share to make sure the SMB path can handle the number of file connections. Currently, Azure Files supports up to 10k handles per root directory.
+  longDescription: |-
+    Azure Netapp Files を使用している場合は、継続的可用性をオンにします。
+    各ファイル共有に接続しているユーザーの数を確認して、SMB パスがファイル接続の数を処理できることを確認します。現在、Azure Files はルート ディレクトリごとに最大 10,000 のハンドルをサポートしています。
   potentialBenefits: Enhanced stability & user limit checks
   pgVerified: true
   publishedToLearn: false
@@ -400,19 +381,18 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-overview?pivots=msix-app-attach"
-
-- description: Segregate App attach storage in disaster recovery plans with distinct file shares
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-desktop/app-attach-overview?pivots=msix-app-attach"
+- description: 個別のファイル共有を使用してディザスター リカバリー プランでアプリ接続ストレージを分離する
   aprlGuid: 7d9c96a6-1ce5-4cf0-ad1b-638a37f753cb
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: Medium
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    App Attach packages should be on a separate share from profiles. And App Attach files should be backed up.
-    Best practice is to separate App Attach VHD files in a separate file share away from user profiles, both for performance and scalability purposes. Requirements can vary greatly depending on how many packaged applications are stored in an image, and you need to test your applications to understand your requirements.
-    Your file share should be in the same Azure region as your session hosts.
+  longDescription: |-
+    App Attach パッケージはプロファイルとは別の共有に存在する必要があります。また、アプリの添付ファイルもバックアップする必要があります。
+    ベスト プラクティスは、パフォーマンスとスケーラビリティの両方の目的で、App Attach VHD ファイルをユーザー プロファイルから離れた別のファイル共有に分離することです。要件は、イメージに保存されているパッケージ化されたアプリケーションの数によって大きく異なるため、要件を理解するにはアプリケーションをテストする必要があります。
+    ファイル共有は、セッション ホストと同じ Azure リージョン内にある必要があります。
   potentialBenefits: Enhances performance and scalability
   pgVerified: true
   publishedToLearn: false
@@ -421,17 +401,16 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/azure/virtual-desktop/app-attach-overview?pivots=msix-app-attach"
-
-- description: Ensure virtual networks have route tables/route server configured for all regions
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-desktop/app-attach-overview?pivots=msix-app-attach"
+- description: 仮想ネットワークにすべてのリージョンに対してルート テーブル/ルート サーバーが構成されていることを確認する
   aprlGuid: db1727d1-5c8e-4a01-a31e-f0d58cfd95b1
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: Medium
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    For high availability connections back to on-premises datacenters should consider backup paths across the regions that have been utilized. Ensure redundancy in routing by having a secondary route table in the secondary region.
+  longDescription: |-
+    高可用性を実現するには、オンプレミス データセンターに戻る接続で、使用されているリージョン全体のバックアップ パスを考慮する必要があります。セカンダリ リージョンにセカンダリ ルート テーブルを配置することで、ルーティングの冗長性を確保します。
   potentialBenefits: Enhanced availability & routing
   pgVerified: true
   publishedToLearn: false
@@ -440,18 +419,17 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/azure/expressroute/designing-for-disaster-recovery-with-expressroute-privatepeering#need-for-redundant-connectivity-solution"
-
-- description: Ensure virtual networks isolation with separate IP space and NSGs for Prod and DR
+      url: "https://learn.microsoft.com/ja-jp/azure/expressroute/designing-for-disaster-recovery-with-expressroute-privatepeering#need-for-redundant-connectivity-solution"
+- description: 本番環境と DR 用に個別の IP スペースと NSG を使用して仮想ネットワークを確実に分離
   aprlGuid: 37d1091b-e599-4548-a067-a9286be16e45
   recommendationTypeId: null
   recommendationControl: Business Continuity
   recommendationImpact: Medium
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    NSG and ASG per AVD persona and IP space per Prod/DR regions.
-    It's important your organization plans for IP addressing in Azure. Planning ensures the IP address space doesn't overlap across on-premises locations and Azure regions. Overlapping IP address spaces across on-premises and Azure regions create major contention challenges.
+  longDescription: |-
+    AVD ペルソナごとの NSG と ASG、および Prod/DR リージョンごとの IP スペース。
+    組織が Azure での IP アドレス指定を計画することが重要です。計画により、オンプレミスの場所と Azure リージョン間で IP アドレス空間が重複しないようにします。オンプレミスと Azure リージョン間で IP アドレス空間が重複すると、大きな競合の問題が発生します。
   potentialBenefits: Enhances security and prevents IP conflicts
   pgVerified: true
   publishedToLearn: false
@@ -460,18 +438,17 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-ip-addressing"
-
-- description: Ensure route tables accommodate failover
+      url: "https://learn.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-ip-addressing"
+- description: ルート テーブルがフェイルオーバーに対応していることを確認する
   aprlGuid: 4b1a45af-d35f-442d-922a-a3e7b6052de1
   recommendationTypeId:
   recommendationControl: Disaster Recovery
   recommendationImpact: Medium
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    Ensure Route Tables that force tunnel traffic to FW/NVA have failover considerations evaluated and won't fail or trigger next-gen FW protections.
-    AVD workload teams should collaborate with centralized teams that manage the shared infrastructure, like networking, to ensure that both Production and DR workloads have the appropriate route tables in place for failover of routing to perform as expected.
+  longDescription: |-
+    FW/NVA へのトンネル トラフィックを強制するルート テーブルでフェイルオーバーに関する考慮事項が評価され、失敗したり、次世代の FW 保護がトリガーされたりしないことを確認します。
+    AVD ワークロード チームは、ネットワークなどの共有インフラストラクチャを管理する集中チームと連携して、本番ワークロードと DR ワークロードの両方に、ルーティングのフェイルオーバーが期待どおりに実行されるように適切なルート テーブルが配置されていることを確認する必要があります。
   potentialBenefits: Enhanced failover reliability
   pgVerified: true
   publishedToLearn: false
@@ -480,17 +457,16 @@
   tags:
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-business-continuity-disaster-recovery"
-
-- description: Provision Secondary Key Vault for Disaster Recovery
+      url: "https://learn.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-business-continuity-disaster-recovery"
+- description: ディザスター リカバリー用にセカンダリ キー コンテナーをプロビジョニングする
   aprlGuid: 1f57434f-f884-41f3-b818-129bbe3c5d3b
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: High
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    To ensure continuous availability and disaster recovery readiness, it is recommended to provision a secondary Key Vault in a secondary region. In the event of a primary region failure, this secondary Key Vault will ensure that critical secrets are accessible for use in deployments in the secondary region.
+  longDescription: |-
+    継続的な可用性と災害復旧への備えを確保するには、セカンダリ リージョンにセカンダリ Key Vault をプロビジョニングすることをお勧めします。プライマリ リージョンに障害が発生した場合、このセカンダリ Key Vault によって、セカンダリ リージョンのデプロイで使用するために重要なシークレットにアクセスできることが保証されます。
   potentialBenefits: Ensures DR readiness and access
   pgVerified: true
   publishedToLearn: false
@@ -499,17 +475,16 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/azure/key-vault/general/disaster-recovery-guidance"
-
-- description: Configure AVD Insights Workbook
+      url: "https://learn.microsoft.com/ja-jp/azure/key-vault/general/disaster-recovery-guidance"
+- description: AVD インサイト ワークブックの構成
   aprlGuid: 0cf72d91-644d-4591-9bb7-84ba3f705a41
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
   recommendationImpact: High
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    AVD Insights is an Azure Workbook template provided by the AVD product team. It is highly recommended in order to monitor and troubleshoot AVD workloads across metrics, logs, events, and more. Both Production and DR workloads should be enabled with AVD Insights.
+  longDescription: |-
+    AVD Insights は、AVD 製品チームが提供する Azure ワークブック テンプレートです。メトリクス、ログ、イベントなどにわたる AVD ワークロードを監視およびトラブルシューティングするために、これを強くお勧めします。 AVD Insights では、本番環境と DR ワークロードの両方を有効にする必要があります。
   potentialBenefits: Enhanced AVD monitoring and troubleshooting
   pgVerified: true
   publishedToLearn: false
@@ -518,17 +493,16 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/azure/virtual-desktop/insights?tabs=monitor"
-
-- description: Ensure separate log analytics workspaces for Prod and DR
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-desktop/insights?tabs=monitor"
+- description: Prod と DR に個別のログ分析ワークスペースを確保する
   aprlGuid: 89b4d8f6-6345-4d66-9012-c3fc2aef94e8
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: Low
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    Having separate Log Analytics ensures that your DR environment is fully operational for visibility of the metrics, performance, and other auditing tools your workload teams will rely on in the event of an incident.
+  longDescription: |-
+    個別の Log Analytics を使用すると、DR 環境が完全に動作し、インシデント発生時にワークロード チームが依存するメトリクス、パフォーマンス、その他の監査ツールを可視化できます。
   potentialBenefits: Improved DR visibility and operation
   pgVerified: true
   publishedToLearn: false
@@ -537,17 +511,16 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/azure/virtual-desktop/diagnostics-log-analytics"
-
-- description: Organize AVD resources using the AVD Scale unit model described by the AVD Landing Zone Methodology
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-desktop/diagnostics-log-analytics"
+- description: AVD ランディング ゾーン方法論で記述された AVD スケール ユニット モデルを使用して AVD リソースを編成する
   aprlGuid: 204b56b0-9710-4c16-b506-bafb5fb318ed
   recommendationTypeId: null
   recommendationControl: Governance
   recommendationImpact: Low
   recommendationResourceType: n/a
   recommendationMetadataState: Active
-  longDescription: |
-    Follow AVD Landing Zone best practices using multiple resource groups based on resource type and associated shared resources for AVD workloads.
+  longDescription: |-
+    AVD ワークロードのリソース タイプと関連する共有リソースに基づいて複数のリソース グループを使用して、AVD ランディング ゾーンのベスト プラクティスに従います。
   potentialBenefits: Enhanced organization and scalability
   pgVerified: true
   publishedToLearn: false
@@ -556,4 +529,4 @@
   tags: null
   learnMoreLink:
     - name: Learn More
-      url: "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/enterprise-scale-landing-zone"
+      url: "https://learn.microsoft.com/ja-jp/azure/cloud-adoption-framework/scenarios/azure-virtual-desktop/enterprise-scale-landing-zone"

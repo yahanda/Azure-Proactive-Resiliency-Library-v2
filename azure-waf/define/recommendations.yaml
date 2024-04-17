@@ -1,18 +1,18 @@
-﻿- description: Define and share Availability Targets with all teams for workload consistency
+- description: ワークロードの一貫性を確保するために、可用性ターゲットを定義してすべてのチームと共有します
   aprlGuid: 0c8a12dd-52fb-cf40-bb4a-b60f99409bab
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: WellArchitected/Define
   recommendationMetadataState: Active
-  longDescription: |
-    Ensure the Availability Targets (SLA, SLO, SLI) are well defined, tested, monitored and communicated across teams working on the Workload.
+  longDescription: |-
+    可用性ターゲット (SLA、SLO、SLI) が適切に定義され、テストされ、監視され、ワークロードに取り組んでいるチーム間で伝達されていることを確認します。
 
-    A Service Level Agreement (SLA) is an availability target that represents a commitment around performance and availability of the application. Understanding the SLA of individual components within the system is essential to define reliability targets. Knowing the SLA of dependencies will also provide a justification for additional spend when making the dependencies highly available and with proper support contracts. Availability targets for any dependencies leveraged by the application should be understood and ideally align with application targets should also be considered.
+    サービス レベル アグリーメント (SLA) は、アプリケーションのパフォーマンスと可用性に関する約束を表す可用性目標です。信頼性の目標を定義するには、システム内の個々のコンポーネントの SLA を理解することが不可欠です。依存関係の SLA を把握しておくと、依存関係の可用性を高め、適切なサポート契約を結ぶ場合に追加費用を正当化することもできます。アプリケーションによって利用される依存関係の可用性目標を理解し、理想的にはアプリケーションの目標と整合することも考慮する必要があります。
 
-    Understanding your availability expectations is vital to reviewing overall operations for the application.
+    可用性に対する期待を理解することは、アプリケーションの全体的な操作をレビューするために不可欠です。
 
-    For example, if you are striving to achieve an application Service Level Objective (SLO) of 99.999%, the level of inherent operational action required by the application is going to be far greater than if an SLO of 99.9% was the goal.
+    たとえば、アプリケーションのサービス レベル目標 (SLO) 99.999% を達成しようとしている場合、アプリケーションに必要な固有の運用アクションのレベルは、SLO 99.9% が目標である場合よりもはるかに高くなります。
   potentialBenefits: Enhances reliability and communication
   pgVerified: true
   publishedToLearn: false
@@ -21,29 +21,28 @@
   tags: null
   learnMoreLink:
     - name: Use business metrics to design resilient Azure applications
-      url: "https://learn.microsoft.com/azure/well-architected/resiliency/business-metrics#workload-availability-targets"
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/resiliency/business-metrics#workload-availability-targets"
     - name: Target functional and nonfunctional requirements
-      url: "https://learn.microsoft.com/azure/well-architected/resiliency/design-requirements"
-
-- description: Ensure the Recovery Targets are well defined and communicated across teams working on the Workload
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/resiliency/design-requirements"
+- description: 回復目標が明確に定義され、ワークロードに取り組んでいるチーム全体に伝達されていることを確認します。
   aprlGuid: a43ab756-5b33-2345-8743-3daee911a1ae
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: High
   recommendationResourceType: WellArchitected/Define
   recommendationMetadataState: Active
-  longDescription: |
-    Ensure the Recovery Targets are well defined and communicated across teams working on the Workload.
-    Two important metrics to consider are the recovery time objective and recovery point objective, as they pertain to disaster recovery.
+  longDescription: |-
+    回復目標が明確に定義され、ワークロードに取り組んでいるチーム全体に伝達されていることを確認します。
+    考慮すべき 2 つの重要な指標は、災害復旧に関係する目標復旧時間と目標復旧時点です。
 
-    - Recovery time objective (RTO) is the maximum acceptable time that an application can be unavailable after an incident. If your RTO is 90 minutes, you must be able to restore the application to a running state within 90 minutes from the start of a disaster. If you have a very low RTO, you might keep a second regional deployment continually running an active/passive configuration on standby, to protect against a regional outage. In some cases, you might deploy an active/active configuration to achieve even lower RTO.
-    - Recovery point objective (RPO) is the maximum duration of data loss that is acceptable during a disaster. For example, if you store data in a single database, with no replication to other databases, and perform hourly backups, you could lose up to an hour of data.
-    RTO and RPO are non-functional requirements of a system and should be dictated by business requirements. To derive these values, it's a good idea to conduct a risk assessment, and clearly understanding the cost of downtime or data loss.
+    - 目標復旧時間 (RTO) は、インシデント後にアプリケーションが使用できなくなるまでの最大許容時間です。 RTO が 90 分の場合、災害の開始から 90 分以内にアプリケーションを実行状態に復元できなければなりません。 RTO が非常に低い場合は、リージョンの停止から保護するために、2 番目のリージョン展開をスタンバイでアクティブ/パッシブ構成で継続的に実行し続けることができます。場合によっては、アクティブ/アクティブ構成を導入して、さらに低い RTO を達成することもあります。
+    - 目標復旧時点 (RPO) は、災害時に許容できるデータ損失の最大期間です。たとえば、他のデータベースへのレプリケーションを行わずにデータを 1 つのデータベースに保存し、1 時間ごとにバックアップを実行すると、最大 1 時間のデータが失われる可能性があります。
+    RTO と RPO はシステムの非機能要件であり、ビジネス要件によって決定される必要があります。これらの値を導き出すには、リスク評価を実施し、ダウンタイムやデータ損失のコストを明確に理解することをお勧めします。
 
-    Monitoring and measuring application availability is vital to qualifying overall application health and progress towards defined targets. Make sure you measure and monitor key targets such as:
+    アプリケーションの可用性を監視および測定することは、アプリケーション全体の健全性を評価し、定義された目標に向けた進捗を確認するために不可欠です。次のような主要な目標を必ず測定および監視してください。
 
-    - Mean Time Between Failures (MTBF) — The average time between failures of a particular component.
-    - Mean Time to Recover (MTTR) — The average time it takes to restore a component after a failure.
+    - 平均故障間隔 (MTBF) — 特定のコンポーネントの平均故障間隔。
+    - 平均復旧時間 (MTTR) — 障害後にコンポーネントを復元するのにかかる平均時間。
   potentialBenefits: Improved recovery times and data loss prevention
   pgVerified: true
   publishedToLearn: false
@@ -52,4 +51,4 @@
   tags: null
   learnMoreLink:
     - name: Target functional and nonfunctional requirements
-      url: "https://learn.microsoft.com/azure/well-architected/resiliency/design-requirements"
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/resiliency/design-requirements"

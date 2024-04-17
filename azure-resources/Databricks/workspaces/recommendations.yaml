@@ -15,7 +15,7 @@
   tags: null
   learnMoreLink:
     - name: Databricks runtime support lifecycles
-      url: "https://learn.microsoft.com/en-us/azure/databricks/release-notes/runtime/databricks-runtime-ver"
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/release-notes/runtime/databricks-runtime-ver"
 - description: Databricks プールを使用する
   aprlGuid: c166602e-0804-e34b-be8f-09b4d56e1fcd
   recommendationTypeId: null
@@ -33,7 +33,7 @@
   tags: null
   learnMoreLink:
     - name: Best practices for reliability
-      url: "https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/reliability/best-practices"
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/lakehouse-architecture/reliability/best-practices"
 - description: ワーカー VM タイプとドライバー タイプには SSD でバックアップされた VM を使用する
   aprlGuid: 5877a510-8444-7a4c-8412-a8dab8662f7e
   recommendationTypeId: null
@@ -51,7 +51,7 @@
   tags: null
   learnMoreLink:
     - name: Azure managed disk types
-      url: "https://learn.microsoft.com/azure/virtual-machines/disks-types#premium-ssd"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/disks-types#premium-ssd"
 - description: バッチ ワークロードの自動スケーリングを有効にする
   aprlGuid: 5c72f0d6-55ec-d941-be84-36c194fa78c0
   recommendationTypeId: null
@@ -69,7 +69,7 @@
   tags: null
   learnMoreLink:
     - name: Best practices for reliability
-      url: "https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/reliability/best-practices#enable-autoscaling-for-batch-workloadss"
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/lakehouse-architecture/reliability/best-practices#enable-autoscaling-for-batch-workloadss"
 - description: SQL ウェアハウスの自動スケーリングを有効にする
   aprlGuid: 362ad2b6-b92c-414f-980a-0cf69467ccce
   recommendationTypeId: null
@@ -87,7 +87,7 @@
   tags: null
   learnMoreLink:
     - name: Best practices for reliability
-      url: "https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/reliability/best-practices#enable-autoscaling-for-sql-warehouse"
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/lakehouse-architecture/reliability/best-practices#enable-autoscaling-for-sql-warehouse"
 - description: Delta Live Tables の強化された自動スケーリングを使用する
   aprlGuid: cd77db98-9b13-6e4b-bd2b-74c2cb538628
   recommendationTypeId: null
@@ -105,9 +105,9 @@
   tags: null
   learnMoreLink:
     - name: Best practices for reliability
-      url: "https://learn.microsoft.com/azure/databricks/lakehouse-architecture/reliability/best-practices"
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/lakehouse-architecture/reliability/best-practices"
     - name: Databricks enhanced autoscaling
-      url: "https://learn.microsoft.com/azure/databricks/delta-live-tables/settings#use-autoscaling-to-increase-efficiency-and-reduce-resource-usage"
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/delta-live-tables/settings#use-autoscaling-to-increase-efficiency-and-reduce-resource-usage"
 - description: 自動ジョブ終了が有効になっています。ユーザー定義のローカル プロセスがないことを確認してください。
   aprlGuid: 3d3e53b5-ebd1-db42-b43b-d4fad74824ec
   recommendationTypeId: null
@@ -125,7 +125,7 @@
   tags: null
   learnMoreLink:
     - name: Best practices for reliability?
-      url: "https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/reliability/best-practices"
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/lakehouse-architecture/reliability/best-practices"
 - description: ロギングクラスターのログ配信を有効にする
   aprlGuid: 7fb90127-5364-bb4d-86fa-30778ed713fb
   recommendationTypeId: null
@@ -143,7 +143,7 @@
   tags: null
   learnMoreLink:
     - name: Create a cluster
-      url: "https://learn.microsoft.com/en-us/azure/databricks/clusters/configure#cluster-log-delivery"
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/clusters/configure#cluster-log-delivery"
 - description: 信頼性を高めるために Delta Lake を使用する
   aprlGuid: da4ea916-4df3-8c4d-8060-17b49da45977
   recommendationTypeId: null
@@ -161,7 +161,7 @@
   tags: null
   learnMoreLink:
     - name: Best practices for reliability
-      url: "https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/reliability/best-practices"
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/lakehouse-architecture/reliability/best-practices"
 - description: フォトン加速を使用する
   aprlGuid: 892ca809-e2b5-9a47-924a-71132bf6f902
   recommendationTypeId: null
@@ -179,7 +179,7 @@
   tags: null
   learnMoreLink:
     - name: Best practices for reliability
-      url: "https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/reliability/best-practices#use-apache-spark-or-photon-for-distributed-compute"
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/lakehouse-architecture/reliability/best-practices#use-apache-spark-or-photon-for-distributed-compute"
 - description: Databricks Auto Loader または Delta Live Tables を使用して、無効なデータまたは不適合なデータを自動的にレスキューします。
   aprlGuid: 7e52d64d-8cc0-8548-a593-eb49ab45630d
   recommendationTypeId: null
@@ -197,7 +197,7 @@
   tags: null
   learnMoreLink:
     - name: Best practices for reliability
-      url: "https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/reliability/best-practices"
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/lakehouse-architecture/reliability/best-practices"
 - description: ジョブの自動再試行と終了を構成する
   aprlGuid: 84e44da6-8cd7-b349-b02c-c8bf72cf587c
   recommendationTypeId: null
@@ -215,7 +215,7 @@
   tags: null
   learnMoreLink:
     - name: Best practices for reliability
-      url: "https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/reliability/best-practices"
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/lakehouse-architecture/reliability/best-practices"
 - description: スケーラブルな運用グレードのモデル サービス インフラストラクチャを使用する
   aprlGuid: 4cbb7744-ff3d-0447-badb-baf068c95696
   recommendationTypeId: null
@@ -233,7 +233,7 @@
   tags: null
   learnMoreLink:
     - name: Best practices for reliability
-      url: "https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/reliability/best-practices"
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/lakehouse-architecture/reliability/best-practices"
 - description: 階層化されたストレージ アーキテクチャを使用する
   aprlGuid: 1b0d0893-bf0e-8f4c-9dc6-f18f145c1ecf
   recommendationTypeId: null
@@ -251,7 +251,7 @@
   tags: null
   learnMoreLink:
     - name: Best practices for reliability
-      url: "https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/reliability/best-practices"
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/lakehouse-architecture/reliability/best-practices"
 - description: データの冗長性を削減してデータの整合性を向上させる
   aprlGuid: e93fe702-e385-d741-ba37-1f1656482ecd
   recommendationTypeId: null
@@ -269,7 +269,7 @@
   tags: null
   learnMoreLink:
     - name: Best practices for reliability
-      url: "https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/reliability/best-practices"
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/lakehouse-architecture/reliability/best-practices"
 - description: スキーマをアクティブに管理する
   aprlGuid: b7e1d13f-54c9-1648-8a52-34c0abe8ce16
   recommendationTypeId: null
@@ -287,7 +287,7 @@
   tags: null
   learnMoreLink:
     - name: Best practices for reliability
-      url: "https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/reliability/best-practices"
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/lakehouse-architecture/reliability/best-practices"
 - description: 使用上の制約とデータの期待
   aprlGuid: a42297c4-7e4f-8b41-8d4b-114033263f0e
   recommendationTypeId: null
@@ -305,7 +305,7 @@
   tags: null
   learnMoreLink:
     - name: Best practices for reliability
-      url: "https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/reliability/best-practices#use-constraints-and-data-expectations"
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/lakehouse-architecture/reliability/best-practices#use-constraints-and-data-expectations"
 - description: 定期的なバックアップを作成する
   aprlGuid: 932d45d6-b46d-e341-abfb-d97bce832f1f
   recommendationTypeId: null
@@ -323,7 +323,7 @@
   tags: null
   learnMoreLink:
     - name: Best practices for reliability
-      url: "https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/reliability/best-practices#create-regular-backups"
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/lakehouse-architecture/reliability/best-practices#create-regular-backups"
 - description: 構造化ストリーミング クエリの失敗から回復する
   aprlGuid: 12e9d852-5cdc-2743-bffe-ee21f2ef7781
   recommendationTypeId: null
@@ -341,7 +341,7 @@
   tags: null
   learnMoreLink:
     - name: Best practices for reliability
-      url: "https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/reliability/best-practices#recover-from-structured-streaming-query-failures"
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/lakehouse-architecture/reliability/best-practices#recover-from-structured-streaming-query-failures"
 - description: デルタタイムトラベルに基づいて ETL ジョブをリカバリする
   aprlGuid: a18d60f8-c98c-ba4e-ad6e-2fac72879df1
   recommendationTypeId: null
@@ -359,7 +359,7 @@
   tags: null
   learnMoreLink:
     - name: Best practices for reliability
-      url: "https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/reliability/best-practices#recover-etl-jobs-based-on-delta-time-travel"
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/lakehouse-architecture/reliability/best-practices#recover-etl-jobs-based-on-delta-time-travel"
 - description: Databricks ワークフローと組み込みのリカバリを使用する
   aprlGuid: c0e22580-3819-444d-8546-a80e4ed85c83
   recommendationTypeId: null
@@ -377,7 +377,7 @@
   tags: null
   learnMoreLink:
     - name: Best practices for reliability
-      url: "https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/reliability/best-practices"
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/lakehouse-architecture/reliability/best-practices"
 - description: 災害復旧パターンを構成する
   aprlGuid: 4fdb7112-4531-6f48-b60e-c917a6068d9b
   recommendationTypeId: null
@@ -413,7 +413,7 @@
   tags: null
   learnMoreLink:
     - name: Best practices for operational excellence
-      url: "https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/operational-excellence/best-practices#2-automate-deployments-and-workloads"
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/lakehouse-architecture/operational-excellence/best-practices#2-automate-deployments-and-workloads"
 - description: 監視、アラート、ロギングを設定する
   aprlGuid: 20193ff9-dbcd-a74e-b197-71d7d9d3c1e6
   recommendationTypeId: null
@@ -431,7 +431,7 @@
   tags: null
   learnMoreLink:
     - name: Best practices for operational excellence
-      url: "https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/operational-excellence/best-practices#system-monitoring"
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/lakehouse-architecture/operational-excellence/best-practices#system-monitoring"
 - description: ワークスペースを個別のサブスクリプションにデプロイする
   aprlGuid: 397cdebb-9d6e-ab4f-83a1-8c481de0a3a7
   recommendationTypeId: null
@@ -503,7 +503,7 @@
   tags: null
   learnMoreLink:
     - name: Use Azure Spot Virtual Machines
-      url: "https://learn.microsoft.com/en-us/azure/virtual-machines/spot-vms"
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/spot-vms"
 - description: レガシーワークスペースの移行
   aprlGuid: 8aa63c34-dd9d-49bd-9582-21ec310dfbdd
   recommendationTypeId: null
@@ -521,7 +521,7 @@
   tags: null
   learnMoreLink:
     - name: Azure Databricks regions - IP addresses and domains
-      url: "https://learn.microsoft.com/azure/databricks/resources/supported-regions#--ip-addresses-and-domains"
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/resources/supported-regions#--ip-addresses-and-domains"
     - name: Migrate - maintained by Databricks Inc.
       url: "https://github.com/databrickslabs/migrate"
     - name: Databricks Terraform Exporter - maintained by Databricks Inc. (Experimental)
@@ -543,6 +543,6 @@
   tags: null
   learnMoreLink:
     - name: Compute configuration best practices
-      url: "https://learn.microsoft.com/azure/databricks/compute/cluster-config-best-practices"
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/compute/cluster-config-best-practices"
     - name: GPU-enabled compute
-      url: "https://learn.microsoft.com/azure/databricks/compute/gpu"
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/compute/gpu"
