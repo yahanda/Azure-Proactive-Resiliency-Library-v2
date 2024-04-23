@@ -146,7 +146,7 @@
   recommendationResourceType: Microsoft.Cdn/profiles
   recommendationMetadataState: Active
   longDescription: |
-    If you use your own TLS certificates, set the Key Vault certificate version to 'Latest' to avoid reconfiguring Azure Front Door for new certificate versions and waiting for deployment across Front Door's environments.
+    独自の TLS 証明書を使用する場合は、新しい証明書バージョンに合わせて Azure Front Door を再構成したり、Front Door の環境全体で展開を待機したりすることを避けるために、Key Vault 証明書のバージョンを "最新" に設定します。
   potentialBenefits: Saves time and automates TLS updates
   pgVerified: true
   publishedToLearn: false

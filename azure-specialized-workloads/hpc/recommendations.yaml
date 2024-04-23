@@ -24,7 +24,7 @@
   recommendationResourceType: n/a
   recommendationMetadataState: Active
   longDescription: |
-    By deploying Azure "burst" nodes (both Windows and Linux) in your HPC Pack cluster or creating your HPC Pack cluster in Azure, you can automatically grow or shrink the cluster's resources such as nodes or cores according to the workload on the cluster.
+    HPC Pack クラスターに Azure "バースト" ノード (Windows と Linux の両方) をデプロイするか、Azure に HPC Pack クラスターを作成すると、クラスター上のワークロードに応じて、ノードやコアなどのクラスターのリソースを自動的に拡大または縮小できます。
   potentialBenefits: Efficient, uninterrupted execution
   pgVerified: false
   publishedToLearn: false

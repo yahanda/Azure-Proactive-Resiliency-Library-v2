@@ -60,7 +60,7 @@
   recommendationResourceType: Microsoft.AVS/privateClouds
   recommendationMetadataState: Active
   longDescription: |-
-    Azure VMware ソリューションの場合、ストレッチ クラスターを有効にすると、99.99% の SLA、同期ストレージ レプリケーション (RPO=0) が提供され、vSAN データストアが 2 つの AZ に分散されます。初期セットアップ時に実行する必要があり、AZ 間での拡張により 2 倍のクォータが必要になります。
+    Azure VMware ソリューションの場合、ストレッチ クラスターを有効にすると、99.99% の SLA、同期ストレージ レプリケーション (RPOu003d0) が提供され、vSAN データストアが 2 つの AZ に分散されます。初期セットアップ時に実行する必要があり、AZ 間での拡張により 2 倍のクォータが必要になります。
   potentialBenefits: 99.99% SLA, 0 RPO, Multi-AZ
   pgVerified: true
   publishedToLearn: false
