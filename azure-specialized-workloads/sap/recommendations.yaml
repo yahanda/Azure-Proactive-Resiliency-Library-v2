@@ -32,7 +32,7 @@
   recommendationResourceType: n/a
   recommendationMetadataState: Active
   longDescription: |-
-    柔軟なオーケストレーションを備えた仮想マシン スケール セット (VMSS) を使用して、指定したゾーン全体および各ゾーン内で仮想マシンを分散し、ベスト エフォート ベースでゾーン内の異なる障害ドメイン全体に VM を分散します。 Microsoft の SAP ワークロード推奨に従って、適切なモードと正しい設定を使用して VMSS Flex を構成します。現在、SAP アプリケーション サーバーに VMSS Flex を使用しておらず、障害ドメインと更新ドメインの配布で可用性セットも使用していない場合は、SAP デプロイメントの復元体制を向上させるために VMSS Flex アーキテクチャへの移行を検討する必要があります。以下のリンクにあるブログ投稿では、可用性セットまたは可用性ゾーンにデプロイされている既存の SAP ワークロードを、FD=1 デプロイ オプションを使用してフレキシブル スケール セットに移行するプロセスの詳細について概説しています。
+    柔軟なオーケストレーションを備えた仮想マシン スケール セット (VMSS) を使用して、指定したゾーン全体および各ゾーン内で仮想マシンを分散し、ベスト エフォート ベースでゾーン内の異なる障害ドメイン全体に VM を分散します。 Microsoft の SAP ワークロード推奨に従って、適切なモードと正しい設定を使用して VMSS Flex を構成します。現在、SAP アプリケーション サーバーに VMSS Flex を使用しておらず、障害ドメインと更新ドメインの配布で可用性セットも使用していない場合は、SAP デプロイメントの復元体制を向上させるために VMSS Flex アーキテクチャへの移行を検討する必要があります。以下のリンクにあるブログ投稿では、可用性セットまたは可用性ゾーンにデプロイされている既存の SAP ワークロードを、FDu003d1 デプロイ オプションを使用してフレキシブル スケール セットに移行するプロセスの詳細について概説しています。
   potentialBenefits: Enhanced resiliency for SAP on Azure
   pgVerified: true
   publishedToLearn: false
@@ -121,7 +121,7 @@
   recommendationResourceType: n/a
   recommendationMetadataState: Active
   longDescription: |-
-    すべての高可用性ソリューションを徹底的にテストします (Linux VM のカーネル パニックやフェールバックを含む)。テストにはゾーン障害のシナリオを含めます。テストでは、データベース、セントラル サービス、アプリケーション サーバー、共有ファイル システムを含む SAP ソリューションの各レイヤーがゾーン冗長性に対して正しく構成されていること、ソリューションが RPO = 0 を満たしていること、アプリケーションが自動的にフェイルオーバーすることを確認する必要があります。 RTOを満たすために。
+    すべての高可用性ソリューションを徹底的にテストします (Linux VM のカーネル パニックやフェールバックを含む)。テストにはゾーン障害のシナリオを含めます。テストでは、データベース、セントラル サービス、アプリケーション サーバー、共有ファイル システムを含む SAP ソリューションの各レイヤーがゾーン冗長性に対して正しく構成されていること、ソリューションが RPO u003d 0 を満たしていること、アプリケーションが自動的にフェイルオーバーすることを確認する必要があります。 RTOを満たすために。
     フェイルバックは自動または手動で行うことができます。
   potentialBenefits: Ensures SAP Azure's failover reliability
   pgVerified: true
@@ -141,9 +141,7 @@
   recommendationMetadataState: Active
   longDescription: |-
     Linux Pacemaker クラスターで移行コマンドを実行すると、システムはリソースを指定されたノードに移動することを目的として、一時的な「優先」ロケーション制約を生成します。この制約により、クラスターの構成を永続的に変更することなく、リソースのターゲット ノードが一時的に優先されます。
-
     計画的なメンテナンスやフェールオーバー テスト中に、メンテナンスや管理タスク中に mitigrate コマンドを利用してリソースを一時的に再配置し、中断を最小限に抑えることができます。この制約は永続的なものではなく、再起動またはクラスターのリセット後は存続しません。短期間の調整用に設計されています。
-
     リソースの移行を必要とする計画されたタスクが完了したら、一時的な制約を手動で削除して、クラスターの元のリソース管理ポリシーに戻します。
     このアプローチにより、クラスター内でのリソースの移動の制御が可能になり、クラスター構成の整合性と効率を維持しながらメンテナンスが容易になります。
   potentialBenefits: Enhanced maintenance and failover handling
@@ -153,6 +151,8 @@
   automationAvailable: no
   tags: null
   learnMoreLink:
+    - name: OpenSource Inventory Checks
+      url: "https://aka.ms/ACESInventoryCheckSAP"
 - description: DR リージョン内の重要な VM ロールのためのコンピューティング リソース容量を確保
   aprlGuid: 820b4c0c-8a74-442a-8ba7-b0cb840cd983
   recommendationTypeId: null
@@ -245,6 +245,8 @@
   automationAvailable: no
   tags: null
   learnMoreLink:
+    - name: DR Guidance
+      url: "https://learn.microsoft.com/ja-jp/azure/sap/workloads/disaster-recovery-sap-guide?tabs=windows"
 - description: DR 手順を文書化してテストし、RPO および RTO 目標を確実に満たすようにする
   aprlGuid: c300e949-528d-4ac9-889b-cacf8b4a6e90
   recommendationTypeId: null
@@ -263,6 +265,8 @@
   automationAvailable: no
   tags: null
   learnMoreLink:
+    - name: DR Guidance
+      url: "https://learn.microsoft.com/ja-jp/azure/sap/workloads/disaster-recovery-sap-guide?tabs=windows"
 - description: DR ソリューション全体に対して堅牢な監視およびアラート ソリューションが導入されていることを確認します。
   aprlGuid: c27134b7-6917-4852-8276-3dbef5c71578
   recommendationTypeId: null
@@ -279,6 +283,8 @@
   automationAvailable: no
   tags: null
   learnMoreLink:
+    - name: DR Guidance
+      url: "https://learn.microsoft.com/ja-jp/azure/sap/workloads/disaster-recovery-sap-guide?tabs=windows"
 - description: スケジュールされたイベント通知を構成する
   aprlGuid: 6b589ce6-c847-4cee-af35-f6e8eb1cf983
   recommendationTypeId: null

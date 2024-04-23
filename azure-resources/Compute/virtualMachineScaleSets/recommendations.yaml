@@ -158,7 +158,7 @@
   recommendationResourceType: Microsoft.Compute/virtualMachineScaleSets
   recommendationMetadataState: Active
   longDescription: |-
-    現在のイメージ バージョンを使用すると、非推奨による中断が防止され、VM と VMSS の中断のない展開が保証されます。
+    イメージの廃止後の中断を避けるために、イメージの現在のバージョンが使用されていることを確認してください。 VM の発行者、オファー、SKU 情報を確認して、サポートされているイメージで実行していることを確認してください。イメージの廃止に関する通知を受け取るには、自動ゲスト パッチ適用またはイメージ アップグレードを有効にします。
   potentialBenefits: Avoid disruptions by updating VMSS images.
   pgVerified: true
   publishedToLearn: false

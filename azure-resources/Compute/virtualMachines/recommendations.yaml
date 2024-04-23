@@ -454,9 +454,9 @@
   recommendationResourceType: Microsoft.Compute/virtualMachines
   recommendationMetadataState: Active
   longDescription: |-
-    ワークロードがメンテナンスに敏感な場合は、Azure メンテナンス アクティビティが発生したときに顧客への影響を軽減するように設計された Azure Boost 互換 VM の使用を検討してください。
+    ワークロードがメンテナンスに敏感な場合は、Azure Boost と互換性のある VM を検討してください。 Azure Boost は、ホスト上で Azure メンテナンス アクティビティが発生したときに顧客への影響を軽減するように設計されており、互換性のある VM サイズの現在のリストは、以下の最初のリンクに記載されています。
   potentialBenefits: Less maintenance impact
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: no
