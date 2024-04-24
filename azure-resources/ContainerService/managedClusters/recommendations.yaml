@@ -477,17 +477,16 @@
   tags: null
   learnMoreLink:
     - name: Resource quotas
-      url: "https://learn.microsoft.com/azure/aks/operator-best-practices-scheduler#enforce-resource-quotas"
-
-- description: Enable AKS private cluster or set authorized IP address ranges
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/operator-best-practices-scheduler#enforce-resource-quotas"
+- description: AKS プライベート クラスターを有効にするか、承認された IP アドレス範囲を設定する
   aprlGuid: ba3f7d17-9654-4038-b172-09f1b2569925
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.ContainerService/managedClusters
   recommendationMetadataState: Active
-  longDescription: |
-    For optimal connectivity and security, enable private cluster in AKS to ensure direct communication between worker nodes and the control plane. If not enabled, secure API server access with authorized IP ranges.
+  longDescription: |-
+    最適な接続とセキュリティを実現するには、AKS でプライベート クラスターを有効にして、ワーカー ノードとコントロール プレーン間の直接通信を確保します。有効になっていない場合は、承認された IP 範囲で API サーバーへのアクセスを保護します。
   potentialBenefits: Provides network reliability, reduced disruptions
   publishedToLearn: false
   publishedToAdvisor: false
@@ -495,4 +494,4 @@
   tags: null
   learnMoreLink:
     - name: AKS private cluster
-      url: "https://learn.microsoft.com/azure/aks/private-clusters"
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/private-clusters"
