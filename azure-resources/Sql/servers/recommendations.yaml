@@ -6,9 +6,9 @@
   recommendationResourceType: Microsoft.Sql/servers
   recommendationMetadataState: Active
   longDescription: |-
-    プライマリ データベースに障害が発生した場合は、セカンダリ データベースへの手動フェールオーバーを実行します。セカンダリ データベースはそれまで読み取り専用のままです。アクティブ geo レプリケーションにより、読み取り可能なレプリカの作成と、データセンターの停止またはアプリケーションのアップグレードの場合の手動フェールオーバーが可能になります。
+    Active Geo Replication は、読み取り可能なセカンダリ データベース レプリカを利用することでビジネスの継続性を確保します。プライマリ データベースに障害が発生した場合は、セカンダリ データベースに手動でフェイルオーバーします。セカンダリは最大 4 つまで同じまたは異なるリージョンに存在でき、読み取り専用アクセスに使用されます。
   potentialBenefits: Enhanced disaster recovery and read scalability
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
@@ -16,7 +16,7 @@
   learnMoreLink:
     - name: Active Geo Replication
       url: "https://learn.microsoft.com/ja-jp/azure/azure-sql/database/active-geo-replication-overview"
-- description: アプリの自動フェイルオーバー グループには、一貫性を保つためにすべての関連データベースを含める必要があります
+- description: 自動フェイルオーバー グループには、通常は同じアプリによって使用される 1 つまたは複数のデータベースを含めることができます。
   aprlGuid: 943c168a-2ec2-a94c-8015-85732a1b4859
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
@@ -24,9 +24,9 @@
   recommendationResourceType: Microsoft.Sql/servers
   recommendationMetadataState: Active
   longDescription: |-
-    読み取り可能なセカンダリ データベースを使用して、読み取り専用クエリのワークロードをオフロードできます。自動フェイルオーバー グループには、プライマリ サーバー上に構成された複数のデータベースが含まれ、グループ内のすべてのデータベースの、異なるリージョンにある 1 つのセカンダリ サーバーまたはインスタンスのみへのレプリケーションをサポートします。
+    フェールオーバー グループは、1 つの論理サーバー上のデータベースを別のリージョンの論理サーバーにレプリケートするように構成することで、災害復旧を容易にします。これにより、geo レプリケートされたデータベース管理が合理化され、プライマリ サーバーに障害が発生した場合に、レプリケートされたデータベースへの接続ルーティングのための単一のエンドポイントが提供されます。
   potentialBenefits: Improves load balancing and disaster recovery
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
@@ -44,9 +44,9 @@
   recommendationResourceType: Microsoft.Sql/servers
   recommendationMetadataState: Active
   longDescription: |-
-    デフォルトでは、プレミアム可用性モデルは 1 つのデータセンターにノードをクラスタ化します。
+    既定では、Azure SQL Database プレミアム レベルは、同じリージョン内に複数のコピーをプロビジョニングします。地理的冗長性の場合、データベースをゾーン冗長として設定し、Azure アベイラビリティ ゾーン全体にコピーを分散して、地域の停止中に可用性を維持できます。
   potentialBenefits: Enhanced reliability, no extra cost
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
@@ -62,9 +62,9 @@
   recommendationResourceType: Microsoft.Sql/servers
   recommendationMetadataState: Active
   longDescription: |-
-    Azure SQL Database は、インフラストラクチャ障害に対する回復力が高いことで知られていますが、一時的なエラーが原因で接続の問題が発生することがあります。コードに再試行ロジックを実装すると、失敗した呼び出しを再試行することで操作が継続され、スムーズなデータベース対話が維持されます。
+    一時的な障害が発生した場合、アプリケーションは Azure SQL Database を使用して接続の再試行を効果的に処理する必要があります。データベース層の構成は必要ありません。代わりに、アプリケーションを正常な再試行用にセットアップする必要があります。
   potentialBenefits: Enhanced connectivity stability
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: no
@@ -80,9 +80,9 @@
   recommendationResourceType: Microsoft.Sql/servers
   recommendationMetadataState: Active
   longDescription: |-
-    利用可能なソリューションを使用して SQL Database を監視し、信頼性に関するインシデントを早期に検出し、データベースの信頼性を高めます。ほぼリアルタイムの監視を選択して、インシデントに迅速に対応します。
+    監視とアラートはデータベース操作の重要な部分です。 Azure SQL Database を使用する場合は、Azure Monitor と SQL Insights を利用して、関連するデータベース メトリックを確実に取得してください。
   potentialBenefits: Quick incident detection and response
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
@@ -102,9 +102,9 @@
   recommendationResourceType: Microsoft.Sql/servers
   recommendationMetadataState: Active
   longDescription: |-
-    Always Encrypted 構成の暗号化キーを保存するには、Azure Key Vault を使用することを強くお勧めします。必須ではありませんが、AKV を使用しない場合は、キーが適切にバックアップされていることを確認してください。
+    Always Encrypted 構成に関連する暗号化キーを保存するには、Azure Key Vault (AKV) を使用することを強くお勧めしますが、必須ではありません。 AKV を使用していない場合は、キーが適切にバックアップされ、安全な方法で保管されていることを確認してください。
   potentialBenefits: Enhanced security and data recovery
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: no
