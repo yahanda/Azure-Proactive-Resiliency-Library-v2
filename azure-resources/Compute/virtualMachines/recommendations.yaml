@@ -488,3 +488,21 @@
       url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/linux/scheduled-events"
     - name: Azure Metadata Service Scheduled Events for Windows VMs
       url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/windows/scheduled-events"
+- description: ZRS ディスクを使用するか、アベイラビリティーゾーンの障害から LRS ディスクを保護する
+  aprlGuid: fa0cf4f5-0b21-47b7-89a9-ee936f193ce1
+  recommendationTypeId: null
+  recommendationControl: High Availability
+  recommendationImpact: Medium
+  recommendationResourceType: Microsoft.Compute/virtualMachines
+  recommendationMetadataState: Active
+  longDescription: |-
+    Azure ディスクは、ゾーン全体のダウンに対する回復力が必要なワークロード向けに、ゾーン冗長ストレージ (ZRS) オプションを提供します。クロスゾーン データ レプリケーションのため、ZRS ディスクはローカル冗長オプション (LRS) と比較して書き込み遅延が長いため、必ずディスクのベンチマークを実施してください。
+  potentialBenefits: Enhanced Disk resilience to failures
+  pgVerified: true
+  publishedToLearn: false
+  publishedToAdvisor: false
+  automationAvailable: arg
+  tags: null
+  learnMoreLink:
+    - name: Redundancy options for managed disks
+      url: "https://aka.ms/zrsdisksdoc"

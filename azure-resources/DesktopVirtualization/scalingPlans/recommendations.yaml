@@ -1,0 +1,18 @@
+- description: スケーリング プランはリージョンごとに作成する必要があり、リージョン間でスケールすることはできません。
+  aprlGuid: 499769ae-67c9-492e-9ca5-cfd4cece5209
+  recommendationTypeId: null
+  recommendationControl: Scaling
+  recommendationImpact: Medium
+  recommendationResourceType: Microsoft.DesktopVirtualization/scalingPlans
+  recommendationMetadataState: Active
+  longDescription: |-
+    各リージョンには、そのリージョン内のホスト プールに割り当てられた独自のスケーリング プランがあります。ただし、地域で障害が発生した場合、これらの計画にアクセスできなくなる可能性があります。このリスクを軽減するには、別のリージョンにセカンダリ スケーリング プランを作成することをお勧めします。
+  potentialBenefits: Enhanced scaling
+  pgVerified: true
+  publishedToLearn: false
+  publishedToAdvisor: false
+  automationAvailable: no
+  tags: null
+  learnMoreLink:
+    - name: Learn More
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-desktop/autoscale-scaling-plan?tabs=portal"
