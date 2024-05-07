@@ -2,13 +2,13 @@
   aprlGuid: d0cfe47f-686b-5043-bf83-5a3868acb80a
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
-  recommendationImpact: Medium
+  recommendationImpact: High
   recommendationResourceType: Microsoft.Network/frontdoorWebApplicationFirewallPolicies
   recommendationMetadataState: Active
   longDescription: |-
     WAF は、正当なリクエストを誤ってブロックする可能性があります (誤検知)。これらは、Log Analytics で過去 24 時間のブロックされた要求を調べることで特定できます。
   potentialBenefits: Reduces false positives, improves access
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: no
@@ -26,13 +26,13 @@
   aprlGuid: 537b4d94-edd1-4041-b13d-8217dfa485f0
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
-  recommendationImpact: Medium
+  recommendationImpact: High
   recommendationResourceType: Microsoft.Network/frontdoorWebApplicationFirewallPolicies
   recommendationMetadataState: Active
   longDescription: |-
     WAF は、正当なリクエストを誤検知としてブロックする場合があります。 Log Analytics を通じて過去 24 時間以内にブロックされた要求を特定すると、これらの誤ったブロックを効率的に管理し、軽減することができます。
   potentialBenefits: Improve false positive identification
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: no
@@ -46,7 +46,7 @@
   aprlGuid: 5357ae22-0f52-1a49-9fd4-1f00ace6add0
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
-  recommendationImpact: Medium
+  recommendationImpact: High
   recommendationResourceType: Microsoft.Network/frontdoorWebApplicationFirewallPolicies
   recommendationMetadataState: Active
   longDescription: |-

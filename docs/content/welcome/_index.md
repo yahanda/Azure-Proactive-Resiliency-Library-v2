@@ -5,30 +5,28 @@ weight: 0
 
 ---
 
-Azure Proactive Resiliency Library v2 (APRL) のホームへようこそ。
+Azure Proactive Resiliency Library v2 (APRL) のホームへようこそ。このサイトの目的は、Azure で実行されているワークロードの回復性に関する推奨事項のキュレーションされたカタログを提供することです。推奨事項の多くには、準拠していないリソースを特定するのに役立つ [Azure Resource Graph (ARG)](https://learn.microsoft.com/azure/governance/resource-graph/overview) クエリのサポートが含まれています。
 
-{{< figure src="../img/aprl-white.png" width="40%" >}}
+サイトのコンテンツは、次の 4 つの主要なセクションに分かれています。
 
-このライブラリは、Well-Architected Framework の信頼性エンゲージメント/評価でお客様、パートナー様、およびフィールドが使用できるガイダンスと推奨事項のステージング領域となることを意図して構築されています。ガイダンスと推奨事項を意図して、お客様やパートナー様でテストおよび検証された後、公式の [Well-Architected Framework ドキュメント](https://aka.ms/waf) に昇格します。
+1. [**Azure Resources:**]({{< ref "azure-resources/_index.md">}}) このセクションでは、個々の Azure リソースに関する推奨事項について説明します。推奨事項は、Azure リソース プロバイダーとリソースの種類別に整理されています。
 
-また、このライブラリには、お客様、パートナー様、およびフィールドがガイダンスと推奨事項に準拠している場合と準拠していないリソースを特定するのに役立つ [Azure Resource Graph (ARG)](https://learn.microsoft.com/ja-jp/azure/governance/resource-graph/overview) クエリのサポートも含まれています。これらのクエリの目的は、長期的には、それらを [Azure Advisor](https://learn.microsoft.com/ja-jp/azure/advisor/advisor-overview) リソースの一部にすることです。
+1. [**Specialized Workloads:**]({{< ref "azure-specialized-workloads/_index.md">}}) このセクションでは、一般的なワークロードの種類に関する推奨事項について説明します。推奨事項は、複数のリソースの種類をカバーし、ワークロード固有のガイダンスが含まれています。
 
-## Get Started
+1. [**Well-Architected Framework:**]({{< ref "azure-waf/_index.md">}}) このセクションでは、[Azure Well-Architected Framework](https://aka.ms/waf) からの回復性に関する推奨事項について説明します。
 
-開始するには、[Azure リソース セクション]({{< ref "azure-resources/_index.md">}}) に移動し、適切なカテゴリ内を移動して、環境内の準拠/非準拠のリソースを検出するのに役立つガイダンス、推奨事項、およびサポートする Azure Resource Graph クエリを見つけます。
+1. [**Tools:**]({{< ref "tools/_index.md">}}) このセクションでは、ワークロード評価用の自動化スクリプトについて説明します。スクリプトは ARG クエリを実行し、分析、レポート、およびトリアージ用のドキュメントを作成します。
 
-{{< hint type=note >}}
+### Get Started
 
-また、このサイトに用意されている基本的な検索機能を使用して、ガイダンス、推奨事項、サポート クエリとスクリプトを探している Azure リソースを見つけることもできます。
-
-{{< /hint >}}
-
-## Contributing
-
-コントリビューションガイドは [こちら]({{< ref "contributing/_index.md">}}) をご覧ください。
+開始するには、[Azure Resources section]({{< ref "azure-resources/_index.md">}}) に移動し、選択したリソース プロバイダーとリソースの種類に移動します。一覧表示された各リソースの種類には、推奨事項、サポート ドキュメント、および使用可能な場合は ARG クエリが提供されます。
 
 {{< hint type=note >}}
 
-このサイトは [Hugo](https://gohugo.io/) を使用して [GithHub Pages](https://pages.github.com) に基づいて構築されていることに注意してください
+また、このサイトに用意されている基本的な検索機能を使用して、探している Azure リソースを見つけることもできます。
 
 {{< /hint >}}
+
+### Contributing
+
+[コントリビューションガイドはこちら]({{< ref "contributing/_index.md">}})をご覧ください。

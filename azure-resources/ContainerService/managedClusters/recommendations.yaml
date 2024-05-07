@@ -488,6 +488,7 @@
   longDescription: |-
     最適な接続とセキュリティを実現するには、AKS でプライベート クラスターを有効にして、ワーカー ノードとコントロール プレーン間の直接通信を確保します。有効になっていない場合は、承認された IP 範囲で API サーバーへのアクセスを保護します。
   potentialBenefits: Provides network reliability, reduced disruptions
+  pgVerified: false
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg

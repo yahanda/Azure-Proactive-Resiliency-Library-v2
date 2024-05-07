@@ -8,7 +8,7 @@
   longDescription: |-
     VM フェールオーバー設定の静的 IP アドレスがフェールオーバー サブネットで利用可能であることを確認して、フェールオーバー中に一貫した IP 割り当てを維持します。ターゲット VM は、利用可能な場合は同じ静的 IP を受け取り、利用できない場合は次に利用可能な IP を受け取ります。 IP 調整は VM ネットワーク設定で行うことができます。
   potentialBenefits: Smooth failover IP management
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: no
@@ -26,7 +26,7 @@
   longDescription: |-
     テスト フェールオーバーを実行して BCDR 戦略を検証し、運用環境に影響を与えることなくターゲット リージョンでアプリケーションが正しく機能していることを確認します。テスト フェールオーバーを使用して、データ損失やダウンタイムを発生させずに障害復旧計画を定期的にテストします。
   potentialBenefits: Ensures BCDR plan accuracy and VM performance
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
@@ -78,3 +78,21 @@
       url: "https://learn.microsoft.com/ja-jp/azure/backup/backup-rbac-rs-vault#minimum-role-requirements-for-azure-vm-backup"
     - name: Recovery Services Vault
       url: "https://learn.microsoft.com/ja-jp/azure/backup/backup-azure-arm-vms-prepare"
+- description: Azure Backup で Recovery Services コンテナーの論理的な削除を有効にする
+  aprlGuid: 9e39919b-78af-4a0b-b70f-c548dae97c25
+  recommendationTypeId: null
+  recommendationControl: Disaster Recovery
+  recommendationImpact: Medium
+  recommendationResourceType: Microsoft.RecoveryServices/vaults
+  recommendationMetadataState: Active
+  longDescription: |-
+    論理的な削除を使用すると、バックアップ データが削除された場合、バックアップ データはさらに 14 日間保持されるため、データを失うことなく、費用をかけずにそのバックアップ アイテムを回復できます。論理的な削除はデフォルトで有効になっています。この機能を無効にすることはお勧めできません。
+  potentialBenefits: Enhances disaster recovery capabilities
+  pgVerified: false
+  publishedToLearn: false
+  publishedToAdvisor: false
+  automationAvailable: arg
+  tags: null
+  learnMoreLink:
+    - name: Soft Delete for Azure Backup
+      url: "https://learn.microsoft.com/ja-jp/azure/backup/backup-azure-security-feature-cloud?tabs=azure-portal"

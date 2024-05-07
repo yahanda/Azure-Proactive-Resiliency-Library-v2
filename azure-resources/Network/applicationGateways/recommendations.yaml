@@ -8,7 +8,7 @@
   longDescription: |-
     Azure Application Gateways v2 は、デフォルトで複数のインスタンスを使用して高可用性を実現します。
   potentialBenefits: Enhances uptime and enables autoscaling
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
@@ -26,7 +26,7 @@
   longDescription: |-
     Application Gateway でのエンドツーエンド SSL/TLS または SSL/TLS 終端により、運用サービスに対して HTTPS を使用してすべての受信接続を保護し、攻撃から保護し、Web サーバーとブラウザーの間でデータのプライバシーと暗号化を確保します。
   potentialBenefits: Enhanced security and privacy
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
@@ -52,7 +52,7 @@
   longDescription: |-
     アプリケーション仮想ネットワークで Application Gateway と Web アプリケーション ファイアウォール (WAF) を使用して、受信 HTTP/S インターネット トラフィックを保護します。 WAF は、OWASP コア ルール セット ベースのルールを通じて、潜在的なエクスプロイトに対する一元的な防御を提供します。
   potentialBenefits: Enhanced security for HTTP/S traffic
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
@@ -72,7 +72,7 @@
   longDescription: |-
     v1 が必要な場合を除き、自動スケーリング、静的 VIP、Azure KeyVault 統合などの組み込み機能を使用してトラフィック管理とパフォーマンスを向上させます。
   potentialBenefits: Better performance, autoscaling, more features
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
@@ -88,13 +88,13 @@
   aprlGuid: 5d035919-898d-a047-8d5d-454e199692e5
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
-  recommendationImpact: Medium
+  recommendationImpact: High
   recommendationResourceType: Microsoft.Network/applicationGateways
   recommendationMetadataState: Active
   longDescription: |-
     ストレージ アカウント、Log Analytics、監査と分析情報の監視サービスへのログインを有効にします。 NSG を使用している場合は、NSG フロー ログの保存を有効にして、Azure クラウドへの詳細なトラフィック分析を提供します。
   potentialBenefits: Enhanced traffic insight and audit
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: no
@@ -108,13 +108,13 @@
   aprlGuid: 847a8d88-21c4-bc48-a94e-562206edd767
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
-  recommendationImpact: Medium
+  recommendationImpact: High
   recommendationResourceType: Microsoft.Network/applicationGateways
   recommendationMetadataState: Active
   longDescription: |-
     カスタム正常性プローブを使用すると、バックエンドの可用性についての理解が深まり、バックエンド サービスの影響の監視が容易になります。
   potentialBenefits: Ensures backend uptime monitoring.
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
@@ -134,7 +134,7 @@
   longDescription: |-
     Application Gateway をゾーン対応構成でデプロイすると、特定のゾーンがダウンした場合でも、他のゾーンのサービスは引き続き利用できるため、顧客はサービスに継続的にアクセスできます。
   potentialBenefits: Enhanced uptime and customer access
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
@@ -154,7 +154,7 @@
   longDescription: |-
     バックエンドのメンテナンスに接続ドレインを使用すると、更新時や正常性の問題時にバックエンド プール メンバーが正常に削除されます。これはバックエンド設定を通じて有効になり、ルールの作成中にすべてのメンバーに適用されます。
   potentialBenefits: Smooth updates, no dropped users
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
@@ -174,7 +174,7 @@
   longDescription: |-
     Application Gateway v2 (Standard_v2 または WAF_v2 SKU) は、最大 125 個のインスタンスをサポートできます。 /24 サブネットは展開に必須ではありませんが、自動スケーリングとメンテナンス アップグレードに十分なスペースを提供することをお勧めします。
   potentialBenefits: Allows autoscaling and maintenance
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg

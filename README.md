@@ -5,13 +5,7 @@
 
 > **GitHub Pagesサイトは、コントリビュートする予定がない限り、[aka.ms/aprl](https://aka.ms/aprl)からアクセスしてください。**
 
-Azure Proactive Resiliency Library v2 (APRL) のホームへようこそ。
-
-<img src="docs/static/img/aprl-white.png" alt="APRL" width="400">
-
-このライブラリは、Well-Architected Framework の信頼性エンゲージメント/評価でお客様、パートナー様、およびフィールドが使用できるガイダンスと推奨事項のステージング領域となることを意図して構築されています。ガイダンスと推奨事項を意図して、お客様やパートナー様でテストおよび検証された後、公式の [Well-Architected Framework ドキュメント](https://aka.ms/waf) に昇格します。
-
-また、このライブラリには、お客様、パートナー様、およびフィールドがガイダンスと推奨事項に準拠している場合と準拠していないリソースを特定するのに役立つ [Azure Resource Graph (ARG)](https://learn.microsoft.com/ja-jp/azure/governance/resource-graph/overview) クエリのサポートも含まれています。これらのクエリの目的は、長期的には、それらを [Azure Advisor](https://learn.microsoft.com/ja-jp/azure/advisor/advisor-overview) リソースの一部にすることです。
+Azure Proactive Resiliency Library v2 (APRL) のホームへようこそ。このサイトの目的は、Azure で実行されているワークロードの回復性に関する推奨事項のキュレーションされたカタログを提供することです。推奨事項の多くには、準拠していないリソースを特定するのに役立つ [Azure Resource Graph (ARG)](https://learn.microsoft.com/azure/governance/resource-graph/overview) クエリのサポートが含まれています。
 
 ## Contributing
 

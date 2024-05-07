@@ -52,6 +52,8 @@
   learnMoreLink:
     - name: Health modeling for reliability
       url: "https://learn.microsoft.com/ja-jp/azure/well-architected/resiliency/monitor-model"
+    - name: Health Modeling for Workloads
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/cross-cutting-guides/health-modeling"
 - description: Azure プラットフォーム リソースのダッシュボードとアラートを作成する
   aprlGuid: 1691bfea-c9fd-0948-969a-03e5abcab299
   recommendationTypeId: null
@@ -116,3 +118,21 @@
       url: "https://github.com/Azure/azure-policy/tree/master/built-in-policies/policyDefinitions/Resilience"
     - name: Get policy compliance data
       url: "https://learn.microsoft.com/ja-jp/azure/governance/policy/how-to/get-compliance-data"
+- description: ビジネス要件に関連した信頼性を追跡するためのメトリクスを定義する
+  aprlGuid: 3e2f722e-7d94-4efa-96f1-78bd3e256a41
+  recommendationTypeId: null
+  recommendationControl: Monitoring and Alerting
+  recommendationImpact: Low
+  recommendationResourceType: WellArchitected/Monitor
+  recommendationMetadataState: Active
+  longDescription: |-
+    クラウド ソリューションの信頼性を測定して向上させるには、ソリューションがビジネス要件をどの程度満たしているかを反映する指標を定義する必要があります。たとえば、可用性、遅延、スループット、エラー率、耐久性を指標として使用して、ソリューションのパフォーマンスと信頼性を定量化できます。これらの指標は、SLA や SLO などの信頼性目標の進捗状況を追跡し、改善の余地がある領域を特定するのに役立ちます。また、指標を顧客の期待やフィードバックに合わせて調整し、それらを使用して信頼性への取り組みに優先順位を付ける必要があります。
+  potentialBenefits: Gain insight into the performance of your application in relation to business requirements
+  pgVerified: false
+  publishedToLearn: false
+  publishedToAdvisor: no
+  automationAvailable: no
+  tags: null
+  learnMoreLink:
+    - name: Recommendations for defining reliability targets
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/reliability/metrics"

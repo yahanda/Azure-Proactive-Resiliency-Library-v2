@@ -122,7 +122,7 @@
   longDescription: |-
     Azure VPN ゲートウェイは、1 つまたは 2 つの可用性ゾーンでのデプロイに基づいて可変 SLA を提供します。可用性ゾーン全体にゾーン冗長仮想ネットワーク ゲートウェイをデプロイすると、ゾーンの復元力が確保され、Azure 上のミッション クリティカルでスケーラブルなサービスへのアクセスが向上します。
   potentialBenefits: Enhanced reliability and scalability
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
@@ -144,7 +144,7 @@
   longDescription: |-
     アクティブ/アクティブ モードは、Basic を除くすべての SKU で利用でき、2 つのゲートウェイ IP 構成と 2 つのパブリック IP アドレスが可能になり、冗長性とトラフィック処理が強化されます。
   potentialBenefits: Enhanced reliability and network capacity
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
@@ -164,7 +164,7 @@
   longDescription: |-
     アクティブ/アクティブ VPN コンセントレーターと Azure VPN ゲートウェイを展開すると、4 つの IPSec トンネルを備えたフルメッシュ トポロジを使用して、復元力と可用性が最大化されます。
   potentialBenefits: Maximizes resilience and availability
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: no
@@ -176,13 +176,13 @@
   aprlGuid: 9eab120e-f6d3-ee49-ba0d-766562ce7df1
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
-  recommendationImpact: Medium
+  recommendationImpact: High
   recommendationResourceType: Microsoft.Network/virtualNetworkGateways
   recommendationMetadataState: Active
   longDescription: |-
     仮想ネットワーク ゲートウェイの健全性の監視とアラートを設定して、さまざまなメトリックを利用して、運用効率を確保し、中断に対する迅速な対応を確保します。
   potentialBenefits: Improved uptime and issue awareness
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: no
@@ -194,13 +194,13 @@
   aprlGuid: 9186dae0-7ddc-8f4b-bea5-55538cea4893
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
-  recommendationImpact: Medium
+  recommendationImpact: High
   recommendationResourceType: Microsoft.Network/virtualNetworkGateways
   recommendationMetadataState: Active
   longDescription: |-
     VPN ゲートウェイは、サービスの健全性を活用して、計画的および計画外のメンテナンスについてユーザーに通知し、VPN 接続の変更について確実にユーザーに通知します。
   potentialBenefits: Improves VPN maintenance alerts
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: no
@@ -220,7 +220,7 @@
   longDescription: |-
     ゾーン冗長 VPN ゲートウェイの場合は、すべてのインスタンスが 1 つのゾーンにデプロイされることを避けるために、常にゾーン冗長 Standard SKU パブリック IP を使用してください。これにより、アクティブ/パッシブ (シングル IP) セットアップとアクティブ/アクティブ (デュアル IP) セットアップの両方に適用され、ゲートウェイの信頼性が確保されます。
   potentialBenefits: Enhanced reliability and disaster recovery
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg

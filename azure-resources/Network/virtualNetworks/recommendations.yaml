@@ -8,7 +8,7 @@
   longDescription: |-
     ネットワーク セキュリティ グループとアプリケーション セキュリティ グループを使用すると、IP、ポート、プロトコルごとに受信トラフィックと送信トラフィックをフィルタリングでき、サブネット レベルでセキュリティ層を追加できます。
   potentialBenefits: Enhanced subnet security and traffic control
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
@@ -32,7 +32,7 @@
   longDescription: |-
     Azure DDoS Protection は、DDoS 攻撃に対する強化された軽減機能を提供し、アプリケーション設計のベスト プラクティスと組み合わせて、仮想ネットワーク内の特定のリソースを保護するように自動調整されます。
   potentialBenefits: Enhanced DDoS attack mitigation
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
@@ -50,7 +50,7 @@
   longDescription: |-
     VNet サービス エンドポイントは、Private Link が利用できず、データ移動の懸念がない場合にのみ使用してください。この機能は、指定された VNet およびサブネットへの Azure サービス アクセスを制限し、ネットワーク セキュリティを強化し、サービス トラフィックを分離します。
   potentialBenefits: Enhanced security and data isolation
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg

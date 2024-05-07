@@ -8,7 +8,7 @@
   longDescription: |-
     プライベート DNS ゾーンとレコードは重要であり、削除するとサービスが停止する可能性があります。不正な変更または偶発的な変更から保護するには、これらのリソースを管理するための組み込みの役割であるプライベート DNS ゾーンの共同作成者役割を特定のユーザーまたはグループに割り当てる必要があります。
   potentialBenefits: Prevents DNS outages
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: no
@@ -20,13 +20,13 @@
   aprlGuid: ab896e8c-49b9-2c44-adec-98339aff7821
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
-  recommendationImpact: Low
+  recommendationImpact: High
   recommendationResourceType: Microsoft.Network/privateDnsZones
   recommendationMetadataState: Active
   longDescription: |-
     プライベート DNS ゾーン内のレコードは、リンクされた仮想ネットワークからのみ解決できます。プライベート DNS ゾーンを複数のネットワークにリンクし、自動登録を有効にして仮想マシンの DNS レコードを自動的に管理できます。
   potentialBenefits: Enhanced DNS reliability and alerting
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: no
@@ -44,7 +44,7 @@
   longDescription: |-
     Azure プライベート DNS は、既定の Azure 名の代わりにカスタム ドメインを使用して、仮想ネットワーク内でドメイン名を処理する信頼性の高い安全な方法を提供します。これらのゾーンのレコードはインターネットからアクセスできず、リンクされた仮想ネットワーク内でのみ解決可能です。
   potentialBenefits: Ensures seamless failover for DNS
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: no

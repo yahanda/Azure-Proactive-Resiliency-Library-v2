@@ -8,7 +8,7 @@
   longDescription: |-
     Azure Network Watcher は、IaaS リソースの監視、診断、メトリックの表示、ログ管理のためのツールを提供します。 VM、VNet、アプリケーション ゲートウェイ、ロード バランサーの健全性の維持には役立ちますが、PaaS や Web 分析の健全性の維持には役立ちません。
   potentialBenefits: Enhanced monitoring and diagnostics for Azure IaaS
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
@@ -26,7 +26,7 @@
   longDescription: |-
     ネットワーク セキュリティ グループ フロー ログは、ネットワーク セキュリティ グループを通じて IP トラフィック情報をログに記録する Azure Network Watcher の機能です。 「失敗」状態の場合、関連するリソースからの監視データは収集されません。
   potentialBenefits: Ensures IP traffic logging
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg

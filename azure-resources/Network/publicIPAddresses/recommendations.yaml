@@ -8,7 +8,7 @@
   longDescription: |-
     Azure のパブリック IP アドレスは、標準 SKU であり、非ゾーン、ゾーン、またはゾーン冗長として利用できます。ゾーン冗長 IP はすべてのゾーンにわたってアクセス可能であり、単一ゾーンの障害に耐えることにより、より高い復元力を提供します。
   potentialBenefits: Enhanced resilience with zone redundancy
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
@@ -28,7 +28,7 @@
   longDescription: |-
     仮想ネットワークからの送信トラフィックに NAT ゲートウェイを採用することで、SNAT ポートの枯渇による接続障害を防ぎ、動的なスケーリングと安全なインターネット接続を確保します。
   potentialBenefits: Avoids SNAT port exhaustion risks
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
@@ -48,7 +48,7 @@
   longDescription: |-
     Basic SKU パブリック IP アドレスは、2025 年 9 月 30 日に廃止されます。ユーザーは、サービスの中断を避けるために、この日までに Standard SKU パブリック IP アドレスにアップグレードすることをお勧めします。
   potentialBenefits: Avoids service disruption
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg

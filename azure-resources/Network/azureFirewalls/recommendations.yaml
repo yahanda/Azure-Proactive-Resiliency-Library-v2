@@ -22,7 +22,7 @@
   aprlGuid: 3c8fa7c6-6b78-a24a-a63f-348a7c71acb9
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
-  recommendationImpact: Medium
+  recommendationImpact: High
   recommendationResourceType: Microsoft.Network/azureFirewalls
   recommendationMetadataState: Active
   longDescription: |-
@@ -96,11 +96,11 @@
   aprlGuid: 8faace2d-a36e-425c-aa58-2ad99e3e0b7a
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
-  recommendationImpact: Medium
+  recommendationImpact: High
   recommendationResourceType: Microsoft.Network/azureFirewalls
   recommendationMetadataState: Active
   longDescription: |-
-    30 分を超える期間、20 ミリ秒を超えるレイテンシ プローブを監視するメトリックを作成すると、ファイアウォール インスタンスの CPU に負荷がかかり、問題が発生する可能性がある時期を特定するのに役立ちます。
+    20 ミリ秒を超えるレイテンシー プローブを 30 ミリ秒を超える期間監視するメトリックを作成すると、ファイアウォール インスタンスの CPU に負荷がかかり、問題が発生する可能性がある時期を特定するのに役立ちます。
   potentialBenefits: Improved CPU stress detection
   pgVerified: false
   publishedToLearn: false
