@@ -53,7 +53,7 @@
     - name: Move to Azure monitor Alerts
       url: "https://learn.microsoft.com/ja-jp/azure/backup/move-to-azure-monitor-alerts"
     - name: Classic alerts retirement announcement
-      url: "https://azure.microsoft.com/updates/transition-to-builtin-azure-monitor-alerts-for-recovery-services-vaults-in-azure-backup-by-31-march-2026/"
+      url: "https://azure.microsoft.com/ja-jp/updates/transition-to-builtin-azure-monitor-alerts-for-recovery-services-vaults-in-azure-backup-by-31-march-2026/"
 - description: すべての Geo-Redundant Storage (GRS) Azure Recovery Services コンテナーのクロスリージョン リストアをオプトインする
   aprlGuid: 1549b91f-2ea0-4d4f-ba2a-4596becbe3de
   recommendationTypeId: null
