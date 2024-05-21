@@ -1,4 +1,4 @@
-- description: 最小インスタンス数を 2 に設定します。
+- description: 自動スケールが有効になっていることを確認してください
   aprlGuid: 823b0cff-05c0-2e4e-a1e7-9965e1cfa16f
   recommendationTypeId: null
   recommendationControl: Scalability
@@ -6,7 +6,7 @@
   recommendationResourceType: Microsoft.Network/applicationGateways
   recommendationMetadataState: Active
   longDescription: |-
-    Azure Application Gateways v2 は、デフォルトで複数のインスタンスを使用して高可用性を実現します。
+    Azure Application Gateways v2 は、デフォルトで複数のインスタンスを使用して常に高可用性の方法でデプロイされます。自動スケールを有効にすると、サービスはスケーリングのための手動介入に依存しなくなります。
   potentialBenefits: Enhances uptime and enables autoscaling
   pgVerified: true
   publishedToLearn: false
@@ -132,7 +132,7 @@
   recommendationResourceType: Microsoft.Network/applicationGateways
   recommendationMetadataState: Active
   longDescription: |-
-    Application Gateway をゾーン対応構成でデプロイすると、特定のゾーンがダウンした場合でも、他のゾーンのサービスは引き続き利用できるため、顧客はサービスに継続的にアクセスできます。
+    Application Gateway をゾーン対応構成でデプロイすると、特定のゾーンがダウンした場合でも、他のゾーンのサービスは引き続き利用できるため、お客様はサービスに継続的にアクセスできます。
   potentialBenefits: Enhanced uptime and customer access
   pgVerified: true
   publishedToLearn: false

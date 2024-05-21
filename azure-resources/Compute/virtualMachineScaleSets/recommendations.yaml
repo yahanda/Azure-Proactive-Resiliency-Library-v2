@@ -6,7 +6,7 @@
   recommendationResourceType: Microsoft.Compute/virtualMachineScaleSets
   recommendationMetadataState: Active
   longDescription: |-
-    柔軟なオーケストレーション モードを使用して単一インスタンスの VM をスケール セットにデプロイすることで、アプリケーションのスケーリングと可用性を将来にわたって保証します。このモードは、リージョン内またはアベイラビリティーゾーン内の障害ドメイン全体に VM を分散することにより、高可用性 (最大 1000 VM) を保証します。
+    柔軟なオーケストレーション モードを使用して単一インスタンスの VM をスケール セットにデプロイすることで、アプリケーションのスケーリングと可用性を将来にわたって保証します。このモードは、リージョン内または可用性ゾーン内の障害ドメイン全体に VM を分散することにより、高可用性 (最大 1000 VM) を保証します。
   potentialBenefits: Higher scalability and availability
   pgVerified: true
   publishedToLearn: false
@@ -100,7 +100,7 @@
   recommendationResourceType: Microsoft.Compute/virtualMachineScaleSets
   recommendationMetadataState: Active
   longDescription: |-
-    Microsoft は、スケーラビリティと柔軟性を向上させるために、VMSS のアベイラビリティーゾーン全体で VM インスタンスの均等な分散を完全に無効にすることを推奨しており、耐障害性の潜在的なトレードオフにもかかわらず、不均一な分散の方がアプリケーションの負荷需要にうまく対応できる可能性があることに注意しています。
+    Microsoft は、スケーラビリティと柔軟性を向上させるために、VMSS の可用性ゾーン全体で VM インスタンスの均等な分散を完全に無効にすることを推奨しており、耐障害性の潜在的なトレードオフにもかかわらず、不均一な分散の方がアプリケーションの負荷需要にうまく対応できる可能性があることに注意しています。
   potentialBenefits: Improves scaling, reduces fail attempts
   pgVerified: true
   publishedToLearn: false
@@ -110,7 +110,7 @@
   learnMoreLink:
     - name: Use scale-in policies with Azure Virtual Machine Scale Sets
       url: "https://learn.microsoft.com/ja-jp/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scale-in-policy"
-- description: VMSS Flex を使用してアベイラビリティ ゾーン全体に VMSS を展開する
+- description: VMSS Flex を使用して可用性ゾーン全体に VMSS を展開する
   aprlGuid: 1422c567-782c-7148-ac7c-5fc14cf45adc
   recommendationTypeId: null
   recommendationControl: High Availability

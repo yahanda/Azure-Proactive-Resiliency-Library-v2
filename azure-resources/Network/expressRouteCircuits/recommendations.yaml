@@ -49,7 +49,7 @@
   pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
-  automationAvailable: arg
+  automationAvailable: no
   tags: null
   learnMoreLink:
     - name: Designing for high availability with ExpressRoute - Active-active connections
@@ -62,7 +62,7 @@
   recommendationResourceType: Microsoft.Network/expressRouteCircuits
   recommendationMetadataState: Active
   longDescription: |-
-    ExpressRoute 経由の BFD を有効にすると、MSEE デバイスと ExpressRoute (CE/PE) 用に構成されたルーター間のリンク障害の検出が高速化され、管理されたレイヤー 3 サービスを備えた顧客とパートナー エッジ ルーティング デバイスの両方に適用されます。
+    ExpressRoute 経由の BFD を有効にすると、MSEE デバイスと ExpressRoute (CE/PE) 用に構成されたルーター間のリンク障害の検出が高速化され、管理されたレイヤー 3 サービスを備えたお客様とパートナー エッジ ルーティング デバイスの両方に適用されます。
   potentialBenefits: Faster link failure detection
   pgVerified: true
   publishedToLearn: false

@@ -6,7 +6,7 @@
   recommendationResourceType: Microsoft.ContainerService/managedClusters
   recommendationMetadataState: Active
   longDescription: |-
-    Azure アベイラビリティ ゾーンは、リージョン内に独立した場所を提供することで高可用性を確保し、独自の電源、冷却、ネットワークを備え、アプリケーションとデータをデータセンター レベルの障害から確実に保護します。
+    Azure 可用性ゾーンは、リージョン内に独立した場所を提供することで高可用性を確保し、独自の電源、冷却、ネットワークを備え、アプリケーションとデータをデータセンター レベルの障害から確実に保護します。
   potentialBenefits: Enhanced fault tolerance for AKS
   pgVerified: false
   publishedToLearn: false
@@ -216,7 +216,7 @@
   recommendationResourceType: Microsoft.ContainerService/managedClusters
   recommendationMetadataState: Active
   longDescription: |-
-    AKS ワークロードを迅速にスケーリングするには、Kubernetes オートスケーラーとは異なり、仮想ノードを利用してポッドを迅速にプロビジョニングします。アベイラビリティ ゾーンを持つクラスターの場合は、永続ボリュームが AZ 間で機能しないため、AZ ごとに 1 つのノードプールを確保し、アクセスがない場合のオートスケーラー ポッド作成の失敗を防ぎます。
+    AKS ワークロードを迅速にスケーリングするには、Kubernetes オートスケーラーとは異なり、仮想ノードを利用してポッドを迅速にプロビジョニングします。可用性ゾーンを持つクラスターの場合は、永続ボリュームが AZ 間で機能しないため、AZ ごとに 1 つのノードプールを確保し、アクセスがない場合のオートスケーラー ポッド作成の失敗を防ぎます。
   potentialBenefits: Faster scaling with virtual nodes
   pgVerified: false
   publishedToLearn: false

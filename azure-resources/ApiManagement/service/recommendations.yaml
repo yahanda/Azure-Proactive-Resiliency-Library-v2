@@ -1,4 +1,4 @@
-- description: API Management サービスを Premium SKU に移行してアベイラビリティーゾーンをサポートする
+- description: API Management サービスを Premium SKU に移行して可用性ゾーンをサポートする
   aprlGuid: baf3bfc0-32a2-4c0c-926d-c9bf0b49808e
   recommendationTypeId: null
   recommendationControl: High Availability
@@ -18,7 +18,7 @@
       url: "https://learn.microsoft.com/ja-jp/azure/api-management/upgrade-and-scale#change-your-api-management-service-tier"
     - name: Migrate Azure API Management to availability zone support
       url: "https://learn.microsoft.com/ja-jp/azure/reliability/migrate-api-mgt"
-- description: Premium API Management インスタンスでアベイラビリティーゾーンを有効にする
+- description: Premium API Management インスタンスで可用性ゾーンを有効にする
   aprlGuid: 740f2c1c-8857-4648-80eb-47d2c56d5a50
   recommendationTypeId: null
   recommendationControl: High Availability

@@ -36,7 +36,7 @@
   learnMoreLink:
     - name: Choose the right IoT Hub tier and size for your solution
       url: "https://learn.microsoft.com/ja-jp/azure/iot-hub/iot-hub-scaling"
-- description: アベイラビリティーゾーンの使用
+- description: 可用性ゾーンの使用
   aprlGuid: 214cbc46-747e-4354-af6e-6bf0054196a5
   recommendationTypeId: null
   recommendationControl: High Availability

@@ -94,7 +94,7 @@
   learnMoreLink:
     - name: About ExpressRoute virtual network gateways - VNet-to-VNet connectivity
       url: "https://learn.microsoft.com/ja-jp/azure/expressroute/expressroute-about-virtual-network-gateways#vnet-to-vnet-connectivity"
-- description: 顧客制御の ExpressRoute ゲートウェイ メンテナンスを構成する
+- description: お客様が管理する ExpressRoute ゲートウェイ メンテナンスを構成する
   aprlGuid: 3e115044-a3aa-433e-be01-ce17d67e50da
   recommendationTypeId: null
   recommendationControl: High Availability
@@ -102,7 +102,7 @@
   recommendationResourceType: Microsoft.Network/virtualNetworkGateways
   recommendationMetadataState: Active
   longDescription: |-
-    ExpressRoute ゲートウェイが更新され、機能、信頼性、パフォーマンス、セキュリティが向上しました。顧客が制御するメンテナンスの構成とスケジュールにより、更新の影響を最小限に抑え、メンテナンス期間に合わせて調整できます。
+    ExpressRoute ゲートウェイが更新され、機能、信頼性、パフォーマンス、セキュリティが向上しました。お客様が管理するメンテナンスの構成とスケジュールにより、更新の影響を最小限に抑え、メンテナンス期間に合わせて調整できます。
   potentialBenefits: Minimizes update impact
   pgVerified: true
   publishedToLearn: false

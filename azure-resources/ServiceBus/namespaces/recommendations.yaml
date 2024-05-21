@@ -1,4 +1,4 @@
-- description: Service Bus 名前空間のアベイラビリティーゾーンを有効にする
+- description: Service Bus 名前空間の可用性ゾーンを有効にする
   aprlGuid: 20057905-262c-49fe-a9be-49f423afb359
   recommendationTypeId: null
   recommendationControl: High Availability

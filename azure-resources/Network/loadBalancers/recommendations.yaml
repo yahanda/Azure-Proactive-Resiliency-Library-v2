@@ -1,4 +1,4 @@
-- description: 標準ロード バランサー SKU を使用する
+- description: Standard ロード バランサー SKU を使用する
   aprlGuid: 38c3bca1-97a1-eb42-8cd3-838b243f35ba
   recommendationTypeId: null
   recommendationControl: High Availability
@@ -62,7 +62,7 @@
   recommendationResourceType: Microsoft.Network/loadBalancers
   recommendationMetadataState: Active
   longDescription: |-
-    アベイラビリティーゾーンのあるリージョンでは、ゾーン冗長フロントエンド IP を Standard Load Balancer に割り当てることで、1 つのアベイラビリティーゾーンに障害が発生した場合でも、他の正常なゾーンとバックエンドインスタンスがトラフィックを受信できる場合に限り、継続的なトラフィック分散が保証されます。
+    可用性ゾーンのあるリージョンでは、ゾーン冗長フロントエンド IP を Standard Load Balancer に割り当てることで、1 つの可用性ゾーンに障害が発生した場合でも、他の正常なゾーンとバックエンドインスタンスがトラフィックを受信できる場合に限り、継続的なトラフィック分散が保証されます。
   potentialBenefits: Enhances uptime and resilience
   pgVerified: true
   publishedToLearn: false
@@ -72,3 +72,21 @@
   learnMoreLink:
     - name: Load Balancer and Availability Zones
       url: "https://learn.microsoft.com/ja-jp/azure/load-balancer/load-balancer-standard-availability-zones#zone-redundant"
+- description: ヘルスプローブを使用してバックエンドインスタンスの可用性を検出する
+  aprlGuid: e5f5fcea-f925-4578-8599-9a391e888a60
+  recommendationTypeId: null
+  recommendationControl: Monitoring and Alerting
+  recommendationImpact: High
+  recommendationResourceType: Microsoft.Network/loadBalancers
+  recommendationMetadataState: Active
+  longDescription: |-
+    正常性プローブは、バックエンド エンドポイントの状態を判断するために Azure Load Balancer によって使用されます。カスタム正常性プローブを使用すると、バックエンドの可用性についての理解が深まり、バックエンド サービスの影響の監視が容易になります。
+  potentialBenefits: Ensures backend uptime monitoring.
+  pgVerified: true
+  publishedToLearn: false
+  publishedToAdvisor: false
+  automationAvailable: arg
+  tags: null
+  learnMoreLink:
+    - name: Load Balancer Health Probe Overview
+      url: "https://learn.microsoft.com/ja-jp/azure/load-balancer/load-balancer-custom-probe-overview"

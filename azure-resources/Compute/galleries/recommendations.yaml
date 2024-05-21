@@ -24,7 +24,7 @@
   recommendationResourceType: Microsoft.Compute/galleries
   recommendationMetadataState: Active
   longDescription: |-
-    Azure コンピューティング ギャラリーでイメージ/VM バージョンを作成するときに高可用性を実現するために ZRS を使用し、アベイラビリティ ゾーンの障害に対する回復力を提供します。アベイラビリティーゾーンのあるリージョンでは ZRS アカウントを使用することをお勧めします。これらのリージョンでは、Standard_LRS よりも Standard_ZRS の選択が推奨されます。
+    Azure コンピューティング ギャラリーでイメージ/VM バージョンを作成するときに高可用性を実現するために ZRS を使用し、可用性ゾーンの障害に対する回復力を提供します。可用性ゾーンのあるリージョンでは ZRS アカウントを使用することをお勧めします。これらのリージョンでは、Standard_LRS よりも Standard_ZRS の選択が推奨されます。
   potentialBenefits: Enhances image version availability
   pgVerified: true
   publishedToLearn: false

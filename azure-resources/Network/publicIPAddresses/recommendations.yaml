@@ -1,4 +1,4 @@
-- description: 該当する場合は、標準 SKU とゾーン冗長 IP を使用します
+- description: 該当する場合は、Standard SKU とゾーン冗長 IP を使用します
   aprlGuid: c63b81fb-7afc-894c-a840-91bb8a8dcfaf
   recommendationTypeId: null
   recommendationControl: High Availability
@@ -6,7 +6,7 @@
   recommendationResourceType: Microsoft.Network/publicIPAddresses
   recommendationMetadataState: Active
   longDescription: |-
-    Azure のパブリック IP アドレスは、標準 SKU であり、非ゾーン、ゾーン、またはゾーン冗長として利用できます。ゾーン冗長 IP はすべてのゾーンにわたってアクセス可能であり、単一ゾーンの障害に耐えることにより、より高い復元力を提供します。
+    Azure のパブリック IP アドレスは、Standard SKU であり、非ゾーン、ゾーン、またはゾーン冗長として利用できます。ゾーン冗長 IP はすべてのゾーンにわたってアクセス可能であり、単一ゾーンの障害に耐えることにより、より高い復元力を提供します。
   potentialBenefits: Enhanced resilience with zone redundancy
   pgVerified: true
   publishedToLearn: false

@@ -42,7 +42,7 @@
   recommendationResourceType: Microsoft.ContainerRegistry/registries
   recommendationMetadataState: Active
   longDescription: |-
-    マルチリージョン デプロイに Azure Container Registry の geo レプリケーションを使用すると、レジストリ管理が簡素化され、待ち時間が最小限に抑えられます。これにより、ローカル データセンターから世界中の顧客にサービスを提供できるようになり、分散した開発チームがサポートされます。リージョン Webhook は、レプリカ内のイベントを通知できます。
+    マルチリージョン デプロイに Azure Container Registry の geo レプリケーションを使用すると、レジストリ管理が簡素化され、待ち時間が最小限に抑えられます。これにより、ローカル データセンターから世界中のお客様にサービスを提供できるようになり、分散した開発チームがサポートされます。リージョン Webhook は、レプリカ内のイベントを通知できます。
   potentialBenefits: Simplifies management, reduces latency
   pgVerified: false
   publishedToLearn: false

@@ -504,7 +504,7 @@
   learnMoreLink:
     - name: Use Azure Spot Virtual Machines
       url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/spot-vms"
-- description: レガシーワークスペースの移行
+- description: ワークスペースの地域分離を評価する
   aprlGuid: 8aa63c34-dd9d-49bd-9582-21ec310dfbdd
   recommendationTypeId: null
   recommendationControl: High Availability
@@ -512,7 +512,7 @@
   recommendationResourceType: Microsoft.Databricks/workspaces
   recommendationMetadataState: Active
   longDescription: |-
-    Azure Databricks は、顧客のワークスペースに影響を与えるリージョンの停止を防ぐために、共有のリージョン内コントロール プレーンから専用のリージョン コントロール プレーンに移行しました。この変更前に確立されたレガシー ワークスペースは、リージョン内のコントロール プレーンを利用する新しいワークスペースとは異なります。
+    ワークスペースをリージョン内のコントロール プレーンに移動して、リージョンの分離を強化します。ワークスペース URL と nslookup を使用して、現在のコントロール プレーン領域を特定します。 CNAME のリージョンがワークスペースのリージョンと異なり、リージョン内コントロールが利用可能な場合は、以下に提供されるツールを使用した移行を検討してください。
   potentialBenefits: Improves resilience and data sovereignty
   pgVerified: false
   publishedToLearn: false
@@ -520,8 +520,8 @@
   automationAvailable: no
   tags: null
   learnMoreLink:
-    - name: Azure Databricks regions - IP addresses and domains
-      url: "https://learn.microsoft.com/ja-jp/azure/databricks/resources/supported-regions#--ip-addresses-and-domains"
+    - name: Azure Databricks control plane addresses
+      url: "https://learn.microsoft.com/ja-jp/azure/databricks/resources/supported-regions#--azure-databricks-control-plane-addresses"
     - name: Migrate - maintained by Databricks Inc.
       url: "https://github.com/databrickslabs/migrate"
     - name: Databricks Terraform Exporter - maintained by Databricks Inc. (Experimental)

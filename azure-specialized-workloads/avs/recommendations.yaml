@@ -1,4 +1,4 @@
-- description: AVS インターコネクト機能を使用して、異なるアベイラビリティ ゾーンのプライベート クラウドに接続します。
+- description: AVS インターコネクト機能を使用して、異なる可用性ゾーンのプライベート クラウドに接続します。
   aprlGuid: 726abfe3-adae-4a6d-8eb8-4b27a7214ca1
   recommendationTypeId: null
   recommendationControl: High Availability
@@ -6,7 +6,7 @@
   recommendationResourceType: n/a
   recommendationMetadataState: Active
   longDescription: |-
-    相互接続機能を使用すると、異なるアベイラビリティ ゾーンにあるプライベート クラウド間の直接通信が可能になり、プライベート クラウド管理とワークロード ネットワーク間の接続が可能になります。
+    相互接続機能を使用すると、異なる可用性ゾーンにあるプライベート クラウド間の直接通信が可能になり、プライベート クラウド管理とワークロード ネットワーク間の接続が可能になります。
   potentialBenefits: Enhanced private cloud connectivity
   pgVerified: true
   publishedToLearn: false
@@ -122,7 +122,7 @@
   recommendationResourceType: n/a
   recommendationMetadataState: Active
   longDescription: |-
-    Azure VMware Solution vSAN ストレッチ クラスターは、2 つのアベイラビリティ ゾーンと監視用の 3 つ目のアベイラビリティ ゾーンをカバーします。 ExpressRoute を使用して、異なる場所に 2 つの回線をデプロイすることで復元力を強化します。 Global Reach を使用すると、オンプレミス回線を Azure のマネージド回線に接続してメッシュ トポロジを作成します。
+    Azure VMware Solution vSAN ストレッチ クラスターは、2 つの可用性ゾーンと監視用の 3 つ目の可用性ゾーンをカバーします。 ExpressRoute を使用して、異なる場所に 2 つの回線をデプロイすることで復元力を強化します。 Global Reach を使用すると、オンプレミス回線を Azure のマネージド回線に接続してメッシュ トポロジを作成します。
   potentialBenefits: Enhanced resilience and connectivity
   pgVerified: true
   publishedToLearn: false

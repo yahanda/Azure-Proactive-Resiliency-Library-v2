@@ -16,7 +16,7 @@
   learnMoreLink:
     - name: Learn More
       url: "https://learn.microsoft.com/ja-jp/azure/reliability/reliability-batch#cross-region-disaster-recovery-and-business-continuity"
-- description: アベイラビリティーゾーン全体で Azure Batch プールを作成する
+- description: 可用性ゾーン全体で Azure Batch プールを作成する
   aprlGuid: 71cfab8f-d588-4742-b175-b6e07ae48dbd
   recommendationTypeId: null
   recommendationControl: High Availability
@@ -24,7 +24,7 @@
   recommendationResourceType: Microsoft.Batch/batchAccounts
   recommendationMetadataState: Active
   longDescription: |-
-    Azure Batch プールの Virtual Machine Configuration を使用する場合、プールをアベイラビリティーゾーン全体に分散することを選択すると、Azure データセンターの障害に対するコンピューティング ノードが強化されます。
+    Azure Batch プールの Virtual Machine Configuration を使用する場合、プールを可用性ゾーン全体に分散することを選択すると、Azure データセンターの障害に対するコンピューティング ノードが強化されます。
   potentialBenefits: Enhanced reliability and failure protection
   pgVerified: false
   publishedToLearn: false

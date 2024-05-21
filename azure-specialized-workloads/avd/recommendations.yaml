@@ -400,7 +400,7 @@
   recommendationResourceType: n/a
   recommendationMetadataState: Active
   longDescription: |-
-    FSLogix エージェントのアップグレードを定期的にチェックし、FSLogix を最新の状態に維持するプロセスが導入されていることを確認します。お客様には、導入プロセスが許す限り速やかに FSLogix の最新バージョンにアップグレードすることをお勧めします。 FSLogix は、顧客の導入に影響を与える現在および潜在的なバグに対処するホットフィックス リリースを提供します。さらに、これはサポート ケースを開始する際の最初の要件です。
+    FSLogix エージェントのアップグレードを定期的にチェックし、FSLogix を最新の状態に維持するプロセスが導入されていることを確認します。お客様には、導入プロセスが許す限り速やかに FSLogix の最新バージョンにアップグレードすることをお勧めします。 FSLogix は、お客様の導入に影響を与える現在および潜在的なバグに対処するホットフィックス リリースを提供します。さらに、これはサポート ケースを開始する際の最初の要件です。
   potentialBenefits: Enhanced reliability & support
   pgVerified: true
   publishedToLearn: false

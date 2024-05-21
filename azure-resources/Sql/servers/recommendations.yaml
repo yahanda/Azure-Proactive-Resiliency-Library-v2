@@ -44,7 +44,7 @@
   recommendationResourceType: Microsoft.Sql/servers
   recommendationMetadataState: Active
   longDescription: |-
-    既定では、Azure SQL Database プレミアム レベルは、同じリージョン内に複数のコピーをプロビジョニングします。地理的冗長性の場合、データベースをゾーン冗長として設定し、Azure アベイラビリティ ゾーン全体にコピーを分散して、地域の停止中に可用性を維持できます。
+    既定では、Azure SQL Database プレミアム レベルは、同じリージョン内に複数のコピーをプロビジョニングします。地理的冗長性の場合、データベースをゾーン冗長として設定し、Azure 可用性ゾーン全体にコピーを分散して、地域の停止中に可用性を維持できます。
   potentialBenefits: Enhanced reliability, no extra cost
   pgVerified: true
   publishedToLearn: false

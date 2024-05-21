@@ -18,7 +18,7 @@
       url: "https://learn.microsoft.com/ja-jp/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-orchestration-modes#what-has-changed-with-flexible-orchestration-mode"
     - name: Attach or detach a Virtual Machine to or from a Virtual Machine Scale Set
       url: "https://learn.microsoft.com/ja-jp/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-attach-detach-vm?branch=main&tabs=portal-1%2Cportal-2%2Cportal-3"
-- description: アベイラビリティーゾーン全体に VM をデプロイする
+- description: 可用性ゾーン全体に VM をデプロイする
   aprlGuid: 2bd0be95-a825-6f47-a8c6-3db1fb5eb387
   recommendationTypeId: null
   recommendationControl: High Availability
@@ -26,7 +26,7 @@
   recommendationResourceType: Microsoft.Compute/virtualMachines
   recommendationMetadataState: Active
   longDescription: |-
-    各 Azure リージョン内の Azure アベイラビリティ ゾーンは、物理的に分離されているため、ローカル障害に対して耐性があり、起こりそうもないデータセンターの障害からアプリケーションとデータを保護します。
+    各 Azure リージョン内の Azure 可用性ゾーンは、物理的に分離されているため、ローカル障害に対して耐性があり、起こりそうもないデータセンターの障害からアプリケーションとデータを保護します。
   potentialBenefits: Enhanced VM resilience to failures
   pgVerified: true
   publishedToLearn: false
@@ -142,7 +142,7 @@
   recommendationResourceType: Microsoft.Compute/virtualMachines
   recommendationMetadataState: Active
   longDescription: |-
-    プレミアム SSD ディスクは、実稼働環境に最適な、高いパフォーマンス、低遅延の I/O 集中型アプリをサポートします。標準 SSD は、重要性の低いワークロードに対して、一貫したパフォーマンスを備えたコスト効率の高いソリューションを提供します。
+    プレミアム SSD ディスクは、実稼働環境に最適な、高いパフォーマンス、低遅延の I/O 集中型アプリをサポートします。Standard SSD は、重要性の低いワークロードに対して、一貫したパフォーマンスを備えたコスト効率の高いソリューションを提供します。
   potentialBenefits: High-performance and reliability for critical apps
   pgVerified: true
   publishedToLearn: false
@@ -374,7 +374,7 @@
       url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/vm/vminsights-overview"
     - name: Did the extension install properly?
       url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/vm/vminsights-troubleshoot#did-the-extension-install-properly"
-- description: すべての Azure 仮想マシンの診断設定を構成する
+- description: すべての Azure 仮想マシンの監視を構成する
   aprlGuid: 4a9d8973-6dba-0042-b3aa-07924877ebd5
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
@@ -390,8 +390,8 @@
   automationAvailable: arg
   tags: null
   learnMoreLink:
-    - name: Diagnostic settings in Azure Monitor
-      url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/essentials/diagnostic-settings?tabs=portal"
+    - name: Azure Monitor Agent overview
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/agents/agents-overview"
 - description: VM のメンテナンス構成を使用する
   aprlGuid: 52ab9e5c-eec0-3148-8bd7-b6dd9e1be870
   recommendationTypeId: null
@@ -428,7 +428,7 @@
   learnMoreLink:
     - name: B-series burstable virtual machine sizes
       url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/sizes-b-series-burstable"
-- description: ミッションクリティカルなワークロードには、Premium または Ultra ディスクを使用する必要があります
+- description: ミッションクリティカルなワークロードでは、Premium または Ultra ディスクの使用を検討する必要があります
   aprlGuid: df0ff862-814d-45a3-95e4-4fad5a244ba6
   recommendationTypeId: null
   recommendationControl: Scalability
@@ -436,8 +436,8 @@
   recommendationResourceType: Microsoft.Compute/virtualMachines
   recommendationMetadataState: Active
   longDescription: |-
-    Azure Premium SSD は、IO 集中型の VM ワークロードに高性能で低遅延を提供します。 Premium SSD v2 は、容量、スループット、IOPS を調整できるため、低コストで優れたパフォーマンスを提供し、変化するニーズに最適ですが、OS ディスクとしては最適ではありません。
-  potentialBenefits: Enhanced performance and cost efficiency
+    Standard HDD および SSD と比較して、Premium SSD、SSDv2、および Ultra SSD は、パフォーマンス、構成可能性が向上し、単一インスタンスの仮想マシンの稼働時間 SLA が向上します。仮想マシン上のすべてのディスクの最も低い SLA が適用されるため、最高の稼働時間 SLA を得るには Premium ディスクまたは Ultra ディスクを使用するのが最善です。
+  potentialBenefits: Enhanced performance, cost efficiency, and uptime SLA
   pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
@@ -454,7 +454,7 @@
   recommendationResourceType: Microsoft.Compute/virtualMachines
   recommendationMetadataState: Active
   longDescription: |-
-    ワークロードがメンテナンスに敏感な場合は、Azure Boost と互換性のある VM を検討してください。 Azure Boost は、ホスト上で Azure メンテナンス アクティビティが発生したときに顧客への影響を軽減するように設計されており、互換性のある VM サイズの現在のリストは、以下の最初のリンクに記載されています。
+    ワークロードがメンテナンスに敏感な場合は、Azure Boost と互換性のある VM を検討してください。 Azure Boost は、ホスト上で Azure メンテナンス アクティビティが発生したときにお客様への影響を軽減するように設計されており、互換性のある VM サイズの現在のリストは、以下の最初のリンクに記載されています。
   potentialBenefits: Less maintenance impact
   pgVerified: true
   publishedToLearn: false
@@ -488,7 +488,7 @@
       url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/linux/scheduled-events"
     - name: Azure Metadata Service Scheduled Events for Windows VMs
       url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/windows/scheduled-events"
-- description: ZRS ディスクを使用するか、アベイラビリティーゾーンの障害から LRS ディスクを保護する
+- description: ZRS ディスクを使用するか、可用性ゾーンの障害から LRS ディスクを保護する
   aprlGuid: fa0cf4f5-0b21-47b7-89a9-ee936f193ce1
   recommendationTypeId: null
   recommendationControl: High Availability

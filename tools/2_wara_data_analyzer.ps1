@@ -133,10 +133,10 @@ $Global:Runtime = Measure-Command -Expression {
     foreach ($Recom in $CoreResources)
       {
         $RecomTitle = $Global:ServicesYAMLContent | Where-Object { $_.aprlGuid -eq $Recom.recommendationId }
-        $Ticket = $Global:SupportTickets | Where-Object { $_.properties.technicalTicketDetails.resourceId -eq $Recom.id }
+        $Ticket = $Global:SupportTickets | Where-Object { $_.'Related Resource' -eq $Recom.id }
         if ($RecomTitle.recommendationMetadataState -eq 'Active' -or $Recom.validationAction -eq 'IMPORTANT - Recommendation cannot be validated with ARGs - Validate Resources manually' -or $Recom.validationAction -eq 'Query under development - Validate Recommendation manually' )
           {
-            $Tickets = if ($Ticket.properties.supportTicketId.count -gt 1) { $Ticket.properties.supportTicketId | ForEach-Object { $_ + ' /' } }else { $Ticket.properties.supportTicketId }
+            $Tickets = if ($Ticket.'Ticket ID'.count -gt 1) { $Ticket.'Ticket ID' | ForEach-Object { $_ + ' /' } }else { $Ticket.'Ticket ID' }
             $Tickets = [string]$Tickets
             $Tickets = if ($Tickets -like '* /*') { $Tickets -replace ".$" }else { $Tickets }
             $tmp = @{
@@ -184,8 +184,8 @@ $Global:Runtime = Measure-Command -Expression {
       {
         if (![string]::IsNullOrEmpty($adv.recommendationId))
           {
-            $Ticket = $Global:SupportTickets | Where-Object { $_.properties.technicalTicketDetails.resourceId -eq $adv.id }
-            $Tickets = if ($Ticket.properties.supportTicketId.count -gt 1) { $Ticket.properties.supportTicketId | ForEach-Object { $_ + ' /' } }else { $Ticket.properties.supportTicketId }
+            $Ticket = $Global:SupportTickets | Where-Object { $_.'Related Resource' -eq $adv.id }
+            $Tickets = if ($Ticket.'Ticket ID'.count -gt 1) { $Ticket.'Ticket ID' | ForEach-Object { $_ + ' /' } }else { $Ticket.'Ticket ID' }
             $Tickets = [string]$Tickets
             $Tickets = if ($Tickets -like '* /*') { $Tickets -replace ".$" }else { $Tickets }
             $tmp = @{
@@ -223,12 +223,12 @@ $Global:Runtime = Measure-Command -Expression {
     function ImpactedResources {
       ####################    Creates the first sheet (ImpactedResources)
       $Styles1 = @(
-        New-ExcelStyle -HorizontalAlignment Center -FontName 'Calibri' -FontSize 11 -FontColor "White" -Bold -BackgroundColor "DarkSlateGray" -AutoSize -Range "A1:O1"
+        New-ExcelStyle -HorizontalAlignment Center -FontName 'Calibri' -FontSize 11 -FontColor "White" -Bold -BackgroundColor "DarkSlateGray" -AutoSize -Range "A1:N1"
         New-ExcelStyle -HorizontalAlignment Center -FontName 'Calibri' -FontSize 11 -AutoSize -NumberFormat '0' -Range "A:B"
         New-ExcelStyle -HorizontalAlignment Center -FontName 'Calibri' -FontSize 11 -Width 100 -WrapText -NumberFormat '0' -Range "C:C"
         New-ExcelStyle -HorizontalAlignment Center -FontName 'Calibri' -FontSize 11 -AutoSize -NumberFormat '0' -Range "D:E"
         New-ExcelStyle -HorizontalAlignment Left -FontName 'Calibri' -FontSize 11 -Width 80 -Range "F:F"
-        New-ExcelStyle -HorizontalAlignment Center -FontName 'Calibri' -FontSize 11 -AutoSize -NumberFormat '0' -Range "L:O"
+        New-ExcelStyle -HorizontalAlignment Center -FontName 'Calibri' -FontSize 11 -AutoSize -NumberFormat '0' -Range "L:N"
       )
 
       $cond = @()
@@ -244,7 +244,6 @@ $Global:Runtime = Measure-Command -Expression {
       $ImpactedResourcesSheet.Add('recommendationId')
       $ImpactedResourcesSheet.Add('name')
       $ImpactedResourcesSheet.Add('id')
-      $ImpactedResourcesSheet.Add('tags')
       $ImpactedResourcesSheet.Add('param1')
       $ImpactedResourcesSheet.Add('param2')
       $ImpactedResourcesSheet.Add('param3')
@@ -431,33 +430,27 @@ $Global:Runtime = Measure-Command -Expression {
           if (![string]::IsNullOrEmpty($Ticket))
             {
               $tmp = @{
-                'Ticket ID'         = [string]$Ticket.properties.supportTicketId;
-                'Severity'          = [string]$Ticket.properties.severity;
-                'Status'            = [string]$Ticket.properties.status;
-                'Support Plan Type' = [string]$Ticket.properties.supportPlanType;
-                'Creation Date'     = [string]$Ticket.properties.createdDate;
-                'Modified Date'     = [string]$Ticket.properties.modifiedDate;
-                'Customer Contact'  = [string]$Ticket.properties.contactDetails.primaryEmailAddress;
-                'Title'             = [string]$Ticket.properties.title;
-                'Description'       = [string]$Ticket.properties.description;
-                'Related Resource'  = [string]$Ticket.properties.technicalTicketDetails.resourceId
-                #'Support Engineer'     = [string]$Ticket.properties.supportEngineer.emailAddress
+                'Ticket ID'         = [string]$Ticket.'Ticket ID';
+                'Severity'          = [string]$Ticket.'Severity';
+                'Status'            = [string]$Ticket.'Status';
+                'Support Plan Type' = [string]$Ticket.'Support Plan Type';
+                'Creation Date'     = [string]$Ticket.'Creation Date';
+                'Modified Date'     = [string]$Ticket.'Modified Date';
+                'Title'             = [string]$Ticket.'Title';
+                'Related Resource'  = [string]$Ticket.'Related Resource'
               }
               $Global:TicketsSheet += $tmp
             }
         }
 
       $Styles5 = @(
-        New-ExcelStyle -HorizontalAlignment Center -FontName 'Calibri' -FontSize 11 -FontColor "White" -VerticalAlignment Center -Bold -WrapText -BackgroundColor "DarkSlateGray" -Width 20 -NumberFormat '0' -Range "A1"
+        New-ExcelStyle -HorizontalAlignment Center -FontName 'Calibri' -FontSize 11 -FontColor "White" -VerticalAlignment Center -Bold -WrapText -BackgroundColor "DarkSlateGray" -Width 20 -Range "A1"
         New-ExcelStyle -HorizontalAlignment Center -FontName 'Calibri' -FontSize 11 -FontColor "White" -VerticalAlignment Center -Bold -WrapText -BackgroundColor "DarkSlateGray" -Width 15 -Range "B1:C1"
         New-ExcelStyle -HorizontalAlignment Center -FontName 'Calibri' -FontSize 11 -FontColor "White" -VerticalAlignment Center -Bold -WrapText -BackgroundColor "DarkSlateGray" -Width 35 -Range "D1"
         New-ExcelStyle -HorizontalAlignment Center -FontName 'Calibri' -FontSize 11 -FontColor "White" -VerticalAlignment Center -Bold -WrapText -BackgroundColor "DarkSlateGray" -Width 20 -Range "E1:F1"
-        New-ExcelStyle -HorizontalAlignment Center -FontName 'Calibri' -FontSize 11 -FontColor "White" -VerticalAlignment Center -Bold -WrapText -BackgroundColor "DarkSlateGray" -Width 35 -Range "G1"
-        New-ExcelStyle -HorizontalAlignment Center -FontName 'Calibri' -FontSize 11 -FontColor "White" -VerticalAlignment Center -Bold -WrapText -BackgroundColor "DarkSlateGray" -Width 50 -Range "H1"
-        New-ExcelStyle -HorizontalAlignment Center -FontName 'Calibri' -FontSize 11 -FontColor "White" -VerticalAlignment Center -Bold -WrapText -BackgroundColor "DarkSlateGray" -Width 95 -Range "I1"
-        New-ExcelStyle -HorizontalAlignment Center -FontName 'Calibri' -FontSize 11 -FontColor "White" -VerticalAlignment Center -Bold -WrapText -BackgroundColor "DarkSlateGray" -Width 120 -Range "J1"
-        #New-ExcelStyle -HorizontalAlignment Center -FontName 'Calibri' -FontSize 11 -FontColor "White" -VerticalAlignment Center -Bold -WrapText -BackgroundColor "DarkSlateGray" -Width 35 -Range "K1"
-        New-ExcelStyle -HorizontalAlignment Center -FontName 'Calibri' -FontSize 11 -VerticalAlignment Center -WrapText -NumberFormat '0' -Range "A:J"
+        New-ExcelStyle -HorizontalAlignment Center -FontName 'Calibri' -FontSize 11 -FontColor "White" -VerticalAlignment Center -Bold -WrapText -BackgroundColor "DarkSlateGray" -Width 50 -Range "G1"
+        New-ExcelStyle -HorizontalAlignment Center -FontName 'Calibri' -FontSize 11 -FontColor "White" -VerticalAlignment Center -Bold -WrapText -BackgroundColor "DarkSlateGray" -Width 120 -Range "H1"
+        New-ExcelStyle -HorizontalAlignment Center -FontName 'Calibri' -FontSize 11 -VerticalAlignment Center -WrapText -Range "A:G"
       )
 
       # Configure the array of fields to be used in the Tickets sheet
@@ -468,16 +461,13 @@ $Global:Runtime = Measure-Command -Expression {
       $TicketWorksheet.Add('Support Plan Type')
       $TicketWorksheet.Add('Creation Date')
       $TicketWorksheet.Add('Modified Date')
-      $TicketWorksheet.Add('Customer Contact')
       $TicketWorksheet.Add('Title')
-      $TicketWorksheet.Add('Description')
       $TicketWorksheet.Add('Related Resource')
-      #$TicketWorksheet.Add('Support Engineer')
 
       if (![string]::IsNullOrEmpty($Global:TicketsSheet))
         {
           $Global:TicketsSheet | ForEach-Object { [PSCustomObject]$_ } | Select-Object $TicketWorksheet |
-          Export-Excel -Path $ExcelFile -WorksheetName 'Support Tickets' -TableName 'TableTickets' -AutoSize -TableStyle $tableStyle -Style $Styles5
+          Export-Excel -Path $ExcelFile -WorksheetName 'Support Tickets' -TableName 'TableTickets' -AutoSize -TableStyle $tableStyle -Style $Styles5 -NoNumberConversion *
         }
     }
 
@@ -796,7 +786,7 @@ $Global:Runtime = Measure-Command -Expression {
   }
 
   #Call the functions
-  $Global:Version = "2.0.6"
+  $Global:Version = "2.0.8"
   Write-Host "Version: " -NoNewline
   Write-Host $Global:Version -ForegroundColor DarkBlue
 
