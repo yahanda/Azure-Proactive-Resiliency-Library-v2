@@ -81,7 +81,7 @@
   tags: null
   learnMoreLink:
     - name: Soft delete detail docs
-      url: "https://learn.microsoft.com//azure/storage/blobs/soft-delete-blob-enable?tabs=azure-portal "
+      url: "https://learn.microsoft.com/ja-jp/azure/storage/blobs/soft-delete-blob-enable?tabs=azure-portal "
 - description: 偶発的な変更に備えてバージョン管理を有効にし、バージョン数を 1000 未満に保ちます。
   aprlGuid: 8ebda7c0-e0e1-ed45-af59-2d7ea9a1c05d
   recommendationTypeId: null
