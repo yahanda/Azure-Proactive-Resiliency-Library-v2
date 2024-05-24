@@ -3,7 +3,7 @@
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
   recommendationImpact: Low
-  recommendationResourceType: microsoft.insights/activityLogAlerts
+  recommendationResourceType: Microsoft.Insights/activityLogAlerts
   recommendationMetadataState: Active
   longDescription: |-
     該当するすべてのリソースに対してリソース正常性アラートを構成して、Azure リソースの現在および過去の正常性状態に関する最新情報を常に把握できるようにします。これらのリソースの健全性状態に変化があった場合に通知します。
@@ -25,7 +25,7 @@
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
   recommendationImpact: High
-  recommendationResourceType: microsoft.insights/activityLogAlerts
+  recommendationResourceType: Microsoft.Insights/activityLogAlerts
   recommendationMetadataState: Active
   longDescription: |-
     サービスの正常性では、使用されている Azure サービスとリージョンのパーソナライズされた正常性ビューが提供され、使用されているサービスを把握することで、停止、計画されたメンテナンス、正常性に関する勧告に関する通知に最適な場所が提供されます。

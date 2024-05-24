@@ -74,30 +74,6 @@
   learnMoreLink:
     - name: Azure Workbooks templates
       url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/visualize/workbooks-templates"
-- description: 今後のサービスの問題については、組織内の適切な担当者に確実に通知されるようにする
-  aprlGuid: 1422b388-5d23-5641-ba1c-139a59fb7b4c
-  recommendationTypeId: null
-  recommendationControl: Monitoring and Alerting
-  recommendationImpact: Medium
-  recommendationResourceType: WellArchitected/Monitor
-  recommendationMetadataState: Active
-  longDescription: |-
-    Azure は、クラウド リソースの正常性に関する情報を常に提供するための一連のエクスペリエンスを提供します。
-
-    Service Health ポータルは、リソースに影響を与える可能性のある 4 種類の正常性イベントを追跡します。
-    - サービスの問題 - 現在影響を受ける Azure サービスの問題 (停止)
-    - 計画されたメンテナンス - 将来のサービスの可用性に影響を与える可能性のある今後のメンテナンス。
-    - 健康に関する勧告 - 注意が必要な Azure サービスの変更。例には、Azure 機能の非推奨やアップグレード要件 (サポートされている PHP フレームワークへのアップグレードなど) が含まれます。
-    - セキュリティ勧告 - Azure サービスの可用性に影響を与える可能性のあるセキュリティ関連の通知または違反。
-  potentialBenefits: Quick issue alerts to key personnel
-  pgVerified: true
-  publishedToLearn: false
-  publishedToAdvisor: false
-  automationAvailable: No
-  tags: null
-  learnMoreLink:
-    - name: Create a Service Health alert using the Azure portal
-      url: "https://learn.microsoft.com/ja-jp/azure/service-health/alerts-activity-log-service-notifications-portal#create-a-service-health-alert-using-the-azure-portal"
 - description: 組み込みの復元ポリシーを利用する
   aprlGuid: 2af4f8c2-bafc-4808-88df-0af009a019b5
   recommendationTypeId: null
@@ -126,8 +102,8 @@
   recommendationResourceType: WellArchitected/Monitor
   recommendationMetadataState: Active
   longDescription: |-
-    クラウド ソリューションの信頼性を測定して向上させるには、ソリューションがビジネス要件をどの程度満たしているかを反映する指標を定義する必要があります。たとえば、可用性、遅延、スループット、エラー率、耐久性を指標として使用して、ソリューションのパフォーマンスと信頼性を定量化できます。これらの指標は、SLA や SLO などの信頼性目標の進捗状況を追跡し、改善の余地がある領域を特定するのに役立ちます。また、指標をお客様の期待やフィードバックに合わせて調整し、それらを使用して信頼性への取り組みに優先順位を付ける必要があります。
-  potentialBenefits: Gain insight into the performance of your application in relation to business requirements
+    クラウド ソリューションの信頼性を測定して向上させるには、ソリューションがビジネス要件をどの程度満たしているかを反映する指標を定義する必要があります。たとえば、可用性、遅延、スループット、エラー率、耐久性を指標として使用して、ソリューションのパフォーマンスと信頼性を定量化できます。これらの指標は、SLA や SLO などの信頼性目標の進捗状況を追跡し、改善の余地がある領域を特定するのに役立ちます。また、指標を顧客の期待やフィードバックに合わせて調整し、それらを使用して信頼性への取り組みに優先順位を付ける必要があります。
+  potentialBenefits: Performance insights align with business requirements
   pgVerified: false
   publishedToLearn: false
   publishedToAdvisor: no

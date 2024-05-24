@@ -399,7 +399,7 @@
 - description: 導入とワークロードを自動化する
   aprlGuid: 42aedaa8-6151-424d-b782-b8666c779969
   recommendationTypeId: null
-  recommendationControl: Automation
+  recommendationControl: Other Best Practices
   recommendationImpact: High
   recommendationResourceType: Microsoft.Databricks/workspaces
   recommendationMetadataState: Active
@@ -529,7 +529,7 @@
 - description: 代替 VM SKU を定義する
   aprlGuid: 028593be-956e-4736-bccf-074cb10b92f4
   recommendationTypeId: null
-  recommendationControl: System Efficiency
+  recommendationControl: Personalized
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Databricks/workspaces
   recommendationMetadataState: Active

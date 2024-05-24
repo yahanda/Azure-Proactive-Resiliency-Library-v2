@@ -8,7 +8,7 @@
   longDescription: |-
     Azure 可用性ゾーンは、リージョン内に独立した場所を提供することで高可用性を確保し、独自の電源、冷却、ネットワークを備え、アプリケーションとデータをデータセンター レベルの障害から確実に保護します。
   potentialBenefits: Enhanced fault tolerance for AKS
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
@@ -88,7 +88,7 @@
   longDescription: |-
     AKS のクラスター オートスケーラーは、ポッド リソースのニーズと利用可能な容量に基づいてノード数を調整し、需要に応じたスケーリングを可能にして、停止を防ぎます。
   potentialBenefits: Optimizes scaling and prevents outages
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
@@ -112,7 +112,7 @@
   longDescription: |-
     バックアップが必要なステートフル アプリで人気の AKS は、インストールされたバックアップ拡張機能を通じて Azure Backup を使用してクラスターと接続されたボリュームを保護できるようになり、バックアップ コンテナーを介したバックアップと復元の操作が可能になります。
   potentialBenefits: Ensures data safety for AKS
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
@@ -148,7 +148,7 @@
   aprlGuid: d3111036-355d-431b-ab49-8ddad042800b
   recommendationTypeId: null
   recommendationControl: High Availability
-  recommendationImpact: Low
+  recommendationImpact: Medium
   recommendationResourceType: Microsoft.ContainerService/managedClusters
   recommendationMetadataState: Active
   longDescription: |-
@@ -238,7 +238,7 @@
   longDescription: |-
     運用 AKS クラスターには、財政的に裏付けられた SLA と強化されたノードのスケーラビリティを実現するための Standard レベルが必要です。これは、無料サービスにはこれらの機能がないためです。
   potentialBenefits: SLA guarantee and better scalability
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
@@ -258,7 +258,7 @@
   longDescription: |-
     Azure Monitor は、メトリック API からイベントを収集し、コンテナー ログをキャプチャし、CPU/メモリ データを収集することにより、AKS の正常性とパフォーマンスに関するリアルタイムの洞察を可能にします。 Azure Monitor Container Insights、Prometheus、Grafana などを使用してデータを視覚化できます。
   potentialBenefits: Real-time AKS health/performance insights
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
@@ -311,7 +311,7 @@
 - description: DevOps フレームワークを使用する場合は GitOps を有効にする
   aprlGuid: 5f3cbd68-692a-4121-988c-9770914859a9
   recommendationTypeId: null
-  recommendationControl: Automation
+  recommendationControl: Other Best Practices
   recommendationImpact: Low
   recommendationResourceType: Microsoft.ContainerService/managedClusters
   recommendationMetadataState: Active
@@ -328,7 +328,7 @@
       url: "https://learn.microsoft.com/ja-jp/azure/architecture/guide/aks/aks-cicd-github-actions-and-gitops"
     - name: GitOps for AKS - Reference Architecture
       url: "https://learn.microsoft.com/ja-jp/azure/architecture/example-scenario/gitops-aks/gitops-blueprint-aks"
-- description: アプリケーション要件に基づいてアフィニティ ルールまたは非アフィニティ ルールを構成する
+- description: ポッド トポロジの分散制約を使用して、ポッドが異なるノードまたはゾーンに分散されるようにします。
   aprlGuid: 928fcc6f-5e9a-42d9-9bd4-260af42de2e5
   recommendationTypeId: null
   recommendationControl: High Availability
@@ -336,9 +336,9 @@
   recommendationResourceType: Microsoft.ContainerService/managedClusters
   recommendationMetadataState: Active
   longDescription: |-
-    トポロジー分散制約を構成して、リージョン、ゾーン、ノード、その他のドメインなどの障害ドメイン間でクラスター全体にポッドを分散し、高可用性とリソースの効率的な利用を実現します。
+    ポッド トポロジの分散制約を使用してノードまたはゾーン トポロジに基づいてポッドの分散を制御し、ポッドがクラスター全体に確実に分散されるようにすることで、可用性と信頼性を強化します。
   potentialBenefits: Ensures high availability and efficient use
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: no
@@ -358,7 +358,7 @@
   longDescription: |-
     AKS kubelet コントローラーは liveness プローブを使用してコンテナーとアプリケーションの正常性を検証し、システムがその正常性状態に基づいてコンテナーを再起動するタイミングを認識できるようにします。
   potentialBenefits: Enhances container health monitoring
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: no
@@ -368,7 +368,7 @@
       url: "https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/"
     - name: Assign Pod Node
       url: "https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/"
-- description: 可用性を保証するために実稼働アプリケーションでポッド レプリカ セットを構成する
+- description: 実稼働アプリケーションで複数のレプリカを含むデプロイメントを使用して、可用性を保証します
   aprlGuid: bcfe71f1-ebed-49e5-a84a-193b81ad5d27
   recommendationTypeId: null
   recommendationControl: High Availability
@@ -376,9 +376,9 @@
   recommendationResourceType: Microsoft.ContainerService/managedClusters
   recommendationMetadataState: Active
   longDescription: |-
-    ポッドまたはデプロイメント マニフェストで ReplicaSet を構成すると、レプリカ ポッドの数が安定し、指定された数の同一のポッドが常に利用可能になり、可用性が保証されます。
+    ポッドまたはデプロイメント マニフェストで複数のレプリカを構成すると、レプリカ ポッドの数が安定し、指定された数の同一のポッドが常に利用可能になり、その可用性が保証されます。
   potentialBenefits: Ensures stable pod availability
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: no
@@ -396,7 +396,7 @@
   longDescription: |-
     重要なシステム ポッドがノード停止に対して確実に回復できるように、システム ノード プールは最小ノード数 2 で構成する必要があります。
   potentialBenefits: Ensures pod resilience
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
@@ -414,7 +414,7 @@
   longDescription: |-
     少なくとも 2 つのノードでユーザー ノード プールを構成することは、高可用性を必要とするアプリケーションにとって不可欠であり、中断することなく動作し、アクセスできる状態を維持します。
   potentialBenefits: Ensures high app availability
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
@@ -432,7 +432,7 @@
   longDescription: |-
     ポッド中断バジェットは、メンテナンスやスケーリングなどの中断中に利用可能な状態を維持する必要があるポッドの最小数または割合を構成する Kubernetes リソースであり、クラスター内で常に最小数のポッドが利用可能であることが保証されます。
   potentialBenefits: Ensures cluster resiliency during disruptions
-  pgVerified: false
+  pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: no
@@ -458,41 +458,23 @@
   automationAvailable: arg
   tags: null
   learnMoreLink:
-    - name: AKS Networking
-      url: "https://learn.microsoft.com/ja-jp/azure/aks/concepts-network"
-- description: 名前空間レベルでリソース クォータを強制する
-  aprlGuid: d479df28-d367-4ef0-8b86-0495ab94fabd
+    - name: Azure CNI Dynamic IP Allocation
+      url: "https://learn.microsoft.com/ja-jp/azure/aks/configure-azure-cni-dynamic-ip-allocation"
+- description: ノード プールの自動スケール設定は、サブスクリプション コア クォータを超えてはなりません
+  aprlGuid: a01afc4c-7439-4919-b2da-3565992ea2a7
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.ContainerService/managedClusters
   recommendationMetadataState: Active
   longDescription: |-
-    AKS で名前空間レベルのリソース クォータを強制することは、信頼性を確保し、リソースの枯渇を防ぎ、クラスターの安定性を維持するために重要です。アプリケーションやユーザーによるリソースの独占を阻止し、他のアプリケーションのパフォーマンスの低下や機能停止を回避します。
-  potentialBenefits: Prevents resource monopoly, ensures stability
+    AKS がノードを効率的にスケールアウトして、リソースの制約や潜在的なサービス中断を軽減しながら需要の増加に対応できるようにするために、ノード プールの設定はサブスクリプション コア クォータを超えないようにする必要があります。
+  potentialBenefits: Reduced disruptions
   pgVerified: false
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: no
   tags: null
   learnMoreLink:
-    - name: Resource quotas
-      url: "https://learn.microsoft.com/ja-jp/azure/aks/operator-best-practices-scheduler#enforce-resource-quotas"
-- description: AKS プライベート クラスターを有効にするか、承認された IP アドレス範囲を設定する
-  aprlGuid: ba3f7d17-9654-4038-b172-09f1b2569925
-  recommendationTypeId: null
-  recommendationControl: High Availability
-  recommendationImpact: High
-  recommendationResourceType: Microsoft.ContainerService/managedClusters
-  recommendationMetadataState: Active
-  longDescription: |-
-    最適な接続とセキュリティを実現するには、AKS でプライベート クラスターを有効にして、ワーカー ノードとコントロール プレーン間の直接通信を確保します。有効になっていない場合は、承認された IP 範囲で API サーバーへのアクセスを保護します。
-  potentialBenefits: Provides network reliability, reduced disruptions
-  pgVerified: false
-  publishedToLearn: false
-  publishedToAdvisor: false
-  automationAvailable: arg
-  tags: null
-  learnMoreLink:
-    - name: AKS private cluster
-      url: "https://learn.microsoft.com/ja-jp/azure/aks/private-clusters"
+    - name: Azure Quotas
+      url: "https://learn.microsoft.com/ja-jp/azure/quotas/quotas-overview"

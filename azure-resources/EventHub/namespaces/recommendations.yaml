@@ -6,7 +6,7 @@
   recommendationResourceType: Microsoft.EventHub/namespaces
   recommendationMetadataState: Disabled
   longDescription: |-
-    Azure portal を使用すると、可用性ゾーンのサポートによるゾーン冗長性が自動的に有効になります。可用性ゾーン内のデータ センター間でメタデータとデータ (イベント) の複製を継続するには、この機能を無効にしないでください。
+    Azure portal を使用すると、可用性ゾーンのサポートによるゾーン冗長性が自動的に有効になります。アベイラビリティ ゾーン内のデータ センター間でメタデータとデータ (イベント) の複製を継続するには、この機能を無効にしないでください。
   potentialBenefits: Enhanced fault tolerance for Event Hub
   pgVerified: false
   publishedToLearn: false

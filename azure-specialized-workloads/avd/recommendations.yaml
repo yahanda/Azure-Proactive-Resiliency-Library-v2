@@ -3,7 +3,7 @@
   recommendationTypeId: null
   recommendationControl: Governance
   recommendationImpact: High
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
     サービス正常性アラートを設定して、サービスの問題、計画されたメンテナンス、または Azure Virtual Desktop リソースに影響を与える可能性のあるその他の変更を常に把握できるようにします。 Resource Health を使用して、VM とストレージ ソリューションを監視します。
@@ -11,7 +11,7 @@
   pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
-  automationAvailable: ARG
+  automationAvailable: arg
   tags: null
   learnMoreLink:
     - name: Learn More
@@ -21,7 +21,7 @@
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
   recommendationImpact: High
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
     AVD インサイト ワークブック テンプレートを構成して、メトリクス、ログ、イベントなどにわたる AVD ワークロードを監視およびトラブルシューティングします。 AVD Insights では、本番環境と DR ワークロードの両方を有効にする必要があります。
@@ -39,7 +39,7 @@
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: Low
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
     個別の Log Analytics を使用すると、DR 環境が完全に動作し、インシデント発生時にワークロード チームが依存するメトリクス、パフォーマンス、その他の監査ツールを可視化できます。
@@ -57,7 +57,7 @@
   recommendationTypeId: null
   recommendationControl: Governance
   recommendationImpact: Low
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
     AVD ワークロードのリソース タイプと関連する共有リソースに基づいて複数のリソース グループを使用して、AVD ランディング ゾーンのベスト プラクティスに従います。
@@ -75,7 +75,7 @@
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: Low
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
     サブスクリプション制限と API スロットル制限を監視し、計画します。サブスクリプション内のリソースの使用状況を追跡します。さらにスケーリングが必要な場合は、複数のサブスクリプションにわたってスケーリングすることを検討してください。
@@ -96,7 +96,7 @@
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
     Active Directory ドメイン サービス (AD DS) 統合 DNS/その他は、マルチリージョン ゾーン全体のセカンダリ/ターシャリ顧客 DNS をターゲットにする必要があります。カスタム DNS を使用する場合は、単一障害点を避けるために冗長 DNS サーバーがあることを確認してください。
@@ -114,7 +114,7 @@
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: Medium
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
     AVD にはマルチリージョン展開 (アクティブ/アクティブまたはアクティブ/パッシブ) を採用することをお勧めします。各リージョンには、プライマリ リージョンが停止した場合に備えて、少なくとも ID、名前解決、AVD 管理リソース、およびセッション ホストが含まれている必要があります。
@@ -132,9 +132,9 @@
 - description: ストレージ アカウントごとに FSLogix ファイル共有を 1 つだけ作成します
   aprlGuid: ed1f0327-0914-49e8-9518-16acb0d6b8d6
   recommendationTypeId: null
-  recommendationControl: Storage
+  recommendationControl: Scalability
   recommendationImpact: Medium
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
     容量とパフォーマンスのスケーリングを最大化するには、Azure ファイル ストレージ アカウントごとにファイル共有を 1 つだけ作成することをお勧めします。このアプローチでは、単一のファイル共有をストレージ アカウントの最大容量まで拡張できます。
@@ -150,9 +150,9 @@
 - description: 専用の FSLogix ファイル共有を作成し、ホスト プールごとにセットアップする
   aprlGuid: ff916698-7507-4519-b545-c94dd81d73c5
   recommendationTypeId: null
-  recommendationControl: Storage
+  recommendationControl: Scalability
   recommendationImpact: Medium
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
     ファイル共有サービスの容量とパフォーマンスのスケーリングを最大化し、ユーザーのプロファイルの競合を回避するには、ホスト プールごとに 1 つのファイル共有ターゲットと FSLogix セットアップを作成することをお勧めします。
@@ -170,7 +170,7 @@
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: Medium
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
     FSLogix ストレージ アカウントでバックアップを有効にすることをお勧めします。ユーザー プロファイルの回復力を確保することで、障害が発生してもユーザー データとエクスペリエンスを一貫したものにすることができます。
@@ -190,7 +190,7 @@
   recommendationTypeId: null
   recommendationControl: Other Best Practices
   recommendationImpact: Medium
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
     RDP ショートパスは、クライアントとセッション ホストの間に UDP ベースの直接接続を確立します。デフォルトでは、リモート デスクトップ プロトコル (RDP) は UDP を使用して接続を確立しようとし、フォールバック接続メカニズムとして TCP ベースのリバース接続トランスポートを使用します。 UDP ベースのトランスポートにより、接続の信頼性が向上し、遅延がより安定します。
@@ -203,12 +203,12 @@
   learnMoreLink:
     - name: Learn More
       url: "https://learn.microsoft.com/ja-jp/azure/virtual-desktop/rdp-shortpath?tabs=managed-networks"
-- description: AVD セッション ホストの AVD コントロール プレーンへの接続を検証し、RDP ショートパスが使用されている場合に UDP ポートが許可されていることを検証します。
+- description: AVD セッション ホストがコントロール プレーンに接続されていることを確認し、RDP ショートパス用の UDP ポートを許可する
   aprlGuid: e718ac1a-ebab-4f75-9e4a-1a5ccef20d1f
   recommendationTypeId: null
   recommendationControl: Governance
   recommendationImpact: Medium
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
     AVD セッション ホストが AVD コントロール プレーンと効果的に通信できること、および UDP が使用されている場合は UDP ポートが開いていることを確認します。 VM の AVD コントロール プレーンへの接続を検証し、UDP TURN ポートのアクセス可能性を確認します。グローバル URL をホワイトリストに登録し、UDP/TURN ポートが開いていてアクセスできることを確認し、スムーズなユーザー接続を促進します。
@@ -228,7 +228,7 @@
   recommendationTypeId: null
   recommendationControl: Security
   recommendationImpact: Low
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
     ハイブリッド - Entra ID Connect は Azure で実行するのが最適ですが、オンプレミスでホストすることもできます。フェールオーバーが発生した場合には、セカンダリ以上の VM をステージング モードでセットアップする必要があります。
@@ -247,7 +247,7 @@
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: Medium
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
     高可用性を実現するには、オンプレミスのデータセンターに戻る接続で、使用されているリージョン全体のバックアップ パスを考慮する必要があります。セカンダリ リージョンにセカンダリ ルート テーブルを配置することで、ルーティングの冗長性を確保します。
@@ -265,7 +265,7 @@
   recommendationTypeId: null
   recommendationControl: Business Continuity
   recommendationImpact: Medium
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
     AVD ペルソナごとの NSG と ASG、および Prod/DR リージョンごとの IP スペース。
@@ -284,7 +284,7 @@
   recommendationTypeId:
   recommendationControl: Disaster Recovery
   recommendationImpact: Medium
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
     FW/NVA へのトンネル トラフィックを強制するルート テーブルでフェイルオーバーに関する考慮事項が評価され、失敗したり、次世代の FW 保護がトリガーされたりしないことを確認します。
@@ -298,12 +298,12 @@
   learnMoreLink:
     - name: Learn More
       url: "https://learn.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/landing-zone/design-area/management-business-continuity-disaster-recovery"
-- description: AVD コントロール プレーンへのセッション ホスト トラフィックがサブネットからインターネットに直接送信できるように静的ルートを構成します。
+- description: セッション ホストが AVD コントロール プレーン サブネットに直接アクセスできるように静的ルートを構成する
   aprlGuid: 1c6c97d7-4d03-4f53-985d-fa239f715173
   recommendationTypeId: null
-  recommendationControl: Performance
+  recommendationControl: Other Best Practices
   recommendationImpact: Medium
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
     AVD コントロール プレーンをターゲットとするセッション ホスト トラフィックがサブネットからインターネット (ネクスト ホップ) に直接送信できるように、ルート テーブルに静的ルートが設定されていることを確認します。これにより、信頼できるトラフィックの通信におけるホップの検査や追加による遅延が回避されます。 。
@@ -323,7 +323,7 @@
   recommendationTypeId: null
   recommendationControl: Governance
   recommendationImpact: Low
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
     Azure Virtual Desktop 環境内でイメージの更新を処理するための体系的なプロセスを確立します。個々のセッション ホストを直接更新する代わりに、更新されたイメージの新しいバージョンを作成します。このプロセスには、必要な更新と構成を含むゴールデン イメージの作成と構成が含まれます。
@@ -341,7 +341,7 @@
   recommendationTypeId: null
   recommendationControl: Governance
   recommendationImpact: Medium
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
     すべてのセッション ホストに標準の FSLogix 構成が展開されていることを確認します。設定の一貫性とベスト プラクティスとの整合性を定期的に検証します。
@@ -359,7 +359,7 @@
   recommendationTypeId:
   recommendationControl: Security
   recommendationImpact: Medium
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
     ユーザー権限が SMB 共有に正しく設定されていることを確認して、ユーザーは自分のプロファイルのみに適切なアクセス権を持ち、他のユーザー プロファイルにはアクセスできず、管理者はルート ボリュームにフル アクセス権を持ちます。また、DR イベントの場合に備えて、セカンダリ ストレージ パスのアクセス許可が設定されていることを確認してください。
@@ -377,7 +377,7 @@
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting
   recommendationImpact: Medium
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
     FSLogix ストレージ リソースの診断設定を構成し、そのメトリクスとエラーの FSLogix ログを定期的に構成します。イベントはセッション ホスト内でローカルに確認することで確認できますが、この情報を Log Analytics ワークスペースに統合するように AVD インサイト ワークブックを構成することをお勧めします。
@@ -397,7 +397,7 @@
   recommendationTypeId: null
   recommendationControl: Governance
   recommendationImpact: Low
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
     FSLogix エージェントのアップグレードを定期的にチェックし、FSLogix を最新の状態に維持するプロセスが導入されていることを確認します。お客様には、導入プロセスが許す限り速やかに FSLogix の最新バージョンにアップグレードすることをお勧めします。 FSLogix は、お客様の導入に影響を与える現在および潜在的なバグに対処するホットフィックス リリースを提供します。さらに、これはサポート ケースを開始する際の最初の要件です。
@@ -415,7 +415,7 @@
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: Medium
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
     Azure Netapp Files を使用している場合は、継続的可用性をオンにします。
@@ -434,7 +434,7 @@
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: Medium
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
     App Attach パッケージはプロファイルとは別の共有に存在する必要があります。また、アプリの添付ファイルもバックアップする必要があります。要件は、イメージに保存されているパッケージ化されたアプリケーションの数によって大きく異なるため、要件を理解するにはアプリケーションをテストする必要があります。
@@ -453,7 +453,7 @@
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: High
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
     継続的な可用性と災害復旧への備えを確保するには、セカンダリ リージョンにセカンダリ Key Vault をプロビジョニングすることをお勧めします。プライマリ リージョンに障害が発生した場合、このセカンダリ Key Vault によって、セカンダリ リージョンのデプロイで使用するために重要なシークレットにアクセスできることが保証されます。
@@ -466,15 +466,15 @@
   learnMoreLink:
     - name: Learn More
       url: "https://learn.microsoft.com/ja-jp/azure/key-vault/general/disaster-recovery-guidance"
-- description: AVD セッション ホストと同じリージョン内の可用性ゾーン全体の Azure 仮想マシンにドメイン コントローラーのペアをデプロイする
+- description: AVD リージョンの可用性ゾーン全体で Azure VM に 2 つ以上のドメイン コントローラーをデプロイする
   aprlGuid: d61f6ee8-de1b-4fd9-9ce3-316cfe11ee05
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: High
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
-    AVD で AD DS ID ソリューションを使用する場合は、可用性ゾーン全体の Azure 仮想マシンにドメイン コントローラーをデプロイすることをお勧めします。これにより、オンプレミス サービスへの依存関係が削除されて環境の信頼性が向上し、ユーザー認証のパスが短縮されてパフォーマンスが向上します。
+    AVD で AD DS ID ソリューションを使用する場合は、可用性ゾーン全体の Azure 仮想マシンに 2 つ以上のドメイン コントローラーをデプロイすることをお勧めします。これにより、オンプレミス サービスへの依存関係が削除されて環境の信頼性が向上し、ユーザー認証のパスが短縮されてパフォーマンスが向上します。
     この推奨事項は、Microsoft Entra ID または Entra Domain Services に参加しているセッション ホストを使用する場合には適用されません。
   potentialBenefits: Enhanced identity resilience
   pgVerified: true
@@ -485,12 +485,12 @@
   learnMoreLink:
     - name: Learn More
       url: "https://learn.microsoft.com/ja-jp/azure/architecture/example-scenario/azure-virtual-desktop/azure-virtual-desktop-multi-region-bcdr"
-- description: AVD セッション ホストと同じリージョン内の可用性ゾーン全体に Azure 仮想マシン上に DNS のペアをデプロイする
+- description: AVD リージョン内の可用性ゾーン全体の Azure VM にドメイン コントローラーをデプロイする
   aprlGuid: 99bf5c94-aa68-4bb3-8b7f-45d1c5f09b5d
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVD
   recommendationMetadataState: Active
   longDescription: |-
     カスタム DNS サーバーを使用する場合は、可用性ゾーン全体の Azure 仮想マシンに DNS サーバーをデプロイすることをお勧めします。これにより、オンプレミス サービスへの依存関係が削除されて環境の信頼性が向上し、名前解決のためのより短いパスが作成されることでパフォーマンスが向上します。

@@ -1,7 +1,7 @@
 - description: コードとしてのインフラストラクチャとの一貫性を確保するために手動構成を回避する
   aprlGuid: 6bf9e5d5-fe57-c647-8daa-4903770e1302
   recommendationTypeId: null
-  recommendationControl: Automation
+  recommendationControl: Other Best Practices
   recommendationImpact: Medium
   recommendationResourceType: WellArchitected/Deploy
   recommendationMetadataState: Active
@@ -26,7 +26,7 @@
 - description: 開発環境でのすべての変更を実稼働環境に適用する前に検証しました。
   aprlGuid: e42e646c-7d67-dd4b-96dc-16a3439fa030
   recommendationTypeId: null
-  recommendationControl: Automation
+  recommendationControl: Other Best Practices
   recommendationImpact: Medium
   recommendationResourceType: WellArchitected/Deploy
   recommendationMetadataState: Active
@@ -48,13 +48,13 @@
 - description: 使用される展開方法が信頼性戦略に沿っていることを確認する
   aprlGuid: e067b48e-7f91-40d9-bed9-bccac945417a
   recommendationTypeId: null
-  recommendationControl: Automation
+  recommendationControl: Other Best Practices
   recommendationImpact: Medium
   recommendationResourceType: WellArchitected/Deploy
   recommendationMetadataState: Active
   longDescription: |-
-    信頼性のもう 1 つの側面は、ワークロードの更新またはロールバックに使用されるデプロイメント方法です。使用する展開方法が信頼性戦略に適合しており、ワークロードの可用性とパフォーマンスの要件をサポートしていることを確認する必要があります。たとえば、軽減したいリスクと影響のレベルに応じて、Blue-Green デプロイメント、カナリア デプロイメント、またはローリング デプロイメントの使用を選択できます。また、変更をデプロイする際には速度と安全性の間のトレードオフを考慮し、適切なテストおよび検証方法を使用してコードと構成の品質を確保する必要があります。さらに、展開の失敗に対処するための明確で文書化されたプロセスを用意し、変更や問題があれば関係者やお客様に伝える必要があります。
-  potentialBenefits: Ensure deployment strategy satisfies reliability requirements
+    信頼性のもう 1 つの側面は、ワークロードの更新またはロールバックに使用されるデプロイメント方法です。使用する展開方法が信頼性戦略に適合しており、ワークロードの可用性とパフォーマンスの要件をサポートしていることを確認する必要があります。たとえば、軽減したいリスクと影響のレベルに応じて、Blue-Green デプロイ、カナリア デプロイ、またはローリング デプロイの使用を選択できます。また、変更をデプロイする際には速度と安全性の間のトレードオフを考慮し、適切なテストおよび検証方法を使用してコードと構成の品質を確保する必要があります。さらに、展開の失敗に対処するための明確で文書化されたプロセスを用意し、変更や問題があれば関係者や顧客に伝える必要があります。
+  potentialBenefits: Align deployment strategy to reliability requirements
   pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
@@ -68,7 +68,7 @@
 - description: 導入時に完全なテストスイートを実装する
   aprlGuid: e435d7c1-afd7-4350-9130-b410482df2b9
   recommendationTypeId: null
-  recommendationControl: Automation
+  recommendationControl: Other Best Practices
   recommendationImpact: Medium
   recommendationResourceType: WellArchitected/Deploy
   recommendationMetadataState: Active
@@ -86,13 +86,13 @@
 - description: 障害シナリオが定期的にテストされるようにする
   aprlGuid: 59f2b6c5-a7ba-422a-aa52-eb1380e9a22b
   recommendationTypeId: null
-  recommendationControl: Automation
+  recommendationControl: Disaster Recovery
   recommendationImpact: Medium
   recommendationResourceType: WellArchitected/Deploy
   recommendationMetadataState: Active
   longDescription: |-
     障害シナリオとは、内部または外部の要因により、クラウド ソリューションが期待どおりに動作しない、またはサービス レベル目標 (SLO) を満たさない可能性がある状況です。たとえば、障害シナリオには、ハードウェア障害、ネットワーク停止、セキュリティ違反、構成エラー、需要の予期せぬ急増、サードパーティ サービスへの依存などが含まれる場合があります。これらのシナリオを定期的にテストすると、ソリューションに対する障害の影響を評価し、障害を軽減するための緊急時対応計画を準備するのに役立ちます。フォールト インジェクション、災害復旧訓練、ゲームデー、カオス エンジニアリングなどのツールや手法を使用して、制御された環境で障害シナリオをシミュレートおよびテストできます。
-  potentialBenefits: Gain confidence that your application can handle failure scenarios correctly
+  potentialBenefits: Gain confidence in handling failures
   pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
@@ -104,13 +104,13 @@
 - description: リージョンフェイルオーバーを定期的にテストする
   aprlGuid: 770dbc38-bd28-4669-83a5-81f1a49b682b
   recommendationTypeId: null
-  recommendationControl: Automation
+  recommendationControl: Disaster Recovery
   recommendationImpact: Medium
   recommendationResourceType: WellArchitected/Deploy
   recommendationMetadataState: Active
   longDescription: |-
-    リージョン フェールオーバーは、クラウド ソリューションのプライマリ リージョンで大規模な中断または停止が発生した場合に、セカンダリ リージョンに切り替えるプロセスです。リージョン フェールオーバーは、さまざまな地理的領域にわたってソリューションの可用性とパフォーマンスを維持するのに役立ちます。ただし、リージョン フェイルオーバーは簡単ではなく、慎重な計画とテストが必要です。定期的にリージョン フェールオーバーをテストして、バックアップ リージョンがソリューションの負荷と機能を処理できること、データがリージョン間で一貫性があり安全であること、フェールオーバーとフェールバックの手順が期待どおりに機能していることを確認する必要があります。リージョン フェールオーバーをテストすることは、ユーザーやお客様に影響を与える前に、フェールオーバー戦略の潜在的な問題やギャップを特定して解決するのにも役立ちます。
-  potentialBenefits: Gain confidence that your application can handle regional failovers correctly
+    リージョン フェールオーバーは、クラウド ソリューションのプライマリ リージョンで大規模な中断または停止が発生した場合に、セカンダリ リージョンに切り替えるプロセスです。リージョン フェールオーバーは、さまざまな地理的領域にわたってソリューションの可用性とパフォーマンスを維持するのに役立ちます。ただし、リージョン フェイルオーバーは簡単ではなく、慎重な計画とテストが必要です。定期的にリージョン フェールオーバーをテストして、バックアップ リージョンがソリューションの負荷と機能を処理できること、データがリージョン間で一貫性があり安全であること、フェールオーバーとフェールバックの手順が期待どおりに機能していることを確認する必要があります。リージョン フェールオーバーをテストすることは、ユーザーや顧客に影響を与える前に、フェールオーバー戦略の潜在的な問題やギャップを特定して解決するのにも役立ちます。
+  potentialBenefits: Ensure app resilience with regional failover testing
   pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
@@ -122,13 +122,13 @@
 - description: 停止中にフェイルオーバーの自動化を確実に利用できるようにする
   aprlGuid: 0b0893f6-7c47-4580-83b2-ff6711ac8406
   recommendationTypeId: null
-  recommendationControl: Automation
+  recommendationControl: Disaster Recovery
   recommendationImpact: Medium
   recommendationResourceType: WellArchitected/Deploy
   recommendationMetadataState: Active
   longDescription: |-
-    信頼性の高いフェイルオーバー戦略の重要な側面の 1 つは自動化です。自動化により、停止中のセカンダリ リージョンへの切り替えに伴う人的エラー、遅延、複雑さを軽減できます。ただし、特に停止の影響を受けるコンポーネントやサービスに依存している場合、自動化自体が障害や中断に対して脆弱になる可能性があります。したがって、フェイルオーバーの自動化が利用可能であり、停止時にも回復力があること、および手動介入なしでフェイルオーバーの自動化をトリガーできることを確認する必要があります。また、フェイルオーバー自動化を定期的に監視およびテストして、さまざまなシナリオや条件下で期待どおりに機能することを確認する必要があります。たとえば、潜在的なリージョン停止の軽減策としてリージョン フェールオーバーを使用している場合、バックアップ リージョンへのフェールオーバーを調整するために使用される自動化は、停止が発生するリージョンでホストされるべきではありません。ワークロードの運用環境が含まれていないリージョンでオートメーションをホストすることを検討してください。
-  potentialBenefits: Gain confidence in your failover automation being available during outages
+    信頼性の高いフェイルオーバー戦略の重要な側面の 1 つは自動化です。自動化により、停止中のセカンダリ リージョンへの切り替えに伴う人的エラー、遅延、複雑さを軽減できます。ただし、特に停止の影響を受けるコンポーネントやサービスに依存している場合、自動化自体が障害や中断に対して脆弱になる可能性があります。したがって、フェイルオーバー自動化が利用可能であり、停止時にも回復力があること、および手動介入なしでフェイルオーバー自動化をトリガーできることを確認する必要があります。また、フェイルオーバー自動化を定期的に監視およびテストして、さまざまなシナリオや条件下で期待どおりに機能することを確認する必要があります。たとえば、潜在的なリージョン停止の軽減策としてリージョン フェールオーバーを使用している場合、バックアップ リージョンへのフェールオーバーを調整するために使用される自動化は、停止が発生するリージョンでホストされるべきではありません。ワークロードの運用環境が含まれていないリージョンでオートメーションをホストすることを検討してください。
+  potentialBenefits: Gain confidence in your failover automation
   pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false

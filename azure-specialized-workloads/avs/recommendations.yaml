@@ -3,7 +3,7 @@
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVS
   recommendationMetadataState: Active
   longDescription: |-
     相互接続機能を使用すると、異なる可用性ゾーンにあるプライベート クラウド間の直接通信が可能になり、プライベート クラウド管理とワークロード ネットワーク間の接続が可能になります。
@@ -21,7 +21,7 @@
   recommendationTypeId: null
   recommendationControl: Security
   recommendationImpact: High
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVS
   recommendationMetadataState: Active
   longDescription: |-
     NSX と vCenter Server 用に 2 つの外部 ID ソースが構成されていることを確認します。 VMware vCenter Server と NSX Manager は、外部 ID による認証にこれらを使用します。
@@ -41,7 +41,7 @@
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVS
   recommendationMetadataState: Active
   longDescription: |-
     HCX サービスでアプライアンスの障害耐性のためにネットワーク拡張の高可用性を有効にします。選択したアプライアンスをアクティブ スタンバイ構成にペアリングし、高可用性と迅速な復旧を確保し、障害があっても構成を稼働状態に保ちます。
@@ -61,7 +61,7 @@
   recommendationTypeId: null
   recommendationControl: Other Best Practices
   recommendationImpact: High
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVS
   recommendationMetadataState: Active
   longDescription: |-
     ネットワークのセキュリティと安定性を確保するために、HCX 管理デバイスが使用するネットワークを拡張しないでください。
@@ -79,7 +79,7 @@
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVS
   recommendationMetadataState: Active
   longDescription: |-
     Azure VMware Solution のサービス SLA は、クラスターのサイズに基づいて変化する vSAN ストレージ ポリシーの影響を受けます。 6 台のホストを超えるクラスターの場合は、FTT-2 ポリシー (RAID-1 または RAID-6) をお勧めします。 FTT はフォールト トレランス機能を指します。
@@ -99,7 +99,7 @@
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVS
   recommendationMetadataState: Active
   longDescription: |-
     Microsoft は、重要なワークロードに対して、別個のピアリングの場所で 2 つ以上の ExpressRoute 回線を使用することを推奨しています。 Global Reach を使用して、これらの回線と Azure VMware Solutions プライベート クラウドを接続します。
@@ -119,7 +119,7 @@
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVS
   recommendationMetadataState: Active
   longDescription: |-
     Azure VMware Solution vSAN ストレッチ クラスターは、2 つの可用性ゾーンと監視用の 3 つ目の可用性ゾーンをカバーします。 ExpressRoute を使用して、異なる場所に 2 つの回線をデプロイすることで復元力を強化します。 Global Reach を使用すると、オンプレミス回線を Azure のマネージド回線に接続してメッシュ トポロジを作成します。
@@ -137,7 +137,7 @@
   recommendationTypeId: null
   recommendationControl: Disaster Recovery
   recommendationImpact: High
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/AVS
   recommendationMetadataState: Active
   longDescription: |-
     ビジネス継続性を確保するために 2 つの Azure VMware Solution プライベート クラウドを異なるリージョンにデプロイし、ExpressRoute ゲートウェイ接続とグローバル リーチ接続に基づくメッシュ ネットワーク トポロジを実装できます。

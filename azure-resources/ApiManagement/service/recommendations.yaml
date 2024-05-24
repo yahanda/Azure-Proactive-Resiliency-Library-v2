@@ -1,4 +1,4 @@
-- description: API Management サービスを Premium SKU に移行して可用性ゾーンをサポートする
+- description: API Management サービスを Premium SKU に移行してアベイラビリティーゾーンをサポートする
   aprlGuid: baf3bfc0-32a2-4c0c-926d-c9bf0b49808e
   recommendationTypeId: null
   recommendationControl: High Availability

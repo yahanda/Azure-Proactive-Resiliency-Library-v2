@@ -3,7 +3,7 @@
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/HPC
   recommendationMetadataState: Active
   longDescription: |-
     現在、すべての HPC Pack ARM テンプレートでは、可用性が高くないヘッド ノードの 1 つにクラスター共有を作成します。
@@ -21,7 +21,7 @@
   recommendationTypeId: null
   recommendationControl: Scalability
   recommendationImpact: Medium
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/HPC
   recommendationMetadataState: Active
   longDescription: |
     HPC Pack クラスターに Azure "バースト" ノード (Windows と Linux の両方) をデプロイするか、Azure に HPC Pack クラスターを作成すると、クラスター上のワークロードに応じて、ノードやコアなどのクラスターのリソースを自動的に拡大または縮小できます。
@@ -39,7 +39,7 @@
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: Medium
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/HPC
   recommendationMetadataState: Active
   longDescription: |-
     少なくとも 2 つのヘッド ノードを持つクラスターを確立します。ヘッド ノードに障害が発生した場合、アクティブな HPC サービスは、影響を受けたヘッド ノードから別の機能しているヘッド ノードに自動的に転送されます。
@@ -57,7 +57,7 @@
   recommendationTypeId: null
   recommendationControl: High Availability
   recommendationImpact: High
-  recommendationResourceType: n/a
+  recommendationResourceType: Specialized.Workload/HPC
   recommendationMetadataState: Active
   longDescription: |-
     HPC がドメイン コントローラーへの接続に失敗すると、管理者とユーザーは HPC サービスに接続できなくなり、クラスターへのジョブの管理や送信ができなくなります。

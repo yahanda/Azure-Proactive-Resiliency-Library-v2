@@ -1,4 +1,4 @@
-- description: Standard ロード バランサー SKU を使用する
+- description: 標準ロード バランサー SKU を使用する
   aprlGuid: 38c3bca1-97a1-eb42-8cd3-838b243f35ba
   recommendationTypeId: null
   recommendationControl: High Availability
@@ -80,7 +80,7 @@
   recommendationResourceType: Microsoft.Network/loadBalancers
   recommendationMetadataState: Active
   longDescription: |-
-    正常性プローブは、バックエンド エンドポイントの状態を判断するために Azure Load Balancer によって使用されます。カスタム正常性プローブを使用すると、バックエンドの可用性についての理解が深まり、バックエンド サービスの影響の監視が容易になります。
+    正常性プローブは、バックエンド エンドポイントの状態を判断するために Azure Load Balancer によって使用されます。ベンダーの推奨事項に沿ったカスタム正常性プローブを使用すると、バックエンドの可用性についての理解が深まり、バックエンド サービスの影響の監視が容易になります。
   potentialBenefits: Ensures backend uptime monitoring.
   pgVerified: true
   publishedToLearn: false

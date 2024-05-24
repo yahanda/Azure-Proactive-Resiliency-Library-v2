@@ -39,7 +39,7 @@
 - description: 自動修復ポリシーを有効にする
   aprlGuid: 820f4743-1f94-e946-ae0b-45efafd87962
   recommendationTypeId: null
-  recommendationControl: Automation
+  recommendationControl: Other Best Practices
   recommendationImpact: High
   recommendationResourceType: Microsoft.Compute/virtualMachineScaleSets
   recommendationMetadataState: Active
@@ -133,7 +133,7 @@
 - description: パッチ オーケストレーション オプションを Azure でオーケストレーションされたものに設定する
   aprlGuid: e4ffd7b0-ba24-c84e-9352-ba4819f908c0
   recommendationTypeId: null
-  recommendationControl: Automation
+  recommendationControl: Other Best Practices
   recommendationImpact: Low
   recommendationResourceType: Microsoft.Compute/virtualMachineScaleSets
   recommendationMetadataState: Active
@@ -168,21 +168,21 @@
   learnMoreLink:
     - name: Deprecated Azure Marketplace images
       url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/deprecated-images"
-- description: 実稼働 VMSS インスタンスは SSD ディスクを使用する必要があります
-  aprlGuid: 1074f391-22bf-42f5-9c95-68af5ad89bf6
+- description: ミッションクリティカルなワークロードでは、Premium または Ultra ディスクの使用を検討する必要があります
+  aprlGuid: df0ff862-814d-45a3-95e4-4fad5a244ba6
   recommendationTypeId: null
   recommendationControl: Scalability
   recommendationImpact: High
-  recommendationResourceType: Microsoft.Compute/virtualMachineScaleSets
+  recommendationResourceType: Microsoft.Compute/virtualMachines
   recommendationMetadataState: Active
   longDescription: |-
-    HDD はリソースに悪影響を与える可能性があり、重要でないリソースやアクセス頻度の低いリソースにのみ適しているため、実稼働ワークロードには SSD ディスクを使用することをお勧めします。
-  potentialBenefits: Faster access and reliability for VMSS
+    Standard HDD および SSD と比較して、Premium SSD、SSDv2、および Ultra SSD は、パフォーマンス、構成可能性が向上し、単一インスタンスの仮想マシンの稼働時間 SLA が向上します。仮想マシン上のすべてのディスクの最も低い SLA が適用されるため、最高の稼働時間 SLA を得るには Premium ディスクまたは Ultra ディスクを使用するのが最善です。
+  potentialBenefits: Enhanced performance, cost efficiency, and uptime SLA
   pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
   automationAvailable: arg
   tags: null
   learnMoreLink:
-    - name: Disk Comparison
+    - name: Disk type comparison and decision tree
       url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/disks-types#disk-type-comparison"

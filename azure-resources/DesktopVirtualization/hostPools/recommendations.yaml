@@ -42,7 +42,7 @@
   recommendationResourceType: Microsoft.DesktopVirtualization/hostPools
   recommendationMetadataState: Active
   longDescription: |-
-    ハイブリッド VM は一意の OU に存在する必要があります。 AD 参加を使用する場合、セッション ホストは、一意の OU を使用してホスト プールごとに特定の AVD 構成をターゲットにすることでメリットを得ることができます。例には、Fslogix、タイムアウト制限、セッション制御などが含まれます。リソースが環境ごとに構成されていることを確認するために、本番環境と DR 組織単位をセグメント化することも重要です。
+    AVD 構成を最適化するには、ハイブリッド VM を固有の OU に配置します。環境固有の設定のために Prod ユニットと DR ユニットを分離します。これにより、Fslogix、タイムアウト、セッション制御など、セッション ホストの対象を絞った構成が保証されます。
   potentialBenefits: Improved AVD hostpool config & segmentation
   pgVerified: true
   publishedToLearn: false

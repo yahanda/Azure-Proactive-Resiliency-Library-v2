@@ -160,7 +160,7 @@
       url: "https://learn.microsoft.com/ja-jp/azure/storage/common/storage-account-overview#legacy-storage-account-types"
     - name: Upgrade to a general-purpose v2 storage account
       url: "https://learn.microsoft.com/ja-jp/azure/storage/common/storage-account-upgrade"
-- description: FSLogix ストレージ アカウントの Azure Private Link サービスを有効にする
+- description: ストレージ アカウントの Azure Private Link サービスを有効にする
   aprlGuid: dc55be60-6f8c-461e-a9d5-a3c7686ed94e
   recommendationTypeId: null
   recommendationControl: Security
@@ -168,13 +168,12 @@
   recommendationResourceType: Microsoft.Storage/storageAccounts
   recommendationMetadataState: Active
   longDescription: |-
-    Azure Private Link Service を使用すると、仮想ネットワーク内のプライベート エンドポイントを介して、Azure ストレージ アカウントおよび Azure がホストするお客様/パートナー サービスにアクセスできます。 Azure Private Endpoint は、Azure Private Link を利用したサービスにプライベートかつ安全に接続するネットワーク インターフェイスです。プライベート エンドポイントは、VNet のプライベート IP アドレスを使用して、サービスを VNet に効果的に取り込みます。サービスへのすべてのトラフィックはプライベート エンドポイント経由でルーティングできるため、ゲートウェイ、NAT デバイス、ExpressRoute または VPN 接続、またはパブリック IP アドレスは必要ありません。仮想ネットワークとサービス間のトラフィックは Microsoft バックボーン ネットワークを経由するため、パブリック インターネットからの露出が排除されます。 Azure リソースのインスタンスに接続すると、最高レベルの粒度のアクセス制御が可能になります。
-    Azure Private Link Service は、VNet のプライベート エンドポイント経由で Azure Storage とサービスへの安全なアクセスを提供します。パブリック IP は必要ないため、プライバシーが確保されます。きめ細かなアクセス制御が提供されます。
+    Azure Private Link Service を利用して、VNet のプライベート エンドポイント経由で Azure Storage とサービスに安全にアクセスします。パブリック IP の必要性を排除し、データのプライバシーを確保します。セキュリティを強化するためのきめ細かなアクセス制御をお楽しみください。
   potentialBenefits: Secure, private access to storage with no public IPs
   pgVerified: true
   publishedToLearn: false
   publishedToAdvisor: false
-  automationAvailable: ARG
+  automationAvailable: arg
   tags: null
   learnMoreLink:
     - name: Learn More

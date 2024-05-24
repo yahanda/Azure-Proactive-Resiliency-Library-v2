@@ -1,7 +1,7 @@
 - description: あなたの推薦タイトルをここに入力してください (100 文字未満)
   aprlGuid: Generate a Unique GUID for Your Recommendation
   recommendationTypeId: null
-  recommendationControl: High Availability/Business Continuity/Disaster Recovery/Scalability/Monitoring and Alerting/Service Upgrade and Retirement/Other Best Practices/Personalized/Governance
+  recommendationControl: High Availability/Business Continuity/Disaster Recovery/Scalability/Monitoring and Alerting/Service Upgrade and Retirement/Other Best Practices/Personalized/Governance/Security
   recommendationImpact: Low/Medium/High
   recommendationResourceType: Friendly name to identity resource type
   recommendationMetadataState: Active
@@ -20,8 +20,7 @@
 - description: あなたの推薦タイトルをここに入力してください (100 文字未満)
   aprlGuid: Generate a Unique GUID for Your Recommendation
   recommendationTypeId: null
-  recommendationControl: High Availability/Business Continuity/Disaster Recovery/Scalability/Monitoring and Alerting/Service Upgrade and Retirement/Other Best Practices/Personalized/Governance
-  recommendationImpact: Low/Medium/High
+  recommendationControl: High Availability/Business Continuity/Disaster Recovery/Scalability/Monitoring and Alerting/Service Upgrade and Retirement/Other Best Practices/Personalized/Governance/Security
   recommendationResourceType: Friendly name to identity resource type
   recommendationMetadataState: Active
   longDescription: |-

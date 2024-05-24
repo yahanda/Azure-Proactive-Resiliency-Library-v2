@@ -7,7 +7,7 @@
   recommendationMetadataState: Active
   longDescription: |-
     発信接続は、クラウド ソリューションがデータベース、API、サードパーティ プロバイダーなどの外部サービスまたはリソースに対して行うリクエストです。これらの接続を適切に管理することは、ソリューションの信頼性とパフォーマンスを確保するために非常に重要です。リクエストのタイプと頻度に応じて、発信接続のオープン、クローズ、再利用、プールに適切なパターンを使用する必要があります。たとえば、サーキット ブレーカー パターンを使用して、ソリューションが障害が発生したサービスに対して繰り返しリクエストを行うことを防止したり、接続プーリングを使用して既存の接続を再利用し、新しい接続を作成するオーバーヘッドを削減したりできます。さらに、依存関係の注入やファクトリー パターンなどのパターンを使用してコード内の接続オブジェクトを管理し、使用しなくなった接続を確実に閉じてポートの枯渇を防ぐことができます。
-  potentialBenefits: Increase the application's ability to manage outgoing connections at scale
+  potentialBenefits: Increase connection management
   pgVerified: false
   publishedToLearn: false
   publishedToAdvisor: no
@@ -63,7 +63,7 @@
   recommendationMetadataState: Active
   longDescription: |-
     分散システムでは部分的な障害が避けられず、他のコンポーネントは機能し続けているにもかかわらず、一部のコンポーネントが障害を起こしたり使用できなくなったりすることがあります。したがって、クラウド ソリューションでは、部分的な障害を適切に処理し、システム全体の中断を回避するパターンを実装する必要があります。これらのパターンには、指数バックオフを使用して失敗した操作を再試行すること、タイムアウトを使用して低速または応答しないサービスの影響を制限すること、プライマリ サービスが利用できない場合に代替応答を提供するフォールバック ロジックが含まれます。たとえば、Web ページに読み込まれた動的コンテンツは、コンテンツが利用できない場合、または完全に非表示にする必要がある場合、デフォルト値に戻す必要があります。これにより、エラー メッセージを表示するよりも好ましいユーザー エクスペリエンスが得られます。
-  potentialBenefits: Give users a workable experience despite ongoing partial issues
+  potentialBenefits: Enable users to function despite ongoing issues
   pgVerified: false
   publishedToLearn: false
   publishedToAdvisor: no
