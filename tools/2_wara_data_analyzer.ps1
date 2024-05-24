@@ -736,7 +736,7 @@ $Script:Runtime = Measure-Command -Expression {
         ChartRow          = 80
         ChartColumn       = 3
         NoLegend          = $false
-        ChartTitle        = 'Recommendations per Services/Well-Architected Area'
+        ChartTitle        = 'サービス/Well-Architected 領域ごとの推奨事項'
         ChartHeight       = 696
         ChartWidth        = 450
       }
@@ -759,7 +759,7 @@ $Script:Runtime = Measure-Command -Expression {
         ChartRow          = 80
         ChartColumn       = 30
         NoLegend          = $false
-        ChartTitle        = 'Recommendations per Resiliency Category'
+        ChartTitle        = '回復性カテゴリごとの推奨事項'
         ChartHeight       = 569
         ChartWidth        = 462
       }
