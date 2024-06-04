@@ -50,7 +50,7 @@
       url: "https://techcommunity.microsoft.com/t5/running-sap-applications-on-the/how-to-easily-migrate-an-existing-sap-system-vms-to-flexible/ba-p/3833548"
 - description: 単一インスタンスの VM を使用する場合は、すべての OS とデータ ディスクが Premium SSD または Ultra Disk である必要があります
   aprlGuid: b60ae773-9917-4bca-8a42-7cb45365a917
-  recommendationTypeId: null
+  recommendationTypeId: 58d6648d-32e8-4346-827c-4f288dd8ca24
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Specialized.Workload/SAP

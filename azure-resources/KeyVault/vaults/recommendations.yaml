@@ -83,7 +83,7 @@
   pgVerified: false
   publishedToLearn: false
   publishedToAdvisor: false
-  automationAvailable: arg
+  automationAvailable: no
   tags: null
   learnMoreLink:
     - name: Azure Key Vault logging overview

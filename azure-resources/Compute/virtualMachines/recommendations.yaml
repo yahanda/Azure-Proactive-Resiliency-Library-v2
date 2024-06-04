@@ -20,7 +20,7 @@
       url: "https://learn.microsoft.com/ja-jp/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-attach-detach-vm?branch=main&tabs=portal-1%2Cportal-2%2Cportal-3"
 - description: 可用性ゾーン全体に VM をデプロイする
   aprlGuid: 2bd0be95-a825-6f47-a8c6-3db1fb5eb387
-  recommendationTypeId: null
+  recommendationTypeId: 066a047a-9ace-45f4-ac50-6325840a6b00
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.Compute/virtualMachines
@@ -134,25 +134,8 @@
   learnMoreLink:
     - name: What is the Azure Backup service?
       url: "https://learn.microsoft.com/ja-jp/azure/backup/backup-overview"
-- description: 運用 VM は SSD ディスクを使用する必要があります
-  aprlGuid: d3f3ee41-b9aa-d34d-b442-5d46d20232b2
-  recommendationTypeId: null
-  recommendationControl: Scalability
-  recommendationImpact: High
-  recommendationResourceType: Microsoft.Compute/virtualMachines
-  recommendationMetadataState: Active
-  longDescription: |-
-    プレミアム SSD ディスクは、実稼働環境に最適な、高いパフォーマンス、低遅延の I/O 集中型アプリをサポートします。Standard SSD は、重要性の低いワークロードに対して、一貫したパフォーマンスを備えたコスト効率の高いソリューションを提供します。
-  potentialBenefits: High-performance and reliability for critical apps
-  pgVerified: true
-  publishedToLearn: false
-  publishedToAdvisor: false
-  automationAvailable: arg
-  tags: null
-  learnMoreLink:
-    - name: Azure managed disk types
-      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/disks-types#premium-ssd"
-- description: 停止状態の VM を確認する
+
+- description: Review VMs in stopped state
   aprlGuid: 98b334c0-8578-6046-9e43-b6e8fce6318e
   recommendationTypeId: null
   recommendationControl: Governance

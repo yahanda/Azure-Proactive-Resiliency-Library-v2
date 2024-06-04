@@ -1,179 +1,179 @@
 ---
-title: Overview and Usage of APRL Scripts
+title: APRLスクリプトの概要と使用方法
 weight: 10
 geekdocCollapseSection: false
 ---
 
-This section provides an overview of the Azure Proactive Resiliency Library v2 (APRL) scripts and how to use them. The following scenarios are covered:
+このセクションでは、Azure Proactive Resiliency Library v2 (APRL) スクリプトの概要とその使用方法について説明します。以下のシナリオについて説明します。
 
 {{< toc >}}
 
-## 1 - Collector Script
+## 1 - Collector スクリプト
 
-- [GitHub Link to Download](https://github.com/Azure/Azure-Proactive-Resiliency-Library-v2/blob/main/tools/1_wara_collector.ps1)
-- [GitHub Link to Sample Output](https://github.com/Azure/Azure-Proactive-Resiliency-Library-v2/blob/main/tools/sample-output/WARA_File_2024-05-07_11_59.json)
+- [GitHub Link to Download](https://github.com/yahanda/Azure-Proactive-Resiliency-Library-v2/blob/main/tools/1_wara_collector.ps1)
+- [GitHub Link to Sample Output](https://github.com/yahanda/Azure-Proactive-Resiliency-Library-v2/blob/main/tools/sample-output/WARA_File_2024-05-07_11_59.json)
 
-The Collector PowerShell script is the first script to be run in the Azure Proactive Resiliency Library (APRL) tooling suite. It is designed to collect data from the Azure environment to help identify potential issues and areas for improvement using the Azure Resource Graph queries within this repository. The script leverages the Az.ResourceGraph module to query Azure Resource Graph for relevant data.
+Collector PowerShell スクリプトは、Azure Proactive Resiliency Library (APRL) ツール スイートで実行される最初のスクリプトです。これは、Azure 環境からデータを収集し、このリポジトリ内の Azure Resource Graph クエリを使用して、潜在的な問題と改善すべき領域を特定するのに役立つように設計されています。このスクリプトでは、Az.ResourceGraph モジュールを利用して、Azure Resource Graph に関連データのクエリを実行します。
 
 ---
 
-**You have two options for running the collector script:**
+**Collector スクリプトを実行するには、次の 2 つのオプションがあります**
 
-1. Cloud Shell - Requires Cloud Shell be configured with write access to a fileshare within the same tenant
+1. Cloud Shell - 同じテナント内のファイル共有への書き込みアクセス権を持つ Cloud Shell を構成する必要があります。
 
-1. Local Machine - Requires current modules leveraged in the script be installed
+1. Local Machine - スクリプトで利用されている現在のモジュールがインストールされている必要があります。
 
 ### 1.1 - Cloud Shell
 
-1. From the [Azure Portal](https://portal.azure.com/) open Cloud Shell, select PowerShell instead of BASH
+1. [Azure Portal](https://portal.azure.com/) で Cloud Shell を開き、BASH ではなく PowerShell を選択します。
 
-    - If this is your first time using Cloud Shell, refer to the getting started guide from Microsoft Learn - [Azure Cloud Shell](https://learn.microsoft.com/en-us/azure/cloud-shell/get-started/classic?tabs=azurecli#start-cloud-shell).
+    - Cloud Shell を初めて使用する場合は、Microsoft Learn のファースト ステップ ガイドを参照してください - [Azure Cloud Shell](https://learn.microsoft.com/en-us/azure/cloud-shell/get-started/classic?tabs=azurecli#start-cloud-shell).
 
     {{< figure src="../../img/tools/collector-1.png" width="100%" >}}
 
-1. Upload the WARA Collector Script to Cloud Shell
+1. WARA Collector スクリプトを Cloud Shell にアップロードします。
   {{< figure src="../../img/tools/collector-2.png" width="60%" >}}
 
-1. Execute script leveraging optional parameters
+1. オプションのパラメーターを利用してスクリプトを実行します。
 
-    - Parameters include:
-      - **TenantID**:  *Optional* ; tenant to be used.
-      - **SubscriptionIds**:  *Optional (or SubscriptionsFile)* ; Specifies Subscription(s) to be included in the analysis: Subscription1,Subscription2.
-      - **SubscriptionsFile**:  *Optional (or SubscriptionIds)* ; specifies the file with the subscription list to be analysed (one subscription per line).
-      - **RunbookFile**:  *Optional* ; specifies the file with the runbook (selectors & checks) to be used.
-      - **ResourceGroups**:  *Optional* ; specifies Resource Group(s) to be included in the analysis: ResourceGroup1,ResourceGroup2.
-      - **Debug**: *Optional* ; Writes Debugging information of the script during the execution.
+    - パラメータには次のものが含まれます
+      - **TenantID**:  *任意* ; 使用するテナント
+      - **SubscriptionIds**:  *任意 (or SubscriptionsFile)* ; 分析に含めるサブスクリプションを指定します: Subscription1,Subscription2
+      - **SubscriptionsFile**:  *任意 (or SubscriptionIds)* ; 分析するサブスクリプション・リストを含むファイルを指定します (1 行に 1 つのサブスクリプション)
+      - **RunbookFile**:  *任意* ; 使用する Runbook (セレクタとチェック) を含むファイルを指定します
+      - **ResourceGroups**:  *任意* ; 分析に含めるリソース グループを指定します: ResourceGroup1,ResourceGroup2
+      - **Debug**: *任意* ; 実行中にスクリプトのデバッグ情報を書き込みます
 
     {{< figure src="../../img/tools/collector-3.png" width="100%" >}}
 
-1. Select "A" to allow modules to install
+1. 「A」を選択して、モジュールのインストールを許可します。
   {{< figure src="../../img/tools/collector-4.png" width="100%" >}}
 
-1. After Script completes, download the results
+1. スクリプトが完了したら、結果をダウンロードします。
   {{< figure src="../../img/tools/collector-5.png" width="100%" >}}
 
 ### 1.2 Local Machine
 
-1. To run the script there are 5 prerequisites that must be completed first:
-    1. **The script must be executed from PowerShell 7, not Windows PowerShell or PowerShell ISE.**
+1. スクリプトを実行するには、最初に完了する必要がある 5 つの前提条件があります。
+    1. **スクリプトは、Windows PowerShell や PowerShell ISE ではなく、PowerShell 7 から実行する必要があります**
       {{< figure src="../../img/tools/collector-6.png" width="40%" >}}
-    1. **Git must be installed on the local machine - [Git](https://git-scm.com/download/win)**
-    1. **Install required PowerShell Modules:**
+    1. **Git をローカル コンピューターにインストールする必要があります - [Git](https://git-scm.com/download/win)**
+    1. **必要な PowerShell モジュールをインストールします**
         - Install-Module -Name ImportExcel -Force -SkipPublisherCheck
         - Install-Module -Name Az.ResourceGraph -SkipPublisherCheck
         - Install-Module -Name Az.Accounts -SkipPublisherCheck
-    1. **Unblock the Script**
-        - The script is digitally signed, but the PowerShell module ImportExcel is not. So at this moment, you need to allow the execution of scripts not signed locally:
+    1. **スクリプトのブロックを解除します**
+        - スクリプトはデジタル署名されていますが、PowerShell モジュールの ImportExcel は署名されていません。したがって、現時点では、ローカルで署名されていないスクリプトの実行を許可する必要があります。
           - Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
           - Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope LocalMachine
-    1. **Reader permissions to target subscription(s)**
+    1. **対象サブスクリプションに対する閲覧者のアクセス許可**
 
-1. Open a new PowerShell 7 session after completeing prerequisites
+1. 前提条件の完了後に新しい PowerShell 7 セッションを開きます。
 
-1. Change your directory to the same location that you have downloaded the WARA collector script to.
+1. ディレクトリを、WARA Collector スクリプトをダウンロードしたのと同じ場所に変更します。
 
-    - We recommend running this as close to your C:\ as path to avoid errors related to file path length.
+    - ファイル パスの長さに関連するエラーを回避するために、これを C:\ パスの近くで実行することをお勧めします
     {{< figure src="../../img/tools/collector-7.png" width="40%" >}}
 
-1. Execute script leveraging optional parameters
+1. オプションのパラメーターを利用してスクリプトを実行します。
 
-      - Parameters include:
-        - **TenantID**:  Optional; tenant to be used.
-        - **SubscriptionIds**:  Optional (or SubscriptionsFile); Specifies Subscription(s) to be included in the analysis: Subscription1,Subscription2.
-        - **SubscriptionsFile**:  Optional (or SubscriptionIds); specifies the file with the subscription list to be analysed (one subscription per line).
-        - **RunbookFile**:  Optional; specifies the file with the runbook (selectors & checks) to be used.
-        - **ResourceGroups**:  Optional; specifies Resource Group(s) to be included in the analysis: ResourceGroup1,ResourceGroup2.
-        - **Debug**:  Writes Debugging information of the script during the execution.
+      - パラメータには次のものが含まれます
+        - **TenantID**:  任意; 使用するテナント
+        - **SubscriptionIds**:  任意 (or SubscriptionsFile); 分析に含めるサブスクリプションを指定します: Subscription1,Subscription2
+        - **SubscriptionsFile**:  任意 (or SubscriptionIds); 分析するサブスクリプション・リストを含むファイルを指定します (1 行に 1 つのサブスクリプション)
+        - **RunbookFile**:  任意; 使用する Runbook (セレクタとチェック) を含むファイルを指定します
+        - **ResourceGroups**:  任意; 分析に含めるリソース グループを指定します: ResourceGroup1,ResourceGroup2
+        - **Debug**:  実行中にスクリプトのデバッグ情報を書き込みます
         {{< figure src="../../img/tools/collector-8.png" width="100%" >}}
 
-1. Authenticate with the account that has Reader permissions to the target subscription(s)
+1. ターゲット サブスクリプションに対する閲覧者アクセス許可を持つアカウントで認証します。
   {{< figure src="../../img/tools/collector-9.png" width="40%" >}}
 
-1. After script completes, the results will be saved to the same folder location.
+1. スクリプトが完了すると、結果は同じフォルダーの場所に保存されます。
 
-## 2 - Data Analyzer Script
+## 2 - Data Analyzer スクリプト
 
-- [GitHub Link to Download](https://github.com/Azure/Azure-Proactive-Resiliency-Library-v2/blob/main/tools/2_wara_data_analyzer.ps1)
-- [GitHub Link to Sample Output](https://github.com/Azure/Azure-Proactive-Resiliency-Library-v2/blob/main/tools/sample-output/WARA%20Action%20Plan%202024-05-07_12_07.xlsx)
+- [GitHub Link to Download](https://github.com/yahanda/Azure-Proactive-Resiliency-Library-v2/blob/main/tools/2_wara_data_analyzer.ps1)
+- [GitHub Link to Sample Output](https://github.com/yahanda/Azure-Proactive-Resiliency-Library-v2/blob/main/tools/sample-output/WARA%20Action%20Plan%202024-05-07_12_07.xlsx)
 
-The Data Analyzer PowerShell script is the second script in the Azure Proactive Resiliency Library (APRL) tooling suite. It compares the output collected by the Collector script with the Azure Proactive Resiliency Guidelines (APRL) and generates an ActionPlan Excel spreadsheet. The goal of this tool is to summarize the collected data and provide actionable insights into the health and resiliency of the Azure environment.
+Data Analyzer PowerShell スクリプトは、Azure Proactive Resiliency Library (APRL) ツール スイートの 2 番目のスクリプトです。Collector スクリプトによって収集された出力を Azure Proactive Resiliency Guidelines (APRL) と比較し、ActionPlan Excel スプレッドシートを生成します。このツールの目的は、収集されたデータを要約し、Azure 環境の正常性と回復性に関する実用的な分析情報を提供することです。
 
 ---
 
-### Local Machine - Script Execution
+### Local Machine - スクリプト実行
 
-**The Data Analyzer script must be run from a Windows Machine with Excel installed.**
+**Data Analyzer スクリプトは、Excel がインストールされている Windows コンピューターから実行する必要があります**
 
-1. Change your directory to the same location that you have downloaded the WARA Data Analyzer script to.
+1. ディレクトリを、WARA Data Analyzer スクリプトをダウンロードしたのと同じ場所に変更します。
 
-    - We recommend running this as close to your C:\ as path to avoid errors related to file path length.
+    - ファイル パスの長さに関連するエラーを回避するために、これを C:\ パスの近くで実行することをお勧めします
     {{< figure src="../../img/tools/collector-7.png" width="40%" >}}
 
-1. Execute script pointing the -JSONFile parameter to file created by the WARA Collector script.
+1. WARA Collector スクリプトによって作成されたファイルを -JSONFile パラメーターでポイントしてスクリプトを実行します。
   {{< figure src="../../img/tools/analyzer-1.png" width="100%" >}}
 
-1. Select "R" to allow script to run
+1. 「R」を選択して、スクリプトの実行を許可します。
   {{< figure src="../../img/tools/analyzer-2.png" width="100%" >}}
 
-1. After the script completes it will save a WARA Action Plan.xlsx file to the same file path.
+1. スクリプトが完了すると、WARA Action Plan.xlsx ファイルが同じファイル パスに保存されます。
 
-### Local Machine - Action Plan Analysis
+### Local Machine - Action Plan 分析
 
-1. Once the script has completed, open the Excel Action Plan and familiarize yourself with the structure of the file, generated data, resources collected, pivot tables, and charts created.
+1. スクリプトが完了したら、Excelアクションプランを開き、ファイルの構造、生成されたデータ、収集されたリソース、ピボットテーブル、および作成されたグラフについて理解します。
 
-    - These are the worksheets:
-      - **Recommendations**: you will find all Recommendations, their category, impact, description, learn more links, and much more.
-        - Note that Columns A and B are counting the number of Azure Resources associated with the RecommendationID.
-      - **ImpactedResources**: you will find a list of Azure Resources associated with a RecommendationID. These are the Azure Resources NOT following Microsoft best practices for Reliability.
-      - **PivotTable**: you will find a couple of pivot tables used to automatically create the charts
-      - **Charts**: you will find 3 charts that will be used in the Executive Summary PPTx
-      - **ResourceTypes**: you will find a list of all ResourceTypes the customer is using, number of Resources deployed for each one, and if there are Recommendations for the ResourceType in APRL.
-    - At this point, all Azure Resources with recommendations and Azure Resource Graph queries available in APRL, were automatically validated. Follow the next steps to validate the remaining services without automation or that does not exist in APRL yet.
+    - ワークシートには次のものが含まれます
+      - **Recommendations**: すべての推奨事項、そのカテゴリ、影響、説明、詳細情報のリンクなどが表示されます。
+        - 列 A と列 B は、RecommendationID に関連付けられている Azure リソースの数をカウントしていることに注意してください。
+      - **ImpactedResources**: RecommendationID に関連付けられている Azure リソースの一覧が表示されます。これらは、信頼性に関する Microsoft のベスト プラクティスに従っていない Azure リソースです。
+      - **PivotTable**: チャートを自動的に作成するために使用されるピボットテーブルがいくつかあります。
+      - **Charts**: Executive Summary PPTx で使用される3つのチャートがあります。
+      - **ResourceTypes**: お客様が使用しているすべてのResourceTypeのリスト、各ResourceTypeにデプロイされたリソースの数、およびAPRLのResourceTypeに関する推奨事項があるかどうかが表示されます。
+    - この時点で、APRL で使用可能な推奨事項と Azure Resource Graph クエリを含むすべての Azure リソースが自動的に検証されました。以下のステップに従って、自動化されていない、またはAPRLにまだ存在しない残りのサービスを検証します。
 
-1. Go to the "ImpactedResources" worksheet, filter Column "B" by "IMPORTANT", and validate manually the remaining resource configurations for reliabilty patterns.
+1. "ImpactedResources" ワークシートに移動し、列 "B" を "IMPORTANT" でフィルター処理し、残りのリソース構成の信頼性パターンを手動で検証します。
 
     - "IMPORTANT - Query under development"
     - "IMPORTANT - Recommendation cannot be validated with ARGs - Validate Resources manually"
     - "IMPORTANT - ServiceType Not Available in APRL - Validate Resources manually if Applicable, if not delete this line"
 
-1. Remove/add any recommendations based on your analysis prior to generating reports
+1. レポートを生成する前に、分析に基づいて推奨事項を削除/追加します。
 
-## 3 - Reports Generator Script
+## 3 - Reports Generator スクリプト
 
-- [GitHub Link to Download](https://github.com/Azure/Azure-Proactive-Resiliency-Library-v2/blob/main/tools/3_wara_reports_generator.ps1)
-- [GitHub Link to Sample Output - Executive Summary Presentation](https://github.com/Azure/Azure-Proactive-Resiliency-Library-v2/blob/main/tools/sample-output/Executive%20Summary%20Presentation%20-%20Contoso%20Hotels%20-%202024-05-07-12-12.pptx)
-- [GitHub Link to Sample Output - Assessment Report](https://github.com/Azure/Azure-Proactive-Resiliency-Library-v2/blob/main/tools/sample-output/Assessment%20Report%20-%20Contoso%20Hotels%20-%202024-05-07-12-12.docx)
+- [GitHub Link to Download](https://github.com/yahanda/Azure-Proactive-Resiliency-Library-v2/blob/main/tools/3_wara_reports_generator.ps1)
+- [GitHub Link to Sample Output - Executive Summary Presentation](https://github.com/yahanda/Azure-Proactive-Resiliency-Library-v2/blob/main/tools/sample-output/Executive%20Summary%20Presentation%20-%20Contoso%20Hotels%20-%202024-05-07-12-12.pptx)
+- [GitHub Link to Sample Output - Assessment Report](https://github.com/yahanda/Azure-Proactive-Resiliency-Library-v2/blob/main/tools/sample-output/Assessment%20Report%20-%20Contoso%20Hotels%20-%202024-05-07-12-12.docx)
 
-The Reports Generator PowerShell script serves as the final step in the Azure Proactive Resiliency Library (APRL) tooling suite. It takes the Excel spreadsheet generated by the Data Analyzer script and converts it into Microsoft Word and PowerPoint formats. The Reports Generator automates the process of creating comprehensive reports from the analyzed data, making it easier to share insights and recommendations.
+Reports Generator PowerShell スクリプトは、Azure Proactive Resiliency Library (APRL) ツール スイートの最後の手順として機能します。Data Analyzer スクリプトによって生成された Excel スプレッドシートを Microsoft Word および PowerPoint 形式に変換します。Reports Generator は、分析されたデータから包括的なレポートを作成するプロセスを自動化し、洞察と推奨事項の共有を容易にします。
 
 ---
 
-### Local Machine - Report Generation
+### Local Machine - レポート生成
 
-1. You will need to have both the Word and PowerPoint templates downloaded to the same file location.
+1. Word テンプレートと PowerPoint テンプレートの両方を同じファイルの場所にダウンロードする必要があります。
   {{< figure src="../../img/tools/generator-1.png" width="80%" >}}
 
-1. Change your directory to the same location that you have downloaded the WARA Reports Generator script to.
+1. ディレクトリを、WARA Reports Generator スクリプトをダウンロードしたのと同じ場所に変更します。
 
-    - We recommend running this as close to your C:\ as path to avoid errors related to file path length.
+    - ファイル パスの長さに関連するエラーを回避するために、これを C:\ パスの近くで実行することをお勧めします
     {{< figure src="../../img/tools/collector-7.png" width="40%" >}}
 
-1. Execute script leveraging needed parameters
+1. 必要なパラメーターを利用してスクリプトを実行します。
 
-    - Parameters include:
-      - **ExcelFile**:  *Mandatory*; WARA Excel file generated by '2_wara_data_analyzer.ps1' script and customized.
-      - **CustomerName**:  *Optional*; specifies the Name of the Customer to be added to the PPTx and DOCx files.
-      - **Heavy**:  *Optional*; runs the script at a lower pace to handle heavy environments.
-      - **WorkloadName**:  *Optional*; specifies the Name of the Workload of the analyses to be added to the PPTx and DOCx files.
-      - **PPTTemplateFile**:  *Optional*; specifies the PPTx template file to be used as source. If not specified the script will look for the file in the same path as the script.
-      - **WordTemplateFile**:  *Optional*; specifies the DOCx template file to be used as source. If not specified the script will look for the file in the same path as the script.
-      - **Debugging**: *Optional*; Writes a Debugging information to a log file.
+    - パラメーターには次のものが含まれます
+      - **ExcelFile**:  *必須*; 「2_wara_data_analyzer.ps1」スクリプトによって生成され、カスタマイズされたWARA Excelファイル。
+      - **CustomerName**:  *任意*; PPTx ファイルと DOCx ファイルに追加するお客様名を指定します。
+      - **Heavy**:  *任意*; スクリプトを遅いペースで実行して、負荷の高い環境で処理できるようにします。
+      - **WorkloadName**:  *任意*; PPTx ファイルおよび DOCx ファイルに追加する分析のワークロード名を指定します。
+      - **PPTTemplateFile**:  *任意*; ソースとして使用する PPTx テンプレート ファイルを指定します。指定しない場合、スクリプトはスクリプトと同じパスでファイルを検索します。
+      - **WordTemplateFile**:  *任意*; ソースとして使用する DOCx テンプレート ファイルを指定します。指定しない場合、スクリプトはスクリプトと同じパスでファイルを検索します。
+      - **Debugging**: *任意*; デバッグ情報をログ ファイルに書き込みます。
     {{< figure src="../../img/tools/generator-2.png" width="100%" >}}
 
-1. Select "R" to allow script to run
+1. 「R」を選択して、スクリプトの実行を許可します。
   {{< figure src="../../img/tools/generator-3.png" width="100%" >}}
 
-1. After the script successfully runs, you will find two new files saved in your folder. Some of the information will be automatically populated based on the Action Plan.
+1. スクリプトが正常に実行されると、フォルダーに 2 つの新しいファイルが保存されます。一部の情報は、アクションプランに基づいて自動的に入力されます。
 {{< hint type=important >}}
 Updates will need to be made prior to presenting to any audience.
 {{< /hint >}}
