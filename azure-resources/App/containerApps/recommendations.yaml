@@ -1,0 +1,18 @@
+- description: コンテナーの健全性プローブを有効にする
+  aprlGuid: 8dbcd94b-0948-4df3-b608-1946726c3abf
+  recommendationTypeId: null
+  recommendationControl: High Availability
+  recommendationImpact: High
+  recommendationResourceType: Microsoft.App/containerApps
+  recommendationMetadataState: Active
+  longDescription: |-
+    コンテナー正常性プローブを有効にして、コンテナー アプリの正常性を監視し、異常なコンテナーが自動的に再起動されるようにします。
+  potentialBenefits: Enhanced availability and resilience
+  pgVerified: false
+  publishedToLearn: false
+  publishedToAdvisor: false
+  automationAvailable: no
+  tags: null
+  learnMoreLink:
+    - name: Health probes for Azure Container Apps
+      url: "https://learn.microsoft.com/ja-jp/azure/container-apps/health-probes?tabs=arm-template"

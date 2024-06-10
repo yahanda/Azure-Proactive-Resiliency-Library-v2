@@ -7,7 +7,7 @@
   recommendationMetadataState: Active
   longDescription: |-
     Azure App Service の診断ログを有効にすることは、アプリケーション ログと Web サーバー ログの両方を含む監視と診断にとって重要です。
-  potentialBenefits: Enhanced monitoring and diagnostics
+  potentialBenefits: Monitoring and Alerting
   pgVerified: false
   publishedToLearn: false
   publishedToAdvisor: false
@@ -108,3 +108,57 @@
   learnMoreLink:
     - name: Configure web apps in Azure App Service
       url: "https://learn.microsoft.com/ja-jp/azure/app-service-web/web-sites-configure"
+- description: App Services のヘルスチェックを有効にする
+  aprlGuid: fd049c28-ae6d-48f0-a641-cc3ba1a3fe1d
+  recommendationTypeId: null
+  recommendationControl: Other Best Practices
+  recommendationImpact: Medium
+  recommendationResourceType: Microsoft.Web/sites
+  recommendationMetadataState: Active
+  longDescription: |-
+    実稼働ワークロードにはヘルスチェックを使用します。ヘルスチェックは、異常なインスタンスからリクエストを再ルーティングし、異常なままの場合はインスタンスを置き換えることにより、アプリケーションの可用性を高めます。ヘルスチェックパスは、アプリケーションの重要なコンポーネントをチェックする必要があります。
+  potentialBenefits: Enhanced reliability via automation
+  pgVerified: false
+  publishedToLearn: false
+  publishedToAdvisor: false
+  automationAvailable: arg
+  tags: null
+  learnMoreLink:
+    - name: Monitor the health of App Service instances
+      url: "https://learn.microsoft.com/ja-jp/azure/app-service/monitor-instances-health-check?tabs=dotnet#enable-health-check"
+- description: ネットワークアクセス制限を構成する
+  aprlGuid: aab6b4a4-9981-43a4-8728-35c7ecbb746d
+  recommendationTypeId: null
+  recommendationControl: Governance
+  recommendationImpact: Medium
+  recommendationResourceType: Microsoft.Web/sites
+  recommendationMetadataState: Active
+  longDescription: |-
+    ネットワーク アクセス制限を使用して、アプリへのネットワーク アクセスを制御する優先順位の許可/拒否リストを定義します。公開 Web アプリケーションの保護には、Application Gateway で利用できる Web アプリケーション ファイアウォールなどをお勧めします。
+  potentialBenefits: Enhanced security
+  pgVerified: false
+  publishedToLearn: false
+  publishedToAdvisor: false
+  automationAvailable: arg
+  tags: null
+  learnMoreLink:
+    - name: Set up Azure App Service access restrictions
+      url: "https://learn.microsoft.com/ja-jp/azure/app-service/app-service-ip-restrictions?tabs=azurecli"
+- description: アプリサービスの最小インスタンス数を 2 に設定します
+  aprlGuid: 9e6682ac-31bc-4635-9959-ab74b52454e6
+  recommendationTypeId: null
+  recommendationControl: Scalability
+  recommendationImpact: Medium
+  recommendationResourceType: Microsoft.Web/sites
+  recommendationMetadataState: Active
+  longDescription: |-
+    App Service は、運用ワークロードに対して少なくとも 2 つのインスタンスで構成する必要があります。アプリのウォームアップ時間が長い場合は、少なくとも 3 つのインスタンスを使用する必要があります。
+  potentialBenefits: Improves app performace
+  pgVerified: false
+  publishedToLearn: false
+  publishedToAdvisor: false
+  automationAvailable: arg
+  tags: null
+  learnMoreLink:
+    - name: Ultimate guide to running healthy apps in the cloud
+      url: "https://azure.github.io/AppService/2020/05/15/Robust-Apps-for-the-cloud.html"

@@ -1,0 +1,58 @@
+- description: 動的なワークロードの需要を満たすために NAT ゲートウェイを拡張する
+  aprlGuid: 4281631c-3d19-4994-8d96-084c2a51a534
+  recommendationTypeId: null
+  recommendationControl: Scalability
+  recommendationImpact: Medium
+  recommendationResourceType: Microsoft.Network/natGateways
+  recommendationMetadataState: Active
+  longDescription: |-
+    NAT ゲートウェイは、パブリック IP アドレスごとに 64,512 個の SNAT ポートを提供し、最大 16 個のパブリック IP アドレスをサポートします。 「合計 SNAT 接続数」メトリックを監視して、NAT ゲートウェイの接続制限に近づいているかどうかを判断します。パブリック IP アドレスを追加することで、NAT ゲートウェイを拡張できます。
+  potentialBenefits: Enhances reliability and scalability
+  pgVerified: false
+  publishedToLearn: false
+  publishedToAdvisor: false
+  automationAvailable: no
+  tags: null
+  learnMoreLink:
+    - name: Scale a NAT gateway to meet the demand of a dynamic workload
+      url: "https://learn.microsoft.com/ja-jp/azure/nat-gateway/nat-gateway-design#scale-a-nat-gateway-to-meet-the-demand-of-a-dynamic-workload"
+    - name: Total SNAT Connection Count
+      url: "https://learn.microsoft.com/ja-jp/azure/nat-gateway/nat-metrics#total-snat-connection-count"
+- description: NAT ゲートウェイの監視とアラートを構成する
+  aprlGuid: babf75d6-6407-4d90-b01e-5a1768e621f5
+  recommendationTypeId: null
+  recommendationControl: Monitoring and Alerting
+  recommendationImpact: High
+  recommendationResourceType: Microsoft.Network/natGateways
+  recommendationMetadataState: Active
+  longDescription: |-
+    NAT ゲートウェイの監視とアラートには Network Insights を使用します。合計 SNAT 接続数メトリックを使用して、NAT ゲートウェイの接続制限に近づいているかどうかを判断します。 NAT ゲートウェイの Azure Monitor Baseline Alerts (AMBA) しきい値に基づいてアラートを設定する
+  potentialBenefits: Enhanced network performance and health
+  pgVerified: false
+  publishedToLearn: false
+  publishedToAdvisor: false
+  automationAvailable: no
+  tags: null
+  learnMoreLink:
+    - name: What is Azure NAT Gateway metrics and alerts?
+      url: "https://learn.microsoft.com/ja-jp/azure/nat-gateway/nat-metrics"
+    - name: AMBA - NAT Gateway
+      url: "https://azure.github.io/azure-monitor-baseline-alerts/services/Network/natGateways/"
+- description: ゾーン分離シナリオでは、ゾーン NAT ゲートウェイの導入を検討してください。
+  aprlGuid: 419df1ea-336b-460a-b6b2-fefe2588fcef
+  recommendationTypeId: null
+  recommendationControl: High Availability
+  recommendationImpact: Medium
+  recommendationResourceType: Microsoft.Network/natGateways
+  recommendationMetadataState: Active
+  longDescription: |-
+    ゾーン分離シナリオのゾーン約束は、NAT ゲートウェイ リソースを使用する仮想マシン インスタンスが NAT ゲートウェイ リソースおよびそのパブリック IP アドレスと同じゾーンにある場合に存在します。ゾーン分離に使用するパターンは、可用性ゾーンごとに「ゾーン スタック」を作成することです。
+  potentialBenefits: Enhances reliability and scalability
+  pgVerified: false
+  publishedToLearn: false
+  publishedToAdvisor: false
+  automationAvailable: no
+  tags: null
+  learnMoreLink:
+    - name: Zonal NAT gateway resource for each zone in a region to create zone-resiliency
+      url: "https://learn.microsoft.com/ja-jp/azure/nat-gateway/nat-availability-zones#zonal-nat-gateway-resource-for-each-zone-in-a-region-to-create-zone-resiliency"

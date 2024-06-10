@@ -1,0 +1,36 @@
+- description: Azure App Configuration のパージ保護を有効にする
+  aprlGuid: bb4c8db4-f821-475b-b1ea-16e95358665e
+  recommendationTypeId: null
+  recommendationControl: Governance
+  recommendationImpact: Low
+  recommendationResourceType: Microsoft.AppConfiguration/configurationStores
+  recommendationMetadataState: Active
+  longDescription: |-
+    パージ保護が有効になっている場合、論理的に削除されたストアは保持期間内にパージできません。無効にすると、保持期間が終了する前に論理的に削除されたストアをパージできます。
+  potentialBenefits: Prevent accidental deletion of configuration stores.
+  pgVerified: false
+  publishedToLearn: false
+  publishedToAdvisor: false
+  automationAvailable: arg
+  tags: null
+  learnMoreLink:
+    - name: Purge protection
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-app-configuration/concept-soft-delete#purge-protection"
+- description: App Configuration Standard レベルへのアップグレード
+  aprlGuid: 2102a57a-a056-4d5e-afe5-9df9f92177ca
+  recommendationTypeId: null
+  recommendationControl: High Availability
+  recommendationImpact: High
+  recommendationResourceType: Microsoft.AppConfiguration/configurationStores
+  recommendationMetadataState: Active
+  longDescription: |-
+    SLA は無料利用枠では利用できません。 Standard レベルにアップグレードして 99.9% の SLA を実現
+  potentialBenefits: High availability, more storage, higher request quota.
+  pgVerified: false
+  publishedToLearn: false
+  publishedToAdvisor: false
+  automationAvailable: arg
+  tags: null
+  learnMoreLink:
+    - name: Choose App Configuration tier
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-app-configuration/faq#which-app-configuration-tier-should-i-use"

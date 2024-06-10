@@ -32,8 +32,8 @@
   automationAvailable: no
   tags: null
   learnMoreLink:
-    - name: Scenarios for Azure Private DNS zones
-      url: "https://learn.microsoft.com/ja-jp/azure/dns/private-dns-scenarios"
+    - name: Supported metrics for Microsoft.Network/privateDnsZones
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/reference/supported-metrics/microsoft-network-privatednszones-metrics"
 - description: 本番ゾーンと DR ゾーンを同一のワークロードとリソースのフェイルオーバー エントリで調整します。
   aprlGuid: 1e02335c-1f90-fd4e-a5a5-d359c7b22d70
   recommendationTypeId: null

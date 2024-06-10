@@ -38,25 +38,3 @@
       url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/logs/log-analytics-workspace-health"
     - name: Azure Monitor configuration recommendations
       url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/best-practices-logs#configuration-recommendations"
-- description: 最小限のログ記録とログの保持を構成する
-  aprlGuid: 7a0063ee-98a0-4634-823b-310a67f798cc
-  recommendationTypeId: null
-  recommendationControl: Governance
-  recommendationImpact: Low
-  recommendationResourceType: Microsoft.OperationalInsights/workspaces
-  recommendationMetadataState: Active
-  longDescription: |-
-    Azure Monitor ログは、データの種類に応じて特定の期間、ログ データを保持します (たとえば、プラットフォーム ログの場合は 30 日間)。コンプライアンスまたはビジネス上の理由により、より長い保存期間が必要になる場合があります。データ保持設定は調整可能です。
-  potentialBenefits: Cost-saving and compliance with data rules
-  pgVerified: true
-  publishedToLearn: false
-  publishedToAdvisor: false
-  automationAvailable: no
-  tags: null
-  learnMoreLink:
-    - name: Data retention and archive in Azure Monitor Logs
-      url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/logs/data-retention-archive?tabs=portal-1%2Cportal-2"
-    - name: Run search jobs in Azure Monitor
-      url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/logs/search-jobs?tabs=portal-1%2Cportal-2"
-    - name: Restore logs in Azure Monitor
-      url: "https://learn.microsoft.com/ja-jp/azure/azure-monitor/logs/restore?tabs=api-1"

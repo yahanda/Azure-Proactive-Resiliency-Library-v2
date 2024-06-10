@@ -25,8 +25,8 @@
   recommendationImpact: High
   recommendationResourceType: Microsoft.ContainerService/managedClusters
   recommendationMetadataState: Active
-  longDescription: |
-    AKS assigns the kubernetes.azure.com/mode: system label to nodes in system node pools signaling the preference for system pods should be scheduled there. The CriticalAddonsOnly=true:NoSchedule taint can be added to your system nodes to prohibit application pods from being scheduled on them.
+  longDescription: |-
+    AKS は、システム ノード プール内のノードに kubernetes.azure.com/mode: system ラベルを割り当て、システム ポッドの優先順位をそこにスケジュールする必要があることを示します。 CriticalAddonsOnlyu003dtrue:NoSchedule テイントをシステム ノードに追加して、アプリケーション ポッドのスケジュールを禁止できます。
   potentialBenefits: Enhanced reliability via pod isolation
   pgVerified: false
   publishedToLearn: false

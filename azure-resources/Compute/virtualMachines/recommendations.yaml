@@ -134,8 +134,7 @@
   learnMoreLink:
     - name: What is the Azure Backup service?
       url: "https://learn.microsoft.com/ja-jp/azure/backup/backup-overview"
-
-- description: Review VMs in stopped state
+- description: 停止状態の VM を確認する
   aprlGuid: 98b334c0-8578-6046-9e43-b6e8fce6318e
   recommendationTypeId: null
   recommendationControl: Governance

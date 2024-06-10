@@ -1,0 +1,270 @@
+- description: RE:01 ビジネス目標に合わせてワークロードを設計する
+  aprlGuid: 8c0a0a4c-9e34-41af-9f6d-89d8dc00370e
+  recommendationTypeId: null
+  recommendationControl: Other Best Practices
+  recommendationImpact: Medium
+  recommendationResourceType: WellArchitected/Reliability
+  recommendationMetadataState: Active
+  longDescription: |-
+    ビジネス目標に合わせてワークロードを設計し、不必要な複雑さやオーバーヘッドを回避します。実用的でバランスの取れたアプローチを使用して、望ましい結果をもたらす設計上の決定を下します。非効率性や潜在的な問題を軽減するために、必要なものを設計に含めます。
+  potentialBenefits: Meet business requirements
+  pgVerified: true
+  publishedToLearn: true
+  publishedToAdvisor: no
+  automationAvailable: no
+  tags: null
+  learnMoreLink:
+    - name: RE:01 Simplicity and efficiency
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/reliability/simplify"
+- description: RE:02 ユーザーとシステムのフローを特定して評価する
+  aprlGuid: 74415e66-7baf-43f3-8def-164bc7b48215
+  recommendationTypeId: null
+  recommendationControl: High Availability
+  recommendationImpact: Medium
+  recommendationResourceType: WellArchitected/Reliability
+  recommendationMetadataState: Active
+  longDescription: |-
+    ユーザーとシステムのフローを特定して評価します。ビジネス要件に基づいた重要度スケールを使用して、フローに優先順位を付けます。
+  potentialBenefits: Align architecture with reliability goals
+  pgVerified: true
+  publishedToLearn: true
+  publishedToAdvisor: no
+  automationAvailable: no
+  tags: null
+  learnMoreLink:
+    - name: RE:02 Critical flows
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/reliability/identify-flows"
+- description: RE:03 故障モード分析を使用して潜在的な故障を特定し、優先順位を付ける
+  aprlGuid: f5fbe3d4-7196-46b8-9b09-0e29e7cf43ac
+  recommendationTypeId: null
+  recommendationControl: Other Best Practices
+  recommendationImpact: Medium
+  recommendationResourceType: WellArchitected/Reliability
+  recommendationMetadataState: Active
+  longDescription: |-
+    障害モード分析 (FMA) を使用して、ソリューション コンポーネントの潜在的な障害を特定し、優先順位を付けます。 FMA を実行すると、各障害モードのリスクと影響を評価できます。ワークロードがどのように応答して回復するかを判断します。
+  potentialBenefits: Reduce risk of unpredicted behavior
+  pgVerified: true
+  publishedToLearn: true
+  publishedToAdvisor: no
+  automationAvailable: no
+  tags: null
+  learnMoreLink:
+    - name: RE:03 Failure mode analysis
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/reliability/failure-mode-analysis"
+- description: RE:04 信頼性と回復目標を定義する
+  aprlGuid: 2c41b97c-af27-47b5-aafb-81bbf95fe8ba
+  recommendationTypeId: null
+  recommendationControl: High Availability
+  recommendationImpact: Medium
+  recommendationResourceType: WellArchitected/Reliability
+  recommendationMetadataState: Active
+  longDescription: |-
+    コンポーネント、フロー、ソリューション全体の信頼性と回復の目標を定義します。定義されたターゲットを使用して健康モデルを構築します。健康モデルは、健康な状態、劣化した状態、および不健康な状態がどのようなものであるかを定義します。
+  potentialBenefits: Communicate reliability expectations with stakeholders
+  pgVerified: true
+  publishedToLearn: true
+  publishedToAdvisor: no
+  automationAvailable: no
+  tags: null
+  learnMoreLink:
+    - name: RE:04 Target metrics
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/reliability/metrics"
+- description: RE:05 冗長性を考慮した設計
+  aprlGuid: e404ef3f-e427-4e43-a1df-09da987e744f
+  recommendationTypeId: null
+  recommendationControl: High Availability
+  recommendationImpact: Medium
+  recommendationResourceType: WellArchitected/Reliability
+  recommendationMetadataState: Active
+  longDescription: |-
+    特に重要なフローに対して、さまざまなレベルで冗長性を追加します。特定された信頼性目標に従って、コンピューティング、データ、ネットワーク、その他のインフラストラクチャ層に冗長性を適用します。
+  potentialBenefits: Optimize for resiliency
+  pgVerified: true
+  publishedToLearn: true
+  publishedToAdvisor: no
+  automationAvailable: no
+  tags: null
+  learnMoreLink:
+    - name: RE:05 Redundancy
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/reliability/redundancy"
+- description: RE:05 マルチリージョンの高可用性のための設計
+  aprlGuid: df93ae26-260e-408f-860c-42cd189f8bf8
+  recommendationTypeId: null
+  recommendationControl: High Availability
+  recommendationImpact: Medium
+  recommendationResourceType: WellArchitected/Reliability
+  recommendationMetadataState: Active
+  longDescription: |-
+    高可用性は、信頼性を考慮した設計の基本原則です。高可用性アーキテクチャは、ダウンタイムを可能な限り回避し、ダウンタイムが発生した場合に効率的に回復するのに役立ちます。
+  potentialBenefits: Minimize downtime from regional outages
+  pgVerified: true
+  publishedToLearn: true
+  publishedToAdvisor: no
+  automationAvailable: no
+  tags: null
+  learnMoreLink:
+    - name: RE:05 High-availability multi-region design
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/reliability/highly-available-multi-region-design"
+- description: RE:05 アベイラビリティ ゾーンによる高可用性の設計
+  aprlGuid: 3d6adb0a-042f-47f7-a7ea-db2e360903d5
+  recommendationTypeId: null
+  recommendationControl: High Availability
+  recommendationImpact: Medium
+  recommendationResourceType: WellArchitected/Reliability
+  recommendationMetadataState: Active
+  longDescription: |-
+    高可用性は、信頼性を考慮した設計の基本原則です。高可用性アーキテクチャは、ダウンタイムを可能な限り回避し、ダウンタイムが発生した場合に効率的に回復するのに役立ちます。
+  potentialBenefits: Minimize downtime from zonal outages
+  pgVerified: true
+  publishedToLearn: true
+  publishedToAdvisor: no
+  automationAvailable: no
+  tags: null
+  learnMoreLink:
+    - name: Regions and availability zones
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/reliability/regions-availability-zones"
+- description: RE:06 データパーティショニングの設計
+  aprlGuid: 7f0b9ea3-0159-4ea7-b854-a4313fe76d7f
+  recommendationTypeId: null
+  recommendationControl: High Availability
+  recommendationImpact: Medium
+  recommendationResourceType: WellArchitected/Reliability
+  recommendationMetadataState: Active
+  longDescription: |-
+    データをパーティショニングすると、スケーラビリティが向上し、競合が減少し、パフォーマンスが最適化されます。データパーティショニングを実装して、使用パターンごとにデータを分割します。
+  potentialBenefits: Improve data estate reliability
+  pgVerified: true
+  publishedToLearn: true
+  publishedToAdvisor: no
+  automationAvailable: no
+  tags: null
+  learnMoreLink:
+    - name: RE:06 Data partitioning
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/reliability/partition-data"
+- description: RE:06 信頼性の高いスケーリングのための設計
+  aprlGuid: 340fe5c3-d599-448a-8e52-15e96771a3f0
+  recommendationTypeId: null
+  recommendationControl: Scalability
+  recommendationImpact: Medium
+  recommendationResourceType: WellArchitected/Reliability
+  recommendationMetadataState: Active
+  longDescription: |-
+    アプリケーション、データ、インフラストラクチャのレベルでタイムリーで信頼性の高いスケーリング戦略を実装します。
+  potentialBenefits: Dynamically handle increased load
+  pgVerified: true
+  publishedToLearn: true
+  publishedToAdvisor: no
+  automationAvailable: no
+  tags: null
+  learnMoreLink:
+    - name: RE:06 Scaling
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/reliability/scaling"
+- description: RE:07 バックグラウンドジョブを使用する
+  aprlGuid: 4e1094dd-2d85-4a1a-8ca8-1e6ea21206fb
+  recommendationTypeId: null
+  recommendationControl: Other Best Practices
+  recommendationImpact: Medium
+  recommendationResourceType: WellArchitected/Reliability
+  recommendationMetadataState: Active
+  longDescription: |-
+    バックグラウンド ジョブは、アプリケーション UI の負荷を最小限に抑えるのに役立ち、可用性が向上し、対話型の応答時間が短縮されます。
+  potentialBenefits: Minimize application load
+  pgVerified: true
+  publishedToLearn: true
+  publishedToAdvisor: no
+  automationAvailable: no
+  tags: null
+  learnMoreLink:
+    - name: RE:07 Background jobs
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/reliability/background-jobs"
+- description: RE:07 自己保存と自己修復の措置を講じる
+  aprlGuid: 7b5008cf-1853-44c4-827d-bca091678c3f
+  recommendationTypeId: null
+  recommendationControl: High Availability
+  recommendationImpact: Medium
+  recommendationResourceType: WellArchitected/Reliability
+  recommendationMetadataState: Active
+  longDescription: |-
+    自己保存および自己修復手段を実装することで、ワークロードの回復力と回復可能性を強化します。自己修復機能は、さまざまなタイプの障害に対応する障害検出と自動修正アクションを組み込むことで、ダウンタイムを回避するのに役立ちます。
+  potentialBenefits: Reduce the likelihood of outages
+  pgVerified: true
+  publishedToLearn: true
+  publishedToAdvisor: no
+  automationAvailable: no
+  tags: null
+  learnMoreLink:
+    - name: RE:07 Self-preservation
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/reliability/self-preservation"
+- description: RE:07 一時的な障害を処理する
+  aprlGuid: 66ae4a5c-7f58-4293-bed8-5caa4f9f34e2
+  recommendationTypeId: null
+  recommendationControl: High Availability
+  recommendationImpact: Medium
+  recommendationResourceType: WellArchitected/Reliability
+  recommendationMetadataState: Active
+  longDescription: |-
+    インフラストラクチャベースの信頼性パターンとソフトウェアベースの設計パターンを使用して、コンポーネントの障害や一時的なエラーに対処する機能をソリューションに組み込みます。
+  potentialBenefits: Reduce the likelihood of outages
+  pgVerified: true
+  publishedToLearn: true
+  publishedToAdvisor: no
+  automationAvailable: no
+  tags: null
+  learnMoreLink:
+    - name: RE:07 Transient faults
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/reliability/handle-transient-faults"
+- description: RE:08 信頼性テスト戦略を設計する
+  aprlGuid: 7db74a6a-4062-46a8-a0cd-18684fb0ec08
+  recommendationTypeId: null
+  recommendationControl: Other Best Practices
+  recommendationImpact: Medium
+  recommendationResourceType: WellArchitected/Reliability
+  recommendationMetadataState: Active
+  longDescription: |-
+    カオス エンジニアリングの原則をテスト環境と運用環境に適用して、回復力と可用性のシナリオをテストします。テストを使用して、アクティブな誤動作とシミュレートされた負荷テストを実行することで、グレースフル デグラデーションの実装とスケーリング戦略が効果的であることを確認します。
+  potentialBenefits: Validate and optimize workload reliability
+  pgVerified: true
+  publishedToLearn: true
+  publishedToAdvisor: no
+  automationAvailable: no
+  tags: null
+  learnMoreLink:
+    - name: RE:08 Testing
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/reliability/testing-strategy"
+- description: RE:09 事業継続および災害復旧計画の実施
+  aprlGuid: 5f95df03-cae2-4761-90b7-7afd657ac124
+  recommendationTypeId: null
+  recommendationControl: Disaster Recovery
+  recommendationImpact: Medium
+  recommendationResourceType: WellArchitected/Reliability
+  recommendationMetadataState: Active
+  longDescription: |-
+    復旧目標に沿った、構造化、テスト、文書化された事業継続および災害復旧 (BCDR) 計画を実装します。計画は、すべてのコンポーネントとシステム全体をカバーする必要があります。
+  potentialBenefits: Reliable disaster recovery
+  pgVerified: true
+  publishedToLearn: true
+  publishedToAdvisor: no
+  automationAvailable: no
+  tags: null
+  learnMoreLink:
+    - name: RE:09 Disaster recovery
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/reliability/disaster-recovery"
+- description: RE:10 信頼性の高い監視およびアラート戦略を設計する
+  aprlGuid: 90adebf7-bc90-4939-9aa8-119c46bee0fc
+  recommendationTypeId: null
+  recommendationControl: Monitoring and Alerting
+  recommendationImpact: Medium
+  recommendationResourceType: WellArchitected/Reliability
+  recommendationMetadataState: Active
+  longDescription: |-
+    ソリューションの健全性指標を測定して公開します。稼働時間やその他の信頼性データをワークロード全体から、また個々のコンポーネントや主要なフローからも継続的に取得します。
+  potentialBenefits: Observability into workload health
+  pgVerified: true
+  publishedToLearn: true
+  publishedToAdvisor: no
+  automationAvailable: no
+  tags: null
+  learnMoreLink:
+    - name: RE:10 Monitoring and alerting
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/reliability/monitoring-alerting-strategy"
