@@ -1,8 +1,8 @@
-- description: 自動スケールが有効になっていることを確認してください
+- description: Ensure Autoscale feature has been enabled
   aprlGuid: 823b0cff-05c0-2e4e-a1e7-9965e1cfa16f
-  recommendationTypeId: null
+  recommendationTypeId: c9c9750b-9ddb-436f-b19a-9c725539a0b5
   recommendationControl: Scalability
-  recommendationImpact: High
+  recommendationImpact: Medium
   recommendationResourceType: Microsoft.Network/applicationGateways
   recommendationMetadataState: Active
   longDescription: |-
@@ -44,9 +44,9 @@
       url: "https://learn.microsoft.com/ja-jp/azure/application-gateway/ssl-certificate-management"
 - description: Web アプリケーション ファイアウォール ポリシーを有効にする
   aprlGuid: 8d9223c4-730d-ca47-af88-a9a024c37270
-  recommendationTypeId: null
+  recommendationTypeId: efe75f01-6fff-5d9d-08e6-092b98d3fb3f
   recommendationControl: Security
-  recommendationImpact: High
+  recommendationImpact: Low
   recommendationResourceType: Microsoft.Network/applicationGateways
   recommendationMetadataState: Active
   longDescription: |-
@@ -61,10 +61,11 @@
     - name: Well-Architected Framework Application Gateway Overview
       url: "https://learn.microsoft.com/ja-jp/azure/well-architected/services/networking/azure-application-gateway"
     - name: Application Gateway - Web Application Firewall
-      url: "https://learn.microsoft.com/ja-jp/azure/application-gateway/features#web-application-firewall"
-- description: V1 の代わりに Application GW V2 を使用する
+      url: "https://learn.microsoft.com/azure/application-gateway/features#web-application-firewall"
+
+- description: Migrate to Application Gateway v2
   aprlGuid: 7893f0b3-8622-1d47-beed-4b50a19f7895
-  recommendationTypeId: null
+  recommendationTypeId: 0e19257e-dcef-4d00-8de1-5fe1ae0fd948
   recommendationControl: Scalability
   recommendationImpact: High
   recommendationResourceType: Microsoft.Network/applicationGateways
@@ -126,7 +127,7 @@
       url: "https://learn.microsoft.com/ja-jp/azure/well-architected/services/networking/azure-application-gateway"
 - description: ゾーン冗長構成で Application Gateway をデプロイする
   aprlGuid: c9c00f2a-3888-714b-a72b-b4c9e8fcffb2
-  recommendationTypeId: null
+  recommendationTypeId: 5c488377-be3e-4365-92e8-09d1e8d9038c
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.Network/applicationGateways
@@ -166,7 +167,7 @@
       url: "https://learn.microsoft.com/ja-jp/azure/application-gateway/configuration-http-settings#connection-draining"
 - description: Application Gateway サブネットが /24 サブネット マスクを使用していることを確認する
   aprlGuid: 8364fd0a-7c0e-e240-9d95-4bf965aec243
-  recommendationTypeId: null
+  recommendationTypeId: ef4da732-f541-4109-bc0e-465c68b6c7eb
   recommendationControl: Other Best Practices
   recommendationImpact: High
   recommendationResourceType: Microsoft.Network/applicationGateways

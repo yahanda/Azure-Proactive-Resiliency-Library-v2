@@ -1,6 +1,6 @@
 - description: ExpressRoute ゲートウェイをさまざまなピアリングの場所からの回線に接続し、回復力を強化します
   aprlGuid: d37db635-157f-584d-9bce-4f6fc8c65ce5
-  recommendationTypeId: null
+  recommendationTypeId: 8d61a7d4-5405-4f43-81e3-8c6239b844a6
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.Network/virtualNetworkGateways
@@ -18,7 +18,7 @@
       url: "https://learn.microsoft.com/ja-jp/azure/expressroute/designing-for-disaster-recovery-with-expressroute-privatepeering"
 - description: ゾーン冗長 ExpressRoute ゲートウェイ SKU を使用する
   aprlGuid: bbe668b7-eb5c-c746-8b82-70afdedf0cae
-  recommendationTypeId: null
+  recommendationTypeId: c9af1ef6-55bc-48af-bfe4-2c80490159f8
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.Network/virtualNetworkGateways
@@ -134,11 +134,12 @@
       url: "https://learn.microsoft.com/ja-jp/azure/vpn-gateway/about-zone-redundant-vnet-gateways#gwskus"
     - name: SLA summary for Azure services
       url: "https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services?lang=1"
-- description: VPN ゲートウェイを使用したアクティブ/アクティブ モードの計画
+
+- description: Enable Active-Active VPN Gateways for redundancy
   aprlGuid: 281a2713-c0e0-3c48-b596-19f590c46671
-  recommendationTypeId: null
+  recommendationTypeId: c249dc0e-9a17-423e-838a-d72719e8c5dd
   recommendationControl: High Availability
-  recommendationImpact: High
+  recommendationImpact: Medium
   recommendationResourceType: Microsoft.Network/virtualNetworkGateways
   recommendationMetadataState: Active
   longDescription: |-

@@ -1,6 +1,6 @@
 - description: 高可用性を実現するために少なくとも 2 つのリージョンを構成する
   aprlGuid: 43663217-a1d3-844b-80ea-571a2ce37c6c
-  recommendationTypeId: null
+  recommendationTypeId: b57f7a29-dcc8-43de-86fa-18d3f9d3764d
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.DocumentDB/databaseAccounts
@@ -20,7 +20,7 @@
       url: "https://learn.microsoft.com/ja-jp/azure/cosmos-db/high-availability#tips-for-building-highly-available-applications"
 - description: 単一の書き込みリージョンを持つマルチリージョン アカウントのサービス管理フェイルオーバーを有効にする
   aprlGuid: 9cabded7-a1fc-6e4a-944b-d7dd98ea31a2
-  recommendationTypeId: null
+  recommendationTypeId: 5de9f2e6-087e-40da-863a-34b7943beed4
   recommendationControl: Disaster Recovery
   recommendationImpact: High
   recommendationResourceType: Microsoft.DocumentDB/databaseAccounts
@@ -58,7 +58,7 @@
       url: "https://learn.microsoft.com/ja-jp/azure/cosmos-db/conflict-resolution-policies"
 - description: 継続的バックアップ モードを構成する
   aprlGuid: e544520b-8505-7841-9e77-1f1974ee86ec
-  recommendationTypeId: null
+  recommendationTypeId: 52fef986-5897-4359-8b92-0f22749f0d73
   recommendationControl: Disaster Recovery
   recommendationImpact: High
   recommendationResourceType: Microsoft.DocumentDB/databaseAccounts

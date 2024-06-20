@@ -33,26 +33,9 @@
   tags: null
   learnMoreLink:
     - name: About ExpressRoute Direct Circuit Sizes
-      url: "https://learn.microsoft.com/ja-jp/azure/expressroute/expressroute-erdirect-about?source=recommendations#circuit-sizes"
-- description: ExpressRoute Direct Circuits 全体にレート制限を実装してネットワーク フローを最適化する
-  aprlGuid: d40c769d-2f08-4980-8d8f-a386946276e6
-  recommendationTypeId: null
-  recommendationControl: Scalability
-  recommendationImpact: Medium
-  recommendationResourceType: Microsoft.Network/ExpressRoutePorts
-  recommendationMetadataState: Active
-  longDescription: |-
-    レート制限は、ExpressRoute Direct 経由でオンプレミス ネットワークと Azure 間のトラフィック量を制御し、プライベート ピアリングまたは Microsoft ピアリングに適用します。ポート帯域幅を分散し、安定性を確保し、輻輳を防止します。回線上で有効にするための手順が概説されています。
-  potentialBenefits: Optimizes network, prevents congestion
-  pgVerified: true
-  publishedToLearn: false
-  publishedToAdvisor: false
-  automationAvailable: no
-  tags: null
-  learnMoreLink:
-    - name: Rate limiting for ExpressRoute Direct circuits (Preview)
-      url: "https://learn.microsoft.com/ja-jp/azure/expressroute/rate-limit"
-- description: ExpressRoute ポートの監視とアラートを構成する
+      url: "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-erdirect-about?source=recommendations#circuit-sizes"
+
+- description: Configure monitoring and alerting for ExpressRoute Ports
   aprlGuid: 55815823-d588-4cb7-a5b8-ae581837356e
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting

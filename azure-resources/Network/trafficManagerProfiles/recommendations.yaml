@@ -22,9 +22,9 @@
       url: "https://learn.microsoft.com/ja-jp/azure/traffic-manager/traffic-manager-troubleshooting-degraded"
 - description: トラフィック マネージャー プロファイルには複数のエンドポイントが必要です
   aprlGuid: 5b422a7f-8caa-3d48-becb-511599e5bba9
-  recommendationTypeId: null
+  recommendationTypeId: 6cd70072-c45c-4716-bf7b-b35c18e46e72
   recommendationControl: High Availability
-  recommendationImpact: High
+  recommendationImpact: Medium
   recommendationResourceType: Microsoft.Network/trafficManagerProfiles
   recommendationMetadataState: Active
   longDescription: |-
@@ -40,7 +40,7 @@
       url: "https://learn.microsoft.com/ja-jp/azure/traffic-manager/traffic-manager-endpoint-types"
 - description: 別のリージョン内に少なくとも 1 つのエンドポイントを構成する
   aprlGuid: 1ad9d7b7-9692-1441-a8f4-93792efbe97a
-  recommendationTypeId: null
+  recommendationTypeId: 0db76759-6d22-4262-93f0-2f989ba2b58e
   recommendationControl: Disaster Recovery
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Network/trafficManagerProfiles
@@ -55,12 +55,13 @@
   tags: null
   learnMoreLink:
     - name: Reliability recommendations
-      url: "https://learn.microsoft.com/ja-jp/azure/advisor/advisor-reference-reliability-recommendations#add-at-least-one-more-endpoint-to-the-profile-preferably-in-another-azure-region"
-- description: エンドポイントが地理的プロファイルに対して (全世界) に設定されていることを確認します
+      url: "https://learn.microsoft.com/azure/advisor/advisor-reference-reliability-recommendations#add-at-least-one-more-endpoint-to-the-profile-preferably-in-another-azure-region"
+
+- description: Ensure endpoint configured to (All World) for geographic profiles
   aprlGuid: c31f76a0-48cd-9f44-aa43-99ee904db9bc
-  recommendationTypeId: null
+  recommendationTypeId: 0bbe0a49-3c63-49d3-ab4a-aa24198f03f7
   recommendationControl: Disaster Recovery
-  recommendationImpact: Medium
+  recommendationImpact: High
   recommendationResourceType: Microsoft.Network/trafficManagerProfiles
   recommendationMetadataState: Active
   longDescription: |-

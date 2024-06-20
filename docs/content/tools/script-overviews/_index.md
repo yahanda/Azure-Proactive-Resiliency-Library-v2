@@ -41,7 +41,7 @@ Collector PowerShell スクリプトは、Azure Proactive Resiliency Library (AP
       - **SubscriptionIds**:  *任意 (or SubscriptionsFile)* ; 分析に含めるサブスクリプションを指定します: Subscription1,Subscription2
       - **SubscriptionsFile**:  *任意 (or SubscriptionIds)* ; 分析するサブスクリプション・リストを含むファイルを指定します (1 行に 1 つのサブスクリプション)
       - **RunbookFile**:  *任意* ; 使用する Runbook (セレクタとチェック) を含むファイルを指定します
-      - **ResourceGroups**:  *任意* ; 分析に含めるリソース グループを指定します: ResourceGroup1,ResourceGroup2
+      - **ResourceGroups**:  *任意* ; 分析に含めるリソース グループを指定します: "ResourceGroup1","ResourceGroup2"
       - **Debug**: *任意* ; 実行中にスクリプトのデバッグ情報を書き込みます
 
     {{< figure src="../../img/tools/collector-3.png" width="100%" >}}

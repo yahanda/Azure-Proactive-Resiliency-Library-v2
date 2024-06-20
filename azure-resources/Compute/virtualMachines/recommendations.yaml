@@ -56,7 +56,7 @@
       url: "https://learn.microsoft.com/ja-jp/azure/architecture/checklist/resiliency-per-service#virtual-machines"
 - description: Azure Site Recovery を使用して VM をレプリケートする
   aprlGuid: cfe22a65-b1db-fd41-9e8e-d573922709ae
-  recommendationTypeId: null
+  recommendationTypeId: ed651749-cd37-4fd5-9897-01b416926745
   recommendationControl: Disaster Recovery
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Compute/virtualMachines
@@ -76,7 +76,7 @@
       url: "https://learn.microsoft.com/ja-jp/azure/site-recovery/site-recovery-test-failover-to-azure"
 - description: VM ディスクにマネージド ディスクを使用する
   aprlGuid: 122d11d7-b91f-8747-a562-f56b79bcfbdc
-  recommendationTypeId: null
+  recommendationTypeId: 57ecb3cd-f2b4-4cad-8b3a-232cca527a0b
   recommendationControl: High Availability
   recommendationImpact: High
   recommendationResourceType: Microsoft.Compute/virtualMachines
@@ -118,7 +118,7 @@
       url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/disks-types"
 - description: Azure Backup サービスを使用して VM をバックアップする
   aprlGuid: 1981f704-97b9-b645-9c57-33f8ded9261a
-  recommendationTypeId: null
+  recommendationTypeId: 651c7925-17a3-42e5-85cd-73bd095cf27f
   recommendationControl: Disaster Recovery
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Compute/virtualMachines
@@ -154,7 +154,7 @@
       url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/states-billing?context=%2Ftroubleshoot%2Fazure%2Fvirtual-machines%2Fcontext%2Fcontext#power-states-and-billing"
 - description: 高速ネットワーク (AccelNet) を有効にする
   aprlGuid: dfedbeb1-1519-fc47-86a5-52f96cf07105
-  recommendationTypeId: null
+  recommendationTypeId: 3a3c1a2a-8597-4d3a-981a-0a24a0ee9de4
   recommendationControl: Scalability
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Compute/virtualMachines
@@ -205,8 +205,9 @@
   tags: null
   learnMoreLink:
     - name: Use Source Network Address Translation (SNAT) for outbound connections
-      url: "https://learn.microsoft.com/ja-jp/azure/load-balancer/load-balancer-outbound-connections"
-- description: VM ネットワーク インターフェイスと関連サブネットの両方に、ネットワーク セキュリティ グループ (NSG) が関連付けられています。
+      url: "https://learn.microsoft.com/azure/load-balancer/load-balancer-outbound-connections"
+
+- description: VM network interfaces and associated subnets both have a Network Security Group associated
   aprlGuid: 82b3cf6b-9ae2-2e44-b193-10793213f676
   recommendationTypeId: null
   recommendationControl: Security
@@ -226,7 +227,7 @@
       url: "https://learn.microsoft.com/ja-jp/azure/virtual-network/network-security-group-how-it-works#intra-subnet-traffic"
 - description: IP 転送はネットワーク仮想アプライアンスに対してのみ有効にする必要があります
   aprlGuid: 41a22a5e-5e08-9647-92d0-2ffe9ef1bdad
-  recommendationTypeId: null
+  recommendationTypeId: c3b51c94-588b-426b-a892-24696f9e54cc
   recommendationControl: Security
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Compute/virtualMachines
@@ -317,12 +318,13 @@
     - name: Policy-driven governance
       url: "https://learn.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/landing-zone/design-principles#policy-driven-governance"
     - name: Azure Policy Regulatory Compliance controls for Azure Virtual Machines
-      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/security-policy"
-- description: マネージド ディスクの高度な暗号化オプションを有効にする
+      url: "https://learn.microsoft.com/azure/virtual-machines/security-policy"
+
+- description: Virtual Machines should have Azure Disk Encryption or EncryptionAtHost enabled
   aprlGuid: f0a97179-133a-6e4f-8a49-8a44da73ffce
-  recommendationTypeId: null
+  recommendationTypeId: a40cc620-e72c-fdf4-c554-c6ca2cd705c0
   recommendationControl: Security
-  recommendationImpact: Medium
+  recommendationImpact: High
   recommendationResourceType: Microsoft.Compute/virtualMachines
   recommendationMetadataState: Active
   longDescription: |-
@@ -412,7 +414,7 @@
       url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/sizes-b-series-burstable"
 - description: ミッションクリティカルなワークロードでは、Premium または Ultra ディスクの使用を検討する必要があります
   aprlGuid: df0ff862-814d-45a3-95e4-4fad5a244ba6
-  recommendationTypeId: null
+  recommendationTypeId: 58d6648d-32e8-4346-827c-4f288dd8ca24
   recommendationControl: Scalability
   recommendationImpact: High
   recommendationResourceType: Microsoft.Compute/virtualMachines
@@ -469,10 +471,11 @@
     - name: Azure Metadata Service Scheduled Events for Linux VMs
       url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/linux/scheduled-events"
     - name: Azure Metadata Service Scheduled Events for Windows VMs
-      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/windows/scheduled-events"
-- description: ZRS ディスクを使用するか、可用性ゾーンの障害から LRS ディスクを保護する
+      url: "https://learn.microsoft.com/azure/virtual-machines/windows/scheduled-events"
+
+- description: Use Azure Disks with Zone Redundant Storage for higher resiliency and availability
   aprlGuid: fa0cf4f5-0b21-47b7-89a9-ee936f193ce1
-  recommendationTypeId: null
+  recommendationTypeId: d4102c0f-ebe3-4b22-8fe0-e488866a87af
   recommendationControl: High Availability
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Compute/virtualMachines
