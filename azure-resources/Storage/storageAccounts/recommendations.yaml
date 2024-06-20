@@ -17,9 +17,8 @@
     - name: Azure Storage redundancy
       url: "https://learn.microsoft.com/ja-jp/azure/storage/common/storage-redundancy"
     - name: Change the redundancy configuration for a storage account
-      url: "https://learn.microsoft.com/azure/storage/common/redundancy-migration"
-
-- description: Classic Storage Accounts must be migrated to new Azure Resource Manager resources
+      url: "https://learn.microsoft.com/ja-jp/azure/storage/common/redundancy-migration"
+- description: クラシック ストレージ アカウントは新しい Azure Resource Manager リソースに移行する必要があります
   aprlGuid: 63ad027e-611c-294b-acc5-8e3234db9a40
   recommendationTypeId: 47bb383c-8e25-95f0-c2aa-437add1d87d3
   recommendationControl: Service Upgrade and Retirement
@@ -38,17 +37,16 @@
     - name: Azure classic storage accounts retirement announcement
       url: "https://azure.microsoft.com/updates/classic-azure-storage-accounts-will-be-retired-on-31-august-2024/"
     - name: Migrate your classic storage accounts to Azure Resource Manager
-      url: "https://learn.microsoft.com/azure/storage/common/classic-account-migration-overview"
-
-- description: Use premium performance block blob storage for high performance workloads
+      url: "https://learn.microsoft.com/ja-jp/azure/storage/common/classic-account-migration-overview"
+- description: 高パフォーマンスのワークロードにはプレミアム パフォーマンスのブロック BLOB ストレージを使用する
   aprlGuid: 5587ef77-7a05-a74d-9c6e-449547a12f27
   recommendationTypeId: c6b94711-f1f5-4e7e-9c89-c17ed4190969
   recommendationControl: Scalability
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Storage/storageAccounts
   recommendationMetadataState: Active
-  longDescription: |
-    Use premium performance block blob storage instead of standard performance storage for workloads that require fast storage response times and/or high transaction rates.
+  longDescription: |-
+    高速なストレージ応答時間や高いトランザクション レートを必要とするワークロードには、標準パフォーマンス ストレージの代わりにプレミアム パフォーマンス ブロック BLOB ストレージを使用します。
   potentialBenefits: Optimized cost and performance
   pgVerified: true
   publishedToLearn: false
@@ -65,9 +63,8 @@
     - name: Scalability and performance targets for Blob storage
       url: "https://learn.microsoft.com/ja-jp/azure/storage/blobs/scalability-targets"
     - name: Premium block blob storage accounts
-      url: "https://learn.microsoft.com/azure/storage/blobs/storage-blob-block-blob-premium"
-
-- description: Enable Soft Delete to protect your data
+      url: "https://learn.microsoft.com/ja-jp/azure/storage/blobs/storage-blob-block-blob-premium"
+- description: データを保護するために論理的な削除を有効にする
   aprlGuid: 03263c57-c869-3841-9e0a-3dbb9ef3e28d
   recommendationTypeId: 42dbf883-9e4b-4f84-9da4-232b87c4b5e9
   recommendationControl: Disaster Recovery

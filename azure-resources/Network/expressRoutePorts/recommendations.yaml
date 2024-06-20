@@ -33,9 +33,8 @@
   tags: null
   learnMoreLink:
     - name: About ExpressRoute Direct Circuit Sizes
-      url: "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-erdirect-about?source=recommendations#circuit-sizes"
-
-- description: Configure monitoring and alerting for ExpressRoute Ports
+      url: "https://learn.microsoft.com/ja-jp/azure/expressroute/expressroute-erdirect-about?source=recommendations#circuit-sizes"
+- description: ExpressRoute ポートの監視とアラートを構成する
   aprlGuid: 55815823-d588-4cb7-a5b8-ae581837356e
   recommendationTypeId: null
   recommendationControl: Monitoring and Alerting

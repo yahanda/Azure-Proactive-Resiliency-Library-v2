@@ -205,9 +205,8 @@
   tags: null
   learnMoreLink:
     - name: Use Source Network Address Translation (SNAT) for outbound connections
-      url: "https://learn.microsoft.com/azure/load-balancer/load-balancer-outbound-connections"
-
-- description: VM network interfaces and associated subnets both have a Network Security Group associated
+      url: "https://learn.microsoft.com/ja-jp/azure/load-balancer/load-balancer-outbound-connections"
+- description: VM ネットワーク インターフェイスと関連サブネットの両方に、ネットワーク セキュリティ グループが関連付けられています
   aprlGuid: 82b3cf6b-9ae2-2e44-b193-10793213f676
   recommendationTypeId: null
   recommendationControl: Security
@@ -318,9 +317,8 @@
     - name: Policy-driven governance
       url: "https://learn.microsoft.com/ja-jp/azure/cloud-adoption-framework/ready/landing-zone/design-principles#policy-driven-governance"
     - name: Azure Policy Regulatory Compliance controls for Azure Virtual Machines
-      url: "https://learn.microsoft.com/azure/virtual-machines/security-policy"
-
-- description: Virtual Machines should have Azure Disk Encryption or EncryptionAtHost enabled
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/security-policy"
+- description: 仮想マシンでは Azure Disk Encryption または EncryptionAtHost が有効になっている必要があります
   aprlGuid: f0a97179-133a-6e4f-8a49-8a44da73ffce
   recommendationTypeId: a40cc620-e72c-fdf4-c554-c6ca2cd705c0
   recommendationControl: Security
@@ -471,9 +469,8 @@
     - name: Azure Metadata Service Scheduled Events for Linux VMs
       url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/linux/scheduled-events"
     - name: Azure Metadata Service Scheduled Events for Windows VMs
-      url: "https://learn.microsoft.com/azure/virtual-machines/windows/scheduled-events"
-
-- description: Use Azure Disks with Zone Redundant Storage for higher resiliency and availability
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machines/windows/scheduled-events"
+- description: Azure ディスクとゾーン冗長ストレージを使用して、耐障害性と可用性を高めます
   aprlGuid: fa0cf4f5-0b21-47b7-89a9-ee936f193ce1
   recommendationTypeId: d4102c0f-ebe3-4b22-8fe0-e488866a87af
   recommendationControl: High Availability

@@ -1,4 +1,4 @@
-- description: Ensure Autoscale feature has been enabled
+- description: 自動スケール機能が有効になっていることを確認してください
   aprlGuid: 823b0cff-05c0-2e4e-a1e7-9965e1cfa16f
   recommendationTypeId: c9c9750b-9ddb-436f-b19a-9c725539a0b5
   recommendationControl: Scalability
@@ -61,9 +61,8 @@
     - name: Well-Architected Framework Application Gateway Overview
       url: "https://learn.microsoft.com/ja-jp/azure/well-architected/services/networking/azure-application-gateway"
     - name: Application Gateway - Web Application Firewall
-      url: "https://learn.microsoft.com/azure/application-gateway/features#web-application-firewall"
-
-- description: Migrate to Application Gateway v2
+      url: "https://learn.microsoft.com/ja-jp/azure/application-gateway/features#web-application-firewall"
+- description: Application Gateway v2 への移行
   aprlGuid: 7893f0b3-8622-1d47-beed-4b50a19f7895
   recommendationTypeId: 0e19257e-dcef-4d00-8de1-5fe1ae0fd948
   recommendationControl: Scalability

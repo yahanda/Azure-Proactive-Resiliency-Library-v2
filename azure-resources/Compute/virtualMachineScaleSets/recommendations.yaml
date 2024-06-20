@@ -17,9 +17,8 @@
     - name: When to use VMSS instead of VMs
       url: "https://learn.microsoft.com/ja-jp/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-design-overview#when-to-use-scale-sets-instead-of-virtual-machines"
     - name: Azure Well-Architected Framework review - Virtual Machines and Scale Sets
-      url: "https://learn.microsoft.com/azure/well-architected/services/compute/virtual-machines/virtual-machines-review"
-
-- description: Enable Azure Virtual Machine Scale Set Application Health Monitoring
+      url: "https://learn.microsoft.com/ja-jp/azure/well-architected/services/compute/virtual-machines/virtual-machines-review"
+- description: Azure 仮想マシン スケール セットのアプリケーション正常性監視を有効にする
   aprlGuid: 94794d2a-eff0-2345-9b67-6f9349d0a627
   recommendationTypeId: 3b587048-b04b-4f81-aaed-e43793652b0f
   recommendationControl: Monitoring and Alerting
@@ -36,9 +35,8 @@
   tags: null
   learnMoreLink:
     - name: Using Application Health extension with Virtual Machine Scale Sets
-      url: "https://learn.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-health-extension?tabs=rest-api"
-
-- description: Enable Automatic Repair Policy on Azure Virtual Machine Scale Sets
+      url: "https://learn.microsoft.com/ja-jp/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-health-extension?tabs=rest-api"
+- description: Azure 仮想マシン スケール セットで自動修復ポリシーを有効にする
   aprlGuid: 820f4743-1f94-e946-ae0b-45efafd87962
   recommendationTypeId: b4d988a9-85e6-4179-b69c-549bdd8a55bb
   recommendationControl: High Availability

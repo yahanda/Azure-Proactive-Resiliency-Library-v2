@@ -33,9 +33,8 @@
   tags: null
   learnMoreLink:
     - name: Azure Key Vault purge-protection overview
-      url: "https://learn.microsoft.com/azure/key-vault/general/soft-delete-overview#purge-protection"
-
-- description: Private endpoint should be configured for Key Vault
+      url: "https://learn.microsoft.com/ja-jp/azure/key-vault/general/soft-delete-overview#purge-protection"
+- description: プライベート エンドポイントは Key Vault 用に構成する必要があります
   aprlGuid: 00c3d2b0-ea6e-4c4b-89be-b78a35caeb51
   recommendationTypeId: 2e96bc2f-1972-e471-9e70-ae58d41e9d2a
   recommendationControl: Security

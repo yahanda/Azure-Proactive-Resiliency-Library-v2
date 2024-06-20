@@ -35,9 +35,8 @@
     - name: AutoFailover Groups
       url: "https://learn.microsoft.com/ja-jp/azure/azure-sql/database/auto-failover-group-overview?tabs=azure-powershell"
     - name: DR Design
-      url: "https://learn.microsoft.com/en-us/azure/azure-sql/database/designing-cloud-solutions-for-disaster-recovery"
-
-- description: Enable zone redundancy for Azure SQL Database to achieve high availability and resiliency
+      url: "https://learn.microsoft.com/ja-jp/azure/azure-sql/database/designing-cloud-solutions-for-disaster-recovery"
+- description: Azure SQL Database のゾーン冗長性を有効にして、高可用性と復元性を実現します。
   aprlGuid: c0085c32-84c0-c247-bfa9-e70977cbf108
   recommendationTypeId: 807e58d0-e385-41ad-987b-4a4b3e3fb563
   recommendationControl: High Availability

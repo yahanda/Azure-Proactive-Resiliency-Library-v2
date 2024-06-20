@@ -55,9 +55,8 @@
   tags: null
   learnMoreLink:
     - name: Reliability recommendations
-      url: "https://learn.microsoft.com/azure/advisor/advisor-reference-reliability-recommendations#add-at-least-one-more-endpoint-to-the-profile-preferably-in-another-azure-region"
-
-- description: Ensure endpoint configured to (All World) for geographic profiles
+      url: "https://learn.microsoft.com/ja-jp/azure/advisor/advisor-reference-reliability-recommendations#add-at-least-one-more-endpoint-to-the-profile-preferably-in-another-azure-region"
+- description: エンドポイントが地理的プロファイルに対して (全世界) に設定されていることを確認します
   aprlGuid: c31f76a0-48cd-9f44-aa43-99ee904db9bc
   recommendationTypeId: 0bbe0a49-3c63-49d3-ab4a-aa24198f03f7
   recommendationControl: Disaster Recovery

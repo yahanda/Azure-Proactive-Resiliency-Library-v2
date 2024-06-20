@@ -125,17 +125,16 @@
   tags: null
   learnMoreLink:
     - name: Using S2S VPN as a backup for ExpressRoute private peering
-      url: "https://learn.microsoft.com/azure/expressroute/use-s2s-vpn-as-backup-for-expressroute-privatepeering"
-
-- description: Implement rate-limiting across ExpressRoute Direct Circuits to optimize network flow
+      url: "https://learn.microsoft.com/ja-jp/azure/expressroute/use-s2s-vpn-as-backup-for-expressroute-privatepeering"
+- description: ExpressRoute Direct Circuits 全体にレート制限を実装してネットワーク フローを最適化する
   aprlGuid: d40c769d-2f08-4980-8d8f-a386946276e6
   recommendationTypeId: null
   recommendationControl: Scalability
   recommendationImpact: Medium
   recommendationResourceType: Microsoft.Network/expressRouteCircuits
   recommendationMetadataState: Active
-  longDescription: |
-    Rate limiting controls traffic volume between on-premises networks and Azure via ExpressRoute Direct, applying to private or Microsoft peering. It distributes port bandwidth, ensures stability, and prevents congestion, with steps outlined for enabling on circuits.
+  longDescription: |-
+    レート制限は、ExpressRoute Direct 経由でオンプレミス ネットワークと Azure 間のトラフィック量を制御し、プライベート ピアリングまたは Microsoft ピアリングに適用します。ポート帯域幅を分散し、安定性を確保し、輻輳を防止します。回線上で有効にするための手順が概説されています。
   potentialBenefits: Optimizes network, prevents congestion
   pgVerified: true
   publishedToLearn: false
@@ -144,4 +143,4 @@
   tags: null
   learnMoreLink:
     - name: Rate limiting for ExpressRoute Direct circuits (Preview)
-      url: "https://learn.microsoft.com/en-us/azure/expressroute/rate-limit"
+      url: "https://learn.microsoft.com/ja-jp/azure/expressroute/rate-limit"

@@ -134,8 +134,7 @@
       url: "https://learn.microsoft.com/ja-jp/azure/vpn-gateway/about-zone-redundant-vnet-gateways#gwskus"
     - name: SLA summary for Azure services
       url: "https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services?lang=1"
-
-- description: Enable Active-Active VPN Gateways for redundancy
+- description: 冗長性のためにアクティブ/アクティブ VPN ゲートウェイを有効にする
   aprlGuid: 281a2713-c0e0-3c48-b596-19f590c46671
   recommendationTypeId: c249dc0e-9a17-423e-838a-d72719e8c5dd
   recommendationControl: High Availability

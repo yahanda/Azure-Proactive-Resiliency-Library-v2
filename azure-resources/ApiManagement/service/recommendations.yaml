@@ -37,9 +37,8 @@
     - name: Ensure API Management availability and reliability
       url: "https://learn.microsoft.com/ja-jp/azure/api-management/high-availability#availability-zones"
     - name: Migrate Azure API Management to availability zone support
-      url: "https://learn.microsoft.com/en-us/azure/reliability/migrate-api-mgt"
-
-- description: Azure API Management platform version should be stv2
+      url: "https://learn.microsoft.com/ja-jp/azure/reliability/migrate-api-mgt"
+- description: Azure API Management プラットフォームのバージョンは stv2 である必要があります
   aprlGuid: e35cf148-8eee-49d1-a1c9-956160f99e0b
   recommendationTypeId: e5f60ef8-3fcc-4fb5-bee7-7aaeb44c1509
   recommendationControl: High Availability
