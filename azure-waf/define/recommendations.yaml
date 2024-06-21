@@ -1,4 +1,4 @@
-- description: ワークロードの一貫性を確保するために、可用性ターゲットを定義してすべてのチームと共有します。
+- description: ワークロードの一貫性を確保するために、可用性ターゲットを定義してすべてのチームと共有します
   aprlGuid: 0c8a12dd-52fb-cf40-bb4a-b60f99409bab
   recommendationTypeId: null
   recommendationControl: High Availability
