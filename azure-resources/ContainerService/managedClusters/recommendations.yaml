@@ -122,28 +122,6 @@
       url: "https://learn.microsoft.com/ja-jp/azure/backup/azure-kubernetes-service-cluster-backup"
     - name: Best Practices for AKS Backups
       url: "https://learn.microsoft.com/ja-jp/azure/aks/operator-best-practices-storage"
-- description: AKS バージョンのアップグレードを計画する
-  aprlGuid: e6188d3b-7fbc-4ecf-a37b-b658f9efcdc4
-  recommendationTypeId: null
-  recommendationControl: Service Upgrade and Retirement
-  recommendationImpact: High
-  recommendationResourceType: Microsoft.ContainerService/managedClusters
-  recommendationMetadataState: Active
-  longDescription: |-
-    マイナー バージョン リリースでは、新機能と改善がもたらされます。パッチ リリースは毎週行われることが多く、セキュリティの脆弱性や重大なバグなど、マイナー バージョン内の重大なバグ修正に重点が置かれています。サポートされていない Kubernetes バージョンにより、AKS サポートを求めるときにクラスターがサポートされなくなる可能性があります。
-  potentialBenefits: Enhances features, fixes bugs, ensures support
-  pgVerified: false
-  publishedToLearn: false
-  publishedToAdvisor: false
-  automationAvailable: no
-  tags: null
-  learnMoreLink:
-    - name: Updating to the latest AKS version
-      url: "https://learn.microsoft.com/ja-jp/azure/aks/operator-best-practices-cluster-security?tabs=azure-cli#regularly-update-to-the-latest-version-of-kubernetes"
-    - name: Upgrade cluster
-      url: "https://learn.microsoft.com/ja-jp/azure/aks/upgrade-cluster?tabs=azure-cli"
-    - name: Auto-upgrading cluster
-      url: "https://learn.microsoft.com/ja-jp/azure/aks/auto-upgrade-cluster"
 - description: マルチゾーン AKS を実行する場合は永続ボリュームにゾーン冗長ストレージを使用する
   aprlGuid: d3111036-355d-431b-ab49-8ddad042800b
   recommendationTypeId: null
@@ -477,4 +455,40 @@
   tags: null
   learnMoreLink:
     - name: Azure Quotas
-      url: "https://learn.microsoft.com/ja-jp/azure/quotas/quotas-overview"
+      url: "https://learn.microsoft.com/azure/quotas/quotas-overview"
+- description: Linux ノードプールには Azure Linux を使用する
+  aprlGuid: f46b0d1d-56ef-4795-b98a-f6ee00cb341a
+  recommendationTypeId: null
+  recommendationControl: High Availability
+  recommendationImpact: High
+  recommendationResourceType: Microsoft.ContainerService/managedClusters
+  recommendationMetadataState: Active
+  longDescription: |-
+    AKS 上の Azure Linux は、検証済みのソースで構築されたコンポーネントを使用するネイティブ イメージで復元性を高めます。軽量なので、攻撃対象領域とメンテナンスが軽減されます。 Azure 向けに最適化された Microsoft 強化カーネルにより、コンテナー ワークロードの安定性とセキュリティが強化されます。
+  potentialBenefits: Reduced disruptions
+  pgVerified: false
+  publishedToLearn: false
+  publishedToAdvisor: false
+  automationAvailable: arg
+  tags: null
+  learnMoreLink:
+    - name: Azure Linux
+      url: "https://learn.microsoft.com/azure/aks/use-azure-linux"
+- description: アプリケーションの少なくとも 2 つのレプリカをデプロイします
+  aprlGuid: 9200aca6-0e83-4749-a5eb-e3939367bdc2
+  recommendationTypeId: null
+  recommendationControl: High Availability
+  recommendationImpact: High
+  recommendationResourceType: Microsoft.ContainerService/managedClusters
+  recommendationMetadataState: Active
+  longDescription: |-
+    アプリケーションの少なくとも 2 つのレプリカをデプロイすると、アプリケーションの可用性が高く、ノード障害に耐えることができます。
+  potentialBenefits: Ensures high app availability
+  pgVerified: false
+  publishedToLearn: false
+  publishedToAdvisor: false
+  automationAvailable: no
+  tags: null
+  learnMoreLink:
+    - name: Multi-replica apps
+      url: "https://learn.microsoft.com/azure/aks/best-practices-app-cluster-reliability#multi-replica-applications"

@@ -19,7 +19,7 @@
 - description: Azure NetApp Files での運用に標準のネットワーク機能を使用する
   aprlGuid: ab984130-c57b-6c4a-8d04-6723b4e1bdb6
   recommendationTypeId: null
-  recommendationControl: Governance
+  recommendationControl: Scalability
   recommendationImpact: High
   recommendationResourceType: Microsoft.NetApp/netAppAccounts
   recommendationMetadataState: Active
@@ -42,7 +42,7 @@
   recommendationResourceType: Microsoft.NetApp/netAppAccounts
   recommendationMetadataState: Active
   longDescription: |-
-    可用性ゾーンは、ローカル障害に耐えるための Azure リージョン内の個別の場所です。ワークロードを複数の可用性ゾーンにデプロイし、アプリケーション ベースのレプリケーションとフェールオーバー テクノロジを使用するか、高可用性を実現するために Azure NetApp Files ゾーン間レプリケーションの使用を検討してください。
+    可用性ゾーンは、ローカル障害に耐えるための Azure リージョン内の個別の場所です。ワークロードを複数の可用性ゾーンにデプロイし、アプリケーション ベースのレプリケーションまたは Azure NetApp Files ゾーン間レプリケーションを使用して高可用性を実現します。フェイルオーバーは手動プロセスであることに注意してください。
   potentialBenefits: High Availability across availability zones
   pgVerified: true
   publishedToLearn: false
@@ -114,7 +114,7 @@
   recommendationResourceType: Microsoft.NetApp/netAppAccounts
   recommendationMetadataState: Active
   longDescription: |-
-    Azure NetApp Files レプリケーションは、リージョンが停止した場合にアプリケーション フェールオーバー用の非同期クロスリージョン ボリューム レプリケーションを可能にすることでデータ保護を提供します。ボリュームはリージョン間でレプリケートできますが、クロスゾーン レプリケーションと同時に行うことはできません。
+    Azure NetApp Files レプリケーションは、リージョンが停止した場合にアプリケーション フェールオーバー用の非同期クロスリージョン ボリューム レプリケーションを可能にすることでデータ保護を提供します。ボリュームはリージョン間でレプリケートできますが、クロスゾーン レプリケーションと同時に行うことはできません。フェイルオーバーは手動プロセスであることに注意してください。
   potentialBenefits: Enhanced data protection and disaster recovery
   pgVerified: true
   publishedToLearn: false
@@ -132,7 +132,7 @@
   recommendationResourceType: Microsoft.NetApp/netAppAccounts
   recommendationMetadataState: Active
   longDescription: |-
-    クロスゾーン レプリケーション (CZR) 機能により、異なる可用性ゾーンにまたがる Azure NetApp Files ボリューム間の非同期データ レプリケーションが可能になり、ゾーン全体の災害発生時にデータ保護と重要なアプリケーションのフェールオーバーが確保されます。
+    クロスゾーン レプリケーション (CZR) 機能により、異なる可用性ゾーンにまたがる Azure NetApp Files ボリューム間の非同期データ レプリケーションが可能になり、ゾーン全体の災害発生時にデータ保護と重要なアプリケーションのフェールオーバーが確保されます。フェイルオーバーは手動プロセスであることに注意してください。
   potentialBenefits: Enhances disaster recovery across availability zones
   pgVerified: true
   publishedToLearn: false

@@ -34,3 +34,21 @@
   learnMoreLink:
     - name: Schedule Redis Updates
       url: "https://learn.microsoft.com/ja-jp/azure/azure-cache-for-redis/cache-administration#update-channel-and-schedule-updates"
+- description: プライベートエンドポイントの構成
+  aprlGuid: c474fc96-4e6a-4fb0-95d0-a26b3f35933c
+  recommendationTypeId: null
+  recommendationControl: Security
+  recommendationImpact: Medium
+  recommendationResourceType: Microsoft.Cache/redis
+  recommendationMetadataState: Active
+  longDescription: |-
+    プライベート エンドポイントを使用して安全な接続を行い、パブリック インターネットを避けてプライベート リンク経由でキャッシュします。
+  potentialBenefits: Secure, private VNet ingress, efficient data transfer
+  pgVerified: false
+  publishedToLearn: false
+  publishedToAdvisor: false
+  automationAvailable: arg
+  tags: null
+  learnMoreLink:
+    - name: Configure private endpoints for Azure Redis Cache
+      url: "https://learn.microsoft.com/azure/azure-cache-for-redis/cache-network-isolation"
