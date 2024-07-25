@@ -1,4 +1,11 @@
+
+
 # Azure Proactive Resiliency Library v2 (APRL)
+
+> [!CAUTION]
+> このリポジトリはアーカイブ済みで今後更新されません。最新のアップデートは以下のリポジトリをご参照ください。
+>
+> **New Repository:** [https://github.com/tksh164/aprl-v2-ja](https://github.com/tksh164/aprl-v2-ja)
 
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/Azure/Azure-Proactive-Resiliency-Library-v2.svg)](http://isitmaintained.com/project/Azure/Azure-Proactive-Resiliency-Library-v2 "Average time to resolve an issue")
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/Azure/Azure-Proactive-Resiliency-Library-v2.svg)](http://isitmaintained.com/project/Azure/Azure-Proactive-Resiliency-Library-v2 "Percentage of issues still open")
